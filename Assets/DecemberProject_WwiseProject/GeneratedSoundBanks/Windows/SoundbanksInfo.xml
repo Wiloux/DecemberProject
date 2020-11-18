@@ -11,40 +11,57 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4204904655">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2556667380">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="959168799">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2600694668">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2385628260" Name="Footstep1" ObjectPath="\Events\Default Work Unit\Footstep1" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.394739" DurationMax="0.394739">
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Player\Footstep" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.457973" DurationMax="0.553824">
 					<IncludedMemoryFiles>
-						<File Id="1065276239" Language="SFX">
-							<ShortName>walk1 1.wav</ShortName>
-							<Path>SFX\walk1 1_10C4C929.wem</Path>
+						<File Id="280403748" Language="SFX">
+							<ShortName>footstep3.wav</ShortName>
+							<Path>SFX\footstep3_10C4C929.wem</Path>
+						</File>
+						<File Id="479510423" Language="SFX">
+							<ShortName>footstep1.wav</ShortName>
+							<Path>SFX\footstep1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2385628263" Name="Footstep2" ObjectPath="\Events\Default Work Unit\Footstep2" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.394739" DurationMax="0.394739">
+				<Event Id="2045095431" Name="FootstepLady" ObjectPath="\Events\Default Work Unit\Player\FootstepLady" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.374376" DurationMax="0.500000">
 					<IncludedMemoryFiles>
-						<File Id="314465950" Language="SFX">
-							<ShortName>walk2 1.wav</ShortName>
-							<Path>SFX\walk2 1_10C4C929.wem</Path>
+						<File Id="128443798" Language="SFX">
+							<ShortName>footsteplady2.wav</ShortName>
+							<Path>SFX\footsteplady2_10C4C929.wem</Path>
+						</File>
+						<File Id="365710504" Language="SFX">
+							<ShortName>footsteplady3.wav</ShortName>
+							<Path>SFX\footsteplady3_10C4C929.wem</Path>
+						</File>
+						<File Id="442015427" Language="SFX">
+							<ShortName>footsteplady1.wav</ShortName>
+							<Path>SFX\footsteplady1_10C4C929.wem</Path>
+						</File>
+						<File Id="695972227" Language="SFX">
+							<ShortName>footsteplady4.wav</ShortName>
+							<Path>SFX\footsteplady4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2385628262" Name="Footstep3" ObjectPath="\Events\Default Work Unit\Footstep3" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.534059" DurationMax="0.534059">
+				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\Orb\PlayOrb" MaxAttenuation="70.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="466496854" Language="SFX">
-							<ShortName>walk3 1.wav</ShortName>
-							<Path>SFX\walk3 1_10C4C929.wem</Path>
+						<File Id="252448318" Language="SFX">
+							<ShortName>orb1.wav</ShortName>
+							<Path>SFX\orb1_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2852051516" Name="StopOrb" ObjectPath="\Events\Default Work Unit\Orb\StopOrb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

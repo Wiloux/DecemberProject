@@ -7527,18 +7527,15 @@ MonoBehaviour:
   FootstepSound1:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: da599c134218d934e9be9c22a4410f37,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   FootstepSound2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: fd8c2a5f4bc48b246bbd8fefd0f579a8,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   FootstepSound3:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8a0095beb1a60b94c92bd42376f7e37d,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &4150466204413269305
 GameObject:
   m_ObjectHideFlags: 0

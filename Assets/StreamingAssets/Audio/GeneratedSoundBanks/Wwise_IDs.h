@@ -13,9 +13,10 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID FOOTSTEP1 = 2385628260U;
-        static const AkUniqueID FOOTSTEP2 = 2385628263U;
-        static const AkUniqueID FOOTSTEP3 = 2385628262U;
+        static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID FOOTSTEPLADY = 2045095431U;
+        static const AkUniqueID PLAYORB = 2053742238U;
+        static const AkUniqueID STOPORB = 2852051516U;
     } // namespace EVENTS
 
     namespace BANKS
@@ -27,6 +28,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

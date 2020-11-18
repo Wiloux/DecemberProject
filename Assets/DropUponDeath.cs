@@ -10,6 +10,7 @@ public class DropUponDeath : MonoBehaviour
         {
             other.GetComponent<Movement>().hasSoul = true;
             Destroy(gameObject);
+            AkSoundEngine.PostEvent("StopOrb", gameObject);
         }
     }
 }

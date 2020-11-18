@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 27596ce3e9aa5240a54f786194d9fa0c
     GuidInternal: 
-    m_lastTime: -8585959477278184900
+    m_lastTime: -8585958670233333048
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -41,6 +41,15 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
+    - name: Music
+      guid: 9b647e44102feb4489f4d257d074e699
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 2
+      Path: Default Work Unit\Music
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -49,7 +58,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585959462060497575
+    m_lastTime: -8585958675589414138
     List:
     - name: Main
       guid: e8a3ab083a4d344489c1ca41b102a799
@@ -68,41 +77,85 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23cdf775154ee34c9621da36a37cfeb8
     GuidInternal: 
-    m_lastTime: -8585959462060315871
+    m_lastTime: -8585958675589473955
     List:
-    - name: Footstep1
-      guid: afc3cd89d1637044a67af763b6690cee
-      id: 2385628260
+    - name: Footstep
+      guid: f45a96c2937e6240aae0ba630aceb904
+      id: 1866025847
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Footstep1
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Footstep
         ObjectType: 3
-      Path: Default Work Unit\Footstep1
+      Path: Default Work Unit\Player\Footstep
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Footstep2
-      guid: 37097c4d1bc9ee4cb6a911f59ae50d5f
-      id: 2385628263
+    - name: FootstepLady
+      guid: 7fccd7458f6f834b81fa575dc24b0a8e
+      id: 2045095431
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Footstep2
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: FootstepLady
         ObjectType: 3
-      Path: Default Work Unit\Footstep2
+      Path: Default Work Unit\Player\FootstepLady
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: Footstep3
-      guid: 871d86a580d0294fb5dabf6403d0b06d
-      id: 2385628262
+    - name: Orb
+      guid: c81e9fcc0469f24ca4e6763d29c70cd0
+      id: 595159780
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Footstep3
+      - ElementName: Orb
+        ObjectType: 4
+      Path: Default Work Unit\Orb
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Player
+      guid: d1642b156f412e4ebaf7af31896bbc46
+      id: 1069431850
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      Path: Default Work Unit\Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayOrb
+      guid: c1d701c549456649b5195c89eafe7d85
+      id: 2053742238
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Orb
+        ObjectType: 4
+      - ElementName: PlayOrb
         ObjectType: 3
-      Path: Default Work Unit\Footstep3
+      Path: Default Work Unit\Orb\PlayOrb
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopOrb
+      guid: abcd6ec3cdd2094ca3d1312503c60df8
+      id: 2852051516
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Orb
+        ObjectType: 4
+      - ElementName: StopOrb
+        ObjectType: 3
+      Path: Default Work Unit\Orb\StopOrb
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -150,7 +203,6 @@ MonoBehaviour:
   - /DecemberProject_WwiseProject
   - /DecemberProject_WwiseProject/Events
   - /DecemberProject_WwiseProject/Events/Default Work Unit
-  - /DecemberProject_WwiseProject/SoundBanks
-  - /DecemberProject_WwiseProject/SoundBanks/Default Work Unit
+  - /DecemberProject_WwiseProject/Events/Default Work Unit/Orb
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

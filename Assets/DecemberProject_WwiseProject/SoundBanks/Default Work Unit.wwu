@@ -5,9 +5,10 @@
 			<ChildrenList>
 				<SoundBank Name="Main" ID="{08ABA3E8-4D3A-4434-89C1-CA41B102A799}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Footstep1" ID="{89CDC3AF-63D1-4470-A67A-F763B6690CEE}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Footstep2" ID="{4D7C0937-C91B-4CEE-B6A9-11F59AE50D5F}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Footstep3" ID="{A5861D87-D080-4F29-B5DA-BF6403D0B06D}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footstep" ID="{C2965AF4-7E93-4062-AAE0-BA630ACEB904}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayOrb" ID="{C501D7C1-4549-4966-B519-5C89EAFE7D85}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="FootstepLady" ID="{45D7CC7F-6F8F-4B83-81FA-575DC24B0A8E}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopOrb" ID="{C36ECDAB-D2CD-4C09-A3D1-312503C60DF8}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
