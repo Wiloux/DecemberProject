@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Footstep1" ID="{89CDC3AF-63D1-4470-A67A-F763B6690CEE}">
+					<ChildrenList>
+						<Action Name="" ID="{DCEF7B07-6F07-4BBB-9877-DD2666132AE7}" ShortID="731924071">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="walk1 1" ID="{B47D63FC-9755-40CE-8DB1-2A044CAC7FEB}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footstep2" ID="{4D7C0937-C91B-4CEE-B6A9-11F59AE50D5F}">
+					<ChildrenList>
+						<Action Name="" ID="{8956067B-880E-4176-9A8E-1A2A1FA736C6}" ShortID="112236945">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="walk2 1" ID="{29066A0D-8929-471C-8FDF-6C470CB8CB7B}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footstep3" ID="{A5861D87-D080-4F29-B5DA-BF6403D0B06D}">
+					<ChildrenList>
+						<Action Name="" ID="{C1F01C12-1C11-43A3-946E-E7DC07596349}" ShortID="772108782">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="walk3 1" ID="{C39E7888-E8B6-469A-8625-C17667CD48DC}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

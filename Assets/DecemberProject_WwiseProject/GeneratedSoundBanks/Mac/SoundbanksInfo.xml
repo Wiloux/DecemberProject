@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2953616821">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="959168799">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2385628260" Name="Footstep1" ObjectPath="\Events\Default Work Unit\Footstep1" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.394739" DurationMax="0.394739">
+					<IncludedMemoryFiles>
+						<File Id="1065276239" Language="SFX">
+							<ShortName>walk1 1.wav</ShortName>
+							<Path>SFX\walk1 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2385628263" Name="Footstep2" ObjectPath="\Events\Default Work Unit\Footstep2" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.394739" DurationMax="0.394739">
+					<IncludedMemoryFiles>
+						<File Id="314465950" Language="SFX">
+							<ShortName>walk2 1.wav</ShortName>
+							<Path>SFX\walk2 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2385628262" Name="Footstep3" ObjectPath="\Events\Default Work Unit\Footstep3" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.534059" DurationMax="0.534059">
+					<IncludedMemoryFiles>
+						<File Id="466496854" Language="SFX">
+							<ShortName>walk3 1.wav</ShortName>
+							<Path>SFX\walk3 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,0 +1,10 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2385628260	Footstep1			\Default Work Unit\Footstep1	
+	2385628262	Footstep3			\Default Work Unit\Footstep3	
+	2385628263	Footstep2			\Default Work Unit\Footstep2	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	314465950	walk2 1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\walk2 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\WalkPlaceholder\walk2 1		69696
+	466496854	walk3 1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\walk3 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\WalkPlaceholder\walk3 1		94272
+	1065276239	walk1 1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\walk1 1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\WalkPlaceholder\walk1 1		69696
+
