@@ -1555,7 +1555,8 @@ MonoBehaviour:
   FootstepSound1:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 099a7466680fb4943b6b0566f0f6e938,
+      type: 2}
   FootstepSound2:
     idInternal: 0
     valueGuidInternal: 
@@ -1563,8 +1564,7 @@ MonoBehaviour:
   FootstepSound3:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 099a7466680fb4943b6b0566f0f6e938,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
 --- !u!54 &111623764
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8092,12 +8092,12 @@ MonoBehaviour:
   FootstepSound1:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 309c5b50797f87040ae4ec929843ad50,
+      type: 2}
   FootstepSound2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 099a7466680fb4943b6b0566f0f6e938,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   FootstepSound3:
     idInternal: 0
     valueGuidInternal: 
@@ -56930,7 +56930,7 @@ PrefabInstance:
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
       propertyPath: isNinja
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7293696574984134419, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}

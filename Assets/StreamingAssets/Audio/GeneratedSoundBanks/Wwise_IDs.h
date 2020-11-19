@@ -19,21 +19,6 @@ namespace AK
         static const AkUniqueID STOPORB = 2852051516U;
     } // namespace EVENTS
 
-    namespace SWITCHES
-    {
-        namespace HASSOUL
-        {
-            static const AkUniqueID GROUP = 2553901394U;
-
-            namespace SWITCH
-            {
-                static const AkUniqueID NO = 1668749452U;
-                static const AkUniqueID YES = 979470758U;
-            } // namespace SWITCH
-        } // namespace HASSOUL
-
-    } // namespace SWITCHES
-
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

@@ -4,16 +4,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	2053742238	PlayOrb			\Default Work Unit\Orb\PlayOrb	
 	2852051516	StopOrb			\Default Work Unit\Orb\StopOrb	
 
-Switch Group	ID	Name			Wwise Object Path	Notes
-	2553901394	HasSoul			\Default Work Unit\HasSoul	
-
-Switch	ID	Name	Switch Group			Notes
-	979470758	Yes	HasSoul			
-	1668749452	No	HasSoul			
-
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	128443798	footsteplady2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteplady2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\FootstepsLady\footsteplady2		88264
-	252448318	orb1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\orb1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Orb\orb1		705664
+	252448318	orb1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\orb1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\orb1		705664
 	280403748	footstep3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\footstep3		88264
 	365710504	footsteplady3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteplady3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\FootstepsLady\footsteplady3		88264
 	442015427	footsteplady1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteplady1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\FootstepsLady\footsteplady1		66104
