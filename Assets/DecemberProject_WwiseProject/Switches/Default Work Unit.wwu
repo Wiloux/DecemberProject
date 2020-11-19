@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="HasSoul" ID="{B8F06511-8933-4F68-96FE-6A8688435880}">
+					<ChildrenList>
+						<Switch Name="Yes" ID="{2E492C2B-2367-4D5C-B4E5-7227D994E648}"/>
+						<Switch Name="No" ID="{66AF3913-85D1-4BD3-9124-04E58BB2F2B0}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

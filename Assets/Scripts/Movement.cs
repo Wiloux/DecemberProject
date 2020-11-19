@@ -267,6 +267,7 @@ public class Movement : MonoBehaviour
                                 break;
                             case Objective.WorkType.jerryCan:
                                 hasSoul = true;
+                                AkSoundEngine.PostEvent("PlayOrb", gameObject);
                                 break;
                             case Objective.WorkType.chest:
                                 int i = Random.Range(0, 3);
@@ -297,6 +298,7 @@ public class Movement : MonoBehaviour
                 anim.SetBool("isStunned", true);
                 agent.SetDestination(transform.position);
                 agent.isStopped = true;
+                AkSoundEngine.PostEvent("StopOrb", gameObject);
 
                 if (!isBeingHelped)
                 {
