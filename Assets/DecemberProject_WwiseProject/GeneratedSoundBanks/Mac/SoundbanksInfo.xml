@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2600694668">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4163781969">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -53,7 +53,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\Orb\PlayOrb" MaxAttenuation="70.000000" DurationType="Infinite">
+				<Event Id="448200913" Name="PlayJerrycan" ObjectPath="\Events\Default Work Unit\SoulStuff\Jerrycan\PlayJerrycan" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="63.500000" DurationMax="63.500000">
+					<IncludedMemoryFiles>
+						<File Id="467019561" Language="SFX">
+							<ShortName>jerrycan1 .wav</ShortName>
+							<Path>SFX\jerrycan1 _10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\PlayOrb" MaxAttenuation="70.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="252448318" Language="SFX">
 							<ShortName>orb1.wav</ShortName>
@@ -61,7 +69,8 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2852051516" Name="StopOrb" ObjectPath="\Events\Default Work Unit\Orb\StopOrb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2638603827" Name="StopJerrycan" ObjectPath="\Events\Default Work Unit\SoulStuff\Jerrycan\StopJerrycan" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2852051516" Name="StopOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\StopOrb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

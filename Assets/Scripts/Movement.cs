@@ -232,6 +232,10 @@ public class Movement : MonoBehaviour
                         currentObjective.isBeingWorkedOn = true;
                         currentObjective.WorkLeft -= workingSpeed * Time.deltaTime;
                     }
+                    if (currentObjective.Type == Objective.WorkType.jerryCan)
+                    {
+                        AkSoundEngine.PostEvent("PlayJerrycan", gameObject);
+                    }
                     else
                     {
                         if (!readytoadd)
@@ -267,6 +271,8 @@ public class Movement : MonoBehaviour
                                 break;
                             case Objective.WorkType.jerryCan:
                                 hasSoul = true;
+                                AkSoundEngine.PostEvent("StopJerrycan", gameObject);
+                                AkSoundEngine.PostEvent("PlayOrb", gameObject);
                                 break;
                             case Objective.WorkType.chest:
                                 int i = Random.Range(0, 3);

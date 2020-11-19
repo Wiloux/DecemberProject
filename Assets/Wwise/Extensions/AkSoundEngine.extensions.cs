@@ -5,6 +5,8 @@
 //
 //////////////////////////////////////////////////////////////////////
 
+using System;
+
 public partial class AkSoundEngine
 {
 	#region User Hooks - Extended for Auto-Registration
@@ -84,6 +86,11 @@ public partial class AkSoundEngine
 		return IsInRegisteredList(GetAkGameObjectID(in_gameObject));
 	}
 
-	#endregion
+    internal static void PostEvent(string v1, string v2)
+    {
+        throw new NotImplementedException();
+    }
+
+    #endregion
 }
 #endif // #if !(UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.

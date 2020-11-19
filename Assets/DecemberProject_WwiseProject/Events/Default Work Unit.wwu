@@ -29,33 +29,74 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
-				<Folder Name="Orb" ID="{CC9F1EC8-6904-4CF2-A4E6-763D29C70CD0}" ShortID="1025363708">
+				<Folder Name="SoulStuff" ID="{C1ED0E0A-26C4-4EB8-BA66-33BB6A1421A3}" ShortID="1068933723">
 					<ChildrenList>
-						<Event Name="PlayOrb" ID="{C501D7C1-4549-4966-B519-5C89EAFE7D85}">
+						<Folder Name="Orb" ID="{CC9F1EC8-6904-4CF2-A4E6-763D29C70CD0}" ShortID="1025363708">
 							<ChildrenList>
-								<Action Name="" ID="{E7DA9806-B236-4602-8EC8-B46A3BE929B6}" ShortID="33274407">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="orb1" ID="{E428B7F1-9100-4712-91A2-4B6F0087B399}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="PlayOrb" ID="{C501D7C1-4549-4966-B519-5C89EAFE7D85}">
+									<ChildrenList>
+										<Action Name="" ID="{E7DA9806-B236-4602-8EC8-B46A3BE929B6}" ShortID="33274407">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="orb1" ID="{E428B7F1-9100-4712-91A2-4B6F0087B399}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="StopOrb" ID="{C36ECDAB-D2CD-4C09-A3D1-312503C60DF8}">
+									<ChildrenList>
+										<Action Name="" ID="{443B3D53-7396-4830-AE2E-111A1F0A5F50}" ShortID="689072175">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="orb1" ID="{E428B7F1-9100-4712-91A2-4B6F0087B399}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
-						<Event Name="StopOrb" ID="{C36ECDAB-D2CD-4C09-A3D1-312503C60DF8}">
+						</Folder>
+						<Folder Name="Jerrycan" ID="{C41231A4-2675-4A62-9A2C-B401F4147665}" ShortID="643543200">
 							<ChildrenList>
-								<Action Name="" ID="{443B3D53-7396-4830-AE2E-111A1F0A5F50}" ShortID="689072175">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="orb1" ID="{E428B7F1-9100-4712-91A2-4B6F0087B399}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
+								<Event Name="PlayJerrycan" ID="{3B72C077-1A3F-48B9-9F9E-A6968EA3C8AA}">
+									<ChildrenList>
+										<Action Name="" ID="{1CF5FB33-D1E4-46D0-861A-06990D99AB47}" ShortID="179916331">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="jerrycan1" ID="{A44D1D71-31A8-4FAB-8C2C-97053917C429}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="StopJerrycan" ID="{677693DC-8A70-49AE-ACCD-9722D97FFC26}">
+									<ChildrenList>
+										<Action Name="" ID="{472D059B-17C6-45BE-92BE-2DCED0AACABD}" ShortID="591234422">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="jerrycan1" ID="{A44D1D71-31A8-4FAB-8C2C-97053917C429}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
-						</Event>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

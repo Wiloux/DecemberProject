@@ -1555,8 +1555,7 @@ MonoBehaviour:
   FootstepSound1:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 099a7466680fb4943b6b0566f0f6e938,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   FootstepSound2:
     idInternal: 0
     valueGuidInternal: 
@@ -1564,7 +1563,8 @@ MonoBehaviour:
   FootstepSound3:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 099a7466680fb4943b6b0566f0f6e938,
+      type: 2}
 --- !u!54 &111623764
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8092,12 +8092,12 @@ MonoBehaviour:
   FootstepSound1:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 309c5b50797f87040ae4ec929843ad50,
-      type: 2}
+    WwiseObjectReference: {fileID: 0}
   FootstepSound2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 309c5b50797f87040ae4ec929843ad50,
+      type: 2}
   FootstepSound3:
     idInternal: 0
     valueGuidInternal: 
