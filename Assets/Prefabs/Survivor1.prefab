@@ -23047,7 +23047,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Icosphere
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -8225011308345740974, guid: 8d124fc817ff0ce4fbef719332d2f99c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8d124fc817ff0ce4fbef719332d2f99c, type: 3}
 --- !u!1 &1308016585298511717 stripped
 GameObject:
