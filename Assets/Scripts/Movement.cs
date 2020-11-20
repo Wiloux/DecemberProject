@@ -303,7 +303,6 @@ public class Movement : MonoBehaviour
                 anim.SetBool("isStunned", true);
                 agent.SetDestination(transform.position);
                 agent.isStopped = true;
-
                 if (!isBeingHelped)
                 {
                     if (currDisolveAmount > 0)
@@ -430,7 +429,19 @@ public class Movement : MonoBehaviour
                                     readytoadd = false;
                                 }
                             }
+<<<<<<< Updated upstream
                             currentObjective.isBeingWorkedOn = false;
+=======
+
+                            if (currentObjective.Type == Objective.WorkType.jerryCan)
+                            {
+                                if(mustPlaySFX)
+                                mustPlaySFX = false;
+                                AkSoundEngine.PostEvent("StopJerrycan", gameObject);
+                           
+                            }
+                                currentObjective.isBeingWorkedOn = false;
+>>>>>>> Stashed changes
                             if (currentObjective.GetComponent<Movement>() != null)
                             {
                                 currentObjective.GetComponent<Movement>().isBeingHelped = false;
@@ -471,6 +482,7 @@ public class Movement : MonoBehaviour
                             if (currentObjective.Type == Objective.WorkType.jerryCan && hasSoul)
                             {
                                 currentObjective = null;
+                                AkSoundEngine.PostEvent("StopJerrycan", gameObject);
                                 return;
                             }
                             if (currentObjective.Type == Objective.WorkType.chest && currentItem != Items.None)
@@ -487,7 +499,7 @@ public class Movement : MonoBehaviour
                     }
                     else if (hit.transform.tag == "Player" && hit.transform.GetComponent<Movement>().currentState == States.Corrupted)
                     {
-
+                        AkSoundEngine.PostEvent("StopJerrycan", gameObject);
                         if (currentObjective != null)
                         {
                             currentObjective.isBeingWorkedOn = false;

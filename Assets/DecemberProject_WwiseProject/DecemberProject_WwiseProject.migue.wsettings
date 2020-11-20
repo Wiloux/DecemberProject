@@ -33,7 +33,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="ZS1gFbI6+0qygb7A7330sA=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="6KOrCDpNNESJwcpBsQKnmQ=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="6+FYdNOtRkisgjY8OdCBWAGE89P/////WrIRZjzkRkCMr1nwfmiP2gGE89P/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="WrIRZjzkRkCMr1nwfmiP2gGESNz/////6+FYdNOtRkisgjY8OdCBWAGESNz/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
@@ -42,7 +42,7 @@
 				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
-				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value=""/>
+				<Property Name="MonitoringManager\GameObjectFilter\x64_GameObjectFilters" Type="string" Value="AAAAAAFKZXJyeWNhbiAoNCkA7vYUAgAAIGBD9BQCAADQEXjTFAIAAEDQ79wUAgAAcCZ30xQCAABAsTH0FAIAAKDjxPYUAgAA4QbAPf1/AADQEXjTFAIAAEDQ79wUAgAAcCZ30xQCAABAsTH0FAIAANB7Q/QUAgAA4QbAPf1/AACg48T2FAIAAAAAAAABUGxheWVyAG4gKDQpAO72FAIAACBgQ/QUAgAA0BF40xQCAABA0O/cFAIAAHAmd9MUAgAAQLEx9BQCAACg48T2FAIAAOEGwD39fwAA0BF40xQCAABA0O/cFAIAAHAmd9MUAgAAQLEx9BQCAADQe0P0FAIAAOEGwD39fwAAoOPE9hQCAAAAAAAAAQBsYXllcgBuICg0KQDu9hQCAAAgYEP0FAIAANAReNMUAgAAQNDv3BQCAABwJnfTFAIAAECxMfQUAgAAoOPE9hQCAADhBsA9/X8AANAReNMUAgAAQNDv3BQCAABwJnfTFAIAAECxMfQUAgAA0HtD9BQCAADhBsA9/X8AAKDjxPYUAgAA"/>
 				<Property Name="OverrideCacheFolder\Active" Type="bool" Value="False"/>
 				<Property Name="OverrideCacheFolder\Path" Type="string" Value=".cache"/>
 				<Property Name="OverrideOriginalFolder\Active" Type="bool" Value="False"/>

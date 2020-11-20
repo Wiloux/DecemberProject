@@ -157,6 +157,7 @@ public class Enemy : MonoBehaviour
                 //Corrupts
                 if (CurrentTransformPlayer.isSpotted && !CurrentTransformPlayer.isCorrupted && Vector3.Distance(CurrentTransformPlayer.PlayerScript.transform.position, transform.position) < CorruptRange)
                 {
+                    AkSoundEngine.PostEvent("StopJerrycan", gameObject);
                     CurrentTransformPlayer.PlayerScript.corruptedTimes++;
                     CurrentTransformPlayer.PlayerScript.currentState = Movement.States.Corrupted;
                     CurrentTransformPlayer.PlayerScript.disolveAmount = CurrentTransformPlayer.PlayerScript.disolveAmount / CurrentTransformPlayer.PlayerScript.corruptedTimes;
