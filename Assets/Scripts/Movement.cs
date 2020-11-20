@@ -82,12 +82,22 @@ public class Movement : MonoBehaviour
     public bool hover;
     public TVClass ChoiceTV;
 
+    bool mustPlaySFX;
+
     bool readytoadd;
 
     // Update is called once per frame
     void Update()
     {
-        soulGameObject.SetActive(hasSoul);
+        if(currentObjective == null || currentObjective.Type != Objective.WorkType.car) {
+
+            soulGameObject.SetActive(hasSoul);
+        }
+        else
+        {
+            soulGameObject.SetActive(false);
+        }
+
         hover = HoverWork();
         SelectedSprite.SetActive(isSelected);
         if (isSelected && currentState != States.Dead)
@@ -231,11 +241,13 @@ public class Movement : MonoBehaviour
                     {
                         currentObjective.isBeingWorkedOn = true;
                         currentObjective.WorkLeft -= workingSpeed * Time.deltaTime;
-                    }
-                    if (currentObjective.Type == Objective.WorkType.jerryCan)
-                    {
-                        AkSoundEngine.PostEvent("PlayJerrycan", gameObject);
-                    }
+
+                        if (currentObjective.Type == Objective.WorkType.jerryCan && !mustPlaySFX)
+                        {
+                            mustPlaySFX = true;
+                            AkSoundEngine.PostEvent("PlayJerrycan", gameObject);
+                        }
+                    }                 
                     else
                     {
                         if (!readytoadd)
@@ -430,7 +442,14 @@ public class Movement : MonoBehaviour
                                     readytoadd = false;
                                 }
                             }
-                            currentObjective.isBeingWorkedOn = false;
+
+                            if (currentObjective.Type == Objective.WorkType.jerryCan)
+                            {
+                                if(mustPlaySFX)
+                                mustPlaySFX = false;
+                           
+                            }
+                                currentObjective.isBeingWorkedOn = false;
                             if (currentObjective.GetComponent<Movement>() != null)
                             {
                                 currentObjective.GetComponent<Movement>().isBeingHelped = false;
@@ -479,7 +498,12 @@ public class Movement : MonoBehaviour
                                 return;
                             }
 
+                            if (currentObjective.Type == Objective.WorkType.jerryCan)
+                            {
+                                if (mustPlaySFX)
+                                    mustPlaySFX = false;
 
+                            }
                             anim.SetBool("isWorking", false);
                             agent.SetDestination(GetWorkPos(currentObjective));
                             currentState = States.Working;
