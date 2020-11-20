@@ -58,7 +58,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585958675589414138
+    m_lastTime: -8585957793062988871
     List:
     - name: Main
       guid: e8a3ab083a4d344489c1ca41b102a799
@@ -77,7 +77,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23cdf775154ee34c9621da36a37cfeb8
     GuidInternal: 
-    m_lastTime: -8585958675589473955
+    m_lastTime: -8585957783996767402
     List:
     - name: Footstep
       guid: f45a96c2937e6240aae0ba630aceb904
@@ -107,15 +107,31 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Jerrycan
+      guid: a43112c47526624a9a2cb401f4147665
+      id: 2981649099
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SoulStuff
+        ObjectType: 4
+      - ElementName: Jerrycan
+        ObjectType: 4
+      Path: Default Work Unit\SoulStuff\Jerrycan
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Orb
       guid: c81e9fcc0469f24ca4e6763d29c70cd0
       id: 595159780
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: SoulStuff
+        ObjectType: 4
       - ElementName: Orb
         ObjectType: 4
-      Path: Default Work Unit\Orb
+      Path: Default Work Unit\SoulStuff\Orb
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -131,17 +147,63 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: PlayJerrycan
+      guid: 77c0723b3f1ab9489f9ea6968ea3c8aa
+      id: 448200913
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SoulStuff
+        ObjectType: 4
+      - ElementName: Jerrycan
+        ObjectType: 4
+      - ElementName: PlayJerrycan
+        ObjectType: 3
+      Path: Default Work Unit\SoulStuff\Jerrycan\PlayJerrycan
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PlayOrb
       guid: c1d701c549456649b5195c89eafe7d85
       id: 2053742238
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: SoulStuff
+        ObjectType: 4
       - ElementName: Orb
         ObjectType: 4
       - ElementName: PlayOrb
         ObjectType: 3
-      Path: Default Work Unit\Orb\PlayOrb
+      Path: Default Work Unit\SoulStuff\Orb\PlayOrb
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SoulStuff
+      guid: 0a0eedc1c426b84eba6633bb6a1421a3
+      id: 1254852662
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SoulStuff
+        ObjectType: 4
+      Path: Default Work Unit\SoulStuff
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopJerrycan
+      guid: dc937667708aae49accd9722d97ffc26
+      id: 2638603827
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SoulStuff
+        ObjectType: 4
+      - ElementName: Jerrycan
+        ObjectType: 4
+      - ElementName: StopJerrycan
+        ObjectType: 3
+      Path: Default Work Unit\SoulStuff\Jerrycan\StopJerrycan
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -151,11 +213,13 @@ MonoBehaviour:
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
+      - ElementName: SoulStuff
+        ObjectType: 4
       - ElementName: Orb
         ObjectType: 4
       - ElementName: StopOrb
         ObjectType: 3
-      Path: Default Work Unit\Orb\StopOrb
+      Path: Default Work Unit\SoulStuff\Orb\StopOrb
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -177,7 +241,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c10cf6ffacd865489438d69566d6646e
     GuidInternal: 
-    m_lastTime: -8585959477278085429
+    m_lastTime: -8585958550956614534
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
@@ -187,7 +251,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 1883bfc3b5820c46ba3136de0ff3d53c
     GuidInternal: 
-    m_lastTime: -8585959477277806262
+    m_lastTime: -8585957803260950915
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -203,6 +267,5 @@ MonoBehaviour:
   - /DecemberProject_WwiseProject
   - /DecemberProject_WwiseProject/Events
   - /DecemberProject_WwiseProject/Events/Default Work Unit
-  - /DecemberProject_WwiseProject/Events/Default Work Unit/Orb
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

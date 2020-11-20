@@ -442,18 +442,17 @@ public class Movement : MonoBehaviour
                                     readytoadd = false;
                                 }
                             }
-<<<<<<< HEAD
 
                             if (currentObjective.Type == Objective.WorkType.jerryCan)
                             {
-                                if(mustPlaySFX)
-                                mustPlaySFX = false;
-                           
+                                if (mustPlaySFX)
+                                {
+                                    mustPlaySFX = false;
+                                    AkSoundEngine.PostEvent("StopJerrycan", gameObject);
+                                }
                             }
                                 currentObjective.isBeingWorkedOn = false;
-=======
-                            currentObjective.isBeingWorkedOn = false;
->>>>>>> parent of 79f4bc4... sound plays and stops implemented  to jerrycan
+
                             if (currentObjective.GetComponent<Movement>() != null)
                             {
                                 currentObjective.GetComponent<Movement>().isBeingHelped = false;
@@ -489,6 +488,7 @@ public class Movement : MonoBehaviour
                             if (currentObjective.Type == Objective.WorkType.car && !hasSoul)
                             {
                                 currentObjective = null;
+                                AkSoundEngine.PostEvent("StopJerrycan", gameObject);
                                 return;
                             }
                             if (currentObjective.Type == Objective.WorkType.jerryCan && hasSoul)
@@ -515,7 +515,6 @@ public class Movement : MonoBehaviour
                     }
                     else if (hit.transform.tag == "Player" && hit.transform.GetComponent<Movement>().currentState == States.Corrupted)
                     {
-
                         if (currentObjective != null)
                         {
                             currentObjective.isBeingWorkedOn = false;
@@ -530,7 +529,7 @@ public class Movement : MonoBehaviour
                             currentObjective = null;
                             return;
                         }
-
+                        AkSoundEngine.PostEvent("StopJerrycan", gameObject);
                         currentObjective.GetComponent<Movement>().isBeingHelped = true;
                         currentObjective.isBeingWorkedOn = true;
                         anim.SetBool("isWorking", false);
@@ -581,6 +580,7 @@ public class Movement : MonoBehaviour
                             currentObjective = null;
                         }
                         agent.isStopped = false;
+                        AkSoundEngine.PostEvent("StopJerrycan", gameObject);
                         anim.SetBool("isWorking", false);
                         anim.SetBool("isWalking", true);
                         agent.SetDestination(hit.point);
