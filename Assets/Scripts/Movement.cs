@@ -649,6 +649,11 @@ public class Movement : MonoBehaviour
         }
     }
 
+
+    public void FuckWwise(string EventName)
+    {
+        AkSoundEngine.PostEvent(EventName, gameObject);
+    }
     private void OnDrawGizmos()
     {
         if (Killer != null)
