@@ -442,6 +442,7 @@ public class Movement : MonoBehaviour
                                     readytoadd = false;
                                 }
                             }
+<<<<<<< HEAD
 
                             if (currentObjective.Type == Objective.WorkType.jerryCan)
                             {
@@ -450,6 +451,9 @@ public class Movement : MonoBehaviour
                            
                             }
                                 currentObjective.isBeingWorkedOn = false;
+=======
+                            currentObjective.isBeingWorkedOn = false;
+>>>>>>> parent of 79f4bc4... sound plays and stops implemented  to jerrycan
                             if (currentObjective.GetComponent<Movement>() != null)
                             {
                                 currentObjective.GetComponent<Movement>().isBeingHelped = false;
