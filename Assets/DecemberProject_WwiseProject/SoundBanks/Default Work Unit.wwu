@@ -6,7 +6,9 @@
 				<SoundBank Name="Main" ID="{08ABA3E8-4D3A-4434-89C1-CA41B102A799}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Footstep" ID="{C2965AF4-7E93-4062-AAE0-BA630ACEB904}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopStatic" ID="{8BCA3C52-A28F-436F-992A-CAC287BA40F3}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayJerrycan" ID="{3B72C077-1A3F-48B9-9F9E-A6968EA3C8AA}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayStatic" ID="{D784173A-5FEC-4910-BF9C-C085618D09F7}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayOrb" ID="{C501D7C1-4549-4966-B519-5C89EAFE7D85}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopJerrycan" ID="{677693DC-8A70-49AE-ACCD-9722D97FFC26}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FootstepLady" ID="{45D7CC7F-6F8F-4B83-81FA-575DC24B0A8E}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>

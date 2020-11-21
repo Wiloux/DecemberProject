@@ -363,6 +363,73 @@
 								<ActiveSource Name="jerrycan1" ID="{88E43A71-717C-48A8-B243-2DB785B903A2}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="orb2" ID="{62B35F2A-8A71-4DC5-B8DA-CB6C478C44C6}" ShortID="712512099">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="orb2" ID="{D51481E8-EBD6-4796-9C81-53E243DC9AC6}">
+									<Language>SFX</Language>
+									<AudioFile>orb2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="4341323"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="orb2" ID="{D51481E8-EBD6-4796-9C81-53E243DC9AC6}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Others" ID="{6DDA24EA-831C-48FE-8E29-260E1842B295}" ShortID="1054960549">
+					<ChildrenList>
+						<Sound Name="static" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" ShortID="953070430">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-24</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="static" ID="{5314F1D4-C03C-4A80-88A9-7E394DE0B076}">
+									<Language>SFX</Language>
+									<AudioFile>static.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="889404178"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="static" ID="{5314F1D4-C03C-4A80-88A9-7E394DE0B076}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

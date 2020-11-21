@@ -41,7 +41,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="orb1" ID="{E428B7F1-9100-4712-91A2-4B6F0087B399}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+													<ObjectRef Name="orb2" ID="{62B35F2A-8A71-4DC5-B8DA-CB6C478C44C6}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -56,7 +56,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="orb1" ID="{E428B7F1-9100-4712-91A2-4B6F0087B399}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+													<ObjectRef Name="orb2" ID="{62B35F2A-8A71-4DC5-B8DA-CB6C478C44C6}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -97,6 +97,39 @@
 								</Event>
 							</ChildrenList>
 						</Folder>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Others" ID="{4708A0F0-4800-4D04-98EF-ECDC5DD1FA4A}" ShortID="914481716">
+					<ChildrenList>
+						<Event Name="StopStatic" ID="{8BCA3C52-A28F-436F-992A-CAC287BA40F3}">
+							<ChildrenList>
+								<Action Name="" ID="{052A858B-D5A2-4BC2-A568-2BC58126D7FF}" ShortID="733975873">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="static" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayStatic" ID="{D784173A-5FEC-4910-BF9C-C085618D09F7}">
+							<ChildrenList>
+								<Action Name="" ID="{D46E15CF-C0F4-47DE-99FE-A1573EE76EA4}" ShortID="546034890">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="static" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -157,7 +157,8 @@ public class Enemy : MonoBehaviour
                 //Corrupts
                 if (CurrentTransformPlayer.isSpotted && !CurrentTransformPlayer.isCorrupted && Vector3.Distance(CurrentTransformPlayer.PlayerScript.transform.position, transform.position) < CorruptRange)
                 {
-                    CurrentTransformPlayer.PlayerScript.FuckWwise("StopJerrycan"); 
+                    CurrentTransformPlayer.PlayerScript.FuckWwise("StopJerrycan");
+                    CurrentTransformPlayer.PlayerScript.FuckWwise("PlayStatic");
                     CurrentTransformPlayer.PlayerScript.corruptedTimes++;
                     CurrentTransformPlayer.PlayerScript.currentState = Movement.States.Corrupted;
                     CurrentTransformPlayer.PlayerScript.disolveAmount = CurrentTransformPlayer.PlayerScript.disolveAmount / CurrentTransformPlayer.PlayerScript.corruptedTimes;

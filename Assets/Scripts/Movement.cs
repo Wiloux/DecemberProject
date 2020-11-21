@@ -141,7 +141,7 @@ public class Movement : MonoBehaviour
                 anim.SetBool("isWalking", false);
             }
         }
-
+        
         switch (currentState)
         {
             case States.Walk:
