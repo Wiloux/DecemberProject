@@ -58,7 +58,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585955505117685638
+    m_lastTime: -8585955352193238252
     List:
     - name: Main
       guid: e8a3ab083a4d344489c1ca41b102a799
@@ -77,7 +77,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23cdf775154ee34c9621da36a37cfeb8
     GuidInternal: 
-    m_lastTime: -8585955505117745191
+    m_lastTime: -8585955352193287788
     List:
     - name: Footstep
       guid: f45a96c2937e6240aae0ba630aceb904
@@ -172,6 +172,20 @@ MonoBehaviour:
       - ElementName: PlayJerrycan
         ObjectType: 3
       Path: Default Work Unit\SoulStuff\Jerrycan\PlayJerrycan
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayLightbulb
+      guid: 701df6473818e7409c839faf4d145e85
+      id: 3228498500
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Others
+        ObjectType: 4
+      - ElementName: PlayLightbulb
+        ObjectType: 3
+      Path: Default Work Unit\Others\PlayLightbulb
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -347,6 +361,7 @@ MonoBehaviour:
   - /DecemberProject_WwiseProject
   - /DecemberProject_WwiseProject/Events
   - /DecemberProject_WwiseProject/Events/Default Work Unit
+  - /DecemberProject_WwiseProject/Events/Default Work Unit/Others
   - /DecemberProject_WwiseProject/Events/Default Work Unit/TVHead
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

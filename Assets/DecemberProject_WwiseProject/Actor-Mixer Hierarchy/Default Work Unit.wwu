@@ -323,6 +323,14 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{36022E00-4B97-4B85-B35C-AEFC91F254AD}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-0.587371512481643"/>
+										<Property Name="PanY" Type="Real64" Value="1.23839009287925"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="orb1" ID="{81BE40FF-04E6-4C76-8340-FD78A098C425}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -399,13 +407,8 @@
 					<ChildrenList>
 						<Sound Name="staticTvHead" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" ShortID="953070430">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -419,25 +422,33 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="static" ID="{5314F1D4-C03C-4A80-88A9-7E394DE0B076}">
+								<AudioFileSource Name="staticTvHead" ID="{DECA04DB-772D-4C7B-84A8-8F3FC91D4962}">
 									<Language>SFX</Language>
-									<AudioFile>static.wav</AudioFile>
+									<AudioFile>staticTvHead.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="889404178"/>
+										<MediaID ID="975610250"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
 							<PositioningInfo>
-								<Panner Name="" ID="{59B53E47-A33E-4F50-97F2-FC2D30CB3C2A}"/>
+								<Panner Name="" ID="{59B53E47-A33E-4F50-97F2-FC2D30CB3C2A}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-0.881057268722445"/>
+										<Property Name="PanY" Type="Real64" Value="0.309597523219807"/>
+									</PropertyList>
+								</Panner>
+								<Position Name="" ID="{CC2E6944-6A32-498D-89BE-80ABF2181151}"/>
 							</PositioningInfo>
 							<ActiveSourceList>
-								<ActiveSource Name="static" ID="{5314F1D4-C03C-4A80-88A9-7E394DE0B076}" Platform="Linked"/>
+								<ActiveSource Name="staticTvHead" ID="{DECA04DB-772D-4C7B-84A8-8F3FC91D4962}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="static2" ID="{490F014A-8102-4DD4-9134-D54817DA6AB3}" ShortID="775215911">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-19</Value>
@@ -456,16 +467,72 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="static2" ID="{E04202A5-A972-4F1B-B34F-3065D8430F64}">
+								<AudioFileSource Name="staticPlayer" ID="{937CE997-22C1-4CD1-8375-18FBC48C062D}">
 									<Language>SFX</Language>
-									<AudioFile>static2.wav</AudioFile>
+									<AudioFile>staticPlayer.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="555018090"/>
+										<MediaID ID="528025441"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{C4487193-08CD-467D-B5AC-825CAE8D7622}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-6.81311753628633E-15"/>
+										<Property Name="PanY" Type="Real64" Value="1.23839009287926"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 							<ActiveSourceList>
-								<ActiveSource Name="static2" ID="{E04202A5-A972-4F1B-B34F-3065D8430F64}" Platform="Linked"/>
+								<ActiveSource Name="staticPlayer" ID="{937CE997-22C1-4CD1-8375-18FBC48C062D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="faulty lightbulb" ID="{D5D31C3F-2191-4CC8-AD52-501A5FF53F5D}" ShortID="450808103">
+							<PropertyList>
+								<Property Name="HoldEmitterPositionOrientation" Type="bool" Value="True"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Lightbulb" ID="{DC062C90-12E9-4691-A895-F3F265680B61}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="faulty lightbulb" ID="{60B263F1-1D1C-4E9B-BFBA-0A145FC75BD6}">
+									<PropertyList>
+										<Property Name="LoopBegin" Type="Real64" Value="0.245882992873892"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.0449134948096886"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>faulty lightbulb.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="849160375"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{79C955DE-5983-4B6C-AFAF-A2C6711B5C7D}"/>
+								<Position Name="" ID="{CB2F0670-9238-443A-BE99-381CF667C18E}">
+									<PropertyList>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+									</PropertyList>
+								</Position>
+							</PositioningInfo>
+							<ActiveSourceList>
+								<ActiveSource Name="faulty lightbulb" ID="{60B263F1-1D1C-4E9B-BFBA-0A145FC75BD6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

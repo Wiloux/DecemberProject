@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID FOOTSTEPLADY = 2045095431U;
         static const AkUniqueID PLAYJERRYCAN = 448200913U;
+        static const AkUniqueID PLAYLIGHTBULB = 3228498500U;
         static const AkUniqueID PLAYORB = 2053742238U;
         static const AkUniqueID PLAYSTATIC = 3467592801U;
         static const AkUniqueID STOPJERRYCAN = 2638603827U;

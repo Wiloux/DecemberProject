@@ -8,6 +8,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2053742238	PlayOrb			\Default Work Unit\SoulStuff\Orb\PlayOrb	
 	2638603827	StopJerrycan			\Default Work Unit\SoulStuff\Jerrycan\StopJerrycan	
 	2852051516	StopOrb			\Default Work Unit\SoulStuff\Orb\StopOrb	
+	3228498500	PlayLightbulb			\Default Work Unit\Others\PlayLightbulb	
 	3467592801	PlayStatic			\Default Work Unit\Others\PlayStatic	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
@@ -18,7 +19,8 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	442015427	footsteplady1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteplady1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\FootstepsLady\footsteplady1		66104
 	467019561	jerrycan1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\jerrycan1 _10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SoulStuff\jerrycan1		11201464
 	479510423	footstep1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\footstep1		88264
-	555018090	static2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\static2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\static2		11289664
+	528025441	static2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\staticPlayer_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\static2		5644864
 	695972227	footsteplady4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteplady4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\FootstepsLady\footsteplady4		78124
-	889404178	staticTvHead	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\static_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\staticTvHead		11289664
+	849160375	faulty lightbulb	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\faulty lightbulb_12C24B61.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\faulty lightbulb		168604
+	975610250	staticTvHead	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\staticTvHead_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\staticTvHead		5644864
 
