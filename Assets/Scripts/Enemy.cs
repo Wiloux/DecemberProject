@@ -53,8 +53,9 @@ public class Enemy : MonoBehaviour
         foreach (Objective go in FindObjectsOfType(typeof(Objective)))
         {
             if (go.gameObject.GetComponent<Movement>() == false)
-            {if(go.gameObject.GetComponent<Objective>().Type !=  Objective.WorkType.chest)
-                Objectives.Add(go);
+            {
+                if (go.gameObject.GetComponent<Objective>().Type != Objective.WorkType.chest)
+                    Objectives.Add(go);
             }
         }
 
@@ -83,10 +84,10 @@ public class Enemy : MonoBehaviour
         {
             t += slowdownLength * Time.unscaledDeltaTime;
             Time.timeScale = Mathf.Lerp(0, 1, t); // notice we are using the unscaledDelta now
-       //     Time.timeScale = Mathf.Clamp(Time.timeScale, 0, 1);
+                                                  //     Time.timeScale = Mathf.Clamp(Time.timeScale, 0, 1);
         }
 
-        foreach(Objective go in Objectives)
+        foreach (Objective go in Objectives)
         {
             if (go.isFinished)
             {
@@ -122,7 +123,7 @@ public class Enemy : MonoBehaviour
 
                 foreach (SpottedSurvior Player in Players)
                 {
-                    if (Player.PlayerScript.ChaseMe && Player.PlayerScript.currentState != Movement.States.Corrupted)
+                    if (Player.PlayerScript.ChaseMe && Player.PlayerScript.currentState != Movement.States.Corrupted && Player.PlayerScript.currentState != Movement.States.Dead)
                     {
                         t = 0;
                         Player.isSpotted = true;
@@ -174,9 +175,10 @@ public class Enemy : MonoBehaviour
 
                     if (CurrentTransformPlayer.PlayerScript.readytoadd)
                     {
-                        CurrentTransformPlayer.PlayerScript.currentObjective.Workers--;                 
+                        CurrentTransformPlayer.PlayerScript.currentObjective.Workers--;
                         CurrentTransformPlayer.PlayerScript.readytoadd = false;
                     }
+
                     if (CurrentTransformPlayer.PlayerScript.ChoiceTV.survivor == null)
                     {
                         TVClass newtv = tvscript.Tvs[Random.Range(0, tvscript.Tvs.Count)];
@@ -199,7 +201,7 @@ public class Enemy : MonoBehaviour
                 {
                     if (Player.PlayerScript.ChaseTimer <= 0)
                     {
-                //      Debug.Log("Stops Chase : " + Player.PlayerScript.transform.name);
+                        //      Debug.Log("Stops Chase : " + Player.PlayerScript.transform.name);
                         Player.isSpotted = false;
                     }
 
@@ -211,7 +213,7 @@ public class Enemy : MonoBehaviour
                 //Checks if should go back to Patroll
                 if (NoMoreSpotted)
                 {
-              //     Debug.Log("Going Back to Patroll");
+                    //     Debug.Log("Going Back to Patroll");
                     CurrentTransformPlayer = null;
                     currentState = States.Patrolling;
                     agent.speed = spd;

@@ -19733,6 +19733,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isNinja: 0
+  playerInt: 0
   rotationSpeedMovement: 0.1
   isSelected: 0
   SelectedSprite: {fileID: 7293696575229752624}
@@ -19757,6 +19758,8 @@ MonoBehaviour:
   isBeingHelped: 0
   wantsToUseItem: 0
   destination: {fileID: 0}
+  lightGameObject: {fileID: 8003499399501762830}
+  TextGameObject: {fileID: 7998798503298397064}
   startedWorking: 0
   currentBearTrap: {fileID: 0}
   currentWard: {fileID: 0}
@@ -19771,11 +19774,7 @@ MonoBehaviour:
     tvGameObject: {fileID: 0}
     objective: {fileID: 0}
     survivor: {fileID: 0}
-  footSFX:
-  - {fileID: 8300000, guid: 21fc6d30a3fee0f4ea77912d3cf3d868, type: 3}
-  - {fileID: 8300000, guid: 642f0cd68b1cf4b4f847282717fefe2b, type: 3}
-  - {fileID: 8300000, guid: 86208a739b789424cb95b02c433067d7, type: 3}
-  audioSource: {fileID: 0}
+  readytoadd: 0
 --- !u!195 &7293696574984134419
 NavMeshAgent:
   m_ObjectHideFlags: 0

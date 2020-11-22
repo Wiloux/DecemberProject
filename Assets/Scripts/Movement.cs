@@ -56,11 +56,13 @@ public class Movement : MonoBehaviour
     NavMeshHit navHit;
     public GameObject destination;
 
+    public GameObject lightGameObject;
+    public GameObject TextGameObject;
+
     ParticleSystem pixelParticle;
     void Start()
     {
-
-        audioSource = GetComponent<AudioSource>();
+      //  audioSource = GetComponent<AudioSource>();
         pixelParticle = transform.Find("PixelParticle").GetComponent<ParticleSystem>();
         DisolveMat = transform.Find("Mesh").GetComponent<Renderer>().material;
         anim = GetComponent<Animator>();
@@ -339,6 +341,8 @@ public class Movement : MonoBehaviour
                         pixelParticle.Stop();
 
                         KillerScript.spd += 0.2f;
+                        lightGameObject.SetActive(false);
+                        TextGameObject.SetActive(false);
                         currentState = States.Dead;
                     }
                 }
@@ -352,14 +356,20 @@ public class Movement : MonoBehaviour
                 if (ChoiceTV.objective.isFinished)
                 {
                     KillerScript.CurrentTransformObjective = ChoiceTV.objective.PS.transform;
-                    corruptedTimes = 1;
+                    corruptedTimes = 0;
                     DisolveMat.SetFloat("Vector1_DD60D333", 0);
                     anim.SetBool("isStunned", false);
                     currentState = States.Walk;
                     ChoiceTV.survivor = null;
+                    ChoiceTV.objective.WorkLeft = ChoiceTV.objective.WorkNeeded;
+                    ChoiceTV.objective.isFinished = false;
+                    agent.SetDestination(transform.position);
+                    lightGameObject.SetActive(true);
+                    TextGameObject.SetActive(true);
                     KillerScript.tvscript.Tvs.Add(ChoiceTV);
                     ChoiceTV.tvGameObject.SetActive(false);
-                    ChoiceTV = null;
+                    
+                    ChoiceTV.survivor = null;
                 }
                 break;
 
@@ -604,14 +614,14 @@ public class Movement : MonoBehaviour
         }
     }
 
-    public List<AudioClip> footSFX = new List<AudioClip>();
-    public AudioSource audioSource;
+    //public List<AudioClip> footSFX = new List<AudioClip>();
+    //public AudioSource audioSource;
     public void PlayRdmFootSound()
     {
-        int i = Random.Range(0, footSFX.Count);
-        float j = Random.Range(0.80f, 1.20f);
-        audioSource.pitch = j;
-        audioSource.PlayOneShot(footSFX[i]);
+        //int i = Random.Range(0, footSFX.Count);
+        //float j = Random.Range(0.80f, 1.20f);
+        //audioSource.pitch = j;
+        //audioSource.PlayOneShot(footSFX[i]);
     }
     public bool HoverWork()
     {
