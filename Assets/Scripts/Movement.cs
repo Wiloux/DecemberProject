@@ -9,6 +9,8 @@ public class Movement : MonoBehaviour
 
     public bool isNinja;
 
+    public int playerInt;
+
     public float rotationSpeedMovement = 0.1f;
     float rotateVelocity;
     public bool isSelected;
@@ -84,7 +86,8 @@ public class Movement : MonoBehaviour
 
     bool mustPlaySFX;
 
-    bool readytoadd;
+    [HideInInspector]
+    public bool readytoadd;
 
     // Update is called once per frame
     void Update()
@@ -93,7 +96,7 @@ public class Movement : MonoBehaviour
 
             soulGameObject.SetActive(hasSoul);
         }
-        else
+        else if (currentObjective.Type == Objective.WorkType.car)
         {
             soulGameObject.SetActive(false);
         }
@@ -122,6 +125,10 @@ public class Movement : MonoBehaviour
                     }
                 }
             }
+        }
+        else
+        {
+            ChaseMe = false;
         }
 
 
@@ -274,6 +281,7 @@ public class Movement : MonoBehaviour
                                 Movement move = currentObjective.GetComponent<Movement>();
                                 move.currDisolveAmount = disolveAmount;
                                 move.currentState = States.Walk;
+                                move.PlayWwiseEvent("StopStatic");
                                 move.isBeingHelped = false;
                                 currentObjective.isBeingWorkedOn = false;
                                 move.anim.SetBool("isStunned", false);
@@ -349,6 +357,7 @@ public class Movement : MonoBehaviour
                     anim.SetBool("isStunned", false);
                     currentState = States.Walk;
                     ChoiceTV.survivor = null;
+                    KillerScript.tvscript.Tvs.Add(ChoiceTV);
                     ChoiceTV.tvGameObject.SetActive(false);
                     ChoiceTV = null;
                 }
@@ -641,7 +650,24 @@ public class Movement : MonoBehaviour
     {
         if (currentObj.PS != null)
         {
-            return currentObjective.PS.transform.position;
+            if (currentObjective.Type != Objective.WorkType.car)
+            {
+                return currentObjective.PS.transform.position;
+            }
+            else
+            {
+                if(currentObjective.Workers == 0)
+                {
+                    return currentObjective.PS.transform.position;
+                } else if (currentObjective.Workers == 2)
+                {
+                    return new Vector3( currentObjective.PS.transform.position.x + 0.5f, currentObjective.PS.transform.position.y, currentObjective.PS.transform.position.z -0.5f);
+
+                } else
+                {
+                   return new Vector3(currentObjective.PS.transform.position.x - 0.5f, currentObjective.PS.transform.position.y, currentObjective.PS.transform.position.z - 0.5f);
+                }
+            }
         }
         else
         {
@@ -650,22 +676,22 @@ public class Movement : MonoBehaviour
     }
 
 
-    public void FuckWwise(string EventName)
+    public void PlayWwiseEvent(string EventName)
     {
         AkSoundEngine.PostEvent(EventName, gameObject);
     }
-    private void OnDrawGizmos()
-    {
-        if (Killer != null)
-        {
-            if (Physics.Linecast(new Vector3(transform.position.x, 1f, transform.position.z), Killer.transform.position, out hit))
-            {
-                if (hit.transform.name == Killer.transform.name && hit.distance <= SpottedDistance)
-                {
-                    Gizmos.color = Color.yellow;
-                    Gizmos.DrawLine(new Vector3(transform.position.x, 1f, transform.position.z), Killer.transform.position);
-                }
-            }
-        }
-    }
+    //private void OnDrawGizmos()
+    //{
+    //    if (Killer != null)
+    //    {
+    //        if (Physics.Linecast(new Vector3(transform.position.x, 1f, transform.position.z), Killer.transform.position, out hit))
+    //        {
+    //            if (hit.transform.name == Killer.transform.name && hit.distance <= SpottedDistance)
+    //            {
+    //                Gizmos.color = Color.yellow;
+    //                Gizmos.DrawLine(new Vector3(transform.position.x, 1f, transform.position.z), Killer.transform.position);
+    //            }
+    //        }
+    //    }
+    //}
 }

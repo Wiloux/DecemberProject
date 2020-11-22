@@ -102,19 +102,17 @@ public class Objective : MonoBehaviour
             }
         }
 
-        if (Type == WorkType.car && Workers >= 1)
+        if (Type == WorkType.car)
         {
-            souls[0].SetActive(true);
-            if (Workers >= 2)
-            {
-                souls[1].SetActive(true);
-            }
+            souls[0].SetActive(Workers >= 1);
+            souls[1].SetActive(Workers >= 2);
+            souls[2].SetActive(Workers == 3);
         }
 
         if (Type == WorkType.car && Workers == 3)
         {
             WorkLeft -= 2 * Time.deltaTime;
-            souls[2].SetActive(true);
+         
             if (WorkLeft <= 0)
             {
                 Debug.Log("YouWin");

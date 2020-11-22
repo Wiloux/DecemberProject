@@ -36,6 +36,7 @@ public class CameraScript : MonoBehaviour
     }
 
     public bool isLocked = false;
+    public Vector2 maxCamPos;
 
     public int margin;
 
@@ -88,21 +89,21 @@ public class CameraScript : MonoBehaviour
                 {
                     //Move your camera depending on the sign of mouse.Edge.y
 
-                    if (mouseEdge.y < 0)
+                    if (mouseEdge.y < 0 && transform.position.z > -maxCamPos.y)
                     {
                         dir += new Vector3(0, 0, -1);
                     }
-                    else
+                    else if (mouseEdge.y > 0 && transform.position.z < maxCamPos.y)
                     {
                         dir += new Vector3(0, 0, 1);
                     }
                     //Move your camera depending on the sign of mouse.Edge.x
 
-                    if (mouseEdge.x < 0)
+                    if (mouseEdge.x < 0 && transform.position.x > -maxCamPos.x)
                     {
                         dir += new Vector3(-1, 0, 0);
                     }
-                    else
+                    else if (mouseEdge.x > 0 && transform.position.x < maxCamPos.x)
                     {
                         dir += new Vector3(1, 0, 0);
                     }
@@ -117,11 +118,11 @@ public class CameraScript : MonoBehaviour
                 {
                     //Move your camera depending on the sign of mouse.Edge.y
 
-                    if (mouseEdge.x < 0)
+                    if (mouseEdge.x < 0 && transform.position.x > -maxCamPos.x)
                     {
                         dir += new Vector3(-1, 0, 0);
                     }
-                    else
+                    else if (mouseEdge.x > 0 && transform.position.x < maxCamPos.x)
                     {
                         dir += new Vector3(1, 0, 0);
                     }
@@ -131,12 +132,11 @@ public class CameraScript : MonoBehaviour
                 if (!(Mathf.Approximately(mouseEdge.y, 0f)))
                 {
                     //Move your camera depending on the sign of mouse.Edge.y
-
-                    if (mouseEdge.y < 0)
+                    if (mouseEdge.y < 0 && transform.position.z > -maxCamPos.y)
                     {
                         dir += new Vector3(0, 0, -1);
                     }
-                    else
+                    else if (mouseEdge.y > 0 && transform.position.z < maxCamPos.y)
                     {
                         dir += new Vector3(0, 0, 1);
                     }
@@ -176,9 +176,28 @@ public class CameraScript : MonoBehaviour
                 if (hit.transform.gameObject.tag == "Player")
                 {
                     if (CurrentTarget != null)
+                    {
                         CurrentTarget.isSelected = false;
+                        CurrentTarget.wantsToUseItem = false;
+                        LastTarget = CurrentTarget;
+                    }
                     CurrentTarget = hit.transform.gameObject.GetComponent<Movement>();
                     CurrentTarget.isSelected = true;
+
+                    target = Players[CurrentTarget.playerInt].transform;
+                    if (LastTarget != null && LastTarget.currentItem != Movement.Items.None)
+                    {
+                        if (LastTarget.currentItemGhost != null)
+                        {
+                            Destroy(LastTarget.currentItemGhost.gameObject);
+                            LastTarget.currentItemGhost = null;
+                        }
+                    }
+
+                    if (LastTarget != null && LastTarget.wantsToUseItem && CurrentTarget.currentItem != Movement.Items.None)
+                    {
+                        CurrentTarget.wantsToUseItem = true;
+                    }
                 }
             }
         }
@@ -230,9 +249,26 @@ public class CameraScript : MonoBehaviour
         if (tap[PlayerInt] == 1)
         {
             if (CurrentTarget != null)
+            {
                 CurrentTarget.isSelected = false;
+                CurrentTarget.wantsToUseItem = false;
+                LastTarget = CurrentTarget;
+            }
+            if (LastTarget != null && LastTarget.currentItem != Movement.Items.None)
+            {
+                if (LastTarget.currentItemGhost != null)
+                {
+                    Destroy(LastTarget.currentItemGhost.gameObject);
+                    LastTarget.currentItemGhost = null;
+                }
+            }
 
+            if (LastTarget != null && LastTarget.wantsToUseItem && CurrentTarget.currentItem != Movement.Items.None)
+            {
+                CurrentTarget.wantsToUseItem = true;
+            }
             CurrentTarget = Players[PlayerInt];
+            target = Players[PlayerInt].transform;
             //playerInt = PlayerInt;
             CurrentTarget.isSelected = true;
             if (doubletap == null)

@@ -134,6 +134,7 @@ public class Enemy : MonoBehaviour
                             CameraScript.instance.CurrentTarget = Player.PlayerScript;
                         }
                         CameraScript.instance.isLocked = true;
+                        CameraScript.instance.CamLockedImg.SetActive(true);
                         CameraScript.instance.target = Player.PlayerScript.transform;
 
                         Player.PlayerScript.isSelected = true;
@@ -157,8 +158,8 @@ public class Enemy : MonoBehaviour
                 //Corrupts
                 if (CurrentTransformPlayer.isSpotted && !CurrentTransformPlayer.isCorrupted && Vector3.Distance(CurrentTransformPlayer.PlayerScript.transform.position, transform.position) < CorruptRange)
                 {
-                    CurrentTransformPlayer.PlayerScript.FuckWwise("StopJerrycan");
-                    CurrentTransformPlayer.PlayerScript.FuckWwise("PlayStatic");
+                    CurrentTransformPlayer.PlayerScript.PlayWwiseEvent("StopJerrycan");
+                    CurrentTransformPlayer.PlayerScript.PlayWwiseEvent("PlayStatic");
                     CurrentTransformPlayer.PlayerScript.corruptedTimes++;
                     CurrentTransformPlayer.PlayerScript.currentState = Movement.States.Corrupted;
                     CurrentTransformPlayer.PlayerScript.disolveAmount = CurrentTransformPlayer.PlayerScript.disolveAmount / CurrentTransformPlayer.PlayerScript.corruptedTimes;
@@ -170,9 +171,16 @@ public class Enemy : MonoBehaviour
                     CurrentTransformPlayer.PlayerScript.ChaseTimer = 0;
                     currentWaitAfterCorruptTime = waitAfterCorruptTime;
                     agent.speed = spd;
-                    if(CurrentTransformPlayer.PlayerScript.ChoiceTV.objective == null)
+
+                    if (CurrentTransformPlayer.PlayerScript.readytoadd)
+                    {
+                        CurrentTransformPlayer.PlayerScript.currentObjective.Workers--;                 
+                        CurrentTransformPlayer.PlayerScript.readytoadd = false;
+                    }
+                    if (CurrentTransformPlayer.PlayerScript.ChoiceTV.survivor == null)
                     {
                         TVClass newtv = tvscript.Tvs[Random.Range(0, tvscript.Tvs.Count)];
+                        tvscript.Tvs.Remove(newtv);
                         CurrentTransformPlayer.PlayerScript.ChoiceTV = newtv;
                         newtv.survivor = CurrentTransformPlayer.PlayerScript;
                     }
