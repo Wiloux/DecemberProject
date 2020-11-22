@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1800553400">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1062739261">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -69,17 +69,26 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3467592801" Name="PlayStatic" ObjectPath="\Events\Default Work Unit\Others\PlayStatic" DurationType="OneShot" DurationMin="64.000000" DurationMax="64.000000">
+				<Event Id="3467592801" Name="PlayStatic" ObjectPath="\Events\Default Work Unit\Others\PlayStatic" MaxAttenuation="70.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="889404178" Language="SFX">
-							<ShortName>static.wav</ShortName>
-							<Path>SFX\static_10C4C929.wem</Path>
+						<File Id="555018090" Language="SFX">
+							<ShortName>static2.wav</ShortName>
+							<Path>SFX\static2_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2638603827" Name="StopJerrycan" ObjectPath="\Events\Default Work Unit\SoulStuff\Jerrycan\StopJerrycan" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2852051516" Name="StopOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\StopOrb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1707810303" Name="StopStatic" ObjectPath="\Events\Default Work Unit\Others\StopStatic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="664857509" Name="TvHeadStaticPlay" ObjectPath="\Events\Default Work Unit\TVHead\TvHeadStaticPlay" MaxAttenuation="10.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="889404178" Language="SFX">
+							<ShortName>static.wav</ShortName>
+							<Path>SFX\static_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2047933731" Name="TvHeadStaticStop" ObjectPath="\Events\Default Work Unit\TVHead\TvHeadStaticStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>

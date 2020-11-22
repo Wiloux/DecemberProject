@@ -21,6 +21,8 @@ namespace AK
         static const AkUniqueID STOPJERRYCAN = 2638603827U;
         static const AkUniqueID STOPORB = 2852051516U;
         static const AkUniqueID STOPSTATIC = 1707810303U;
+        static const AkUniqueID TVHEADSTATICPLAY = 664857509U;
+        static const AkUniqueID TVHEADSTATICSTOP = 2047933731U;
     } // namespace EVENTS
 
     namespace BANKS

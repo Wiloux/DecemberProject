@@ -58,7 +58,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585956138532573055
+    m_lastTime: -8585955505117685638
     List:
     - name: Main
       guid: e8a3ab083a4d344489c1ca41b102a799
@@ -77,7 +77,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23cdf775154ee34c9621da36a37cfeb8
     GuidInternal: 
-    m_lastTime: -8585956135312437553
+    m_lastTime: -8585955505117745191
     List:
     - name: Footstep
       guid: f45a96c2937e6240aae0ba630aceb904
@@ -263,6 +263,46 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: TVHead
+      guid: 44ff9c01b34acd49a5522dab17790a0e
+      id: 4167597265
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TVHead
+        ObjectType: 4
+      Path: Default Work Unit\TVHead
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TvHeadStaticPlay
+      guid: 8694ac65db820d4ba6559a5f8ec38302
+      id: 664857509
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TVHead
+        ObjectType: 4
+      - ElementName: TvHeadStaticPlay
+        ObjectType: 3
+      Path: Default Work Unit\TVHead\TvHeadStaticPlay
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: TvHeadStaticStop
+      guid: 83d83a647a37314cb15d53bd45e40064
+      id: 2047933731
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TVHead
+        ObjectType: 4
+      - ElementName: TvHeadStaticStop
+        ObjectType: 3
+      Path: Default Work Unit\TVHead\TvHeadStaticStop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -307,5 +347,6 @@ MonoBehaviour:
   - /DecemberProject_WwiseProject
   - /DecemberProject_WwiseProject/Events
   - /DecemberProject_WwiseProject/Events/Default Work Unit
+  - /DecemberProject_WwiseProject/Events/Default Work Unit/TVHead
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

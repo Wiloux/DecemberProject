@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
 	448200913	PlayJerrycan			\Default Work Unit\SoulStuff\Jerrycan\PlayJerrycan	
+	664857509	TvHeadStaticPlay			\Default Work Unit\TVHead\TvHeadStaticPlay	
 	1707810303	StopStatic			\Default Work Unit\Others\StopStatic	
 	1866025847	Footstep			\Default Work Unit\Player\Footstep	
 	2045095431	FootstepLady			\Default Work Unit\Player\FootstepLady	
+	2047933731	TvHeadStaticStop			\Default Work Unit\TVHead\TvHeadStaticStop	
 	2053742238	PlayOrb			\Default Work Unit\SoulStuff\Orb\PlayOrb	
 	2638603827	StopJerrycan			\Default Work Unit\SoulStuff\Jerrycan\StopJerrycan	
 	2852051516	StopOrb			\Default Work Unit\SoulStuff\Orb\StopOrb	
@@ -16,6 +18,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	442015427	footsteplady1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteplady1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\FootstepsLady\footsteplady1		66104
 	467019561	jerrycan1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\jerrycan1 _10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SoulStuff\jerrycan1		11201464
 	479510423	footstep1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\footstep1		88264
+	555018090	static2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\static2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\static2		11289664
 	695972227	footsteplady4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteplady4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\FootstepsLady\footsteplady4		78124
-	889404178	static	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\static_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\static		11289664
+	889404178	staticTvHead	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\static_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\staticTvHead		11289664
 

@@ -110,7 +110,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="static" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+											<ObjectRef Name="static2" ID="{490F014A-8102-4DD4-9134-D54817DA6AB3}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -124,7 +124,64 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="static" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+											<ObjectRef Name="static2" ID="{490F014A-8102-4DD4-9134-D54817DA6AB3}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="TVHead" ID="{019CFF44-4AB3-49CD-A552-2DAB17790A0E}" ShortID="647744745">
+					<ChildrenList>
+						<Event Name="TvHeadStaticPlay" ID="{65AC9486-82DB-4B0D-A655-9A5F8EC38302}">
+							<ChildrenList>
+								<Action Name="" ID="{474D45E2-9057-47B4-AE1B-BAD50B8FE17D}" ShortID="252365598">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="staticTvHead" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B81C63AA-6CE7-4876-8608-FDDF5FC4435E}" ShortID="127540488">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="36"/>
+										<Property Name="SeekPercent" Type="Real64" Value="50">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2B36EC04-1E6C-4260-8CC3-7299A4957900}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="40"/>
+															<Property Name="Min" Type="Real64" Value="-40"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="staticTvHead" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TvHeadStaticStop" ID="{643AD883-377A-4C31-B15D-53BD45E40064}">
+							<ChildrenList>
+								<Action Name="" ID="{60690C21-A3CE-4612-97FC-B2467FBF117D}" ShortID="554499980">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="staticTvHead" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
