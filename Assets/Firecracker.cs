@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO.IsolatedStorage;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class Firecracker : MonoBehaviour
 {
@@ -11,14 +12,11 @@ public class Firecracker : MonoBehaviour
     public Enemy killer;
     public Movement player;
     public bool isActive;
-
-    AudioSource audioSource;
-    public AudioClip clip;
+    public GameObject particles;
     public bool isBeingWorkedOn;
 
     void Start()
     {
-
     }
     // Update is called once per frame
     void Update()
@@ -29,13 +27,13 @@ public class Firecracker : MonoBehaviour
         }
         if (workLeft <= 0)
         {
-            if (player.currentObjective.isBeingWorkedOn && !isActive)
+
+            if (player.currentObjective != null && player.currentObjective.isBeingWorkedOn && !isActive)
             {
                 if (killer.currentState == Enemy.States.Patrolling)
                 {
-                    audioSource = GetComponent<AudioSource>();
+                    particles.SetActive(true);
                     isActive = true;
-                    audioSource.PlayOneShot(clip);
                     killer.CurrentTransformObjective = transform;
                     Debug.Log("boom");
                 }
