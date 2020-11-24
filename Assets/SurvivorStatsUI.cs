@@ -81,7 +81,6 @@ public class SurvivorStatsUI : MonoBehaviour
         else if (Player.currentState == Movement.States.Walk)
         {
             infotext.text = "Fine";
-            infotext.text = null;
             imgWorkAmount.gameObject.SetActive(false);
             img.gameObject.SetActive(false);
             //       imgWorkAmount.color = Color.white;

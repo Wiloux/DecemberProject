@@ -62,7 +62,7 @@ public class Movement : MonoBehaviour
     ParticleSystem pixelParticle;
     void Start()
     {
-      //  audioSource = GetComponent<AudioSource>();
+        //  audioSource = GetComponent<AudioSource>();
         pixelParticle = transform.Find("PixelParticle").GetComponent<ParticleSystem>();
         DisolveMat = transform.Find("Mesh").GetComponent<Renderer>().material;
         anim = GetComponent<Animator>();
@@ -94,7 +94,8 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(currentObjective == null || currentObjective.Type != Objective.WorkType.car) {
+        if (currentObjective == null || currentObjective.Type != Objective.WorkType.car)
+        {
 
             soulGameObject.SetActive(hasSoul);
         }
@@ -150,7 +151,7 @@ public class Movement : MonoBehaviour
                 anim.SetBool("isWalking", false);
             }
         }
-        
+
         switch (currentState)
         {
             case States.Walk:
@@ -256,7 +257,7 @@ public class Movement : MonoBehaviour
                             mustPlaySFX = true;
                             AkSoundEngine.PostEvent("PlayJerrycan", gameObject);
                         }
-                    }                 
+                    }
                     else
                     {
                         if (!readytoadd)
@@ -368,7 +369,7 @@ public class Movement : MonoBehaviour
                     TextGameObject.SetActive(true);
                     KillerScript.tvscript.Tvs.Add(ChoiceTV);
                     ChoiceTV.tvGameObject.SetActive(false);
-                    
+
                     ChoiceTV.survivor = null;
                 }
                 break;
@@ -381,10 +382,27 @@ public class Movement : MonoBehaviour
             if (wantsToUseItem)
             {
                 wantsToUseItem = false;
+             //   DropPos = null;
+
                 if (currentItemGhost != null)
                 {
-                    currentState = States.Walk;
                     Destroy(currentItemGhost);
+                    currentState = States.Walk;
+                }
+                if (currentBearTrap != null)
+                {
+                    startedWorking = false;
+                    currentBearTrap.isBeingWorkedOn = false;
+                }
+                if (currentWard != null)
+                {
+                    startedWorking = false;
+                    currentWard.isBeingWorkedOn = false;
+                }
+                if (currentFirecracker != null)
+                {
+                    startedWorking = false;
+                    currentFirecracker.isBeingWorkedOn = false;
                 }
             }
             else
@@ -470,7 +488,7 @@ public class Movement : MonoBehaviour
                                     AkSoundEngine.PostEvent("StopJerrycan", gameObject);
                                 }
                             }
-                                currentObjective.isBeingWorkedOn = false;
+                            currentObjective.isBeingWorkedOn = false;
 
                             if (currentObjective.GetComponent<Movement>() != null)
                             {
@@ -666,16 +684,18 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                if(currentObjective.Workers == 0)
+                if (currentObjective.Workers == 0)
                 {
                     return currentObjective.PS.transform.position;
-                } else if (currentObjective.Workers == 2)
+                }
+                else if (currentObjective.Workers == 2)
                 {
-                    return new Vector3( currentObjective.PS.transform.position.x + 0.5f, currentObjective.PS.transform.position.y, currentObjective.PS.transform.position.z -0.5f);
+                    return new Vector3(currentObjective.PS.transform.position.x + 0.5f, currentObjective.PS.transform.position.y, currentObjective.PS.transform.position.z - 0.5f);
 
-                } else
+                }
+                else
                 {
-                   return new Vector3(currentObjective.PS.transform.position.x - 0.5f, currentObjective.PS.transform.position.y, currentObjective.PS.transform.position.z - 0.5f);
+                    return new Vector3(currentObjective.PS.transform.position.x - 0.5f, currentObjective.PS.transform.position.y, currentObjective.PS.transform.position.z - 0.5f);
                 }
             }
         }
