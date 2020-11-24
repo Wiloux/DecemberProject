@@ -17,10 +17,10 @@ MonoBehaviour:
   categories: []
   uiBounds:
     serializedVersion: 2
-    x: 731
+    x: 595
     y: -266
-    width: 637
-    height: 2428
+    width: 773
+    height: 2448
 --- !u!114 &114350483966674976
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1434,7 +1434,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: UnityEngine.Gradient, UnityEngine.CoreModule, Version=0.0.0.0,
           Culture=neutral, PublicKeyToken=null
-      m_SerializableObject: '{"colorKeys":[{"color":{"r":0.24764150381088258,"g":0.5,"b":0.4577327072620392,"a":1.0},"time":0.0},{"color":{"r":0.0,"g":0.2641509175300598,"b":0.26139402389526369,"a":1.0},"time":0.1882352977991104},{"color":{"r":0.0,"g":0.33018869161605837,"b":0.2564142644405365,"a":1.0},"time":0.5176470875740051},{"color":{"r":0.0,"g":0.1719847470521927,"b":0.33018869161605837,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.11470206826925278},{"alpha":1.0,"time":0.8941176533699036},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
+      m_SerializableObject: '{"colorKeys":[{"color":{"r":0.24764150381088258,"g":0.5,"b":0.4577327072620392,"a":1.0},"time":0.0},{"color":{"r":0.0,"g":0.2641509175300598,"b":0.26139402389526369,"a":1.0},"time":0.1882352977991104},{"color":{"r":0.0,"g":0.23584908246994019,"b":0.1849796622991562,"a":1.0},"time":0.5176470875740051},{"color":{"r":0.0,"g":0.1719847470521927,"b":0.33018869161605837,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":0.0,"time":0.0},{"alpha":1.0,"time":0.11470206826925278},{"alpha":1.0,"time":0.8941176533699036},{"alpha":0.0,"time":1.0}],"gradientMode":0}'
     m_Space: 2147483647
   m_Property:
     name: Color
@@ -2439,7 +2439,7 @@ MonoBehaviour:
     linkedSlots:
     - outputSlot: {fileID: 8926484042661614624}
       inputSlot: {fileID: 8926484042661614618}
-    position: {x: 730.86957, y: 908.6957}
+    position: {x: 688, y: 909}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661614624
@@ -2622,7 +2622,7 @@ MonoBehaviour:
       inputSlot: {fileID: 8926484042661614652}
     - outputSlot: {fileID: 8926484042661614629}
       inputSlot: {fileID: 8926484042661614636}
-    position: {x: 742.1739, y: 958.2609}
+    position: {x: 595, y: 1117}
     expandedSlots: []
     expanded: 0
 --- !u!114 &8926484042661614629
