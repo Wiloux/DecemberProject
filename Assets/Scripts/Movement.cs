@@ -312,6 +312,9 @@ public class Movement : MonoBehaviour
                                     currentItem = Items.FireCracker;
                                 }
                                 break;
+                            case Objective.WorkType.car:
+                                soulGameObject.SetActive(false);
+                                break;
                         }
                         break;
                     }
