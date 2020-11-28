@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Chase 5
+  m_Name: P3TV
   m_Shader: {fileID: -6465566751694194690, guid: 553504dd2b670aa46a97054637f45569,
     type: 3}
   m_ShaderKeywords: 
@@ -33,7 +33,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_9DD0349F:
-        m_Texture: {fileID: 8400000, guid: 03615f944e90f6d4cafb9634e30dd5d4, type: 2}
+        m_Texture: {fileID: 2800000, guid: 7a2a1a53dfd286c43b801892c475ed5f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -71,7 +71,7 @@ Material:
     - Vector1_5DC9CE37: 3
     - Vector1_6EB3F014: 9
     - Vector1_9C1F9883: 1
-    - Vector1_A66FC5D1: 7
+    - Vector1_A66FC5D1: 1
     - Vector1_B7E692A0: 10
     - Vector1_C68CC86B: 0.17
     - Vector1_C70F2335: 1

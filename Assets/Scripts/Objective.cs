@@ -24,8 +24,6 @@ public class Objective : MonoBehaviour
 
     public ParticleSystem PS;
 
-    public List<MeshRenderer> arms = new List<MeshRenderer>();
-
   // public MeshRenderer face;
   //  public List<Material> facemat = new List<Material>();
 
@@ -117,9 +115,9 @@ public class Objective : MonoBehaviour
             souls[1].SetActive(Workers >= 2);
             souls[2].SetActive(Workers == 3);
 
-            arms[0].material = Workers >= 1 ? soulmat : pmat;
-            arms[1].material = Workers >= 2 ? soulmat : pmat;
-            arms[2].material = Workers >= 3 ? soulmat : pmat;
+          //  arms[0].material = Workers >= 1 ? soulmat : pmat;
+          //  arms[1].material = Workers >= 2 ? soulmat : pmat;
+         //   arms[2].material = Workers >= 3 ? soulmat : pmat;
         }
         else if (Type == WorkType.car && victory)
         {

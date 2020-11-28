@@ -3042,6 +3042,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Tvs: []
+  pMat:
+  - {fileID: 2100000, guid: 8687b7155a5d3ae4f9f97b59f6b629e4, type: 2}
+  - {fileID: 2100000, guid: 270960d9ae8350d458999d13d8015324, type: 2}
+  - {fileID: 2100000, guid: 3c65343bfd7b2054abe95a52696cc9c7, type: 2}
 --- !u!4 &210626205
 Transform:
   m_ObjectHideFlags: 0
@@ -18726,10 +18730,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  face: {fileID: 0}
-  facemat:
-  - {fileID: 2100000, guid: 93155d87323e69f43a02328bced648f4, type: 2}
-  - {fileID: 2100000, guid: 24c32553f0998564ea18925342540612, type: 2}
   victory: 0
 --- !u!208 &1224438990
 NavMeshObstacle:
@@ -20038,6 +20038,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 210626205}
     m_Modifications:
+    - target: {fileID: 1905671079944148029, guid: 760137e7fb2ae6e4e849c15ad9a1e81c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8687b7155a5d3ae4f9f97b59f6b629e4, type: 2}
     - target: {fileID: 2691606249743971885, guid: 760137e7fb2ae6e4e849c15ad9a1e81c,
         type: 3}
       propertyPath: m_LocalPosition.x
