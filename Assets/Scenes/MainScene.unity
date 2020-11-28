@@ -18725,11 +18725,7 @@ MonoBehaviour:
   Workers: 0
   soulmat: {fileID: 2100000, guid: 24c32553f0998564ea18925342540612, type: 2}
   pmat: {fileID: 2100000, guid: 2fe78078d63c7ef4f800143b4d7b3bff, type: 2}
-  PS: {fileID: 0}
-  arms:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  PS: {fileID: 922475613}
   victory: 0
 --- !u!208 &1224438990
 NavMeshObstacle:
@@ -18758,8 +18754,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.999998, y: 0.8268365, z: 1}
-  m_Center: {x: 0, y: -0.08658126, z: 0}
+  m_Size: {x: 1.6480197, y: 0.11505343, z: 1.2376616}
+  m_Center: {x: -0.018354913, y: -0.0456038, z: 0.013200086}
 --- !u!23 &1224438992
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20042,7 +20038,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 8687b7155a5d3ae4f9f97b59f6b629e4, type: 2}
+      objectReference: {fileID: 2100000, guid: 3c65343bfd7b2054abe95a52696cc9c7, type: 2}
+    - target: {fileID: 1905671079944148029, guid: 760137e7fb2ae6e4e849c15ad9a1e81c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a5072b825be2ac74bad120d6586c14ea, type: 2}
     - target: {fileID: 2691606249743971885, guid: 760137e7fb2ae6e4e849c15ad9a1e81c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46432,7 +46433,6 @@ GameObject:
   - component: {fileID: 2691606251188189342}
   - component: {fileID: 8813986350172365311}
   - component: {fileID: 1905671080848218766}
-  - component: {fileID: 6081556107530478450}
   m_Layer: 0
   m_Name: TV (7)
   m_TagString: Untagged
@@ -54068,7 +54068,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5124665582316544449}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.0488, y: -0.0037, z: 0.0652}
+  m_LocalPosition: {x: -0.0488, y: 0, z: 0.0652}
   m_LocalScale: {x: 0.57433, y: 0.57433, z: 0.8886}
   m_Children: []
   m_Father: {fileID: 2691606251188189342}
@@ -55274,19 +55274,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90.633, z: 0}
---- !u!65 &6081556107530478450
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3741326170475393570}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.036269676, y: 0.031270206, z: 0.032590713}
-  m_Center: {x: 0.0011931921, y: 0.0013490276, z: 0.081223756}
 --- !u!1 &6083327532520919515
 GameObject:
   m_ObjectHideFlags: 0
