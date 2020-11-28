@@ -129,8 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6fdda6fd9d0be4448208d968be12fda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  workLeft: 50
-  workAmount: 50
+  workLeft: 30
+  workAmount: 30
   killer: {fileID: 0}
   player: {fileID: 0}
   isActive: 0

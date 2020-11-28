@@ -6,6 +6,8 @@ public class TVs : MonoBehaviour
 {
     public List<TVClass> Tvs;
 
+    public List<Material> pMat;
+
     void Start()
     {
         {

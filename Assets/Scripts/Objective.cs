@@ -19,8 +19,15 @@ public class Objective : MonoBehaviour
 
     Animator anim;
 
+    public Material soulmat;
+    public Material pmat;
+
     public ParticleSystem PS;
 
+  // public MeshRenderer face;
+  //  public List<Material> facemat = new List<Material>();
+
+    public bool victory;
 
     private void Start()
     {
@@ -107,16 +114,45 @@ public class Objective : MonoBehaviour
             souls[0].SetActive(Workers >= 1);
             souls[1].SetActive(Workers >= 2);
             souls[2].SetActive(Workers == 3);
+
+          //  arms[0].material = Workers >= 1 ? soulmat : pmat;
+          //  arms[1].material = Workers >= 2 ? soulmat : pmat;
+         //   arms[2].material = Workers >= 3 ? soulmat : pmat;
         }
+        else if (Type == WorkType.car && victory)
+        {
+            souls[0].SetActive(true);
+            souls[1].SetActive(true);
+            souls[2].SetActive(true);
+        }
+
+
+
 
         if (Type == WorkType.car && Workers == 3)
         {
             WorkLeft -= 2 * Time.deltaTime;
-         
+
             if (WorkLeft <= 0)
             {
+                victory = true;
                 Debug.Log("YouWin");
             }
         }
+
+
     }
+
+    void set_skinned_mat(GameObject obj, int Mat_Nr, Material Mat)
+    {
+
+        SkinnedMeshRenderer renderer = obj.GetComponentInChildren<SkinnedMeshRenderer>();
+
+        Material[] mats = renderer.materials;
+
+        mats[Mat_Nr] = Mat;
+
+        renderer.materials = mats;
+    }
+
 }

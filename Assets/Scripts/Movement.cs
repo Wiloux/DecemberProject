@@ -298,19 +298,18 @@ public class Movement : MonoBehaviour
                                 AkSoundEngine.PostEvent("PlayOrb", gameObject);
                                 break;
                             case Objective.WorkType.chest:
-                                int i = Random.Range(0, 3);
+                                int i = Random.Range(0, 2);
                                 if (i == 1)
                                 {
                                     currentItem = Items.Trap;
-                                }
-                                else if (i == 2)
-                                {
-                                    currentItem = Items.Ward;
                                 }
                                 else
                                 {
                                     currentItem = Items.FireCracker;
                                 }
+                                break;
+                            case Objective.WorkType.car:
+                                soulGameObject.SetActive(false);
                                 break;
                         }
                         break;
@@ -690,12 +689,12 @@ public class Movement : MonoBehaviour
                 }
                 else if (currentObjective.Workers == 2)
                 {
-                    return new Vector3(currentObjective.PS.transform.position.x + 0.5f, currentObjective.PS.transform.position.y, currentObjective.PS.transform.position.z - 0.5f);
+                    return new Vector3(currentObjective.PS.transform.position.x + 1f, currentObjective.PS.transform.position.y, currentObjective.PS.transform.position.z - 1f);
 
                 }
                 else
                 {
-                    return new Vector3(currentObjective.PS.transform.position.x - 0.5f, currentObjective.PS.transform.position.y, currentObjective.PS.transform.position.z - 0.5f);
+                    return new Vector3(currentObjective.PS.transform.position.x - 1f, currentObjective.PS.transform.position.y, currentObjective.PS.transform.position.z - 1f);
                 }
             }
         }
