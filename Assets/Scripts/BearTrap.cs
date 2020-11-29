@@ -12,11 +12,20 @@ public class BearTrap : MonoBehaviour
     public bool isBeingWorkedOn;
 
     // Update is called once per frame
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("BeartrapSetup", gameObject);
+    }
     void Update()
     {
         if (workLeft > 0 && !isBeingWorkedOn)
         {
+            AkSoundEngine.PostEvent("BeartrapStop", gameObject);
             Destroy(gameObject);
+        }
+        else if (workLeft <= 0)
+        {
+            AkSoundEngine.PostEvent("BeartrapStop", gameObject);
         }
     }
 
@@ -24,6 +33,7 @@ public class BearTrap : MonoBehaviour
     {
         if (other.gameObject.name == "Killer")
         {
+            AkSoundEngine.PostEvent("BeartrapTrigger", gameObject);
             StartCoroutine(LockKiller(other.gameObject.GetComponent<Enemy>()));
         }
     }

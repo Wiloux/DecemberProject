@@ -17,21 +17,25 @@ public class Firecracker : MonoBehaviour
 
     void Start()
     {
+        AkSoundEngine.PostEvent("FireworksSetup", gameObject);
     }
     // Update is called once per frame
     void Update()
     {
         if (workLeft > 0 && !isBeingWorkedOn)
         {
+            AkSoundEngine.PostEvent("FireworksStop", gameObject);
             Destroy(gameObject);
         }
         if (workLeft <= 0)
         {
 
+            AkSoundEngine.PostEvent("FireworksStop", gameObject);
             if (player.currentObjective != null && player.currentObjective.isBeingWorkedOn && !isActive)
             {
                 if (killer.currentState == Enemy.States.Patrolling)
                 {
+                    AkSoundEngine.PostEvent("FireworksTrigger", gameObject);
                     particles.SetActive(true);
                     isActive = true;
                     killer.CurrentTransformObjective = transform;
@@ -42,6 +46,7 @@ public class Firecracker : MonoBehaviour
 
         if (isActive && killer.CurrentTransformObjective != this.transform)
         {
+
             Destroy(gameObject);
         }
     }
