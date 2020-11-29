@@ -11,45 +11,115 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2125464166">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2945722251">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4053857774">
+		<SoundBank Id="3161908922" Language="SFX" Hash="943616829">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Player\Footstep" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.457973" DurationMax="0.553824">
+				<Event Id="3283823493" Name="BeartrapSetup" ObjectPath="\Events\Default Work Unit\Weapons\Beartrap\BeartrapSetup" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="280403748" Language="SFX">
-							<ShortName>footstep3.wav</ShortName>
-							<Path>SFX\footstep3_10C4C929.wem</Path>
-						</File>
-						<File Id="479510423" Language="SFX">
-							<ShortName>footstep1.wav</ShortName>
-							<Path>SFX\footstep1_10C4C929.wem</Path>
+						<File Id="506638655" Language="SFX">
+							<ShortName>beartrap setup.wav</ShortName>
+							<Path>SFX\beartrap setup_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2045095431" Name="FootstepLady" ObjectPath="\Events\Default Work Unit\Player\FootstepLady" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.374376" DurationMax="0.500000">
+				<Event Id="3005731438" Name="BeartrapStop" ObjectPath="\Events\Default Work Unit\Weapons\Beartrap\BeartrapStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4283543462" Name="BeartrapTrigger" ObjectPath="\Events\Default Work Unit\Weapons\Beartrap\BeartrapTrigger" DurationType="OneShot" DurationMin="0.677687" DurationMax="0.677687">
 					<IncludedMemoryFiles>
-						<File Id="128443798" Language="SFX">
-							<ShortName>footsteplady2.wav</ShortName>
-							<Path>SFX\footsteplady2_10C4C929.wem</Path>
+						<File Id="5711083" Language="SFX">
+							<ShortName>beartrap trigger.wav</ShortName>
+							<Path>SFX\beartrap trigger_10C4C929.wem</Path>
 						</File>
-						<File Id="365710504" Language="SFX">
-							<ShortName>footsteplady3.wav</ShortName>
-							<Path>SFX\footsteplady3_10C4C929.wem</Path>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3701804816" Name="FireworksSetup" ObjectPath="\Events\Default Work Unit\Weapons\Fireworks\FireworksSetup" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="864226983" Language="SFX">
+							<ShortName>fireworks setup.wav</ShortName>
+							<Path>SFX\fireworks setup_D79FB2B7.wem</Path>
 						</File>
-						<File Id="442015427" Language="SFX">
-							<ShortName>footsteplady1.wav</ShortName>
-							<Path>SFX\footsteplady1_10C4C929.wem</Path>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2740640909" Name="FireworksStop" ObjectPath="\Events\Default Work Unit\Weapons\Fireworks\FireworksStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2187166475" Name="FireworksTrigger" ObjectPath="\Events\Default Work Unit\Weapons\Fireworks\FireworksTrigger" DurationType="OneShot" DurationMin="2.850000" DurationMax="3.247415">
+					<IncludedMemoryFiles>
+						<File Id="27905807" Language="SFX">
+							<ShortName>firework1.wav</ShortName>
+							<Path>SFX\firework1_10C4C929.wem</Path>
 						</File>
-						<File Id="695972227" Language="SFX">
-							<ShortName>footsteplady4.wav</ShortName>
-							<Path>SFX\footsteplady4_10C4C929.wem</Path>
+						<File Id="335048445" Language="SFX">
+							<ShortName>firework5.wav</ShortName>
+							<Path>SFX\firework5_10C4C929.wem</Path>
+						</File>
+						<File Id="626323812" Language="SFX">
+							<ShortName>firework2.wav</ShortName>
+							<Path>SFX\firework2_10C4C929.wem</Path>
+						</File>
+						<File Id="632205178" Language="SFX">
+							<ShortName>firework4.wav</ShortName>
+							<Path>SFX\firework4_10C4C929.wem</Path>
+						</File>
+						<File Id="1022517877" Language="SFX">
+							<ShortName>firework3.wav</ShortName>
+							<Path>SFX\firework3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2385628260" Name="Footstep1" ObjectPath="\Events\Default Work Unit\Player\Footstep1" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000">
+					<IncludedMemoryFiles>
+						<File Id="190373997" Language="SFX">
+							<ShortName>footsteps 1.2.wav</ShortName>
+							<Path>SFX\footsteps 1.2_10C4C929.wem</Path>
+						</File>
+						<File Id="879557984" Language="SFX">
+							<ShortName>footsteps 1.1.wav</ShortName>
+							<Path>SFX\footsteps 1.1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2385628263" Name="Footstep2" ObjectPath="\Events\Default Work Unit\Player\Footstep2" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.339388" DurationMax="0.449955">
+					<IncludedMemoryFiles>
+						<File Id="113483634" Language="SFX">
+							<ShortName>footsteps 2.1.1.wav</ShortName>
+							<Path>SFX\footsteps 2.1.1_10C4C929.wem</Path>
+						</File>
+						<File Id="432592923" Language="SFX">
+							<ShortName>footsteps 2.2.wav</ShortName>
+							<Path>SFX\footsteps 2.2_10C4C929.wem</Path>
+						</File>
+						<File Id="770735795" Language="SFX">
+							<ShortName>footsteps 2.1.2.wav</ShortName>
+							<Path>SFX\footsteps 2.1.2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2385628262" Name="Footstep3" ObjectPath="\Events\Default Work Unit\Player\Footstep3" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.377211" DurationMax="0.467007">
+					<IncludedMemoryFiles>
+						<File Id="103516333" Language="SFX">
+							<ShortName>footsteps 3.1.wav</ShortName>
+							<Path>SFX\footsteps 3.1_10C4C929.wem</Path>
+						</File>
+						<File Id="300243749" Language="SFX">
+							<ShortName>footsteps 3.2.wav</ShortName>
+							<Path>SFX\footsteps 3.2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2385628257" Name="Footstep4" ObjectPath="\Events\Default Work Unit\Player\Footstep4" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.337868" DurationMax="0.454263">
+					<IncludedMemoryFiles>
+						<File Id="595616853" Language="SFX">
+							<ShortName>footsteps 4.2.wav</ShortName>
+							<Path>SFX\footsteps 4.2_10C4C929.wem</Path>
+						</File>
+						<File Id="771280129" Language="SFX">
+							<ShortName>footsteps 4.1.wav</ShortName>
+							<Path>SFX\footsteps 4.1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

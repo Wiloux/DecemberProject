@@ -2,25 +2,47 @@ Event	ID	Name			Wwise Object Path	Notes
 	448200913	PlayJerrycan			\Default Work Unit\SoulStuff\Jerrycan\PlayJerrycan	
 	664857509	TvHeadStaticPlay			\Default Work Unit\TVHead\TvHeadStaticPlay	
 	1707810303	StopStatic			\Default Work Unit\Others\StopStatic	
-	1866025847	Footstep			\Default Work Unit\Player\Footstep	
-	2045095431	FootstepLady			\Default Work Unit\Player\FootstepLady	
 	2047933731	TvHeadStaticStop			\Default Work Unit\TVHead\TvHeadStaticStop	
 	2053742238	PlayOrb			\Default Work Unit\SoulStuff\Orb\PlayOrb	
+	2187166475	FireworksTrigger			\Default Work Unit\Weapons\Fireworks\FireworksTrigger	
+	2385628257	Footstep4			\Default Work Unit\Player\Footstep4	
+	2385628260	Footstep1			\Default Work Unit\Player\Footstep1	
+	2385628262	Footstep3			\Default Work Unit\Player\Footstep3	
+	2385628263	Footstep2			\Default Work Unit\Player\Footstep2	
 	2638603827	StopJerrycan			\Default Work Unit\SoulStuff\Jerrycan\StopJerrycan	
+	2740640909	FireworksStop			\Default Work Unit\Weapons\Fireworks\FireworksStop	
 	2852051516	StopOrb			\Default Work Unit\SoulStuff\Orb\StopOrb	
+	3005731438	BeartrapStop			\Default Work Unit\Weapons\Beartrap\BeartrapStop	
 	3228498500	PlayLightbulb			\Default Work Unit\Others\PlayLightbulb	
+	3283823493	BeartrapSetup			\Default Work Unit\Weapons\Beartrap\BeartrapSetup	
 	3467592801	PlayStatic			\Default Work Unit\Others\PlayStatic	
+	3701804816	FireworksSetup			\Default Work Unit\Weapons\Fireworks\FireworksSetup	
+	4283543462	BeartrapTrigger			\Default Work Unit\Weapons\Beartrap\BeartrapTrigger	
+
+Effect plug-ins	ID	Name	Type				Notes
+	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	4341323	orb2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\orb2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SoulStuff\orb2		11289664
-	128443798	footsteplady2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteplady2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\FootstepsLady\footsteplady2		88264
-	280403748	footstep3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\footstep3		88264
-	365710504	footsteplady3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteplady3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\FootstepsLady\footsteplady3		88264
-	442015427	footsteplady1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteplady1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\FootstepsLady\footsteplady1		66104
+	5711083	beartrap trigger	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\beartrap trigger_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Beartrap\beartrap trigger		119608
+	27905807	firework1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\firework1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework1		264664
+	103516333	footsteps 3_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 3.1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\3\footsteps 3_1		82444
+	113483634	footsteps 2_1_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 2.1.1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\2\footsteps2\footsteps 2_1_1		59932
+	190373997	footsteps 1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 1.2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\1\footsteps 1_2		88264
+	300243749	footsteps 3_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 3.2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\3\footsteps 3_2		66604
+	335048445	firework5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\firework5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework5		265760
+	432592923	footsteps 2_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 2.2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\2\footsteps 2_2		79436
 	467019561	jerrycan1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\jerrycan1 _10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SoulStuff\jerrycan1		11201464
-	479510423	footstep1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\footstep1		88264
+	506638655	beartrap setup	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\beartrap setup_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Beartrap\beartrap setup		1764064
 	528025441	static2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\staticPlayer_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\static2		5644864
-	695972227	footsteplady4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteplady4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\FootstepsLady\footsteplady4		78124
+	595616853	footsteps 4_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 4.2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\4\footsteps 4_2		59664
+	626323812	firework2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\firework2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework2		287028
+	632205178	firework4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\firework4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework4		238204
+	770735795	footsteps 2_1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 2.1.2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\2\footsteps2\footsteps 2_1_2		61476
+	771280129	footsteps 4_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 4.1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\4\footsteps 4_1		80196
 	849160375	faulty lightbulb	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\faulty lightbulb_12C24B61.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\faulty lightbulb		168604
+	864226983	fireworks setup	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\fireworks setup_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks setup		1764064
+	879557984	footsteps 1_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 1.1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\1\footsteps 1_1		88264
 	975610250	staticTvHead	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\staticTvHead_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\staticTvHead		5644864
+	1022517877	firework3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\firework3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework3		308308
 

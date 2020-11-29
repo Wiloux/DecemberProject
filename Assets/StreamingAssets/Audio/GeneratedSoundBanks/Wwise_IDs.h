@@ -13,8 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID FOOTSTEP = 1866025847U;
-        static const AkUniqueID FOOTSTEPLADY = 2045095431U;
+        static const AkUniqueID BEARTRAPSETUP = 3283823493U;
+        static const AkUniqueID BEARTRAPSTOP = 3005731438U;
+        static const AkUniqueID BEARTRAPTRIGGER = 4283543462U;
+        static const AkUniqueID FIREWORKSSETUP = 3701804816U;
+        static const AkUniqueID FIREWORKSSTOP = 2740640909U;
+        static const AkUniqueID FIREWORKSTRIGGER = 2187166475U;
+        static const AkUniqueID FOOTSTEP1 = 2385628260U;
+        static const AkUniqueID FOOTSTEP2 = 2385628263U;
+        static const AkUniqueID FOOTSTEP3 = 2385628262U;
+        static const AkUniqueID FOOTSTEP4 = 2385628257U;
         static const AkUniqueID PLAYJERRYCAN = 448200913U;
         static const AkUniqueID PLAYLIGHTBULB = 3228498500U;
         static const AkUniqueID PLAYORB = 2053742238U;

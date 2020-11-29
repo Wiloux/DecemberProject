@@ -678,7 +678,7 @@ MonoBehaviour:
   FootstepSound1:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 099a7466680fb4943b6b0566f0f6e938,
+    WwiseObjectReference: {fileID: 11400000, guid: d98011c60a4cc3b46a190bbbb719132a,
       type: 2}
   FootstepSound2:
     idInternal: 0
@@ -2045,7 +2045,7 @@ MonoBehaviour:
   FootstepSound3:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 099a7466680fb4943b6b0566f0f6e938,
+    WwiseObjectReference: {fileID: 11400000, guid: 68195ca0e09d16a44889eb30d50b58b3,
       type: 2}
 --- !u!4 &111623762 stripped
 Transform:
@@ -10201,7 +10201,7 @@ MonoBehaviour:
   FootstepSound2:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 309c5b50797f87040ae4ec929843ad50,
+    WwiseObjectReference: {fileID: 11400000, guid: 475fdcde2eae87647a7f13c91b1b2dd9,
       type: 2}
   FootstepSound3:
     idInternal: 0
