@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class Objective : MonoBehaviour
 {
@@ -109,6 +110,7 @@ public class Objective : MonoBehaviour
             }
         }
 
+        
         if (Type == WorkType.car)
         {
             souls[0].SetActive(Workers >= 1);
@@ -121,9 +123,9 @@ public class Objective : MonoBehaviour
         }
         else if (Type == WorkType.car && victory)
         {
-            souls[0].SetActive(true);
-            souls[1].SetActive(true);
-            souls[2].SetActive(true);
+            souls[0].SetActive(false);
+            souls[1].SetActive(false);
+            souls[2].SetActive(false);
         }
 
 
@@ -133,9 +135,10 @@ public class Objective : MonoBehaviour
         {
             WorkLeft -= 2 * Time.deltaTime;
 
-            if (WorkLeft <= 0)
+            if (WorkLeft <= 0 && !victory)
             {
                 victory = true;
+                PB.Play(asset);
                 Debug.Log("YouWin");
             }
         }
@@ -143,6 +146,8 @@ public class Objective : MonoBehaviour
 
     }
 
+    public PlayableDirector PB;
+    public PlayableAsset asset;
     void set_skinned_mat(GameObject obj, int Mat_Nr, Material Mat)
     {
 
