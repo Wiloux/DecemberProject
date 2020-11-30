@@ -3073,7 +3073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Tvs: []
   pMat:
-  - {fileID: 2100000, guid: 8687b7155a5d3ae4f9f97b59f6b629e4, type: 2}
+  - {fileID: 2100000, guid: 8124d5dd4dec4d4489036b833d7893dc, type: 2}
   - {fileID: 2100000, guid: 270960d9ae8350d458999d13d8015324, type: 2}
   - {fileID: 2100000, guid: 3c65343bfd7b2054abe95a52696cc9c7, type: 2}
 --- !u!4 &210626205
@@ -42569,6 +42569,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 210626205}
     m_Modifications:
+    - target: {fileID: 1905671079944148029, guid: 760137e7fb2ae6e4e849c15ad9a1e81c,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8124d5dd4dec4d4489036b833d7893dc, type: 2}
     - target: {fileID: 2691606249743971885, guid: 760137e7fb2ae6e4e849c15ad9a1e81c,
         type: 3}
       propertyPath: m_LocalPosition.x
