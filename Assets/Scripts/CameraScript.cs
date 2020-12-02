@@ -33,6 +33,14 @@ public class CameraScript : MonoBehaviour
     void Start()
     {
         camOffSet = transform.position - target.transform.position;
+        if (EasterEgg.instance.isNightStalker)
+        {
+            Players[0] = EasterEgg.instance.NightStalker.GetComponent<Movement>();
+        }
+        else
+        {
+            Players[0] = EasterEgg.instance.Syd.GetComponent<Movement>();
+        }
     }
 
     public bool isLocked = false;

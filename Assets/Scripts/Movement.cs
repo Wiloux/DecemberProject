@@ -40,7 +40,7 @@ public class Movement : MonoBehaviour
 
     private Animator anim;
 
-    public Material DisolveMat;
+    public Material[] DisolveMat;
     public float currDisolveAmount;
     public float disolveAmount;
     public float disolveSpd;
@@ -64,7 +64,7 @@ public class Movement : MonoBehaviour
     {
         //  audioSource = GetComponent<AudioSource>();
         pixelParticle = transform.Find("PixelParticle").GetComponent<ParticleSystem>();
-        DisolveMat = transform.Find("Mesh").GetComponent<Renderer>().material;
+        DisolveMat = transform.Find("Mesh").GetComponent<Renderer>().materials;
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();
         KillerScript = GameObject.FindObjectOfType<Enemy>();
@@ -289,7 +289,10 @@ public class Movement : MonoBehaviour
                                 currentObjective.isBeingWorkedOn = false;
                                 move.anim.SetBool("isStunned", false);
                                 move.pixelParticle.Stop();
-                                move.DisolveMat.SetFloat("Vector1_DD60D333", 0);
+                                for (int u = 0; u < DisolveMat.Length; u++)
+                                {
+                                    move.DisolveMat[u].SetFloat("Vector1_DD60D333", 0);
+                                }
                                 currentObjective.WorkLeft = helpAmount;
                                 break;
                             case Objective.WorkType.jerryCan:
@@ -331,12 +334,18 @@ public class Movement : MonoBehaviour
                     if (currDisolveAmount > 0)
                     {
                         currDisolveAmount -= Time.deltaTime * disolveSpd;
-                        DisolveMat.SetFloat("Vector1_DD60D333", ((disolveAmount / currDisolveAmount) - 1) * 0.25f);
+                        for (int u = 0; u < DisolveMat.Length; u++)
+                        {
+                            DisolveMat[u].SetFloat("Vector1_DD60D333", ((disolveAmount / currDisolveAmount) - 1) * 0.25f);
+                        }
                         pixelParticle.Play();
                     }
                     else
                     {
-                        DisolveMat.SetFloat("Vector1_DD60D333", 0.1f);
+                        for (int u = 0; u < DisolveMat.Length; u++)
+                        {
+                            DisolveMat[u].SetFloat("Vector1_DD60D333", 0.1f);
+                        }
                         currDisolveAmount = 0;
                         pixelParticle.Stop();
 
@@ -351,13 +360,18 @@ public class Movement : MonoBehaviour
                 ChoiceTV.tvGameObject.SetActive(true);
                 agent.isStopped = true;
                 transform.position = new Vector3(ChoiceTV.objective.PS.transform.position.x + 2f, ChoiceTV.objective.PS.transform.position.y, ChoiceTV.objective.PS.transform.position.z);
-
-                DisolveMat.SetFloat("Vector1_DD60D333", (ChoiceTV.objective.WorkLeft / ChoiceTV.objective.WorkNeeded) + 0.1f);
+                for (int u = 0; u < DisolveMat.Length; u++)
+                {
+                    DisolveMat[u].SetFloat("Vector1_DD60D333", (ChoiceTV.objective.WorkLeft / ChoiceTV.objective.WorkNeeded) + 0.1f);
+                }
                 if (ChoiceTV.objective.isFinished)
                 {
                     KillerScript.CurrentTransformObjective = ChoiceTV.objective.PS.transform;
                     corruptedTimes = 0;
-                    DisolveMat.SetFloat("Vector1_DD60D333", 0);
+                    for (int u = 0; u < DisolveMat.Length; u++)
+                    {
+                        DisolveMat[u].SetFloat("Vector1_DD60D333", 0);
+                    }
                     anim.SetBool("isStunned", false);
                     currentState = States.Walk;
                     ChoiceTV.survivor = null;
@@ -381,7 +395,7 @@ public class Movement : MonoBehaviour
             if (wantsToUseItem)
             {
                 wantsToUseItem = false;
-             //   DropPos = null;
+                //   DropPos = null;
 
                 if (currentItemGhost != null)
                 {

@@ -19837,7 +19837,12 @@ MonoBehaviour:
   nbOfPlayerWorking: 0
   souls: []
   Workers: 0
+  soulmat: {fileID: 0}
+  pmat: {fileID: 0}
   PS: {fileID: 0}
+  victory: 0
+  PB: {fileID: 0}
+  asset: {fileID: 0}
 --- !u!82 &459132282377244703
 AudioSource:
   m_ObjectHideFlags: 0
