@@ -6,6 +6,11 @@ public class EasterEgg : MonoBehaviour
 {
     public bool isNightStalker;
 
+    public bool VictoryWithoutBeingSpotted = true;
+
+
+    public Objective vm;
+    int NightStalkerPlayerPref;
 
     public static EasterEgg instance;
 
@@ -15,6 +20,23 @@ public class EasterEgg : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        if(PlayerPrefs.GetInt("NightStalkerUnlocked") == 1)
+        {
+           if (PlayerPrefs.GetInt("NightStalkerModeOn") != 1)
+            {
+                isNightStalker = false;
+            }
+            else
+            {
+                isNightStalker = true;
+            }
+
+        }
+        else
+        {
+            isNightStalker = false;
+        }
+
         if (isNightStalker)
         {
             NightStalker.SetActive(true);
@@ -28,13 +50,16 @@ public class EasterEgg : MonoBehaviour
     }
     void Start()
     {
-
+        VictoryWithoutBeingSpotted = true;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (vm.victory)
+        {
+            PlayerPrefs.SetInt("NightStalkerUnlocked", 1);
+        }
     }
 }

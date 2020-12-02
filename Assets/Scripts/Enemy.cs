@@ -144,6 +144,7 @@ public class Enemy : MonoBehaviour
                         CameraScript.instance.target = Player.PlayerScript.transform;
 
                         Player.PlayerScript.isSelected = true;
+                        EasterEgg.instance.VictoryWithoutBeingSpotted = false;
                         currentState = States.Chasing;
                         set_skinned_mat(mesh, 2, ChaseMat[Random.Range(0, ChaseMat.Count)]);
                         chaseLight.color = Color.red;
