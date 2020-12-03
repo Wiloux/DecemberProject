@@ -15,4 +15,16 @@ public class LoadScene : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void Open_Close(GameObject Target)
+    {
+        if (Target.activeInHierarchy)
+        {
+            Target.SetActive(false);
+        }
+        else
+        {
+            Target.SetActive(true);
+        }
+    }
 }
