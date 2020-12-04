@@ -120,9 +120,15 @@ public class Enemy : MonoBehaviour
             case States.Patrolling:
 
                 Objective currentScriptObj = new Objective();
-                if (Vector3.Distance(transform.position, CurrentTransformObjective.position) < MiniDistance) {
+                if (Vector3.Distance(transform.position, CurrentTransformObjective.position) < MiniDistance)
+                {
 
-                    CurrentTransformObjective = Objectives[Random.Range(0, Objectives.Count)].transform;
+                        CurrentTransformObjective = Objectives[Random.Range(0, Objectives.Count)].transform;
+
+                    if (CurrentTransformObjective.GetComponent<Objective>().Type == Objective.WorkType.car)
+                    {
+                        CurrentTransformObjective = CurrentTransformObjective.GetComponent<Objective>().PS.transform;
+                    }
                     currentScriptObj = CurrentTransformObjective.GetComponent<Objective>();
                 }
 
@@ -153,10 +159,11 @@ public class Enemy : MonoBehaviour
 
 
 
+
                 agent.SetDestination(CurrentTransformObjective.position);
 
 
-                break; 
+                break;
             case States.Chasing:
 
                 //Timer when Player is off radar
@@ -195,7 +202,7 @@ public class Enemy : MonoBehaviour
                         CurrentTransformPlayer.PlayerScript.ChoiceTV = newtv;
                         Material[] mats = newtv.tvGameObject.GetComponent<Renderer>().materials;
                         mats[2] = tvscript.pMat[CurrentTransformPlayer.PlayerScript.playerInt];
-                        newtv.tvGameObject.GetComponent<Renderer>().materials = mats;                      
+                        newtv.tvGameObject.GetComponent<Renderer>().materials = mats;
                         newtv.survivor = CurrentTransformPlayer.PlayerScript;
                     }
                     currentState = States.Pause;
