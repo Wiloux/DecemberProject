@@ -133,13 +133,12 @@ public class Objective : MonoBehaviour
 
         if (Type == WorkType.car && Workers == 3)
         {
-            WorkLeft -= 2 * Time.deltaTime;
+            WorkLeft -= 4 * Time.deltaTime;
 
             if (WorkLeft <= 0 && !victory)
             {
                 victory = true;
-                PB.Play(asset);
-                Debug.Log("YouWin");
+                PB.Play(asset);            
             }
         }
 
