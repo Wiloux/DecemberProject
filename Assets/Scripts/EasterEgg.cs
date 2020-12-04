@@ -57,7 +57,7 @@ public class EasterEgg : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (vm.victory)
+        if (vm.victory && VictoryWithoutBeingSpotted)
         {
             PlayerPrefs.SetInt("NightStalkerUnlocked", 1);
         }
