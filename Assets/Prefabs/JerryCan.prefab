@@ -201,8 +201,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 1.6130548, z: 1}
+  m_Center: {x: 0, y: 0.30652738, z: 0}
 --- !u!208 &6111046332166401529
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -237,8 +237,15 @@ MonoBehaviour:
   WorkLeft: 0
   WorkNeeded: 0
   MiniDistance: 0.4
-  WorkTimes: 3
+  nbOfPlayerWorking: 0
+  souls: []
+  Workers: 0
+  soulmat: {fileID: 0}
+  pmat: {fileID: 0}
   PS: {fileID: 0}
+  victory: 0
+  PB: {fileID: 0}
+  asset: {fileID: 0}
 --- !u!95 &1282348743877248656
 Animator:
   serializedVersion: 3

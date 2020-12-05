@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
 
     public Light chaseLight;
 
-    private RaycastHit hit;
+   // private RaycastHit hit;
 
     public float CorruptRange;
 

@@ -9,6 +9,7 @@ public class SurvivorStatsUI : MonoBehaviour
     private Image imgWorkAmount;
     public Image currObj;
     TextMeshProUGUI infotext;
+    public Animator CharaWorkBGAnim;
     RectTransform pos;
     public Sprite Syd;
     public Sprite NS;
@@ -37,10 +38,15 @@ public class SurvivorStatsUI : MonoBehaviour
             }
         }
 
+        CharaWorkBGAnim = transform.Find("CharaImgBG").GetComponent<Animator>();
+
     }
     // Update is called once per frame
     void Update()
     {
+        CharaWorkBGAnim.SetBool("Chased",Player.KillerScript.CurrentTransformPlayer.PlayerScript == Player && Player.KillerScript.currentState == Enemy.States.Chasing);
+        CharaWorkBGAnim.SetBool("Hidding", Vector3.Distance(Player.Killer.transform.position, Player.transform.position) <= Player.SpottedDistance +7.5f);
+
         if (Player.isSelected)
         {
             pos.anchoredPosition = new Vector2(-92, pos.anchoredPosition.y);
