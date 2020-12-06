@@ -27,6 +27,14 @@ public class Firecracker : MonoBehaviour
             AkSoundEngine.PostEvent("FireworksStop", gameObject);
             Destroy(gameObject);
         }
+
+        if (player.currentState == Movement.States.Corrupted)
+        {
+            AkSoundEngine.PostEvent("FireworksStop", gameObject);
+            Destroy(gameObject);
+        }
+
+
         if (workLeft <= 0)
         {
 
@@ -39,7 +47,6 @@ public class Firecracker : MonoBehaviour
                     particles.SetActive(true);
                     isActive = true;
                     killer.CurrentTransformObjective = transform;
-                    Debug.Log("boom");
                 }
             }
         }

@@ -44,8 +44,8 @@ public class SurvivorStatsUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        CharaWorkBGAnim.SetBool("Chased",Player.KillerScript.CurrentTransformPlayer.PlayerScript == Player && Player.KillerScript.currentState == Enemy.States.Chasing);
-        CharaWorkBGAnim.SetBool("Hidding", Vector3.Distance(Player.Killer.transform.position, Player.transform.position) <= Player.SpottedDistance +7.5f);
+        CharaWorkBGAnim.SetBool("Chased", Player.KillerScript.CurrentTransformPlayer.PlayerScript != null && Player.KillerScript.CurrentTransformPlayer.PlayerScript == Player && Player.KillerScript.currentState == Enemy.States.Chasing && Player.currentState != Movement.States.Dead && Player.currentState != Movement.States.Corrupted);
+        CharaWorkBGAnim.SetBool("Hidding", Vector3.Distance(Player.Killer.transform.position, Player.transform.position) <= Player.SpottedDistance +7.5f && Player.currentState != Movement.States.Dead && Player.currentState != Movement.States.Corrupted);
 
         if (Player.isSelected)
         {

@@ -40,6 +40,7 @@ public class Enemy : MonoBehaviour
     public List<Material> IdleMat;
     public List<Material> ChaseMat;
     public List<Material> CorruptMat;
+    public Color PatrollColor;
 
     public float spd;
     public GameObject mesh;
@@ -76,7 +77,7 @@ public class Enemy : MonoBehaviour
 
         chaseLight = GetComponentInChildren<Light>();
         agent = GetComponent<NavMeshAgent>();
-        chaseLight.color = Color.yellow;
+        chaseLight.color = PatrollColor;
      
         agent.speed = spd;
         anim = GetComponent<Animator>();
@@ -123,7 +124,7 @@ public class Enemy : MonoBehaviour
                         CurrentTransformPlayer = null;
                         set_skinned_mat(mesh, 2, IdleMat[Random.Range(0, IdleMat.Count)]);
                         currentState = States.Patrolling;
-                        chaseLight.color = Color.yellow;
+                        chaseLight.color = PatrollColor;
                         agent.isStopped = false;
                     }
                     break;
@@ -247,7 +248,7 @@ public class Enemy : MonoBehaviour
                         currentState = States.Patrolling;
                         agent.speed = spd;
                         set_skinned_mat(mesh, 2, IdleMat[Random.Range(0, IdleMat.Count)]);
-                        chaseLight.color = Color.yellow;
+                        chaseLight.color = PatrollColor;
                     }
                     //Checks for new Main Target 
                     else

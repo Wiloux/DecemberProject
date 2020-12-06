@@ -11,6 +11,8 @@ public class BearTrap : MonoBehaviour
 
     public bool isBeingWorkedOn;
 
+
+    public Movement player;
     // Update is called once per frame
     private void Start()
     {
@@ -18,6 +20,15 @@ public class BearTrap : MonoBehaviour
     }
     void Update()
     {
+
+        if (player.currentState == Movement.States.Corrupted)
+        {
+            AkSoundEngine.PostEvent("BeartrapStop", gameObject);
+            Destroy(gameObject);
+        }
+
+
+
         if (workLeft > 0 && !isBeingWorkedOn)
         {
             AkSoundEngine.PostEvent("BeartrapStop", gameObject);
