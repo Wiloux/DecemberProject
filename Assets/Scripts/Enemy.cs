@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -25,7 +26,9 @@ public class Enemy : MonoBehaviour
 
     public Light chaseLight;
 
-   // private RaycastHit hit;
+
+    public bool isActive;
+    // private RaycastHit hit;
 
     public float CorruptRange;
 
@@ -44,8 +47,13 @@ public class Enemy : MonoBehaviour
     public TVs tvscript;
 
 
+    public List<Transform> SpawnPoint = new List<Transform>();
+
+    int i;
     void Start()
     {
+
+        i = Random.Range(0, SpawnPoint.Count);
 
         tvscript = GameObject.FindGameObjectWithTag("TV").GetComponent<TVs>();
         set_skinned_mat(mesh, 2, IdleMat[Random.Range(0, IdleMat.Count)]);
@@ -69,9 +77,10 @@ public class Enemy : MonoBehaviour
         chaseLight = GetComponentInChildren<Light>();
         agent = GetComponent<NavMeshAgent>();
         chaseLight.color = Color.yellow;
-        CurrentTransformObjective = Objectives[Random.Range(0, Objectives.Count)].transform;
+     
         agent.speed = spd;
         anim = GetComponent<Animator>();
+        StartCoroutine(RdmSpawn());
     }
     public float slowdownLength = 2f;
     float t = 1f;
@@ -79,6 +88,7 @@ public class Enemy : MonoBehaviour
     void Update()
     {
 
+        if (isActive) { 
 
         if (t < 1)
         {
@@ -100,186 +110,191 @@ public class Enemy : MonoBehaviour
         {
             Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
         }
-        switch (currentState)
-        {
-            case States.Pause:
-                if (currentWaitAfterCorruptTime >= 0)
-                {
-                    agent.isStopped = true;
-                    currentWaitAfterCorruptTime -= Time.deltaTime;
-                }
-                else
-                {
-                    CurrentTransformPlayer = null;
-                    set_skinned_mat(mesh, 2, IdleMat[Random.Range(0, IdleMat.Count)]);
-                    currentState = States.Patrolling;
-                    chaseLight.color = Color.yellow;
-                    agent.isStopped = false;
-                }
-                break;
-            case States.Patrolling:
+            switch (currentState)
+            {
+                case States.Pause:
+                    if (currentWaitAfterCorruptTime >= 0)
+                    {
+                        agent.isStopped = true;
+                        currentWaitAfterCorruptTime -= Time.deltaTime;
+                    }
+                    else
+                    {
+                        CurrentTransformPlayer = null;
+                        set_skinned_mat(mesh, 2, IdleMat[Random.Range(0, IdleMat.Count)]);
+                        currentState = States.Patrolling;
+                        chaseLight.color = Color.yellow;
+                        agent.isStopped = false;
+                    }
+                    break;
+                case States.Patrolling:
 
-                Objective currentScriptObj = new Objective();
-                if (Vector3.Distance(transform.position, CurrentTransformObjective.position) < MiniDistance)
-                {
+                    Objective currentScriptObj = new Objective();
+                    if (Vector3.Distance(transform.position, CurrentTransformObjective.position) < MiniDistance)
+                    {
 
                         CurrentTransformObjective = Objectives[Random.Range(0, Objectives.Count)].transform;
 
-                    if (CurrentTransformObjective.GetComponent<Objective>().Type == Objective.WorkType.car)
-                    {
-                        CurrentTransformObjective = CurrentTransformObjective.GetComponent<Objective>().PS.transform;
-                    }
-                    currentScriptObj = CurrentTransformObjective.GetComponent<Objective>();
-                }
-
-                foreach (SpottedSurvior Player in Players)
-                {
-                    if (Player.PlayerScript.ChaseMe && Player.PlayerScript.currentState != Movement.States.Corrupted && Player.PlayerScript.currentState != Movement.States.Dead)
-                    {
-                        t = 0;
-                        Player.isSpotted = true;
-                        Player.Timer = ChaseDur;
-                        CurrentTransformPlayer = Player;
-                        if (CameraScript.instance.CurrentTarget != null)
+                        if (CurrentTransformObjective.GetComponent<Objective>().Type == Objective.WorkType.car)
                         {
-                            CameraScript.instance.CurrentTarget.isSelected = false;
-                            CameraScript.instance.CurrentTarget = Player.PlayerScript;
+                            CurrentTransformObjective = CurrentTransformObjective.GetComponent<Objective>().PS.transform;
                         }
-                        CameraScript.instance.isLocked = true;
-                        CameraScript.instance.CamLockedImg.SetActive(true);
-                        CameraScript.instance.target = Player.PlayerScript.transform;
-
-                        Player.PlayerScript.isSelected = true;
-                        EasterEgg.instance.VictoryWithoutBeingSpotted = false;
-                        currentState = States.Chasing;
-                        set_skinned_mat(mesh, 2, ChaseMat[Random.Range(0, ChaseMat.Count)]);
-                        chaseLight.color = Color.red;
-                    }
-                }
-
-
-
-
-                agent.SetDestination(CurrentTransformObjective.position);
-
-
-                break;
-            case States.Chasing:
-
-                //Timer when Player is off radar
-                bool NoMoreSpotted = true;
-
-
-                agent.speed += 0.03f * Time.deltaTime;
-
-                //Corrupts
-                if (CurrentTransformPlayer.isSpotted && !CurrentTransformPlayer.isCorrupted && Vector3.Distance(CurrentTransformPlayer.PlayerScript.transform.position, transform.position) < CorruptRange)
-                {
-                    CurrentTransformPlayer.PlayerScript.PlayWwiseEvent("StopJerrycan");
-                    CurrentTransformPlayer.PlayerScript.PlayWwiseEvent("PlayStatic");
-                    CurrentTransformPlayer.PlayerScript.corruptedTimes++;
-                    CurrentTransformPlayer.PlayerScript.currentState = Movement.States.Corrupted;
-                    CurrentTransformPlayer.PlayerScript.disolveAmount = CurrentTransformPlayer.PlayerScript.disolveAmount / CurrentTransformPlayer.PlayerScript.corruptedTimes;
-                    CurrentTransformPlayer.PlayerScript.currDisolveAmount = CurrentTransformPlayer.PlayerScript.disolveAmount;
-                    CurrentTransformPlayer.PlayerScript.transform.LookAt(transform.position, Vector3.left);
-                    transform.LookAt(CurrentTransformPlayer.PlayerScript.transform.position, Vector3.left);
-                    CurrentTransformPlayer.isCorrupted = true;
-                    CurrentTransformPlayer.isSpotted = false;
-                    CurrentTransformPlayer.PlayerScript.ChaseTimer = 0;
-                    currentWaitAfterCorruptTime = waitAfterCorruptTime;
-                    agent.speed = spd;
-
-                    if (CurrentTransformPlayer.PlayerScript.readytoadd)
-                    {
-                        CurrentTransformPlayer.PlayerScript.currentObjective.Workers--;
-                        CurrentTransformPlayer.PlayerScript.readytoadd = false;
+                        currentScriptObj = CurrentTransformObjective.GetComponent<Objective>();
                     }
 
-                    if (CurrentTransformPlayer.PlayerScript.ChoiceTV.survivor == null)
+                    foreach (SpottedSurvior Player in Players)
                     {
-                        TVClass newtv = tvscript.Tvs[Random.Range(0, tvscript.Tvs.Count)];
-                        tvscript.Tvs.Remove(newtv);
-                        CurrentTransformPlayer.PlayerScript.ChoiceTV = newtv;
-                        Material[] mats = newtv.tvGameObject.GetComponent<Renderer>().materials;
-                        mats[2] = tvscript.pMat[CurrentTransformPlayer.PlayerScript.playerInt];
-                        newtv.tvGameObject.GetComponent<Renderer>().materials = mats;
-                        newtv.survivor = CurrentTransformPlayer.PlayerScript;
-                    }
-                    currentState = States.Pause;
-                    set_skinned_mat(mesh, 2, CorruptMat[Random.Range(0, CorruptMat.Count)]);
-                    break;
-                }
-
-                if (CurrentTransformPlayer.isCorrupted)
-                {
-                    if (CurrentTransformPlayer.PlayerScript.currentState != Movement.States.Corrupted)
-                        CurrentTransformPlayer.isCorrupted = false;
-                }
-
-                foreach (SpottedSurvior Player in Players)
-                {
-                    if (Player.PlayerScript.ChaseTimer <= 0)
-                    {
-                        //      Debug.Log("Stops Chase : " + Player.PlayerScript.transform.name);
-                        Player.isSpotted = false;
-                    }
-
-                    if (Player.isSpotted)
-                    {
-                        NoMoreSpotted = false;
-                    }
-                }
-                //Checks if should go back to Patroll
-                if (NoMoreSpotted)
-                {
-                    //     Debug.Log("Going Back to Patroll");
-                    CurrentTransformPlayer = null;
-                    currentState = States.Patrolling;
-                    agent.speed = spd;
-                    set_skinned_mat(mesh, 2, IdleMat[Random.Range(0, IdleMat.Count)]);
-                    chaseLight.color = Color.yellow;
-                }
-                //Checks for new Main Target 
-                else
-                {
-                    if (!CurrentTransformPlayer.isSpotted || CurrentTransformPlayer.isCorrupted)
-                    {
-                        float BestDistance = 1000f;
-                        foreach (SpottedSurvior Player in Players)
+                        if (Player.PlayerScript.ChaseMe && Player.PlayerScript.currentState != Movement.States.Corrupted && Player.PlayerScript.currentState != Movement.States.Dead)
                         {
-                            if (Vector3.Distance(transform.position, Player.PlayerScript.transform.position) <= BestDistance && !Player.isCorrupted)
+                            t = 0;
+                            Player.isSpotted = true;
+                            Player.Timer = ChaseDur;
+                            CurrentTransformPlayer = Player;
+                            if (CameraScript.instance.CurrentTarget != null)
                             {
-                                BestDistance = Vector3.Distance(transform.position, Player.PlayerScript.transform.position);
-                                CurrentTransformPlayer = Player;
-                                Debug.Log("New Target :" + Player.PlayerScript.transform.name);
+                                CameraScript.instance.CurrentTarget.isSelected = false;
+                                CameraScript.instance.CurrentTarget = Player.PlayerScript;
+                            }
+                            CameraScript.instance.isLocked = true;
+                            CameraScript.instance.CamLockedImg.SetActive(true);
+                            CameraScript.instance.target = Player.PlayerScript.transform;
+
+                            Player.PlayerScript.isSelected = true;
+                            EasterEgg.instance.VictoryWithoutBeingSpotted = false;
+                            currentState = States.Chasing;
+                            set_skinned_mat(mesh, 2, ChaseMat[Random.Range(0, ChaseMat.Count)]);
+                            chaseLight.color = Color.red;
+                        }
+                    }
+
+
+
+
+                    agent.SetDestination(CurrentTransformObjective.position);
+
+
+                    break;
+                case States.Chasing:
+
+                    //Timer when Player is off radar
+                    bool NoMoreSpotted = true;
+
+
+                    agent.speed += 0.03f * Time.deltaTime;
+
+                    //Corrupts
+                    if (CurrentTransformPlayer.isSpotted && !CurrentTransformPlayer.isCorrupted && Vector3.Distance(CurrentTransformPlayer.PlayerScript.transform.position, transform.position) < CorruptRange)
+                    {
+                        CurrentTransformPlayer.PlayerScript.PlayWwiseEvent("StopJerrycan");
+                        CurrentTransformPlayer.PlayerScript.PlayWwiseEvent("PlayStatic");
+                        CurrentTransformPlayer.PlayerScript.corruptedTimes++;
+                        CurrentTransformPlayer.PlayerScript.currentState = Movement.States.Corrupted;
+                        CurrentTransformPlayer.PlayerScript.disolveAmount = CurrentTransformPlayer.PlayerScript.disolveAmount / CurrentTransformPlayer.PlayerScript.corruptedTimes;
+                        CurrentTransformPlayer.PlayerScript.currDisolveAmount = CurrentTransformPlayer.PlayerScript.disolveAmount;
+                        CurrentTransformPlayer.PlayerScript.transform.LookAt(transform.position, Vector3.left);
+                        transform.LookAt(CurrentTransformPlayer.PlayerScript.transform.position, Vector3.left);
+                        CurrentTransformPlayer.isCorrupted = true;
+                        CurrentTransformPlayer.isSpotted = false;
+                        CurrentTransformPlayer.PlayerScript.ChaseTimer = 0;
+                        currentWaitAfterCorruptTime = waitAfterCorruptTime;
+                        agent.speed = spd;
+
+                        if (CurrentTransformPlayer.PlayerScript.readytoadd)
+                        {
+                            CurrentTransformPlayer.PlayerScript.currentObjective.Workers--;
+                            CurrentTransformPlayer.PlayerScript.readytoadd = false;
+                        }
+
+                        if (CurrentTransformPlayer.PlayerScript.ChoiceTV.survivor == null)
+                        {
+                            TVClass newtv = tvscript.Tvs[Random.Range(0, tvscript.Tvs.Count)];
+                            tvscript.Tvs.Remove(newtv);
+                            CurrentTransformPlayer.PlayerScript.ChoiceTV = newtv;
+                            Material[] mats = newtv.tvGameObject.GetComponent<Renderer>().materials;
+                            mats[2] = tvscript.pMat[CurrentTransformPlayer.PlayerScript.playerInt];
+                            newtv.tvGameObject.GetComponent<Renderer>().materials = mats;
+                            newtv.survivor = CurrentTransformPlayer.PlayerScript;
+                        }
+                        currentState = States.Pause;
+                        set_skinned_mat(mesh, 2, CorruptMat[Random.Range(0, CorruptMat.Count)]);
+                        break;
+                    }
+
+                    if (CurrentTransformPlayer.isCorrupted)
+                    {
+                        if (CurrentTransformPlayer.PlayerScript.currentState != Movement.States.Corrupted)
+                            CurrentTransformPlayer.isCorrupted = false;
+                    }
+
+                    foreach (SpottedSurvior Player in Players)
+                    {
+                        if (Player.PlayerScript.ChaseTimer <= 0)
+                        {
+                            //      Debug.Log("Stops Chase : " + Player.PlayerScript.transform.name);
+                            Player.isSpotted = false;
+                        }
+
+                        if (Player.isSpotted)
+                        {
+                            NoMoreSpotted = false;
+                        }
+                    }
+                    //Checks if should go back to Patroll
+                    if (NoMoreSpotted)
+                    {
+                        //     Debug.Log("Going Back to Patroll");
+                        CurrentTransformPlayer = null;
+                        currentState = States.Patrolling;
+                        agent.speed = spd;
+                        set_skinned_mat(mesh, 2, IdleMat[Random.Range(0, IdleMat.Count)]);
+                        chaseLight.color = Color.yellow;
+                    }
+                    //Checks for new Main Target 
+                    else
+                    {
+                        if (!CurrentTransformPlayer.isSpotted || CurrentTransformPlayer.isCorrupted)
+                        {
+                            float BestDistance = 1000f;
+                            foreach (SpottedSurvior Player in Players)
+                            {
+                                if (Vector3.Distance(transform.position, Player.PlayerScript.transform.position) <= BestDistance && !Player.isCorrupted)
+                                {
+                                    BestDistance = Vector3.Distance(transform.position, Player.PlayerScript.transform.position);
+                                    CurrentTransformPlayer = Player;
+                                    Debug.Log("New Target :" + Player.PlayerScript.transform.name);
+                                }
                             }
                         }
                     }
-                }
 
 
-                //Checks for better target when searching for a while
-                //if (CurrentTransformPlayer.Timer <= ChaseDur / 2)
-                //{
-                //    foreach (SpottedSurvior Player in Players)
-                //    {
-                //        if (Player.isSpotted && Player != CurrentTransformPlayer)
-                //        {
-                //            if (Vector3.Distance(transform.position, Player.PlayerScript.transform.position) <= Vector3.Distance(CurrentTransformPlayer.PlayerScript.transform.position, transform.position))
-                //            {
-                //                Debug.Log("New Target :" + Player.PlayerScript.transform.name + " (too close)");
-                //                CurrentTransformPlayer = Player;
-                //            }
-                //        }
-                //    }
-                //}
+                    //Checks for better target when searching for a while
+                    //if (CurrentTransformPlayer.Timer <= ChaseDur / 2)
+                    //{
+                    //    foreach (SpottedSurvior Player in Players)
+                    //    {
+                    //        if (Player.isSpotted && Player != CurrentTransformPlayer)
+                    //        {
+                    //            if (Vector3.Distance(transform.position, Player.PlayerScript.transform.position) <= Vector3.Distance(CurrentTransformPlayer.PlayerScript.transform.position, transform.position))
+                    //            {
+                    //                Debug.Log("New Target :" + Player.PlayerScript.transform.name + " (too close)");
+                    //                CurrentTransformPlayer = Player;
+                    //            }
+                    //        }
+                    //    }
+                    //}
 
-                if (CurrentTransformPlayer != null)
-                {
-                    agent.SetDestination(CurrentTransformPlayer.PlayerScript.transform.position);
-                }
-                break;
-
+                    if (CurrentTransformPlayer != null)
+                    {
+                        agent.SetDestination(CurrentTransformPlayer.PlayerScript.transform.position);
+                    }
+                    break;
+            }
+        }
+        else
+        {
+            Vector3 THISISRETARDED = new Vector3(SpawnPoint[i].position.x, transform.position.y, SpawnPoint[i].position.z);
+            transform.position = THISISRETARDED;
         }
     }
 
@@ -337,7 +352,18 @@ public class Enemy : MonoBehaviour
 
         renderer.materials = mats;
     }
+    IEnumerator RdmSpawn()
+    {
+        anim.SetBool("stopped", true);
+        chaseLight.gameObject.SetActive(false);
+        isActive = false;
+        yield return new WaitForSeconds(10f);
+        CurrentTransformObjective = Objectives[Random.Range(0, Objectives.Count)].transform;
+        isActive = true;
+        chaseLight.gameObject.SetActive(true);
 
+
+    }
     [System.Serializable]
     public class SpottedSurvior
     {
