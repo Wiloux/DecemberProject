@@ -1,4 +1,17 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1562068129	Overworld			\Default Work Unit\Overworld	
+	3214304800	Spotted			\Default Work Unit\Spotted	
+
+State	ID	Name	State Group			Notes
+	391998042	Tense	Overworld			
+	748895195	None	Overworld			
+	2619280431	NonTense	Overworld			
+	748895195	None	Spotted			
+	979470758	Yes	Spotted			
+	1668749452	No	Spotted			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	3604647259	MainMenu			\Default Work Unit\MainMenu	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Music	
 

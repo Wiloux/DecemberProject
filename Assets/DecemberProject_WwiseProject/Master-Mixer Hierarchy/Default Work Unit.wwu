@@ -20,6 +20,13 @@
 						</Reference>
 					</ReferenceList>
 				</Bus>
+				<Bus Name="MainMenu" ID="{291AF3C4-3FED-4125-89DA-43C96B8CB14C}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{E9F44C94-632E-4E49-9DAD-396F09596528}" WorkUnitID="{F152F3CE-44CE-45BE-9C49-2813E526D499}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
 			</ChildrenList>
 		</WorkUnit>
 	</Busses>

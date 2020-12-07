@@ -58,7 +58,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585949084621135758
+    m_lastTime: -8585943065410117977
     List:
     - name: Main
       guid: e8a3ab083a4d344489c1ca41b102a799
@@ -77,7 +77,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23cdf775154ee34c9621da36a37cfeb8
     GuidInternal: 
-    m_lastTime: -8585949318418321724
+    m_lastTime: -8585943065645599432
     List:
     - name: Beartrap
       guid: 87f1222de4e06641bf489cdb74bd3c23
@@ -481,6 +481,83 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+  - PhysicalPath: Events\Music.wwu
+    PathAndIcons:
+    - ElementName: Music
+      ObjectType: 12
+    ParentPath: Music
+    guid: 38e6abbb33223a48925241b8e238fef4
+    GuidInternal: 
+    m_lastTime: -8585943065410068564
+    List:
+    - name: Overworld
+      guid: 1fd663e1db5653458e55d44d740a8017
+      id: 1562068129
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Overworld
+        ObjectType: 4
+      Path: Music\Overworld
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayChase
+      guid: 337f64e1d714b0408265b3aed2039fb3
+      id: 3706411783
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Overworld
+        ObjectType: 4
+      - ElementName: PlayChase
+        ObjectType: 3
+      Path: Music\Overworld\PlayChase
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayOverworld_Tense
+      guid: 36ff79e8824bfc4cb52c6fb67cd0a24f
+      id: 1809856591
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Overworld
+        ObjectType: 4
+      - ElementName: PlayOverworld_Tense
+        ObjectType: 3
+      Path: Music\Overworld\PlayOverworld_Tense
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopChase
+      guid: 06ac257cac4f534da558c8992f0fc9c1
+      id: 2399390441
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Overworld
+        ObjectType: 4
+      - ElementName: StopChase
+        ObjectType: 3
+      Path: Music\Overworld\StopChase
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopOverworld_Tense
+      guid: 3cc9c036e72ed847931d849ebf1bbf4e
+      id: 4033460349
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Overworld
+        ObjectType: 4
+      - ElementName: StopOverworld_Tense
+        ObjectType: 3
+      Path: Music\Overworld\StopOverworld_Tense
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -499,8 +576,70 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c10cf6ffacd865489438d69566d6646e
     GuidInternal: 
-    m_lastTime: -8585958550956614534
-    List: []
+    m_lastTime: -8585943065645547810
+    List:
+    - name: Overworld
+      guid: 8aff8469e9cb3f4f9dc19f135218b940
+      id: 1562068129
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Overworld
+        ObjectType: 9
+      Path: Default Work Unit\Overworld
+      values:
+      - name: None
+        guid: 5f9ada78969e994384d2f114d1617a17
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: NonTense
+        guid: 08e760d51afb72448f41fe0743f8d463
+        id: 2619280431
+        PathAndIcons:
+        - ElementName: NonTense
+          ObjectType: 8
+      - name: Tense
+        guid: 279dbdebd582584699b8bdcd92fd277c
+        id: 391998042
+        PathAndIcons:
+        - ElementName: Tense
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Spotted
+      guid: cf4a6bc4c779f34b9210ee4ffe16e1c7
+      id: 3214304800
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Spotted
+        ObjectType: 9
+      Path: Default Work Unit\Spotted
+      values:
+      - name: No
+        guid: 6e783a8385e01046abcc20527a99508f
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: No
+          ObjectType: 8
+      - name: None
+        guid: b82a6e9610a7d748bea6daad38f64cb4
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Yes
+        guid: 39960d869fd03841a570609ca7f3614b
+        id: 979470758
+        PathAndIcons:
+        - ElementName: Yes
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -528,5 +667,7 @@ MonoBehaviour:
   - /DecemberProject_WwiseProject/Events/Default Work Unit/Player
   - /DecemberProject_WwiseProject/Events/Default Work Unit/Weapons
   - /DecemberProject_WwiseProject/Events/Default Work Unit/Weapons/Beartrap
+  - /DecemberProject_WwiseProject/SoundBanks
+  - /DecemberProject_WwiseProject/SoundBanks/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

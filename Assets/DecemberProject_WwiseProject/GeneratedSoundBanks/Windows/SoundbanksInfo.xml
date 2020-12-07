@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="437126461">
+		<SoundBank Id="1355168291" Language="SFX" Hash="157350990">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1165085673">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1534414882">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -25,7 +25,7 @@
 					<IncludedMemoryFiles>
 						<File Id="506638655" Language="SFX">
 							<ShortName>beartrap setup.wav</ShortName>
-							<Path>SFX\beartrap setup_D79FB2B7.wem</Path>
+							<Path>SFX\beartrap setup_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -34,7 +34,7 @@
 					<IncludedMemoryFiles>
 						<File Id="5711083" Language="SFX">
 							<ShortName>beartrap trigger.wav</ShortName>
-							<Path>SFX\beartrap trigger_10C4C929.wem</Path>
+							<Path>SFX\beartrap trigger_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -42,7 +42,7 @@
 					<IncludedMemoryFiles>
 						<File Id="864226983" Language="SFX">
 							<ShortName>fireworks setup.wav</ShortName>
-							<Path>SFX\fireworks setup_D79FB2B7.wem</Path>
+							<Path>SFX\fireworks setup_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -51,23 +51,23 @@
 					<IncludedMemoryFiles>
 						<File Id="27905807" Language="SFX">
 							<ShortName>firework1.wav</ShortName>
-							<Path>SFX\firework1_10C4C929.wem</Path>
+							<Path>SFX\firework1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="335048445" Language="SFX">
 							<ShortName>firework5.wav</ShortName>
-							<Path>SFX\firework5_10C4C929.wem</Path>
+							<Path>SFX\firework5_3F75BDB9.wem</Path>
 						</File>
 						<File Id="626323812" Language="SFX">
 							<ShortName>firework2.wav</ShortName>
-							<Path>SFX\firework2_10C4C929.wem</Path>
+							<Path>SFX\firework2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="632205178" Language="SFX">
 							<ShortName>firework4.wav</ShortName>
-							<Path>SFX\firework4_10C4C929.wem</Path>
+							<Path>SFX\firework4_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1022517877" Language="SFX">
 							<ShortName>firework3.wav</ShortName>
-							<Path>SFX\firework3_10C4C929.wem</Path>
+							<Path>SFX\firework3_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -75,11 +75,11 @@
 					<IncludedMemoryFiles>
 						<File Id="190373997" Language="SFX">
 							<ShortName>footsteps 1.2.wav</ShortName>
-							<Path>SFX\footsteps 1.2_10C4C929.wem</Path>
+							<Path>SFX\footsteps 1.2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="879557984" Language="SFX">
 							<ShortName>footsteps 1.1.wav</ShortName>
-							<Path>SFX\footsteps 1.1_10C4C929.wem</Path>
+							<Path>SFX\footsteps 1.1_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -87,15 +87,15 @@
 					<IncludedMemoryFiles>
 						<File Id="113483634" Language="SFX">
 							<ShortName>footsteps 2.1.1.wav</ShortName>
-							<Path>SFX\footsteps 2.1.1_10C4C929.wem</Path>
+							<Path>SFX\footsteps 2.1.1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="432592923" Language="SFX">
 							<ShortName>footsteps 2.2.wav</ShortName>
-							<Path>SFX\footsteps 2.2_10C4C929.wem</Path>
+							<Path>SFX\footsteps 2.2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="770735795" Language="SFX">
 							<ShortName>footsteps 2.1.2.wav</ShortName>
-							<Path>SFX\footsteps 2.1.2_10C4C929.wem</Path>
+							<Path>SFX\footsteps 2.1.2_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -103,11 +103,11 @@
 					<IncludedMemoryFiles>
 						<File Id="103516333" Language="SFX">
 							<ShortName>footsteps 3.1.wav</ShortName>
-							<Path>SFX\footsteps 3.1_10C4C929.wem</Path>
+							<Path>SFX\footsteps 3.1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="300243749" Language="SFX">
 							<ShortName>footsteps 3.2.wav</ShortName>
-							<Path>SFX\footsteps 3.2_10C4C929.wem</Path>
+							<Path>SFX\footsteps 3.2_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -115,35 +115,103 @@
 					<IncludedMemoryFiles>
 						<File Id="595616853" Language="SFX">
 							<ShortName>footsteps 4.2.wav</ShortName>
-							<Path>SFX\footsteps 4.2_10C4C929.wem</Path>
+							<Path>SFX\footsteps 4.2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="771280129" Language="SFX">
 							<ShortName>footsteps 4.1.wav</ShortName>
-							<Path>SFX\footsteps 4.1_10C4C929.wem</Path>
+							<Path>SFX\footsteps 4.1_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3706411783" Name="PlayChase" ObjectPath="\Events\Music\Overworld\PlayChase" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="18310448" Language="SFX">
+							<ShortName>chase bass.wav</ShortName>
+							<Path>SFX\chase bass_9EDFC787.wem</Path>
+						</File>
+						<File Id="172220298" Language="SFX">
+							<ShortName>chase drums.wav</ShortName>
+							<Path>SFX\chase drums_9EDFC787.wem</Path>
+						</File>
+						<File Id="426864640" Language="SFX">
+							<ShortName>stinger drums (2+1dc).wav</ShortName>
+							<Path>SFX\stinger drums (2+1dc)_9EDFC787.wem</Path>
+						</File>
+						<File Id="631430281" Language="SFX">
+							<ShortName>stinger bass (2+1dc).wav</ShortName>
+							<Path>SFX\stinger bass (2+1dc)_9EDFC787.wem</Path>
+						</File>
+						<File Id="693411796" Language="SFX">
+							<ShortName>stinger synth call (2+1dc).wav</ShortName>
+							<Path>SFX\stinger synth call (2+1dc)_9EDFC787.wem</Path>
+						</File>
+						<File Id="740779274" Language="SFX">
+							<ShortName>chase synth 1DC!!!!!!.wav</ShortName>
+							<Path>SFX\chase synth 1DC!!!!!!_9EDFC787.wem</Path>
+						</File>
+						<File Id="741320198" Language="SFX">
+							<ShortName>chase synth CALL1.wav</ShortName>
+							<Path>SFX\chase synth CALL1_9EDFC787.wem</Path>
+						</File>
+						<File Id="803494294" Language="SFX">
+							<ShortName>chase synth CALL2.wav</ShortName>
+							<Path>SFX\chase synth CALL2_9EDFC787.wem</Path>
+						</File>
+						<File Id="863297654" Language="SFX">
+							<ShortName>stinger synth (2+1dc).wav</ShortName>
+							<Path>SFX\stinger synth (2+1dc)_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<ActionSetState>
+						<ActionSetStateEntry Id="979470758" Name="Yes" ObjectPath="\States\Default Work Unit\Spotted\Yes"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="448200913" Name="PlayJerrycan" ObjectPath="\Events\Default Work Unit\SoulStuff\Jerrycan\PlayJerrycan" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="63.500000" DurationMax="63.500000">
 					<IncludedMemoryFiles>
 						<File Id="467019561" Language="SFX">
 							<ShortName>jerrycan1 .wav</ShortName>
-							<Path>SFX\jerrycan1 _10C4C929.wem</Path>
+							<Path>SFX\jerrycan1 _3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3228498500" Name="PlayLightbulb" ObjectPath="\Events\Default Work Unit\Others\PlayLightbulb" MaxAttenuation="10.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="849160375" Language="SFX">
-							<ShortName>faulty lightbulb.wav</ShortName>
-							<Path>SFX\faulty lightbulb_12C24B61.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
+				<Event Id="3228498500" Name="PlayLightbulb" ObjectPath="\Events\Default Work Unit\Others\PlayLightbulb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\PlayOrb" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="4341323" Language="SFX">
 							<ShortName>orb2.wav</ShortName>
-							<Path>SFX\orb2_D79FB2B7.wem</Path>
+							<Path>SFX\orb2_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1809856591" Name="PlayOverworld_Tense" ObjectPath="\Events\Music\Overworld\PlayOverworld_Tense" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="193363895" Language="SFX">
+							<ShortName>tense music bass.wav</ShortName>
+							<Path>SFX\tense music bass_9EDFC787.wem</Path>
+						</File>
+						<File Id="634241349" Language="SFX">
+							<ShortName>tense music synth.wav</ShortName>
+							<Path>SFX\tense music synth_9EDFC787.wem</Path>
+						</File>
+						<File Id="754720362" Language="SFX">
+							<ShortName>tense music undermelody .wav</ShortName>
+							<Path>SFX\tense music undermelody _9EDFC787.wem</Path>
+						</File>
+						<File Id="823019377" Language="SFX">
+							<ShortName>tense music random tremolo.wav</ShortName>
+							<Path>SFX\tense music random tremolo_9EDFC787.wem</Path>
+						</File>
+						<File Id="833994417" Language="SFX">
+							<ShortName>mall ow bass.wav</ShortName>
+							<Path>SFX\mall ow bass_9EDFC787.wem</Path>
+						</File>
+						<File Id="894454575" Language="SFX">
+							<ShortName>mall ow keys.wav</ShortName>
+							<Path>SFX\mall ow keys_9EDFC787.wem</Path>
+						</File>
+						<File Id="937468604" Language="SFX">
+							<ShortName>mall ow drums.wav</ShortName>
+							<Path>SFX\mall ow drums_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -151,22 +219,71 @@
 					<IncludedMemoryFiles>
 						<File Id="528025441" Language="SFX">
 							<ShortName>staticPlayer.wav</ShortName>
-							<Path>SFX\staticPlayer_D79FB2B7.wem</Path>
+							<Path>SFX\staticPlayer_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2399390441" Name="StopChase" ObjectPath="\Events\Music\Overworld\StopChase" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\Spotted\No"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="2638603827" Name="StopJerrycan" ObjectPath="\Events\Default Work Unit\SoulStuff\Jerrycan\StopJerrycan" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2852051516" Name="StopOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\StopOrb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4033460349" Name="StopOverworld_Tense" ObjectPath="\Events\Music\Overworld\StopOverworld_Tense" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1707810303" Name="StopStatic" ObjectPath="\Events\Default Work Unit\Others\StopStatic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="664857509" Name="TvHeadStaticPlay" ObjectPath="\Events\Default Work Unit\TVHead\TvHeadStaticPlay" MaxAttenuation="30.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="975610250" Language="SFX">
 							<ShortName>staticTvHead.wav</ShortName>
-							<Path>SFX\staticTvHead_D79FB2B7.wem</Path>
+							<Path>SFX\staticTvHead_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2047933731" Name="TvHeadStaticStop" ObjectPath="\Events\Default Work Unit\TVHead\TvHeadStaticStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="979470758" Name="Yes" ObjectPath="\States\Default Work Unit\Spotted\Yes">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\Spotted\No">
+					<States/>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="3604647259" Language="SFX" Hash="4105862578">
+			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
+			<ShortName>MainMenu</ShortName>
+			<Path>MainMenu.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2385628260" Name="Footstep1" ObjectPath="\Events\Default Work Unit\Player\Footstep1" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000">
+					<IncludedMemoryFiles>
+						<File Id="190373997" Language="SFX">
+							<ShortName>footsteps 1.2.wav</ShortName>
+							<Path>SFX\footsteps 1.2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="879557984" Language="SFX">
+							<ShortName>footsteps 1.1.wav</ShortName>
+							<Path>SFX\footsteps 1.1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="145167493" Name="PlayHighlight" ObjectPath="\Events\Default Work Unit\MainMenu\PlayHighlight" DurationType="OneShot" DurationMin="0.266259" DurationMax="0.266259">
+					<IncludedMemoryFiles>
+						<File Id="175012262" Language="SFX">
+							<ShortName>Main Menu Highlight.wav</ShortName>
+							<Path>SFX\Main Menu Highlight_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1168436793" Name="PlayKeypress" ObjectPath="\Events\Default Work Unit\MainMenu\PlayKeypress" DurationType="OneShot" DurationMin="0.149773" DurationMax="0.149773">
+					<IncludedMemoryFiles>
+						<File Id="520607068" Language="SFX">
+							<ShortName>Main Menu Keypress.wav</ShortName>
+							<Path>SFX\Main Menu Keypress_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
