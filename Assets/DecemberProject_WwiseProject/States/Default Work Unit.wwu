@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FFF60CC1-D8AC-4865-9438-D69566D6646E}" SchemaVersion="97">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{FFF60CC1-D8AC-4865-9438-D69566D6646E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FFF60CC1-D8AC-4865-9438-D69566D6646E}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Overworld" ID="{6984FF8A-CBE9-4F3F-9DC1-9F135218B940}">
+					<ChildrenList>
+						<State Name="None" ID="{78DA9A5F-9E96-4399-84D2-F114D1617A17}"/>
+						<State Name="NonTense" ID="{D560E708-FB1A-4472-8F41-FE0743F8D463}"/>
+						<State Name="Tense" ID="{EBBD9D27-82D5-4658-99B8-BDCD92FD277C}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Spotted" ID="{C46B4ACF-79C7-4BF3-9210-EE4FFE16E1C7}">
+					<ChildrenList>
+						<State Name="None" ID="{966E2AB8-A710-48D7-BEA6-DAAD38F64CB4}"/>
+						<State Name="Yes" ID="{860D9639-D09F-4138-A570-609CA7F3614B}"/>
+						<State Name="No" ID="{833A786E-E085-4610-ABCC-20527A99508F}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

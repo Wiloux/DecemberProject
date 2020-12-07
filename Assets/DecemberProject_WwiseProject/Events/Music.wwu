@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{BBABE638-2233-483A-9252-41B8E238FEF4}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Music" ID="{BBABE638-2233-483A-9252-41B8E238FEF4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Overworld" ID="{E163D61F-56DB-4553-8E55-D44D740A8017}" ShortID="575240701">
+					<ChildrenList>
+						<Event Name="PlayOverworld_Tense" ID="{E879FF36-4B82-4CFC-B52C-6FB67CD0A24F}">
+							<ChildrenList>
+								<Action Name="" ID="{003430D5-8966-495D-84D0-3DC62B182189}" ShortID="743636475">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld+Tense" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C13301E6-05EA-4C68-BB2A-6718ADB57D6B}" ShortID="929163056">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tense" ID="{0F5147BC-2AD3-4D52-A39C-B5EBE2E12F98}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopOverworld_Tense" ID="{36C0C93C-2EE7-47D8-931D-849EBF1BBF4E}">
+							<ChildrenList>
+								<Action Name="" ID="{B746FE19-04DD-4190-B298-F284CBDD89C1}" ShortID="66274632">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld+Tense" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A1099164-C59C-4DA9-BEF8-B6EEAEFEE14A}" ShortID="241743931">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tense" ID="{0F5147BC-2AD3-4D52-A39C-B5EBE2E12F98}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayChase" ID="{E1647F33-14D7-40B0-8265-B3AED2039FB3}">
+							<ChildrenList>
+								<Action Name="" ID="{9712A5D2-005F-4F64-A665-07B4CDD703BA}" ShortID="702883225">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Chase" ID="{248136FF-289C-4495-987E-97929CD2BB78}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{893C81FC-7FED-4911-9EB4-1DF7B1E75D75}" ShortID="856543564">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Yes" ID="{860D9639-D09F-4138-A570-609CA7F3614B}" WorkUnitID="{FFF60CC1-D8AC-4865-9438-D69566D6646E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StopChase" ID="{7C25AC06-4FAC-4D53-A558-C8992F0FC9C1}">
+							<ChildrenList>
+								<Action Name="" ID="{558579FD-ABF2-48B1-AC08-B97B43CFCA61}" ShortID="1006707211">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Chase" ID="{248136FF-289C-4495-987E-97929CD2BB78}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3E9C9EE2-C322-483C-82B8-9BFB8B5256BC}" ShortID="148987229">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+										<Property Name="Delay" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No" ID="{833A786E-E085-4610-ABCC-20527A99508F}" WorkUnitID="{FFF60CC1-D8AC-4865-9438-D69566D6646E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{993BE491-F43B-4809-8D46-72436DDB4ED6}" ShortID="387552027">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

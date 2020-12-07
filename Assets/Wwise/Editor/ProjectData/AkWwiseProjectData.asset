@@ -58,7 +58,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585955352193238252
+    m_lastTime: -8585949084621135758
     List:
     - name: Main
       guid: e8a3ab083a4d344489c1ca41b102a799
@@ -77,33 +77,185 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23cdf775154ee34c9621da36a37cfeb8
     GuidInternal: 
-    m_lastTime: -8585955352193287788
+    m_lastTime: -8585949318418321724
     List:
-    - name: Footstep
-      guid: f45a96c2937e6240aae0ba630aceb904
-      id: 1866025847
+    - name: Beartrap
+      guid: 87f1222de4e06641bf489cdb74bd3c23
+      id: 4228612070
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Player
+      - ElementName: Weapons
         ObjectType: 4
-      - ElementName: Footstep
-        ObjectType: 3
-      Path: Default Work Unit\Player\Footstep
+      - ElementName: Beartrap
+        ObjectType: 4
+      Path: Default Work Unit\Weapons\Beartrap
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: FootstepLady
-      guid: 7fccd7458f6f834b81fa575dc24b0a8e
-      id: 2045095431
+    - name: BeartrapSetup
+      guid: 9f1bd81d7171db41a06333aecce790b1
+      id: 3283823493
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Weapons
+        ObjectType: 4
+      - ElementName: Beartrap
+        ObjectType: 4
+      - ElementName: BeartrapSetup
+        ObjectType: 3
+      Path: Default Work Unit\Weapons\Beartrap\BeartrapSetup
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BeartrapStop
+      guid: 8efb5190bc1dfe409d93e56dde662bc9
+      id: 3005731438
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Weapons
+        ObjectType: 4
+      - ElementName: Beartrap
+        ObjectType: 4
+      - ElementName: BeartrapStop
+        ObjectType: 3
+      Path: Default Work Unit\Weapons\Beartrap\BeartrapStop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: BeartrapTrigger
+      guid: d56b4ef59acbbf499f56c2acc21b93d4
+      id: 4283543462
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Weapons
+        ObjectType: 4
+      - ElementName: Beartrap
+        ObjectType: 4
+      - ElementName: BeartrapTrigger
+        ObjectType: 3
+      Path: Default Work Unit\Weapons\Beartrap\BeartrapTrigger
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Fireworks
+      guid: 83829fa956446b48bd79948a6077b38d
+      id: 4109189013
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Weapons
+        ObjectType: 4
+      - ElementName: Fireworks
+        ObjectType: 4
+      Path: Default Work Unit\Weapons\Fireworks
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FireworksSetup
+      guid: 69475e60824a2944a366d21038d094e7
+      id: 3701804816
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Weapons
+        ObjectType: 4
+      - ElementName: Fireworks
+        ObjectType: 4
+      - ElementName: FireworksSetup
+        ObjectType: 3
+      Path: Default Work Unit\Weapons\Fireworks\FireworksSetup
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FireworksStop
+      guid: 7d9237c6749dd64186cfe18392d0b855
+      id: 2740640909
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Weapons
+        ObjectType: 4
+      - ElementName: Fireworks
+        ObjectType: 4
+      - ElementName: FireworksStop
+        ObjectType: 3
+      Path: Default Work Unit\Weapons\Fireworks\FireworksStop
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: FireworksTrigger
+      guid: b8ff5059fd54694aba275945c9927b3c
+      id: 2187166475
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Weapons
+        ObjectType: 4
+      - ElementName: Fireworks
+        ObjectType: 4
+      - ElementName: FireworksTrigger
+        ObjectType: 3
+      Path: Default Work Unit\Weapons\Fireworks\FireworksTrigger
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Footstep1
+      guid: b1c9e0c06d711c4f80cb6202b949a47e
+      id: 2385628260
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Player
         ObjectType: 4
-      - ElementName: FootstepLady
+      - ElementName: Footstep1
         ObjectType: 3
-      Path: Default Work Unit\Player\FootstepLady
+      Path: Default Work Unit\Player\Footstep1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Footstep2
+      guid: 43c75fa6552b694eb5a2baa8f34dd094
+      id: 2385628263
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Footstep2
+        ObjectType: 3
+      Path: Default Work Unit\Player\Footstep2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Footstep3
+      guid: e9cc38a0bae16b47a2185f7c2653b950
+      id: 2385628262
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Footstep3
+        ObjectType: 3
+      Path: Default Work Unit\Player\Footstep3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Footstep4
+      guid: deb2aedc5ff33845b6543820066b96ef
+      id: 2385628257
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Player
+        ObjectType: 4
+      - ElementName: Footstep4
+        ObjectType: 3
+      Path: Default Work Unit\Player\Footstep4
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -317,6 +469,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Weapons
+      guid: b8910f32c07e1348b9f00472610369f9
+      id: 1467963052
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Weapons
+        ObjectType: 4
+      Path: Default Work Unit\Weapons
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -361,7 +525,8 @@ MonoBehaviour:
   - /DecemberProject_WwiseProject
   - /DecemberProject_WwiseProject/Events
   - /DecemberProject_WwiseProject/Events/Default Work Unit
-  - /DecemberProject_WwiseProject/Events/Default Work Unit/Others
-  - /DecemberProject_WwiseProject/Events/Default Work Unit/TVHead
+  - /DecemberProject_WwiseProject/Events/Default Work Unit/Player
+  - /DecemberProject_WwiseProject/Events/Default Work Unit/Weapons
+  - /DecemberProject_WwiseProject/Events/Default Work Unit/Weapons/Beartrap
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{0161877E-0446-43D5-A536-A1A4A7AC90CE}" SchemaVersion="97">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{0161877E-0446-43D5-A536-A1A4A7AC90CE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{0161877E-0446-43D5-A536-A1A4A7AC90CE}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Music" ID="{F7DFDC7C-6FDB-4EDC-921D-AD21755C308B}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="PlayOverworld_Tense" ID="{E879FF36-4B82-4CFC-B52C-6FB67CD0A24F}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PlayChase" ID="{E1647F33-14D7-40B0-8265-B3AED2039FB3}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="StopChase" ID="{7C25AC06-4FAC-4D53-A558-C8992F0FC9C1}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="No" ID="{833A786E-E085-4610-ABCC-20527A99508F}"/>
+						<CurrentStateRef Name="NonTense" ID="{D560E708-FB1A-4472-8F41-FE0743F8D463}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

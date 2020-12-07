@@ -22,4 +22,16 @@ public class FootstepScript : MonoBehaviour
     {
         FootstepSound3.Post(gameObject);
     }
+    public AK.Wwise.Event FootstepSound4;
+    // Use this for initialization.
+    void PlayFootstepSound4()
+    {
+        FootstepSound4.Post(gameObject);
+    }
+    public AK.Wwise.Event FootstepSoundKiller;
+    // Use this for initialization.
+    void PlayFootstepSoundKiller()
+    {
+        FootstepSoundKiller.Post(gameObject);
+    }
 }
