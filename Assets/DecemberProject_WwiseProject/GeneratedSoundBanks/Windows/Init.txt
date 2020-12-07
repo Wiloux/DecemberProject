@@ -16,7 +16,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3991942870	Music			\Default Work Unit\Music	
 
 Effect plug-ins	ID	Name	Type				Notes
-	2945072214	My_Closet	Wwise RoomVerb			
+	3407225994	Phone_Booth	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

@@ -7,17 +7,10 @@
 					<ChildrenList>
 						<Event Name="PlayOverworld_Tense" ID="{E879FF36-4B82-4CFC-B52C-6FB67CD0A24F}">
 							<ChildrenList>
-								<Action Name="" ID="{003430D5-8966-495D-84D0-3DC62B182189}" ShortID="743636475">
+								<Action Name="" ID="{3F707080-F2DB-4D33-8711-F736E8B5EBE5}" ShortID="177015691">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Overworld+Tense" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{C13301E6-05EA-4C68-BB2A-6718ADB57D6B}" ShortID="929163056">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Tense" ID="{0F5147BC-2AD3-4D52-A39C-B5EBE2E12F98}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+											<ObjectRef Name="Overworld+Tense" ID="{128DCD76-6399-4D1E-961D-61B9DEB8ECAC}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -25,23 +18,13 @@
 						</Event>
 						<Event Name="StopOverworld_Tense" ID="{36C0C93C-2EE7-47D8-931D-849EBF1BBF4E}">
 							<ChildrenList>
-								<Action Name="" ID="{B746FE19-04DD-4190-B298-F284CBDD89C1}" ShortID="66274632">
+								<Action Name="" ID="{3B40CA06-6EAB-4BA8-A183-5667A2766E9F}" ShortID="671440551">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Overworld+Tense" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-								<Action Name="" ID="{A1099164-C59C-4DA9-BEF8-B6EEAEFEE14A}" ShortID="241743931">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Tense" ID="{0F5147BC-2AD3-4D52-A39C-B5EBE2E12F98}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+											<ObjectRef Name="Overworld+Tense" ID="{128DCD76-6399-4D1E-961D-61B9DEB8ECAC}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
