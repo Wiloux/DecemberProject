@@ -41,6 +41,9 @@ Custom State	ID	Name	State Group	Owner		Notes
 	769042501	Yes	Spotted	\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Tense		
 	1058701320	NonTense	Overworld	\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Tense		
 
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2155950306	Spatialization1			\Default Work Unit\Spatialization1	
+
 Effect plug-ins	ID	Name	Type				Notes
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
 

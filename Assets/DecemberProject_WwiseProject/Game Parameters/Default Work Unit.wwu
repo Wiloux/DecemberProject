@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FDBF762A-8CB4-491C-A285-37708C1866E8}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{FDBF762A-8CB4-491C-A285-37708C1866E8}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FDBF762A-8CB4-491C-A285-37708C1866E8}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Spatialization1" ID="{E8E6DDF1-10E6-484D-B97A-BA85FCC2C25F}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

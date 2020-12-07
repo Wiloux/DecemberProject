@@ -194,7 +194,12 @@
 								<RandomSequenceContainer Name="3" ID="{0CE8723A-4C20-4CB4-8533-E1ABAD612BB2}" ShortID="708083212">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-16</Value>
@@ -261,6 +266,139 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{23B2D491-2349-475D-B06A-20A018B44381}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="-6.55031584528842E-15"/>
+												<Property Name="PanY" Type="Real64" Value="5.32907051820075E-15"/>
+											</PropertyList>
+										</Panner>
+										<Position Name="" ID="{3E7A2B44-9B5E-45A2-B057-3B57E0CF0849}">
+											<ChildrenList>
+												<Path2D Name="3_Path" ID="{29EC29C2-B180-47E9-9A4F-92764824A7A1}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="20000"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-3.22581</XPos>
+															<YPos>80.69054</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+														<Point>
+															<XPos>15.0537634408602</XPos>
+															<YPos>81.5856777493606</YPos>
+															<Flags>0</Flags>
+															<Time>1111</Time>
+														</Point>
+														<Point>
+															<XPos>53.22581</XPos>
+															<YPos>74.42455</YPos>
+															<Flags>0</Flags>
+															<Time>2222</Time>
+														</Point>
+														<Point>
+															<XPos>77.9569892473118</XPos>
+															<YPos>59.079283887468</YPos>
+															<Flags>0</Flags>
+															<Time>3333</Time>
+														</Point>
+														<Point>
+															<XPos>89.247311827957</XPos>
+															<YPos>28.3887468030691</YPos>
+															<Flags>0</Flags>
+															<Time>4444</Time>
+														</Point>
+														<Point>
+															<XPos>91.9354838709677</XPos>
+															<YPos>-2.30179028132991</YPos>
+															<Flags>0</Flags>
+															<Time>5555</Time>
+														</Point>
+														<Point>
+															<XPos>93.010752688172</XPos>
+															<YPos>-40.153452685422</YPos>
+															<Flags>0</Flags>
+															<Time>6666</Time>
+														</Point>
+														<Point>
+															<XPos>72.5806451612903</XPos>
+															<YPos>-62.1483375959079</YPos>
+															<Flags>0</Flags>
+															<Time>7777</Time>
+														</Point>
+														<Point>
+															<XPos>39.7849462365591</XPos>
+															<YPos>-91.8158567774936</YPos>
+															<Flags>0</Flags>
+															<Time>8888</Time>
+														</Point>
+														<Point>
+															<XPos>3.2258064516129</XPos>
+															<YPos>-95.3964194373401</YPos>
+															<Flags>0</Flags>
+															<Time>10000</Time>
+														</Point>
+														<Point>
+															<XPos>-27.4193548387097</XPos>
+															<YPos>-94.3734015345268</YPos>
+															<Flags>0</Flags>
+															<Time>11111</Time>
+														</Point>
+														<Point>
+															<XPos>-67.74194</XPos>
+															<YPos>-62.14834</YPos>
+															<Flags>0</Flags>
+															<Time>12222</Time>
+														</Point>
+														<Point>
+															<XPos>-82.258064516129</XPos>
+															<YPos>-15.6010230179028</YPos>
+															<Flags>0</Flags>
+															<Time>13333</Time>
+														</Point>
+														<Point>
+															<XPos>-91.9354838709677</XPos>
+															<YPos>19.693094629156</YPos>
+															<Flags>0</Flags>
+															<Time>14444</Time>
+														</Point>
+														<Point>
+															<XPos>-91.9354838709677</XPos>
+															<YPos>42.7109974424552</YPos>
+															<Flags>0</Flags>
+															<Time>15555</Time>
+														</Point>
+														<Point>
+															<XPos>-75.2688172043011</XPos>
+															<YPos>59.5907928388747</YPos>
+															<Flags>0</Flags>
+															<Time>16666</Time>
+														</Point>
+														<Point>
+															<XPos>-47.3118279569892</XPos>
+															<YPos>71.8670076726343</YPos>
+															<Flags>0</Flags>
+															<Time>17777</Time>
+														</Point>
+														<Point>
+															<XPos>-31.1827956989247</XPos>
+															<YPos>78.0051150895141</YPos>
+															<Flags>0</Flags>
+															<Time>18888</Time>
+														</Point>
+														<Point>
+															<XPos>-4.30108</XPos>
+															<YPos>81.07416</YPos>
+															<Flags>0</Flags>
+															<Time>20000</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
 									<Playlist>
 										<ItemRef Name="footsteps 3_1" ID="{34527122-041A-4C6F-ACD1-ABF7262D4EFA}"/>
 										<ItemRef Name="footsteps 3_2" ID="{703F0BAD-CA44-48B8-AF85-0388BBF1B2C8}"/>
@@ -341,6 +479,19 @@
 										<ItemRef Name="footsteps 4_2" ID="{51E8D7EE-999C-4419-8118-4DA2CE2D6D35}"/>
 									</Playlist>
 								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="Exp" ID="{A9B16081-AC4B-4D55-B15B-8EA95A1986E1}" ShortID="1003453843">
+									<PropertyList>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -385,7 +536,9 @@
 						</Sound>
 						<Sound Name="orb2" ID="{62B35F2A-8A71-4DC5-B8DA-CB6C478C44C6}" ShortID="712512099">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-96</Value>
@@ -409,6 +562,14 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{A8AD3FA2-D525-4636-84C4-A79A4BD518A8}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-0.147275405007356"/>
+										<Property Name="PanY" Type="Real64" Value="1.55279503105592"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="orb2" ID="{D51481E8-EBD6-4796-9C81-53E243DC9AC6}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -420,6 +581,7 @@
 						<Sound Name="staticTvHead" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" ShortID="953070430">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="EnableDiffraction" Type="bool" Value="True"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -450,11 +612,42 @@
 							<PositioningInfo>
 								<Panner Name="" ID="{59B53E47-A33E-4F50-97F2-FC2D30CB3C2A}">
 									<PropertyList>
-										<Property Name="PanX" Type="Real64" Value="-0.881057268722445"/>
-										<Property Name="PanY" Type="Real64" Value="0.309597523219807"/>
+										<Property Name="PanX" Type="Real64" Value="0.00389848348995442"/>
+										<Property Name="PanY" Type="Real64" Value="0.309597523219812"/>
 									</PropertyList>
 								</Panner>
-								<Position Name="" ID="{CC2E6944-6A32-498D-89BE-80ABF2181151}"/>
+								<Position Name="" ID="{CC2E6944-6A32-498D-89BE-80ABF2181151}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{8A97C6CB-BC2C-425D-9DE7-336DC0D3EEF8}" ShortID="440153186">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="Spatialization1" ID="{E8E6DDF1-10E6-484D-B97A-BA85FCC2C25F}" WorkUnitID="{FDBF762A-8CB4-491C-A285-37708C1866E8}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{FA930CA7-8100-4E89-9969-B0FDDC2898B3}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="1"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>200</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-200</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+								</Position>
 							</PositioningInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="staticTvHead" ID="{DECA04DB-772D-4C7B-84A8-8F3FC91D4962}" Platform="Linked"/>
@@ -512,9 +705,13 @@
 							<ChildrenList>
 								<Sound Name="beartrap setup" ID="{61EDCF2C-D8BA-4CA0-9FC8-B2EFCFC74D0C}" ShortID="539167645">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="TvHeadStatic" ID="{66191E7C-4DE1-4DEC-ADFF-274F900645AB}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 										</Reference>
@@ -537,6 +734,9 @@
 								</Sound>
 								<Sound Name="beartrap trigger" ID="{A8D2C6E6-9ACE-4291-8FE9-5E73C5A5BC50}" ShortID="256592711">
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 										</Reference>
@@ -563,9 +763,15 @@
 							<ChildrenList>
 								<Sound Name="fireworks setup" ID="{FAE4FC29-99CF-4D5A-B7AB-2FE9D3364B46}" ShortID="898368453">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 										</Reference>
@@ -582,6 +788,14 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<PositioningInfo>
+										<Panner Name="" ID="{67045570-B448-4AE6-A0EE-808C79A3A78A}">
+											<PropertyList>
+												<Property Name="PanX" Type="Real64" Value="4.21884749357559E-15"/>
+												<Property Name="PanY" Type="Real64" Value="0.621118012422378"/>
+											</PropertyList>
+										</Panner>
+									</PositioningInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="fireworks setup" ID="{DBFEB4E0-5608-4BEA-8FCB-EB061D9D0FFF}" Platform="Linked"/>
 									</ActiveSourceList>
@@ -592,6 +806,9 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Lightbulb" ID="{DC062C90-12E9-4691-A895-F3F265680B61}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 										</Reference>

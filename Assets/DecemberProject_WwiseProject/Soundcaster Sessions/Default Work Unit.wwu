@@ -18,7 +18,12 @@
 							<Position X="2" Y="0"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Spatialization1" ID="{E8E6DDF1-10E6-484D-B97A-BA85FCC2C25F}"/>
+							<Value>49.7333333333333</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="No" ID="{833A786E-E085-4610-ABCC-20527A99508F}"/>
 						<CurrentStateRef Name="NonTense" ID="{D560E708-FB1A-4472-8F41-FE0743F8D463}"/>

@@ -91,11 +91,6 @@
 						</Property>
 						<Property Name="ConeInnerAngle" Type="int32" Value="140"/>
 						<Property Name="ConeOuterAngle" Type="int32" Value="210"/>
-						<Property Name="ConeUse" Type="bool">
-							<ValueList>
-								<Value>True</Value>
-							</ValueList>
-						</Property>
 						<Property Name="RadiusMax" Type="Real64" Value="30"/>
 					</PropertyList>
 					<CurveUsageInfoList>
@@ -184,7 +179,7 @@
 							</CurveUsageInfo>
 						</HighPassFilterUsage>
 						<SpreadUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+							<CurveUsageInfo Platform="Linked" CurveToUse="None">
 								<Curve Name="Spread" ID="{46ECCF35-89FD-4A82-927D-97FC824AA674}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="1"/>
@@ -192,16 +187,26 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>48.96266</YPos>
+											<YPos>0</YPos>
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>8.78142</XPos>
-											<YPos>46.88796</YPos>
+											<XPos>15.67561</XPos>
+											<YPos>0</YPos>
 											<Flags>0</Flags>
 										</Point>
 										<Point>
-											<XPos>14.96232</XPos>
+											<XPos>15.86266</XPos>
+											<YPos>0</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>15.86366</XPos>
+											<YPos>0</YPos>
+											<Flags>0</Flags>
+										</Point>
+										<Point>
+											<XPos>29.999</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 										</Point>
@@ -223,7 +228,7 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>100</YPos>
+											<YPos>0</YPos>
 											<Flags>5</Flags>
 										</Point>
 										<Point>
