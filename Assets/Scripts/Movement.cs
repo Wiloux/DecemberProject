@@ -304,7 +304,7 @@ public class Movement : MonoBehaviour
                                     currentObjective.isBeingWorkedOn = false;
                                     move.anim.SetBool("isStunned", false);
                                     move.pixelParticle.Stop();
-                                    for (int u = 0; u < DisolveMat.Length; u++)
+                                    for (int u = 0; u < move.DisolveMat.Length; u++)
                                     {
                                         move.DisolveMat[u].SetFloat("Vector1_DD60D333", 0);
                                     }
@@ -335,6 +335,7 @@ public class Movement : MonoBehaviour
                     }
                     break;
                 case States.Corrupted:
+                    ChaseMe = false;
                     wantsToUseItem = false;
                     if (currentItemGhost != null)
                     {
@@ -357,9 +358,9 @@ public class Movement : MonoBehaviour
                         }
                         else
                         {
-                            for (int u = 0; u < DisolveMat.Length; u++)
+                            for (int h = 0; h < DisolveMat.Length; h++)
                             {
-                                DisolveMat[u].SetFloat("Vector1_DD60D333", 0.1f);
+                                DisolveMat[h].SetFloat("Vector1_DD60D333", 0.1f);
                             }
                             currDisolveAmount = 0;
                             pixelParticle.Stop();
@@ -372,6 +373,7 @@ public class Movement : MonoBehaviour
                     }
                     break;
                 case States.Dead:
+                    ChaseMe = false;
                     ChoiceTV.tvGameObject.SetActive(true);
                     agent.isStopped = true;
                     transform.position = new Vector3(ChoiceTV.objective.PS.transform.position.x + 2f, ChoiceTV.objective.PS.transform.position.y, ChoiceTV.objective.PS.transform.position.z);

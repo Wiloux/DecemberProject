@@ -16,8 +16,6 @@ public class Enemy : MonoBehaviour
     public float MiniDistance = 2f;
     public float CheckRadius;
 
-    public LayerMask PlayerLayer;
-
     public enum States { Patrolling, Chasing, Pause }
     public States currentState = States.Patrolling;
 
