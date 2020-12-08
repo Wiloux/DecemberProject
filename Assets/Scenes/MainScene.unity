@@ -4362,7 +4362,8 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 20
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2104492881058642951, guid: 2ef944251e058ed4ab7a7ff0227b0417, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2ef944251e058ed4ab7a7ff0227b0417, type: 3}
 --- !u!4 &310728366 stripped
 Transform:
@@ -4391,59 +4392,9 @@ MonoBehaviour:
   StateGroup: Overworld
   State: Tense
   ExitState: NonTense
-  Player: {fileID: 1798265932}
-  Debug_Enabled: 1
---- !u!114 &310728369
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310728367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f769a0ca46147bb4ab222222aaf939aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StateGroup: Overworld
-  State: Tense
-  ExitState: NonTense
-  Player: {fileID: 111623760}
-  Debug_Enabled: 1
---- !u!114 &310728370
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310728367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f769a0ca46147bb4ab222222aaf939aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StateGroup: Overworld
-  State: Tense
-  ExitState: NonTense
-  Player: {fileID: 812794238}
-  Debug_Enabled: 1
---- !u!114 &310728371
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310728367}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f769a0ca46147bb4ab222222aaf939aa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  StateGroup: Overworld
-  State: Tense
-  ExitState: NonTense
-  Player: {fileID: 30565373}
-  Debug_Enabled: 1
+  Players: []
+  SelectedPlayer: {fileID: 0}
+  CheckDistance: 15
 --- !u!1 &315403944
 GameObject:
   m_ObjectHideFlags: 0
@@ -44126,7 +44077,7 @@ PrefabInstance:
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
       propertyPath: isNinja
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
