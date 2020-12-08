@@ -383,7 +383,7 @@ public class Movement : MonoBehaviour
                     }
                     if (ChoiceTV.objective.isFinished)
                     {
-                      //  KillerScript.CurrentTransformObjective = ChoiceTV.objective.PS.transform;
+                        //  KillerScript.CurrentTransformObjective = ChoiceTV.objective.PS.transform;
                         corruptedTimes = 0;
                         for (int u = 0; u < DisolveMat.Length; u++)
                         {
@@ -407,216 +407,25 @@ public class Movement : MonoBehaviour
             }
 
 
-            if (Input.GetKeyDown(KeyCode.E) && currentItem != Items.None && currentState != States.Corrupted && isSelected)
+            if (!PauseMenu.instance.GamePaused)
             {
-                if (wantsToUseItem)
+                if (Input.GetKeyDown(KeyCode.E) && currentItem != Items.None && currentState != States.Corrupted && isSelected)
                 {
-                    wantsToUseItem = false;
-                    //   DropPos = null;
+                    if (wantsToUseItem)
+                    {
+                        wantsToUseItem = false;
+                        //   DropPos = null;
 
-                    if (currentItemGhost != null)
-                    {
-                        Destroy(currentItemGhost);
-                        currentState = States.Walk;
-                    }
-                    if (currentBearTrap != null)
-                    {
-                        startedWorking = false;
-                        currentBearTrap.isBeingWorkedOn = false;
-                    }
-                    if (currentWard != null)
-                    {
-                        startedWorking = false;
-                        currentWard.isBeingWorkedOn = false;
-                    }
-                    if (currentFirecracker != null)
-                    {
-                        startedWorking = false;
-                        currentFirecracker.isBeingWorkedOn = false;
-                    }
-                }
-                else
-                {
-                    switch (currentItem)
-                    {
-                        case Items.Trap:
-                            currentState = States.Walk;
-                            currentItemGhost = Instantiate(Resources.Load<GameObject>("BearTrapGhost"), DropPos, Quaternion.identity);
-                            break;
-                        case Items.Ward:
-                            currentState = States.Walk;
-                            currentItemGhost = Instantiate(Resources.Load<GameObject>("WardGhost"), DropPos, Quaternion.identity);
-                            break;
-                        case Items.FireCracker:
-                            currentState = States.Walk;
-                            currentItemGhost = Instantiate(Resources.Load<GameObject>("FirecrackGhost"), DropPos, Quaternion.identity);
-                            break;
-                    }
-
-                    wantsToUseItem = true;
-                }
-            }
-
-            if (currentState != States.Dead && isSelected)
-            {
-                if (wantsToUseItem && !startedWorking && currentState != States.Action)
-                {
-                    RaycastHit hitt;
-                    if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitt, Mathf.Infinity))
-                    {
-                        if (hitt.transform.tag == "Ground")
+                        if (currentItemGhost != null)
                         {
-                            currentItemGhost.transform.position = hitt.point;
-                        }
-                    }
-
-                }
-                else if (currentState == States.Action && currentItemGhost != null)
-                {
-                    currentItemGhost.transform.position = DropPos;
-                }
-
-                if (Input.GetMouseButton(1) && isSelected && currentState != States.Corrupted && !wantsToUseItem)
-                {
-                    if (currentBearTrap != null)
-                    {
-                        startedWorking = false;
-                        currentBearTrap.isBeingWorkedOn = false;
-                    }
-                    if (currentWard != null)
-                    {
-                        startedWorking = false;
-                        currentWard.isBeingWorkedOn = false;
-                    }
-                    if (currentFirecracker != null)
-                    {
-                        startedWorking = false;
-                        currentFirecracker.isBeingWorkedOn = false;
-                    }
-                    RaycastHit hit;
-
-                    if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, wallMask))
-                    {
-                        if (hit.transform.tag == "Ground")
-                        {
-                            if (currentObjective != null)
-                            {
-                                if (currentObjective.Type == Objective.WorkType.car)
-                                {
-                                    if (readytoadd)
-                                    {
-                                        currentObjective.Workers--;
-                                        readytoadd = false;
-                                    }
-                                }
-
-                                if (currentObjective.Type == Objective.WorkType.jerryCan)
-                                {
-                                    if (mustPlaySFX)
-                                    {
-                                        mustPlaySFX = false;
-                                        AkSoundEngine.PostEvent("StopJerrycan", gameObject);
-                                    }
-                                }
-                                currentObjective.isBeingWorkedOn = false;
-
-                                if (currentObjective.GetComponent<Movement>() != null)
-                                {
-                                    currentObjective.GetComponent<Movement>().isBeingHelped = false;
-                                }
-                                currentObjective = null;
-                            }
-                            anim.SetBool("isWorking", false);
-                            LastPossiblePos = hit.point;
-                            if (NavMesh.SamplePosition(hit.point, out navHit, 100, -1))
-                            {
-                                //     test.transform.position = navHit.position;
-                                agent.SetDestination(navHit.position);
-                            }
-
-                            Quaternion lookAtRot = Quaternion.LookRotation(hit.point - transform.position);
-                            float yRotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, lookAtRot.eulerAngles.y, ref rotateVelocity, rotationSpeedMovement * (Time.deltaTime * 5));
-                            transform.eulerAngles = new Vector3(0, yRotation, 0);
+                            Destroy(currentItemGhost);
                             currentState = States.Walk;
                         }
-                        else if (hit.transform.tag == "Objective")
-                        {
-                            if (hit.transform.GetComponent<Objective>() != currentObjective)
-                            {
-                                if (currentObjective != null)
-                                    currentObjective = null;
-
-                                currentObjective = hit.transform.GetComponent<Objective>();
-                                if (currentObjective.isFinished || currentObjective.isBeingWorkedOn)
-                                {
-                                    currentObjective = null;
-                                    return;
-                                }
-                                if (currentObjective.Type == Objective.WorkType.car && !hasSoul)
-                                {
-                                    currentObjective = null;
-                                    AkSoundEngine.PostEvent("StopJerrycan", gameObject);
-                                    return;
-                                }
-                                if (currentObjective.Type == Objective.WorkType.jerryCan && hasSoul)
-                                {
-                                    currentObjective = null;
-                                    return;
-                                }
-                                if (currentObjective.Type == Objective.WorkType.chest && currentItem != Items.None)
-                                {
-                                    currentObjective = null;
-                                    return;
-                                }
-
-                                if (currentObjective.Type == Objective.WorkType.jerryCan)
-                                {
-                                    if (mustPlaySFX)
-                                        mustPlaySFX = false;
-
-                                }
-                                anim.SetBool("isWorking", false);
-                                agent.SetDestination(GetWorkPos(currentObjective));
-                                currentState = States.Working;
-                            }
-                        }
-                        else if (hit.transform.tag == "Player" && hit.transform.GetComponent<Movement>().currentState == States.Corrupted)
-                        {
-                            if (currentObjective != null)
-                            {
-                                currentObjective.isBeingWorkedOn = false;
-                                currentObjective = null;
-                            }
-
-                            currentObjective = hit.transform.GetComponent<Objective>();
-                            currentObjective.GetComponent<Movement>().isBeingHelped = false;
-
-                            if (currentObjective.isFinished || currentObjective.isBeingWorkedOn)
-                            {
-                                currentObjective = null;
-                                return;
-                            }
-                            AkSoundEngine.PostEvent("StopJerrycan", gameObject);
-                            currentObjective.GetComponent<Movement>().isBeingHelped = true;
-                            currentObjective.isBeingWorkedOn = true;
-                            anim.SetBool("isWorking", false);
-                            agent.SetDestination(GetWorkPos(currentObjective));
-                            currentState = States.Working;
-                        }
-                    }
-                }
-                else if (Input.GetMouseButton(1) && wantsToUseItem && isSelected && currentState != States.Corrupted)
-                {
-                    RaycastHit hit;
-
-                    if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, wallMask))
-                    {
                         if (currentBearTrap != null)
                         {
                             startedWorking = false;
                             currentBearTrap.isBeingWorkedOn = false;
                         }
-
                         if (currentWard != null)
                         {
                             startedWorking = false;
@@ -627,35 +436,229 @@ public class Movement : MonoBehaviour
                             startedWorking = false;
                             currentFirecracker.isBeingWorkedOn = false;
                         }
-                        if (hit.transform.tag == "Ground")
+                    }
+                    else
+                    {
+                        switch (currentItem)
                         {
-                            if (currentObjective != null)
+                            case Items.Trap:
+                                currentState = States.Walk;
+                                currentItemGhost = Instantiate(Resources.Load<GameObject>("BearTrapGhost"), DropPos, Quaternion.identity);
+                                break;
+                            case Items.Ward:
+                                currentState = States.Walk;
+                                currentItemGhost = Instantiate(Resources.Load<GameObject>("WardGhost"), DropPos, Quaternion.identity);
+                                break;
+                            case Items.FireCracker:
+                                currentState = States.Walk;
+                                currentItemGhost = Instantiate(Resources.Load<GameObject>("FirecrackGhost"), DropPos, Quaternion.identity);
+                                break;
+                        }
+
+                        wantsToUseItem = true;
+                    }
+                }
+
+                if (currentState != States.Dead && isSelected)
+                {
+                    if (wantsToUseItem && !startedWorking && currentState != States.Action)
+                    {
+                        RaycastHit hitt;
+                        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitt, Mathf.Infinity))
+                        {
+                            if (hitt.transform.tag == "Ground")
                             {
-                                if (currentObjective.Type == Objective.WorkType.car)
-                                {
-                                    if (readytoadd)
-                                    {
-                                        currentObjective.Workers--;
-                                        readytoadd = false;
-                                    }
-                                }
-                                currentObjective.isBeingWorkedOn = false;
-                                if (currentObjective.GetComponent<Movement>() != null)
-                                {
-                                    currentObjective.GetComponent<Movement>().isBeingHelped = false;
-                                }
-                                currentObjective = null;
+                                currentItemGhost.transform.position = hitt.point;
                             }
-                            agent.isStopped = false;
-                            AkSoundEngine.PostEvent("StopJerrycan", gameObject);
-                            anim.SetBool("isWorking", false);
-                            anim.SetBool("isWalking", true);
-                            agent.SetDestination(hit.point);
-                            DropPos = hit.point;
-                            Quaternion lookAtRot = Quaternion.LookRotation(hit.point - transform.position);
-                            float yRotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, lookAtRot.eulerAngles.y, ref rotateVelocity, rotationSpeedMovement * (Time.deltaTime * 5));
-                            transform.eulerAngles = new Vector3(0, yRotation, 0);
-                            currentState = States.Action;
+                        }
+
+                    }
+                    else if (currentState == States.Action && currentItemGhost != null)
+                    {
+                        currentItemGhost.transform.position = DropPos;
+                    }
+
+                    if (Input.GetMouseButton(1) && isSelected && currentState != States.Corrupted && !wantsToUseItem)
+                    {
+                        if (currentBearTrap != null)
+                        {
+                            startedWorking = false;
+                            currentBearTrap.isBeingWorkedOn = false;
+                        }
+                        if (currentWard != null)
+                        {
+                            startedWorking = false;
+                            currentWard.isBeingWorkedOn = false;
+                        }
+                        if (currentFirecracker != null)
+                        {
+                            startedWorking = false;
+                            currentFirecracker.isBeingWorkedOn = false;
+                        }
+                        RaycastHit hit;
+
+                        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, wallMask))
+                        {
+                            if (hit.transform.tag == "Ground")
+                            {
+                                if (currentObjective != null)
+                                {
+                                    if (currentObjective.Type == Objective.WorkType.car)
+                                    {
+                                        if (readytoadd)
+                                        {
+                                            currentObjective.Workers--;
+                                            readytoadd = false;
+                                        }
+                                    }
+
+                                    if (currentObjective.Type == Objective.WorkType.jerryCan)
+                                    {
+                                        if (mustPlaySFX)
+                                        {
+                                            mustPlaySFX = false;
+                                            AkSoundEngine.PostEvent("StopJerrycan", gameObject);
+                                        }
+                                    }
+                                    currentObjective.isBeingWorkedOn = false;
+
+                                    if (currentObjective.GetComponent<Movement>() != null)
+                                    {
+                                        currentObjective.GetComponent<Movement>().isBeingHelped = false;
+                                    }
+                                    currentObjective = null;
+                                }
+                                anim.SetBool("isWorking", false);
+                                LastPossiblePos = hit.point;
+                                if (NavMesh.SamplePosition(hit.point, out navHit, 100, -1))
+                                {
+                                    //     test.transform.position = navHit.position;
+                                    agent.SetDestination(navHit.position);
+                                }
+
+                                Quaternion lookAtRot = Quaternion.LookRotation(hit.point - transform.position);
+                                float yRotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, lookAtRot.eulerAngles.y, ref rotateVelocity, rotationSpeedMovement * (Time.deltaTime * 5));
+                                transform.eulerAngles = new Vector3(0, yRotation, 0);
+                                currentState = States.Walk;
+                            }
+                            else if (hit.transform.tag == "Objective")
+                            {
+                                if (hit.transform.GetComponent<Objective>() != currentObjective)
+                                {
+                                    if (currentObjective != null)
+                                        currentObjective = null;
+
+                                    currentObjective = hit.transform.GetComponent<Objective>();
+                                    if (currentObjective.isFinished || currentObjective.isBeingWorkedOn)
+                                    {
+                                        currentObjective = null;
+                                        return;
+                                    }
+                                    if (currentObjective.Type == Objective.WorkType.car && !hasSoul)
+                                    {
+                                        currentObjective = null;
+                                        AkSoundEngine.PostEvent("StopJerrycan", gameObject);
+                                        return;
+                                    }
+                                    if (currentObjective.Type == Objective.WorkType.jerryCan && hasSoul)
+                                    {
+                                        currentObjective = null;
+                                        return;
+                                    }
+                                    if (currentObjective.Type == Objective.WorkType.chest && currentItem != Items.None)
+                                    {
+                                        currentObjective = null;
+                                        return;
+                                    }
+
+                                    if (currentObjective.Type == Objective.WorkType.jerryCan)
+                                    {
+                                        if (mustPlaySFX)
+                                            mustPlaySFX = false;
+
+                                    }
+                                    anim.SetBool("isWorking", false);
+                                    agent.SetDestination(GetWorkPos(currentObjective));
+                                    currentState = States.Working;
+                                }
+                            }
+                            else if (hit.transform.tag == "Player" && hit.transform.GetComponent<Movement>().currentState == States.Corrupted)
+                            {
+                                if (currentObjective != null)
+                                {
+                                    currentObjective.isBeingWorkedOn = false;
+                                    currentObjective = null;
+                                }
+
+                                currentObjective = hit.transform.GetComponent<Objective>();
+                                currentObjective.GetComponent<Movement>().isBeingHelped = false;
+
+                                if (currentObjective.isFinished || currentObjective.isBeingWorkedOn)
+                                {
+                                    currentObjective = null;
+                                    return;
+                                }
+                                AkSoundEngine.PostEvent("StopJerrycan", gameObject);
+                                currentObjective.GetComponent<Movement>().isBeingHelped = true;
+                                currentObjective.isBeingWorkedOn = true;
+                                anim.SetBool("isWorking", false);
+                                agent.SetDestination(GetWorkPos(currentObjective));
+                                currentState = States.Working;
+                            }
+                        }
+                    }
+                    else if (Input.GetMouseButton(1) && wantsToUseItem && isSelected && currentState != States.Corrupted)
+                    {
+                        RaycastHit hit;
+
+                        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, wallMask))
+                        {
+                            if (currentBearTrap != null)
+                            {
+                                startedWorking = false;
+                                currentBearTrap.isBeingWorkedOn = false;
+                            }
+
+                            if (currentWard != null)
+                            {
+                                startedWorking = false;
+                                currentWard.isBeingWorkedOn = false;
+                            }
+                            if (currentFirecracker != null)
+                            {
+                                startedWorking = false;
+                                currentFirecracker.isBeingWorkedOn = false;
+                            }
+                            if (hit.transform.tag == "Ground")
+                            {
+                                if (currentObjective != null)
+                                {
+                                    if (currentObjective.Type == Objective.WorkType.car)
+                                    {
+                                        if (readytoadd)
+                                        {
+                                            currentObjective.Workers--;
+                                            readytoadd = false;
+                                        }
+                                    }
+                                    currentObjective.isBeingWorkedOn = false;
+                                    if (currentObjective.GetComponent<Movement>() != null)
+                                    {
+                                        currentObjective.GetComponent<Movement>().isBeingHelped = false;
+                                    }
+                                    currentObjective = null;
+                                }
+                                agent.isStopped = false;
+                                AkSoundEngine.PostEvent("StopJerrycan", gameObject);
+                                anim.SetBool("isWorking", false);
+                                anim.SetBool("isWalking", true);
+                                agent.SetDestination(hit.point);
+                                DropPos = hit.point;
+                                Quaternion lookAtRot = Quaternion.LookRotation(hit.point - transform.position);
+                                float yRotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, lookAtRot.eulerAngles.y, ref rotateVelocity, rotationSpeedMovement * (Time.deltaTime * 5));
+                                transform.eulerAngles = new Vector3(0, yRotation, 0);
+                                currentState = States.Action;
+                            }
                         }
                     }
                 }
@@ -675,32 +678,35 @@ public class Movement : MonoBehaviour
     public bool HoverWork()
     {
 
-        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, wallMask))
+        if (!PauseMenu.instance.GamePaused)
         {
-            if ((hit.transform.GetComponent<Objective>() != null))
+            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity, wallMask))
             {
-
-                if (hit.transform.GetComponent<Objective>() != currentObjective)
+                if ((hit.transform.GetComponent<Objective>() != null))
                 {
-                    Objective currentObjective = hit.transform.GetComponent<Objective>();
-                    if (currentObjective.Type == Objective.WorkType.jerryCan && hasSoul)
-                    { return false; }
-                    if (currentObjective.isFinished || currentObjective.isBeingWorkedOn)
-                    { return false; }
-                    if (currentObjective.Type == Objective.WorkType.chest && currentItem != Items.None)
-                    { return false; }
-                    if (currentObjective.Type == Objective.WorkType.car && !hasSoul)
-                    { return false; }
-                    if (currentObjective.GetComponent<Movement>() != null)
+                    if (hit.transform.GetComponent<Objective>() != currentObjective)
                     {
-                        if (!currentObjective.GetComponent<Movement>().isBeingHelped)
+                        Objective currentObjective = hit.transform.GetComponent<Objective>();
+                        if (currentObjective.Type == Objective.WorkType.jerryCan && hasSoul)
                         { return false; }
+                        if (currentObjective.isFinished || currentObjective.isBeingWorkedOn)
+                        { return false; }
+                        if (currentObjective.Type == Objective.WorkType.chest && currentItem != Items.None)
+                        { return false; }
+                        if (currentObjective.Type == Objective.WorkType.car && !hasSoul)
+                        { return false; }
+                        if (currentObjective.GetComponent<Movement>() != null)
+                        {
+                            if (currentObjective.GetComponent<Movement>().isBeingHelped)
+                            { return false; }
+                        }
+                        return true;
                     }
                     return true;
                 }
-                return true;
-            }
 
+                return false;
+            }
             return false;
         }
         return false;

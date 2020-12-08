@@ -42,8 +42,10 @@ public class VictoryManagement : MonoBehaviour
                 i++;
             }
 
-            if(i >= 3)
-            anim.SetTrigger("Lost");
+            if (i >= 3)
+            {
+                anim.SetTrigger("Lost");
+            }
         }
 
          //   anim.SetTrigger("Victory");

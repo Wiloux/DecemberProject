@@ -87,14 +87,17 @@ public class Enemy : MonoBehaviour
     void Update()
     {
 
-        if (isActive) { 
-
-        if (t < 1)
-        {
-            t += slowdownLength * Time.unscaledDeltaTime;
-            Time.timeScale = Mathf.Lerp(0, 1, t); // notice we are using the unscaledDelta now
-                                                  //     Time.timeScale = Mathf.Clamp(Time.timeScale, 0, 1);
-        }
+        if (isActive) {
+            if (!PauseMenu.instance.GamePaused)
+            {
+                if (t < 1)
+                {
+                    t += slowdownLength * Time.unscaledDeltaTime;
+                    Time.timeScale = Mathf.Lerp(0, 1, t); // notice we are using the unscaledDelta now
+                                                          //     Time.timeScale = Mathf.Clamp(Time.timeScale, 0, 1);
+                }
+            }
+            
 
         foreach (Objective go in Objectives)
         {

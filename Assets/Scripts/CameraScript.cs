@@ -51,13 +51,15 @@ public class CameraScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!PauseMenu.instance.GamePaused)
         {
-            isLocked = !isLocked;
-            CamLockedImg.SetActive(isLocked);
-        }
 
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                isLocked = !isLocked;
+                CamLockedImg.SetActive(isLocked);
+            }
+        }
         //    cursor.transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (CurrentTarget != null)
@@ -158,53 +160,58 @@ public class CameraScript : MonoBehaviour
 
 
 
-
-        //Switch Focus
-        if (Input.GetKey(KeyCode.F1))
+        if (!PauseMenu.instance.GamePaused)
         {
-            SwitchTarget(0);
-        }
-
-        if (Input.GetKey(KeyCode.F2))
-        {
-            SwitchTarget(1);
-        }
-        if (Input.GetKey(KeyCode.F3))
-        {
-            SwitchTarget(2);
-        }
-
-
-        //Select Character
-        if (Input.GetMouseButtonDown(0))
-        {
-            RaycastHit hit;
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity))
+            //Switch Focus
+            if (Input.GetKey(KeyCode.F1))
             {
-                if (hit.transform.gameObject.tag == "Player")
+                SwitchTarget(0);
+            }
+
+            if (Input.GetKey(KeyCode.F2))
+            {
+                SwitchTarget(1);
+            }
+            if (Input.GetKey(KeyCode.F3))
+            {
+                SwitchTarget(2);
+            }
+
+        }
+
+        if (!PauseMenu.instance.GamePaused)
+        {
+            //Select Character
+            if (Input.GetMouseButtonDown(0))
+            {
+                RaycastHit hit;
+                if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, Mathf.Infinity))
                 {
-                    if (CurrentTarget != null)
+                    if (hit.transform.gameObject.tag == "Player")
                     {
-                        CurrentTarget.isSelected = false;
-                        CurrentTarget.wantsToUseItem = false;
-                        LastTarget = CurrentTarget;
-                    }
-                    CurrentTarget = hit.transform.gameObject.GetComponent<Movement>();
-                    CurrentTarget.isSelected = true;
-
-                    target = Players[CurrentTarget.playerInt].transform;
-                    if (LastTarget != null && LastTarget.currentItem != Movement.Items.None)
-                    {
-                        if (LastTarget.currentItemGhost != null)
+                        if (CurrentTarget != null)
                         {
-                            Destroy(LastTarget.currentItemGhost.gameObject);
-                            LastTarget.currentItemGhost = null;
+                            CurrentTarget.isSelected = false;
+                            CurrentTarget.wantsToUseItem = false;
+                            LastTarget = CurrentTarget;
                         }
-                    }
+                        CurrentTarget = hit.transform.gameObject.GetComponent<Movement>();
+                        CurrentTarget.isSelected = true;
 
-                    if (LastTarget != null && LastTarget.wantsToUseItem && CurrentTarget.currentItem != Movement.Items.None)
-                    {
-                        CurrentTarget.wantsToUseItem = true;
+                        target = Players[CurrentTarget.playerInt].transform;
+                        if (LastTarget != null && LastTarget.currentItem != Movement.Items.None)
+                        {
+                            if (LastTarget.currentItemGhost != null)
+                            {
+                                Destroy(LastTarget.currentItemGhost.gameObject);
+                                LastTarget.currentItemGhost = null;
+                            }
+                        }
+
+                        if (LastTarget != null && LastTarget.wantsToUseItem && CurrentTarget.currentItem != Movement.Items.None)
+                        {
+                            CurrentTarget.wantsToUseItem = true;
+                        }
                     }
                 }
             }
