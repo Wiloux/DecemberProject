@@ -32,7 +32,6 @@ public class MusicState : MonoBehaviour
             if (Player.isSelected)
             {
                 SelectedPlayer = Player.gameObject;
-                return;
             }
         }
 
