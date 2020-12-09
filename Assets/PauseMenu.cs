@@ -14,6 +14,7 @@ public class PauseMenu : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        AkSoundEngine.SetState("PauseMenu", "Yes");
     }
 
     private void Start()
@@ -37,6 +38,7 @@ public class PauseMenu : MonoBehaviour
         GamePaused = !GamePaused;
         PauseMenuPanel.SetActive(GamePaused);
         SurvUI.SetActive(!GamePaused);
+        AkSoundEngine.SetState("PauseMenu", "No");
     }
 
 }

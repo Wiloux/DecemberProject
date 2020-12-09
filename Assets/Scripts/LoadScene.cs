@@ -8,7 +8,7 @@ public class LoadScene : MonoBehaviour
     // Start is called before the first frame update
     public void LoadAScene(int level)
     {
-
+        AkSoundEngine.PostEvent("StopAllSounds", gameObject);
         SceneManager.LoadScene(level);
     }
 

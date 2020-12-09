@@ -30,8 +30,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 27596ce3e9aa5240a54f786194d9fa0c
     GuidInternal: 
-    m_lastTime: -8585955296070771520
+    m_lastTime: -8585941346541611146
     List:
+    - name: MainMenu
+      guid: c4f31a29ed3f254189da43c96b8cb14c
+      id: 3604647259
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MainMenu
+        ObjectType: 2
+      Path: Default Work Unit\MainMenu
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -58,7 +67,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585943065410117977
+    m_lastTime: -8585941349533404212
     List:
     - name: Main
       guid: e8a3ab083a4d344489c1ca41b102a799
@@ -69,6 +78,15 @@ MonoBehaviour:
       - ElementName: Main
         ObjectType: 7
       Path: Default Work Unit\Main
+    - name: MainMenu
+      guid: 5fbd47bc9bbe6642b60ab3f151b6bd10
+      id: 3604647259
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MainMenu
+        ObjectType: 7
+      Path: Default Work Unit\MainMenu
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -77,7 +95,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23cdf775154ee34c9621da36a37cfeb8
     GuidInternal: 
-    m_lastTime: -8585943065645599432
+    m_lastTime: -8585941349536567238
     List:
     - name: Beartrap
       guid: 87f1222de4e06641bf489cdb74bd3c23
@@ -273,6 +291,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: MainMenu
+      guid: 2e641b45bd988b459ed288eb6dc86dce
+      id: 3604647259
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MainMenu
+        ObjectType: 4
+      Path: Default Work Unit\MainMenu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Orb
       guid: c81e9fcc0469f24ca4e6763d29c70cd0
       id: 595159780
@@ -311,6 +341,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: PlayHighlight
+      guid: 5158781b4448104e851efa6d3e2742fb
+      id: 145167493
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MainMenu
+        ObjectType: 4
+      - ElementName: PlayHighlight
+        ObjectType: 3
+      Path: Default Work Unit\MainMenu\PlayHighlight
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PlayJerrycan
       guid: 77c0723b3f1ab9489f9ea6968ea3c8aa
       id: 448200913
@@ -324,6 +368,62 @@ MonoBehaviour:
       - ElementName: PlayJerrycan
         ObjectType: 3
       Path: Default Work Unit\SoulStuff\Jerrycan\PlayJerrycan
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayKeypress
+      guid: 534ef7da30d5ec48847221e8e1061bef
+      id: 1168436793
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MainMenu
+        ObjectType: 4
+      - ElementName: PlayKeypress
+        ObjectType: 3
+      Path: Default Work Unit\MainMenu\PlayKeypress
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayKillerFootsteps1
+      guid: 91630109fe26eb46ba58dee0e4cb7768
+      id: 1927847360
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TVHead
+        ObjectType: 4
+      - ElementName: PlayKillerFootsteps1
+        ObjectType: 3
+      Path: Default Work Unit\TVHead\PlayKillerFootsteps1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayKillerFootsteps2
+      guid: 278765183cca15458911027bb33151bb
+      id: 1927847363
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TVHead
+        ObjectType: 4
+      - ElementName: PlayKillerFootsteps2
+        ObjectType: 3
+      Path: Default Work Unit\TVHead\PlayKillerFootsteps2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayKillerFootsteps3
+      guid: 0af322007f2d4c4186046947278c38d5
+      id: 1927847362
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TVHead
+        ObjectType: 4
+      - ElementName: PlayKillerFootsteps3
+        ObjectType: 3
+      Path: Default Work Unit\TVHead\PlayKillerFootsteps3
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -380,6 +480,20 @@ MonoBehaviour:
       - ElementName: SoulStuff
         ObjectType: 4
       Path: Default Work Unit\SoulStuff
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopAllSounds
+      guid: 15e74a49521e0b4e87f7f52ab4d05713
+      id: 1416937818
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Others
+        ObjectType: 4
+      - ElementName: StopAllSounds
+        ObjectType: 3
+      Path: Default Work Unit\Others\StopAllSounds
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -488,7 +602,7 @@ MonoBehaviour:
     ParentPath: Music
     guid: 38e6abbb33223a48925241b8e238fef4
     GuidInternal: 
-    m_lastTime: -8585943065410068564
+    m_lastTime: -8585942233195295190
     List:
     - name: Overworld
       guid: 1fd663e1db5653458e55d44d740a8017
@@ -566,8 +680,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2a76bffdb48c1c49a28537708c1866e8
     GuidInternal: 
-    m_lastTime: -8585959477277656691
-    List: []
+    m_lastTime: -8585942290093935674
+    List:
+    - name: Spatialization1
+      guid: f1dde6e8e6104d48b97aba85fcc2c25f
+      id: 2155950306
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Spatialization1
+        ObjectType: 13
+      Path: Default Work Unit\Spatialization1
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -576,7 +699,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c10cf6ffacd865489438d69566d6646e
     GuidInternal: 
-    m_lastTime: -8585943065645547810
+    m_lastTime: -8585941348289603838
     List:
     - name: Overworld
       guid: 8aff8469e9cb3f4f9dc19f135218b940
@@ -605,6 +728,37 @@ MonoBehaviour:
         id: 391998042
         PathAndIcons:
         - ElementName: Tense
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: PauseMenu
+      guid: 6bb2a7e89f93b6458575634a237fb705
+      id: 3494343696
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PauseMenu
+        ObjectType: 9
+      Path: Default Work Unit\PauseMenu
+      values:
+      - name: No
+        guid: 18ee4c784a8b2846a1cc61945f256544
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: No
+          ObjectType: 8
+      - name: None
+        guid: 4d1044860625054ab8085a2cb7ac4ffb
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Yes
+        guid: a4271c7f33b91446a84793c83d1d68a4
+        id: 979470758
+        PathAndIcons:
+        - ElementName: Yes
           ObjectType: 8
       ValueGuids: []
       ValueIcons: []
@@ -662,12 +816,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /DecemberProject_WwiseProject
-  - /DecemberProject_WwiseProject/Events
-  - /DecemberProject_WwiseProject/Events/Default Work Unit
-  - /DecemberProject_WwiseProject/Events/Default Work Unit/Player
-  - /DecemberProject_WwiseProject/Events/Default Work Unit/Weapons
-  - /DecemberProject_WwiseProject/Events/Default Work Unit/Weapons/Beartrap
-  - /DecemberProject_WwiseProject/SoundBanks
-  - /DecemberProject_WwiseProject/SoundBanks/Default Work Unit
+  - /DecemberProject_WwiseProject/States
+  - /DecemberProject_WwiseProject/States/Default Work Unit
+  - /DecemberProject_WwiseProject/States/Default Work Unit/Overworld
+  - /DecemberProject_WwiseProject/States/Default Work Unit/PauseMenu
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

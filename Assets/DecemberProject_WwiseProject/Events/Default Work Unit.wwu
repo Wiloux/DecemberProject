@@ -163,6 +163,19 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="StopAllSounds" ID="{494AE715-1E52-4E0B-87F7-F52AB4D05713}">
+							<ChildrenList>
+								<Action Name="" ID="{8929C155-AD65-4B09-A942-996ACEB07449}" ShortID="909547172">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="7"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="TVHead" ID="{019CFF44-4AB3-49CD-A552-2DAB17790A0E}" ShortID="647744745">
@@ -215,6 +228,39 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="staticTvHead" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayKillerFootsteps2" ID="{18658727-CA3C-4515-8911-027BB33151BB}">
+							<ChildrenList>
+								<Action Name="" ID="{41A5A252-F33A-4BEC-A9BE-30470E6C4B8B}" ShortID="1024389788">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KFS2" ID="{304DA442-1FD7-42ED-AC1A-65310F7D9C23}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayKillerFootsteps3" ID="{0022F30A-2D7F-414C-8604-6947278C38D5}">
+							<ChildrenList>
+								<Action Name="" ID="{039B4F51-1747-4214-9E5C-0B5A14FB1777}" ShortID="674719601">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KFS3" ID="{88866E0E-F27B-456A-8AD4-65BB858C466A}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PlayKillerFootsteps1" ID="{09016391-26FE-46EB-BA58-DEE0E4CB7768}">
+							<ChildrenList>
+								<Action Name="" ID="{1E6E09F7-EA32-4499-A56E-4F2B84A06591}" ShortID="761586698">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="KFS1" ID="{84EEE5EF-3C28-408A-82D8-89B8331B8FD5}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -27,10 +27,14 @@ namespace AK
         static const AkUniqueID PLAYHIGHLIGHT = 145167493U;
         static const AkUniqueID PLAYJERRYCAN = 448200913U;
         static const AkUniqueID PLAYKEYPRESS = 1168436793U;
+        static const AkUniqueID PLAYKILLERFOOTSTEPS1 = 1927847360U;
+        static const AkUniqueID PLAYKILLERFOOTSTEPS2 = 1927847363U;
+        static const AkUniqueID PLAYKILLERFOOTSTEPS3 = 1927847362U;
         static const AkUniqueID PLAYLIGHTBULB = 3228498500U;
         static const AkUniqueID PLAYORB = 2053742238U;
         static const AkUniqueID PLAYOVERWORLD_TENSE = 1809856591U;
         static const AkUniqueID PLAYSTATIC = 3467592801U;
+        static const AkUniqueID STOPALLSOUNDS = 1416937818U;
         static const AkUniqueID STOPCHASE = 2399390441U;
         static const AkUniqueID STOPJERRYCAN = 2638603827U;
         static const AkUniqueID STOPORB = 2852051516U;
@@ -53,6 +57,18 @@ namespace AK
                 static const AkUniqueID TENSE = 391998042U;
             } // namespace STATE
         } // namespace OVERWORLD
+
+        namespace PAUSEMENU
+        {
+            static const AkUniqueID GROUP = 3494343696U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NO = 1668749452U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID YES = 979470758U;
+            } // namespace STATE
+        } // namespace PAUSEMENU
 
         namespace SPOTTED
         {

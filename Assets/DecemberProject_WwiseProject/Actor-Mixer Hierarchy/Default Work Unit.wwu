@@ -11,11 +11,6 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-17</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -86,11 +81,6 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-17</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -200,11 +190,6 @@
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-16</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -408,11 +393,6 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-16</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -946,6 +926,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Main Menu Highlight" ID="{EC7C0102-823D-42CB-B16F-F66A308E75FF}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.0720092258539299"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Main Menu Highlight.wav</AudioFile>
 									<MediaIDList>
@@ -979,6 +964,506 @@
 								<ActiveSource Name="Main Menu Keypress" ID="{0F728DDC-9438-49F0-A994-1501479CE1D7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Enemy" ID="{87FA2BEF-40DA-42DA-9CF8-9F121C6CF49B}" ShortID="242813801">
+					<ChildrenList>
+						<RandomSequenceContainer Name="KFS1" ID="{84EEE5EF-3C28-408A-82D8-89B8331B8FD5}" ShortID="1039395423">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{07A87FF2-ECA7-4C2B-9A8B-96FDC07A47A5}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="152"/>
+													<Property Name="Min" Type="Real64" Value="-556"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Footstep Killer 1_1" ID="{EC6B57C5-5756-4A1A-875F-C3544C2F2A2E}" ShortID="15690350">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{A767F8C3-4855-48E4-9752-12927DC9B57E}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 1_1" ID="{B6E05E0E-8D6B-4A53-8665-E0F43A4F86D4}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 1.1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="260759101"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 1_1" ID="{B6E05E0E-8D6B-4A53-8665-E0F43A4F86D4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 1_2" ID="{86626398-76D2-40C4-B35F-02854DC7E2CA}" ShortID="668728032">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 1_2" ID="{30F4ABBC-A026-4EED-9556-3BA3D33FBEDE}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 1.2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="390844414"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 1_2" ID="{30F4ABBC-A026-4EED-9556-3BA3D33FBEDE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 1_3" ID="{C0405962-1770-478A-90C1-5577AD4FB541}" ShortID="49131493">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 1_3" ID="{1BEC94C8-FE2D-4ECC-AE9B-0158395E314F}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 1.3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="582918435"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 1_3" ID="{1BEC94C8-FE2D-4ECC-AE9B-0158395E314F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 1_4" ID="{A21D1FD2-0BF7-4467-9A5A-EB61734D7FC9}" ShortID="554691444">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 1_4" ID="{7F36C4B6-7BF0-4D44-BBCA-2D07949357DC}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 1.4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="945119091"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 1_4" ID="{7F36C4B6-7BF0-4D44-BBCA-2D07949357DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 1_5" ID="{2DD413F6-4894-4A2A-9340-E59967BE5A4A}" ShortID="344391293">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 1_5" ID="{9203EF23-6F7E-4BD6-8F77-6602E001272A}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 1.5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="957438151"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 1_5" ID="{9203EF23-6F7E-4BD6-8F77-6602E001272A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="KFS2" ID="{304DA442-1FD7-42ED-AC1A-65310F7D9C23}" ShortID="901087081">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{E53583FB-D64F-4ED6-B8C9-9B92769AE883}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="253"/>
+													<Property Name="Min" Type="Real64" Value="-556"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Footstep Killer 2_1" ID="{32E83758-34B2-4DCC-8AA9-9A06CE028E06}" ShortID="643604118">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{506899AE-DD0B-452F-9AAB-0421C8995EFF}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 2_1" ID="{7DA19DB5-471F-4393-882C-70D1EC02DE31}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.00745044543762976"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 2.1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="293490680"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 2_1" ID="{7DA19DB5-471F-4393-882C-70D1EC02DE31}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 2_2" ID="{210D8031-31A3-4354-A8E4-DAE209BC54BB}" ShortID="749745466">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{F2204451-6492-4FA6-AD22-1F6E8073D98F}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 2_2" ID="{18C55C56-A9E8-4A53-9359-995D74F9860E}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 2.2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="741580282"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 2_2" ID="{18C55C56-A9E8-4A53-9359-995D74F9860E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 2_3" ID="{BCF96CF4-3B0B-4765-9243-63B4D6B15DAB}" ShortID="638574047">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{75E1EF73-7604-4685-BB33-B086E7135640}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 2_3" ID="{D73C4DC2-2A9E-44A4-A45C-C8ED5609E0C6}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 2.3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="95132543"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 2_3" ID="{D73C4DC2-2A9E-44A4-A45C-C8ED5609E0C6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 2_4" ID="{E86DCE12-66DD-4027-9EB0-9286E740FA44}" ShortID="435481935">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6CECADC3-E6BA-458A-A2A3-3A53814AE876}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 2_4" ID="{B11A5C2D-C2D8-4D8F-A2D7-E4D80C1CB9ED}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 2.4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="535574224"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 2_4" ID="{B11A5C2D-C2D8-4D8F-A2D7-E4D80C1CB9ED}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 2_5" ID="{64873AE0-B2BD-4A64-8F30-C658C122EE9E}" ShortID="960558847">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5687F91C-9D42-4422-9A2B-BB503AE04FF4}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 2_5" ID="{481AB760-7AE3-4812-B9EA-3D582E7E0291}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 2.5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="651192086"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 2_5" ID="{481AB760-7AE3-4812-B9EA-3D582E7E0291}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="KFS3" ID="{88866E0E-F27B-456A-8AD4-65BB858C466A}" ShortID="843549190">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{B2E15A2B-2F79-42DD-8D9D-FE08FD89BC27}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="303"/>
+													<Property Name="Min" Type="Real64" Value="-455"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Footstep Killer 3_1" ID="{8D73EFE3-59BE-4984-B0D0-6DD920C39F59}" ShortID="51263287">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 3_1" ID="{A94B6C89-562B-4C7A-8DA5-42888EDA0065}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 3.1.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="808663612"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 3_1" ID="{A94B6C89-562B-4C7A-8DA5-42888EDA0065}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 3_2" ID="{81E81D48-4781-4120-8095-7194B2AC1BB2}" ShortID="700552335">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 3_2" ID="{AC1520F0-4045-4ED6-9BC5-2AF5668686C4}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 3.2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="9397051"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 3_2" ID="{AC1520F0-4045-4ED6-9BC5-2AF5668686C4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 3_3" ID="{EB98E31B-6AB0-4BC0-A024-AF6A56DE42FA}" ShortID="1060978262">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 3_3" ID="{2841518D-ADED-4C91-9C9E-BAF2E7111D2D}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 3.3.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="19686228"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 3_3" ID="{2841518D-ADED-4C91-9C9E-BAF2E7111D2D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 3_4" ID="{17ECF6BC-C15E-4622-8029-5D1C75C4810C}" ShortID="78149226">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 3_4" ID="{6E012251-62FA-4EDC-9BEB-21225F7E1E3C}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 3.4.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="999391431"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 3_4" ID="{6E012251-62FA-4EDC-9BEB-21225F7E1E3C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Footstep Killer 3_5" ID="{4822091E-0018-4C34-9CC7-3657EA934B79}" ShortID="985414989">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Footstep Killer 3_5" ID="{B402371F-F58A-4579-BC50-539E34028DF2}">
+											<Language>SFX</Language>
+											<AudioFile>Footstep Killer 3.5.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="142657747"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Footstep Killer 3_5" ID="{B402371F-F58A-4579-BC50-539E34028DF2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

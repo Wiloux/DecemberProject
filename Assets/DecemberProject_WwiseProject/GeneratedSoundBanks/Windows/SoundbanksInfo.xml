@@ -11,12 +11,21 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3993245277">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2694265227">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<StateGroups>
+				<StateGroup Id="3494343696" Name="PauseMenu" ObjectPath="\States\Default Work Unit\PauseMenu">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\PauseMenu\None"/>
+						<State Id="979470758" Name="Yes" ObjectPath="\States\Default Work Unit\PauseMenu\Yes"/>
+						<State Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\PauseMenu\No"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4193837658">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1403154964">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -166,11 +175,99 @@
 						<ActionSetStateEntry Id="979470758" Name="Yes" ObjectPath="\States\Default Work Unit\Spotted\Yes"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="145167493" Name="PlayHighlight" ObjectPath="\Events\Default Work Unit\MainMenu\PlayHighlight" DurationType="OneShot" DurationMin="0.266259" DurationMax="0.266259">
+					<IncludedMemoryFiles>
+						<File Id="175012262" Language="SFX">
+							<ShortName>Main Menu Highlight.wav</ShortName>
+							<Path>SFX\Main Menu Highlight_C2066C43.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="448200913" Name="PlayJerrycan" ObjectPath="\Events\Default Work Unit\SoulStuff\Jerrycan\PlayJerrycan" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="63.500000" DurationMax="63.500000">
 					<IncludedMemoryFiles>
 						<File Id="467019561" Language="SFX">
 							<ShortName>jerrycan1 .wav</ShortName>
 							<Path>SFX\jerrycan1 _3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1168436793" Name="PlayKeypress" ObjectPath="\Events\Default Work Unit\MainMenu\PlayKeypress" DurationType="OneShot" DurationMin="0.149773" DurationMax="0.149773">
+					<IncludedMemoryFiles>
+						<File Id="520607068" Language="SFX">
+							<ShortName>Main Menu Keypress.wav</ShortName>
+							<Path>SFX\Main Menu Keypress_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1927847360" Name="PlayKillerFootsteps1" ObjectPath="\Events\Default Work Unit\TVHead\PlayKillerFootsteps1" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.039816" DurationMax="0.089945">
+					<IncludedMemoryFiles>
+						<File Id="260759101" Language="SFX">
+							<ShortName>Footstep Killer 1.1.wav</ShortName>
+							<Path>SFX\Footstep Killer 1.1_3F75BDB9.wem</Path>
+						</File>
+						<File Id="390844414" Language="SFX">
+							<ShortName>Footstep Killer 1.2.wav</ShortName>
+							<Path>SFX\Footstep Killer 1.2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="582918435" Language="SFX">
+							<ShortName>Footstep Killer 1.3.wav</ShortName>
+							<Path>SFX\Footstep Killer 1.3_3F75BDB9.wem</Path>
+						</File>
+						<File Id="945119091" Language="SFX">
+							<ShortName>Footstep Killer 1.4.wav</ShortName>
+							<Path>SFX\Footstep Killer 1.4_3F75BDB9.wem</Path>
+						</File>
+						<File Id="957438151" Language="SFX">
+							<ShortName>Footstep Killer 1.5.wav</ShortName>
+							<Path>SFX\Footstep Killer 1.5_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1927847363" Name="PlayKillerFootsteps2" ObjectPath="\Events\Default Work Unit\TVHead\PlayKillerFootsteps2" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.038460" DurationMax="0.088851">
+					<IncludedMemoryFiles>
+						<File Id="95132543" Language="SFX">
+							<ShortName>Footstep Killer 2.3.wav</ShortName>
+							<Path>SFX\Footstep Killer 2.3_10C4C929.wem</Path>
+						</File>
+						<File Id="293490680" Language="SFX">
+							<ShortName>Footstep Killer 2.1.wav</ShortName>
+							<Path>SFX\Footstep Killer 2.1_8EC83FF6.wem</Path>
+						</File>
+						<File Id="535574224" Language="SFX">
+							<ShortName>Footstep Killer 2.4.wav</ShortName>
+							<Path>SFX\Footstep Killer 2.4_10C4C929.wem</Path>
+						</File>
+						<File Id="651192086" Language="SFX">
+							<ShortName>Footstep Killer 2.5.wav</ShortName>
+							<Path>SFX\Footstep Killer 2.5_10C4C929.wem</Path>
+						</File>
+						<File Id="741580282" Language="SFX">
+							<ShortName>Footstep Killer 2.2.wav</ShortName>
+							<Path>SFX\Footstep Killer 2.2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1927847362" Name="PlayKillerFootsteps3" ObjectPath="\Events\Default Work Unit\TVHead\PlayKillerFootsteps3" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.039593" DurationMax="0.084199">
+					<IncludedMemoryFiles>
+						<File Id="9397051" Language="SFX">
+							<ShortName>Footstep Killer 3.2.wav</ShortName>
+							<Path>SFX\Footstep Killer 3.2_10C4C929.wem</Path>
+						</File>
+						<File Id="19686228" Language="SFX">
+							<ShortName>Footstep Killer 3.3.wav</ShortName>
+							<Path>SFX\Footstep Killer 3.3_10C4C929.wem</Path>
+						</File>
+						<File Id="142657747" Language="SFX">
+							<ShortName>Footstep Killer 3.5.wav</ShortName>
+							<Path>SFX\Footstep Killer 3.5_10C4C929.wem</Path>
+						</File>
+						<File Id="808663612" Language="SFX">
+							<ShortName>Footstep Killer 3.1.wav</ShortName>
+							<Path>SFX\Footstep Killer 3.1_10C4C929.wem</Path>
+						</File>
+						<File Id="999391431" Language="SFX">
+							<ShortName>Footstep Killer 3.4.wav</ShortName>
+							<Path>SFX\Footstep Killer 3.4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -240,6 +337,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1416937818" Name="StopAllSounds" ObjectPath="\Events\Default Work Unit\Others\StopAllSounds" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2399390441" Name="StopChase" ObjectPath="\Events\Music\Overworld\StopChase" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\Spotted\No"/>
@@ -278,7 +376,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="4105862578">
+		<SoundBank Id="3604647259" Language="SFX" Hash="55202904">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>
@@ -299,7 +397,7 @@
 					<IncludedMemoryFiles>
 						<File Id="175012262" Language="SFX">
 							<ShortName>Main Menu Highlight.wav</ShortName>
-							<Path>SFX\Main Menu Highlight_3F75BDB9.wem</Path>
+							<Path>SFX\Main Menu Highlight_C2066C43.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -311,6 +409,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1416937818" Name="StopAllSounds" ObjectPath="\Events\Default Work Unit\Others\StopAllSounds" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
