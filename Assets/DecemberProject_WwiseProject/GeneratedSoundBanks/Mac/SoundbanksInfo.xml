@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1331529741">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2236818282">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -32,7 +32,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4251803906">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2249611605">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -51,6 +51,18 @@
 						<File Id="5711083" Language="SFX">
 							<ShortName>beartrap trigger.wav</ShortName>
 							<Path>SFX\beartrap trigger_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3129425356" Name="EndScene" ObjectPath="\Events\Default Work Unit\EndScene" DurationType="OneShot" DurationMin="41.405102" DurationMax="41.405102">
+					<IncludedMemoryFiles>
+						<File Id="117092517" Language="SFX">
+							<ShortName>atmos 1.wav</ShortName>
+							<Path>SFX\atmos 1_755088F3.wem</Path>
+						</File>
+						<File Id="527035602" Language="SFX">
+							<ShortName>big orb.wav</ShortName>
+							<Path>SFX\big orb_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -115,7 +127,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2385628262" Name="Footstep3" ObjectPath="\Events\Default Work Unit\Player\Footstep3" DurationType="Infinite">
+				<Event Id="2385628262" Name="Footstep3" ObjectPath="\Events\Default Work Unit\Player\Footstep3" DurationType="OneShot" DurationMin="0.844218" DurationMax="0.844218">
 					<IncludedMemoryFiles>
 						<File Id="103516333" Language="SFX">
 							<ShortName>footsteps 3.1.wav</ShortName>
@@ -138,6 +150,11 @@
 							<Path>SFX\footsteps 4.1_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2661533922" Name="IsBeingCorrupted" ObjectPath="\Events\Music\Overworld\IsBeingCorrupted" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="979470758" Name="Yes" ObjectPath="\States\Default Work Unit\IsBeingCorrupted\Yes"/>
+					</ActionSetState>
 				</Event>
 				<Event Id="3706411783" Name="PlayChase" ObjectPath="\Events\Music\Overworld\PlayChase" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -190,11 +207,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="448200913" Name="PlayJerrycan" ObjectPath="\Events\Default Work Unit\SoulStuff\Jerrycan\PlayJerrycan" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="63.500000" DurationMax="63.500000">
+				<Event Id="448200913" Name="PlayJerrycan" ObjectPath="\Events\Default Work Unit\SoulStuff\Jerrycan\PlayJerrycan" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="64.000000" DurationMax="64.000000">
 					<IncludedMemoryFiles>
-						<File Id="467019561" Language="SFX">
-							<ShortName>jerrycan1 .wav</ShortName>
-							<Path>SFX\jerrycan1 _3F75BDB9.wem</Path>
+						<File Id="984088383" Language="SFX">
+							<ShortName>jerrycan1.wav</ShortName>
+							<Path>SFX\jerrycan1_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -279,11 +296,11 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3228498500" Name="PlayLightbulb" ObjectPath="\Events\Default Work Unit\Others\PlayLightbulb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\PlayOrb" DurationType="Infinite">
+				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\PlayOrb" DurationType="OneShot" DurationMin="64.000000" DurationMax="64.000000">
 					<IncludedMemoryFiles>
-						<File Id="4341323" Language="SFX">
-							<ShortName>orb2.wav</ShortName>
-							<Path>SFX\orb2_9EDFC787.wem</Path>
+						<File Id="854505131" Language="SFX">
+							<ShortName>orb remake2.wav</ShortName>
+							<Path>SFX\orb remake2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -316,6 +333,10 @@
 						<File Id="937468604" Language="SFX">
 							<ShortName>mall ow drums.wav</ShortName>
 							<Path>SFX\mall ow drums_9EDFC787.wem</Path>
+						</File>
+						<File Id="1020886213" Language="SFX">
+							<ShortName>mall clean final mix.wav</ShortName>
+							<Path>SFX\mall clean final mix_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>

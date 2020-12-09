@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID BEARTRAPSETUP = 3283823493U;
         static const AkUniqueID BEARTRAPSTOP = 3005731438U;
         static const AkUniqueID BEARTRAPTRIGGER = 4283543462U;
+        static const AkUniqueID ENDSCENE = 3129425356U;
         static const AkUniqueID FIREWORKSSETUP = 3701804816U;
         static const AkUniqueID FIREWORKSSTOP = 2740640909U;
         static const AkUniqueID FIREWORKSTRIGGER = 2187166475U;
@@ -23,6 +24,7 @@ namespace AK
         static const AkUniqueID FOOTSTEP2 = 2385628263U;
         static const AkUniqueID FOOTSTEP3 = 2385628262U;
         static const AkUniqueID FOOTSTEP4 = 2385628257U;
+        static const AkUniqueID ISBEINGCORRUPTED = 2661533922U;
         static const AkUniqueID PLAYCHASE = 3706411783U;
         static const AkUniqueID PLAYHIGHLIGHT = 145167493U;
         static const AkUniqueID PLAYJERRYCAN = 448200913U;
@@ -46,6 +48,18 @@ namespace AK
 
     namespace STATES
     {
+        namespace END
+        {
+            static const AkUniqueID GROUP = 529726532U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NO = 1668749452U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID YES = 979470758U;
+            } // namespace STATE
+        } // namespace END
+
         namespace ISBEINGCORRUPTED
         {
             static const AkUniqueID GROUP = 2661533922U;

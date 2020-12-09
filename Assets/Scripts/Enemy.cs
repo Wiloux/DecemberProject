@@ -218,7 +218,7 @@ public class Enemy : MonoBehaviour
                             newtv.survivor = CurrentTransformPlayer.PlayerScript;
                         }
                         AkSoundEngine.PostEvent("StopChase", gameObject);
-                      //  AkSoundEngine.PostEvent("IsBeingCorrupted", gameObject);
+                       // AkSoundEngine.PostEvent("IsBeingCorrupted", gameObject);
                         currentState = States.Pause;
 
                         foreach (SpottedSurvior Player in Players)

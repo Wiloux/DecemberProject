@@ -63,7 +63,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="orb2" ID="{62B35F2A-8A71-4DC5-B8DA-CB6C478C44C6}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+													<ObjectRef Name="orb remake2" ID="{D6103B4B-2F0D-4192-94B2-88C897AB3D84}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -78,7 +78,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
-													<ObjectRef Name="orb2" ID="{62B35F2A-8A71-4DC5-B8DA-CB6C478C44C6}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+													<ObjectRef Name="orb remake2" ID="{D6103B4B-2F0D-4192-94B2-88C897AB3D84}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
 												</Reference>
 											</ReferenceList>
 										</Action>
@@ -390,6 +390,76 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="EndScene" ID="{8205F5CD-14A6-47E8-BCA5-411A0CC1250A}">
+					<ChildrenList>
+						<Action Name="" ID="{25454861-8C26-41AD-AB89-6D5173DAA049}" ShortID="455167451">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="atmos 1" ID="{DA8DAE6D-98C5-47AD-8BEE-266ADEE319F0}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{02C1E704-43E1-4758-8F37-5A5A1E3C8830}" ShortID="369655620">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="orb remake2" ID="{D6103B4B-2F0D-4192-94B2-88C897AB3D84}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{99A2DAFD-C486-4117-BB06-B036176DBF90}" ShortID="738286080">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="4.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="big orb" ID="{B1D20D7F-34F0-4366-A890-56FD54322539}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{71172AC8-E438-4F99-B868-B1533CC1561E}" ShortID="247608821">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Delay" Type="Real64" Value="4.5"/>
+								<Property Name="FadeTime" Type="Real64" Value="5.93"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Overworld+Tense" ID="{128DCD76-6399-4D1E-961D-61B9DEB8ECAC}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{1BD2514B-BE2A-4AD4-9B51-F2E2B9E5DD26}" ShortID="305774545">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Delay" Type="Real64" Value="7.41"/>
+								<Property Name="FadeTime" Type="Real64" Value="7.69"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Clean" ID="{D4460F4A-2E07-4ADF-9070-741221FD2FFC}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EFEB11A9-924D-4548-8975-1A5BD30DCEB6}" ShortID="106376787">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="Delay" Type="Real64" Value="48"/>
+								<Property Name="FadeTime" Type="Real64" Value="6"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

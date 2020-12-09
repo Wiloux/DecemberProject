@@ -31,6 +31,13 @@
 						<State Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="End" ID="{DF0DF580-D9E3-4451-8BFA-5401CEA77C8C}">
+					<ChildrenList>
+						<State Name="None" ID="{0C173A9D-4907-45BA-AD88-010BDBE37B31}"/>
+						<State Name="Yes" ID="{B60925ED-0EC5-42C8-87A9-67BF17D1A7A5}"/>
+						<State Name="No" ID="{D00660D1-4C93-4198-8996-FD4984C19BC0}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

@@ -185,7 +185,6 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
@@ -486,6 +485,11 @@
 										<Value>2</Value>
 									</ValueList>
 								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>12</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -499,11 +503,11 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="jerrycan1" ID="{88E43A71-717C-48A8-B243-2DB785B903A2}">
+								<AudioFileSource Name="jerrycan1" ID="{0B29A9A6-E5FC-45CD-8CE8-A65D23B954C6}">
 									<Language>SFX</Language>
-									<AudioFile>jerrycan1 .wav</AudioFile>
+									<AudioFile>jerrycan1.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="467019561"/>
+										<MediaID ID="984088383"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
@@ -511,21 +515,46 @@
 								<Panner Name="" ID="{58F4F249-B602-4E26-AC38-02BB3D32238D}"/>
 							</PositioningInfo>
 							<ActiveSourceList>
-								<ActiveSource Name="jerrycan1" ID="{88E43A71-717C-48A8-B243-2DB785B903A2}" Platform="Linked"/>
+								<ActiveSource Name="jerrycan1" ID="{0B29A9A6-E5FC-45CD-8CE8-A65D23B954C6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="orb2" ID="{62B35F2A-8A71-4DC5-B8DA-CB6C478C44C6}" ShortID="712512099">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7308F5B4-E7CF-48FF-8325-1AFDE501F092}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="7"/>
+													<Property Name="Min" Type="Real64" Value="-13"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-96</Value>
+										<Value>-16</Value>
 									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A4D62510-7A72-43D0-8F26-19DF3EF65DCD}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 								</Reference>
@@ -554,6 +583,40 @@
 								<ActiveSource Name="orb2" ID="{D51481E8-EBD6-4796-9C81-53E243DC9AC6}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
+						<Sound Name="orb remake2" ID="{D6103B4B-2F0D-4192-94B2-88C897AB3D84}" ShortID="294155851">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>33</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-9</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="orb remake2" ID="{E515BB2C-AC02-4F2B-8E4D-7997564913D2}">
+									<Language>SFX</Language>
+									<AudioFile>orb remake2.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="854505131"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="orb remake2" ID="{E515BB2C-AC02-4F2B-8E4D-7997564913D2}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Others" ID="{6DDA24EA-831C-48FE-8E29-260E1842B295}" ShortID="1054960549">
@@ -565,7 +628,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-20</Value>
+										<Value>-26</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1464,6 +1527,103 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="EndScene" ID="{EA59F3BC-9640-4837-BCD4-653552A12A48}" ShortID="1023781272">
+					<ChildrenList>
+						<Sound Name="atmos 1" ID="{DA8DAE6D-98C5-47AD-8BEE-266ADEE319F0}" ShortID="764492138">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="atmos 1" ID="{3466D1D6-A7A7-4A50-96B9-848F1FC1A588}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.601659342733136"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>atmos 1.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="117092517"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="atmos 1" ID="{3466D1D6-A7A7-4A50-96B9-848F1FC1A588}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="big orb" ID="{B1D20D7F-34F0-4366-A890-56FD54322539}" ShortID="982324734">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="big orb" ID="{0DD2B819-DC3B-4DF6-A422-CA245FDDACE1}">
+									<Language>SFX</Language>
+									<AudioFile>big orb.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="527035602"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="big orb" ID="{0DD2B819-DC3B-4DF6-A422-CA245FDDACE1}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="orb end" ID="{252C0B36-372F-40A3-BCDF-469E559E679C}" ShortID="823336576">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="orb end" ID="{EC09E20D-A276-4311-8F63-37E6C34B70C4}">
+									<Language>SFX</Language>
+									<AudioFile>orb end.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="524867423"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="orb end" ID="{EC09E20D-A276-4311-8F63-37E6C34B70C4}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="orb end remake" ID="{07208FFF-6E3C-47B5-AA6B-2A52183499E9}" ShortID="464320231">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="orb end remake" ID="{8CFDC5CE-358E-486C-8519-4AAF6AB0B39B}">
+									<Language>SFX</Language>
+									<AudioFile>orb end remake.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="683022384"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="orb end remake" ID="{8CFDC5CE-358E-486C-8519-4AAF6AB0B39B}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

@@ -1,10 +1,14 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	529726532	End			\Default Work Unit\End	
 	1562068129	Overworld			\Default Work Unit\Overworld	
 	2661533922	IsBeingCorrupted			\Default Work Unit\IsBeingCorrupted	
 	3214304800	Spotted			\Default Work Unit\Spotted	
 	3494343696	PauseMenu			\Default Work Unit\PauseMenu	
 
 State	ID	Name	State Group			Notes
+	748895195	None	End			
+	979470758	Yes	End			
+	1668749452	No	End			
 	391998042	Tense	Overworld			
 	748895195	None	Overworld			
 	2619280431	NonTense	Overworld			

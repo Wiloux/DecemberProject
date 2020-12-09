@@ -18,7 +18,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicPlaylistContainer Name="Overworld+Tense" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" ShortID="134416499">
+								<MusicPlaylistContainer Name="Overworld" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" ShortID="134416499">
 									<PropertyList>
 										<Property Name="GridFrequencyPreset" Type="int16" Value="52"/>
 										<Property Name="OutputBusVolume" Type="Real64">
@@ -49,7 +49,7 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicSegment Name="Overworld+Tense" ID="{8E8A587E-926D-40B2-90F5-DCE7163803D0}" ShortID="686969395">
+										<MusicSegment Name="Overworld" ID="{8E8A587E-926D-40B2-90F5-DCE7163803D0}" ShortID="686969395">
 											<PropertyList>
 												<Property Name="EndPosition" Type="Real64" Value="144000"/>
 												<Property Name="Volume" Type="Real64">
@@ -283,7 +283,7 @@
 														<Property Name="LoopCount" Type="int16" Value="0"/>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
-													<SegmentRef Name="Overworld+Tense" ID="{8E8A587E-926D-40B2-90F5-DCE7163803D0}"/>
+													<SegmentRef Name="Overworld" ID="{8E8A587E-926D-40B2-90F5-DCE7163803D0}"/>
 												</MusicPlaylistItem>
 											</ChildrenList>
 										</MusicPlaylistItem>
@@ -431,7 +431,7 @@
 													<SequenceList>
 														<MusicTrackSequence Name="" ID="{4AAD9B0D-FB67-40F1-8616-E5ACF2988291}">
 															<ClipList>
-																<MusicClip Name="tense music undermelody " ID="{CEF386EA-4148-494A-9A9A-DA5F2E758011}">
+																<MusicClip Name="tense music undermelody" ID="{CEF386EA-4148-494A-9A9A-DA5F2E758011}">
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="109714.285714286"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
@@ -1136,7 +1136,7 @@
 													<ObjectRef Name="Tense" ID="{0F5147BC-2AD3-4D52-A39C-B5EBE2E12F98}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
 												</Reference>
 												<Reference Name="SourceContextObject">
-													<ObjectRef Name="Overworld+Tense" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+													<ObjectRef Name="Overworld" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
 												</Reference>
 											</ReferenceList>
 											<TransitionInfo>
@@ -1170,7 +1170,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="DestinationContextObject">
-													<ObjectRef Name="Overworld+Tense" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+													<ObjectRef Name="Overworld" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
 												</Reference>
 												<Reference Name="SourceContextObject">
 													<ObjectRef Name="Tense" ID="{0F5147BC-2AD3-4D52-A39C-B5EBE2E12F98}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
@@ -1208,7 +1208,7 @@
 										<PathElementRef Name="NonTense" ID="{D560E708-FB1A-4472-8F41-FE0743F8D463}"/>
 									</Path>
 									<AudioNodeInfo>
-										<AudioNodeRef Name="Overworld+Tense" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}" Platform="Linked"/>
+										<AudioNodeRef Name="Overworld" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}" Platform="Linked"/>
 									</AudioNodeInfo>
 								</Entry>
 								<Entry>
@@ -1796,12 +1796,22 @@
 					</Playlist>
 				</MusicPlaylistContainer>
 				<MusicPlaylistContainer Name="Clean" ID="{D4460F4A-2E07-4ADF-9070-741221FD2FFC}" ShortID="885029800">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-18</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+							<ObjectRef Name="Music" ID="{447E649B-2F10-44EB-89F4-D257D074E699}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="OverworldMusic" ID="{CEA4A069-E2E9-4AB3-8C8A-458629FA2D92}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1887,7 +1897,20 @@
 						</MusicTransition>
 					</TransitionList>
 					<Playlist>
-						<MusicPlaylistItem Name="" ID="{690413D3-720F-4697-8E8F-2C88D62A031B}" ShortID="86120131"/>
+						<MusicPlaylistItem Name="" ID="{690413D3-720F-4697-8E8F-2C88D62A031B}" ShortID="86120131">
+							<PropertyList>
+								<Property Name="LoopCount" Type="int16" Value="0"/>
+							</PropertyList>
+							<ChildrenList>
+								<MusicPlaylistItem Name="" ID="{4FDFE3A2-B3F9-4CE8-8F75-013ED15C8C5D}" ShortID="171603092">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+									</PropertyList>
+									<SegmentRef Name="mall clean final mix" ID="{FD1F5CEC-A047-4CD0-81DF-2DDAF3CFD055}"/>
+								</MusicPlaylistItem>
+							</ChildrenList>
+						</MusicPlaylistItem>
 					</Playlist>
 				</MusicPlaylistContainer>
 			</ChildrenList>

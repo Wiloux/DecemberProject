@@ -38,9 +38,52 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
+						<CurrentStateRef Name="No" ID="{D00660D1-4C93-4198-8996-FD4984C19BC0}"/>
 						<CurrentStateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
 						<CurrentStateRef Name="No" ID="{833A786E-E085-4610-ABCC-20527A99508F}"/>
-						<CurrentStateRef Name="Tense" ID="{EBBD9D27-82D5-4658-99B8-BDCD92FD277C}"/>
+						<CurrentStateRef Name="NonTense" ID="{D560E708-FB1A-4472-8F41-FE0743F8D463}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="end scene" ID="{51BF487C-2183-4D6C-9CBB-53E17D3ACB81}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="EndScene" ID="{8205F5CD-14A6-47E8-BCA5-411A0CC1250A}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PlayOrb" ID="{C501D7C1-4549-4966-B519-5C89EAFE7D85}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PlayOverworld_Tense" ID="{E879FF36-4B82-4CFC-B52C-6FB67CD0A24F}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MusicVolume" ID="{102EBDFF-AC50-4568-B70E-D32B300D28FF}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Spatialization1" ID="{E8E6DDF1-10E6-484D-B97A-BA85FCC2C25F}"/>
+							<Value>50</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFXVolume" ID="{F6FC2505-72DB-48A0-859F-23DA72E8F544}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="KillerProximity" ID="{36E12197-18AA-4F3E-A7A8-DF0E9F005E82}"/>
+							<Value>50</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
+						<CurrentStateRef Name="No" ID="{D00660D1-4C93-4198-8996-FD4984C19BC0}"/>
+						<CurrentStateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
+						<CurrentStateRef Name="No" ID="{833A786E-E085-4610-ABCC-20527A99508F}"/>
+						<CurrentStateRef Name="NonTense" ID="{D560E708-FB1A-4472-8F41-FE0743F8D463}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

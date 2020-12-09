@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 27596ce3e9aa5240a54f786194d9fa0c
     GuidInternal: 
-    m_lastTime: -8585941307915332705
+    m_lastTime: -8585940731815788427
     List:
     - name: MainMenu
       guid: c4f31a29ed3f254189da43c96b8cb14c
@@ -78,7 +78,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585941332154654340
+    m_lastTime: -8585940719820285934
     List:
     - name: Main
       guid: e8a3ab083a4d344489c1ca41b102a799
@@ -106,7 +106,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23cdf775154ee34c9621da36a37cfeb8
     GuidInternal: 
-    m_lastTime: -8585941349536567238
+    m_lastTime: -8585940695515143240
     List:
     - name: Beartrap
       guid: 87f1222de4e06641bf489cdb74bd3c23
@@ -167,6 +167,18 @@ MonoBehaviour:
       - ElementName: BeartrapTrigger
         ObjectType: 3
       Path: Default Work Unit\Weapons\Beartrap\BeartrapTrigger
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EndScene
+      guid: cdf50582a614e847bca5411a0cc1250a
+      id: 3129425356
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: EndScene
+        ObjectType: 3
+      Path: Default Work Unit\EndScene
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -613,7 +625,7 @@ MonoBehaviour:
     ParentPath: Music
     guid: 38e6abbb33223a48925241b8e238fef4
     GuidInternal: 
-    m_lastTime: -8585941288244620813
+    m_lastTime: -8585940719909545607
     List:
     - name: IsBeingCorrupted
       guid: d8c9fb1fc693e14691bbcd6cfc93a35e
@@ -705,8 +717,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2a76bffdb48c1c49a28537708c1866e8
     GuidInternal: 
-    m_lastTime: -8585941307915382566
+    m_lastTime: -8585941273837038147
     List:
+    - name: KillerProximity
+      guid: 9721e136aa183e4fa7a8df0e9f005e82
+      id: 110585135
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: KillerProximity
+        ObjectType: 13
+      Path: Default Work Unit\KillerProximity
     - name: MusicVolume
       guid: ffbd2e1050ac6845b70ed32b300d28ff
       id: 2346531308
@@ -742,8 +763,39 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c10cf6ffacd865489438d69566d6646e
     GuidInternal: 
-    m_lastTime: -8585941294807768445
+    m_lastTime: -8585940829362346860
     List:
+    - name: End
+      guid: 80f50ddfe3d951448bfa5401cea77c8c
+      id: 529726532
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: End
+        ObjectType: 9
+      Path: Default Work Unit\End
+      values:
+      - name: No
+        guid: d16006d0934c98418996fd4984c19bc0
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: No
+          ObjectType: 8
+      - name: None
+        guid: 9d3a170c0749ba45ad88010bdbe37b31
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Yes
+        guid: ed2509b6c50ec84287a967bf17d1a7a5
+        id: 979470758
+        PathAndIcons:
+        - ElementName: Yes
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: IsBeingCorrupted
       guid: 70effdbdab2838449d5f97a0bfc1175a
       id: 2661533922
@@ -890,10 +942,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /DecemberProject_WwiseProject
-  - /DecemberProject_WwiseProject/States
-  - /DecemberProject_WwiseProject/States/Default Work Unit
-  - /DecemberProject_WwiseProject/States/Default Work Unit/IsBeingCorrupted
-  - /DecemberProject_WwiseProject/States/Default Work Unit/Overworld
-  - /DecemberProject_WwiseProject/States/Default Work Unit/PauseMenu
+  - /DecemberProject_WwiseProject/Events
+  - /DecemberProject_WwiseProject/Events/Default Work Unit
+  - /DecemberProject_WwiseProject/Events/Default Work Unit/Weapons
+  - /DecemberProject_WwiseProject/Events/Default Work Unit/Weapons/Beartrap
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

@@ -6,9 +6,6 @@
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
-							<ValueList>
-								<Value>-18</Value>
-							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{739746F8-3B23-48C3-8261-269621D20AA0}" ShortID="342852953">
 									<ReferenceList>
@@ -91,9 +88,6 @@
 				<Bus Name="Music" ID="{447E649B-2F10-44EB-89F4-D257D074E699}">
 					<PropertyList>
 						<Property Name="BusVolume" Type="Real64">
-							<ValueList>
-								<Value>12</Value>
-							</ValueList>
 							<RTPCList>
 								<RTPC Name="" ID="{F4F4B1FA-DC56-4683-AAD6-7FA13E7A74C9}" ShortID="183728298">
 									<ReferenceList>

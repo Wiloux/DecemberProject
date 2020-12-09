@@ -138,7 +138,8 @@ public class Objective : MonoBehaviour
             if (WorkLeft <= 0 && !victory)
             {
                 victory = true;
-                PB.Play(asset);            
+                PB.Play(asset);
+                AkSoundEngine.PostEvent("EndScene", gameObject);
             }
         }
 

@@ -7,10 +7,44 @@
 					<ChildrenList>
 						<Event Name="PlayOverworld_Tense" ID="{E879FF36-4B82-4CFC-B52C-6FB67CD0A24F}">
 							<ChildrenList>
-								<Action Name="" ID="{3F707080-F2DB-4D33-8711-F736E8B5EBE5}" ShortID="177015691">
+								<Action Name="" ID="{C7B2E4C4-2705-41FC-BFAC-E46573E2A696}" ShortID="321193522">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Overworld+Tense" ID="{128DCD76-6399-4D1E-961D-61B9DEB8ECAC}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3F707080-F2DB-4D33-8711-F736E8B5EBE5}" ShortID="177015691">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Overworld+Tense" ID="{128DCD76-6399-4D1E-961D-61B9DEB8ECAC}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DF00A626-0CED-4366-ABAC-13C15609DE9D}" ShortID="1000660949">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Clean" ID="{D4460F4A-2E07-4ADF-9070-741221FD2FFC}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{635AF5FC-2DDA-4C3B-89A0-6A67BF9AC7CF}" ShortID="242479516">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Clean" ID="{D4460F4A-2E07-4ADF-9070-741221FD2FFC}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
