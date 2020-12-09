@@ -3753,6 +3753,7 @@ GameObject:
   - component: {fileID: 211606107}
   - component: {fileID: 211606108}
   - component: {fileID: 211606109}
+  - component: {fileID: 211606110}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -4003,6 +4004,18 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!114 &211606110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211606099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60bfc658ccbb5441ad467a66fdf58e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &212387922
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20311,8 +20324,6 @@ GameObject:
   - component: {fileID: 1072078273}
   - component: {fileID: 1072078272}
   - component: {fileID: 1072078271}
-  - component: {fileID: 1072078278}
-  - component: {fileID: 1072078270}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -20320,31 +20331,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1072078270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072078269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a09a2192af0cff041a646e26d0abf4e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: 958ca0ea
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3a4515077c4fda548982df4bff048227,
-      type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
 --- !u!114 &1072078271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20549,31 +20535,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1072078278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1072078269}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a09a2192af0cff041a646e26d0abf4e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ae6a0e158f696314bbd950f71796dde8,
-      type: 2}
-  valueIdInternal: 0
-  groupIdInternal: 0
-  valueGuidInternal: 
-  groupGuidInternal: 
 --- !u!4 &1073206818 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1693872491714714106, guid: 9522db83652f8d94f8b7f007e78f2ba0,
@@ -21986,8 +21947,8 @@ MonoBehaviour:
   m_ExecuteInEditor: 1
   m_Bindings:
   - {fileID: 1141910619}
-  - {fileID: 1141910621}
   - {fileID: 1141910618}
+  - {fileID: 1141910621}
   m_VisualEffect: {fileID: 1141910616}
 --- !u!114 &1141910621
 MonoBehaviour:
@@ -23420,6 +23381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1245597029}
   - component: {fileID: 1245597030}
+  - component: {fileID: 1245597031}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -23493,24 +23455,39 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1494085831}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 0.286
+  m_MaxValue: 10
+  m_WholeNumbers: 1
+  m_Value: 8
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1245597031}
+        m_TargetAssemblyTypeName: Volume_Controls, Assembly-CSharp
+        m_MethodName: SetSpecificVolume
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: SFX Slider
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1245597031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245597028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b4b1ef26784cc43891669f08699a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisSlider: {fileID: 1245597030}
+  musicVolume: 0
+  sfxVolume: 10
 --- !u!1001 &1252133609
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31479,7 +31456,7 @@ PrefabInstance:
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
       propertyPath: isNinja
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
@@ -32959,6 +32936,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1601308001}
   - component: {fileID: 1601308002}
+  - component: {fileID: 1601308003}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -33032,24 +33010,39 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1947735246}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
-  m_Value: 0.286
+  m_MaxValue: 10
+  m_WholeNumbers: 1
+  m_Value: 8
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1601308003}
+        m_TargetAssemblyTypeName: Volume_Controls, Assembly-CSharp
+        m_MethodName: SetSpecificVolume
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Music Slider
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1601308003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601308000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47b4b1ef26784cc43891669f08699a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisSlider: {fileID: 1601308002}
+  musicVolume: 10
+  sfxVolume: 0
 --- !u!1001 &1608802169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42513,7 +42506,7 @@ PrefabInstance:
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
       propertyPath: isNinja
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
@@ -48545,7 +48538,7 @@ PrefabInstance:
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
       propertyPath: isNinja
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
@@ -74424,7 +74417,7 @@ PrefabInstance:
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
       propertyPath: isNinja
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}

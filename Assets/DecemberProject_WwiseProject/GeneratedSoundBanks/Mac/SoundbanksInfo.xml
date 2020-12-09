@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2236818282">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1484929441">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -32,7 +32,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2249611605">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3256230341">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -54,11 +54,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3129425356" Name="EndScene" ObjectPath="\Events\Default Work Unit\EndScene" DurationType="OneShot" DurationMin="41.405102" DurationMax="41.405102">
+				<Event Id="3129425356" Name="EndScene" ObjectPath="\Events\Default Work Unit\EndScene" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="117092517" Language="SFX">
 							<ShortName>atmos 1.wav</ShortName>
-							<Path>SFX\atmos 1_755088F3.wem</Path>
+							<Path>SFX\atmos 1_64A70E20.wem</Path>
 						</File>
 						<File Id="527035602" Language="SFX">
 							<ShortName>big orb.wav</ShortName>
@@ -127,7 +127,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2385628262" Name="Footstep3" ObjectPath="\Events\Default Work Unit\Player\Footstep3" DurationType="OneShot" DurationMin="0.844218" DurationMax="0.844218">
+				<Event Id="2385628262" Name="Footstep3" ObjectPath="\Events\Default Work Unit\Player\Footstep3" DurationType="OneShot" DurationMin="0.377211" DurationMax="0.467007">
 					<IncludedMemoryFiles>
 						<File Id="103516333" Language="SFX">
 							<ShortName>footsteps 3.1.wav</ShortName>
@@ -296,11 +296,11 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="3228498500" Name="PlayLightbulb" ObjectPath="\Events\Default Work Unit\Others\PlayLightbulb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\PlayOrb" DurationType="OneShot" DurationMin="64.000000" DurationMax="64.000000">
+				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\PlayOrb" MaxAttenuation="70.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="854505131" Language="SFX">
 							<ShortName>orb remake2.wav</ShortName>
-							<Path>SFX\orb remake2_10C4C929.wem</Path>
+							<Path>SFX\orb remake2_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -407,7 +407,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="4195208089">
+		<SoundBank Id="3604647259" Language="SFX" Hash="2169820753">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>

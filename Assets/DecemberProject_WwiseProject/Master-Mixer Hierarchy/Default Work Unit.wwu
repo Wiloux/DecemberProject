@@ -24,22 +24,22 @@
 												<Flags>5</Flags>
 											</Point>
 											<Point>
-												<XPos>70.22697</XPos>
+												<XPos>7.022697</XPos>
 												<YPos>-1.82177</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>80.10681</XPos>
+												<XPos>8.010681</XPos>
 												<YPos>-1.15384</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>89.85314</XPos>
+												<XPos>8.985314</XPos>
 												<YPos>-0.48991</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>100</XPos>
+												<XPos>10</XPos>
 												<YPos>0</YPos>
 												<Flags>37</Flags>
 											</Point>
@@ -74,7 +74,7 @@
 								<CustomState Name="" ID="{51AAAFA3-B2E8-455B-9CD1-34F16B315686}" ShortID="159890777">
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64" Value="-7"/>
-										<Property Name="Lowpass" Type="int16" Value="37"/>
+										<Property Name="Lowpass" Type="int16" Value="49"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>
@@ -106,27 +106,27 @@
 												<Flags>5</Flags>
 											</Point>
 											<Point>
-												<XPos>59.9466</XPos>
+												<XPos>5.99466</XPos>
 												<YPos>-10.61381</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>69.82644</XPos>
+												<XPos>6.982644</XPos>
 												<YPos>-7.53471</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>79.9733</XPos>
+												<XPos>7.99733</XPos>
 												<YPos>-4.53615</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>90.25367</XPos>
+												<XPos>9.025367</XPos>
 												<YPos>-2.65812</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>100</XPos>
+												<XPos>10</XPos>
 												<YPos>0</YPos>
 												<Flags>37</Flags>
 											</Point>
@@ -162,7 +162,7 @@
 								<CustomState Name="" ID="{D5A23212-9ED6-4FE8-A503-D50B9D7B0752}" ShortID="164552317">
 									<PropertyList>
 										<Property Name="BusVolume" Type="Real64" Value="-7"/>
-										<Property Name="Lowpass" Type="int16" Value="37"/>
+										<Property Name="Lowpass" Type="int16" Value="69"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>

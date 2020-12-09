@@ -11,6 +11,11 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -81,6 +86,11 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -185,10 +195,14 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="EnableAttenuation" Type="bool" Value="False"/>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
 										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -392,6 +406,11 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-9</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
@@ -585,11 +604,13 @@
 						</Sound>
 						<Sound Name="orb remake2" ID="{D6103B4B-2F0D-4192-94B2-88C897AB3D84}" ShortID="294155851">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
 										<Value>33</Value>
 									</ValueList>
 								</Property>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-9</Value>
@@ -597,6 +618,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 								</Reference>
@@ -1532,6 +1556,9 @@
 				<Folder Name="EndScene" ID="{EA59F3BC-9640-4837-BCD4-653552A12A48}" ShortID="1023781272">
 					<ChildrenList>
 						<Sound Name="atmos 1" ID="{DA8DAE6D-98C5-47AD-8BEE-266ADEE319F0}" ShortID="764492138">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
@@ -1543,8 +1570,8 @@
 							<ChildrenList>
 								<AudioFileSource Name="atmos 1" ID="{3466D1D6-A7A7-4A50-96B9-848F1FC1A588}">
 									<PropertyList>
-										<Property Name="FadeOutDuration" Type="Real64" Value="0.601659342733136"/>
-										<Property Name="LoopBegin" Type="Real64" Value="0"/>
+										<Property Name="LoopBegin" Type="Real64" Value="26.5277073841426"/>
+										<Property Name="LoopEnd" Type="Real64" Value="39.8189092281563"/>
 										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 									</PropertyList>
 									<Language>SFX</Language>
@@ -1559,7 +1586,18 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="big orb" ID="{B1D20D7F-34F0-4366-A890-56FD54322539}" ShortID="982324734">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 								</Reference>

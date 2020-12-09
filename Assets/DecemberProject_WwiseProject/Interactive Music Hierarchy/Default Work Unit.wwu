@@ -33,7 +33,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>12</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -294,11 +294,6 @@
 										<Property Name="GridFrequencyPreset" Type="int16" Value="52"/>
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="140"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-9</Value>
-											</ValueList>
-										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -406,6 +401,13 @@
 													</SequenceList>
 												</MusicTrack>
 												<MusicTrack Name="tense music undermelody" ID="{798E2FA6-B922-4DC1-B756-9AC6BC61CEF9}" ShortID="221999476">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
@@ -1799,7 +1801,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-18</Value>
+								<Value>-9</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
