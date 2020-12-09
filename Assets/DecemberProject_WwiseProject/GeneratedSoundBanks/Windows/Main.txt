@@ -31,19 +31,29 @@ Event	ID	Name			Wwise Object Path	Notes
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1562068129	Overworld			\Default Work Unit\Overworld	
+	2661533922	IsBeingCorrupted			\Default Work Unit\IsBeingCorrupted	
 	3214304800	Spotted			\Default Work Unit\Spotted	
 
 State	ID	Name	State Group			Notes
 	391998042	Tense	Overworld			
 	748895195	None	Overworld			
 	2619280431	NonTense	Overworld			
+	748895195	None	IsBeingCorrupted			
+	979470758	Yes	IsBeingCorrupted			
+	1668749452	No	IsBeingCorrupted			
 	748895195	None	Spotted			
 	979470758	Yes	Spotted			
 	1668749452	No	Spotted			
 
 Custom State	ID	Name	State Group	Owner		Notes
+	86268649	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth CALLs		
+	423528815	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase drums		
+	576769052	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger synth (2+1dc)		
+	713069030	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth 1DC!!!!!!		
 	753563285	Yes	Spotted	\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Overworld+Tense		
 	769042501	Yes	Spotted	\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense		
+	897133653	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger drums (2+1dc)		
+	1015398410	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger synth call (2+1dc)		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	2155950306	Spatialization1			\Default Work Unit\Spatialization1	
@@ -63,11 +73,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	113483634	footsteps 2_1_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 2.1.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\2\footsteps2\footsteps 2_1_1		3753
 	142657747	Footstep Killer 3_5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 3.5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS3\Footstep Killer 3_5		8384
 	172220298	chase drums	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\chase drums_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase drums		417645
-	175012262	Main Menu Highlight	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Main Menu Highlight_C2066C43.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Main Menu Highlight		3354
+	175012262	Main Menu Highlight	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Main Menu Highlight_CD1ED910.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Main Menu Highlight		3354
 	190373997	footsteps 1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\1\footsteps 1_2		5443
 	193363895	tense music bass	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\tense music bass_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music bass		507144
 	260759101	Footstep Killer 1_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 1.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_1		1214
-	293490680	Footstep Killer 2_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 2.1_8EC83FF6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_1		8652
+	293490680	Footstep Killer 2_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 2.1_1FE86188.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_1		8652
 	300243749	footsteps 3_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 3.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\3\footsteps 3_2		4412
 	335048445	firework5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\firework5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework5		18300
 	390844414	Footstep Killer 1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_2		1182
@@ -89,7 +99,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	740779274	chase synth 1DC!!!!!!	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\chase synth 1DC!!!!!!_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth 1DC!!!!!!		373718
 	741320198	chase synth CALLs	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\chase synth CALL1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth CALLs		93909
 	741580282	Footstep Killer 2_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 2.2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_2		10252
-	754720362	tense music undermelody 	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\tense music undermelody _9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music undermelody 		1407463
+	754720362	tense music undermelody	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\tense music undermelody _9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music undermelody		1407463
 	770735795	footsteps 2_1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 2.1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\2\footsteps2\footsteps 2_1_2		3706
 	771280129	footsteps 4_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 4.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\4\footsteps 4_1		4506
 	803494294	chase synth CALLs	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\chase synth CALL2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth CALLs		118110

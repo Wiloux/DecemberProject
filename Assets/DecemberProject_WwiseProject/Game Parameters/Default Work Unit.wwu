@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{FDBF762A-8CB4-491C-A285-37708C1866E8}" PersistMode="Standalone">
 			<ChildrenList>
 				<GameParameter Name="Spatialization1" ID="{E8E6DDF1-10E6-484D-B97A-BA85FCC2C25F}"/>
+				<GameParameter Name="MusicVolume" ID="{102EBDFF-AC50-4568-B70E-D32B300D28FF}"/>
+				<GameParameter Name="SFXVolume" ID="{F6FC2505-72DB-48A0-859F-23DA72E8F544}"/>
+				<GameParameter Name="KillerProximity" ID="{36E12197-18AA-4F3E-A7A8-DF0E9F005E82}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

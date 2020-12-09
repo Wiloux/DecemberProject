@@ -46,6 +46,18 @@ namespace AK
 
     namespace STATES
     {
+        namespace ISBEINGCORRUPTED
+        {
+            static const AkUniqueID GROUP = 2661533922U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NO = 1668749452U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID YES = 979470758U;
+            } // namespace STATE
+        } // namespace ISBEINGCORRUPTED
+
         namespace OVERWORLD
         {
             static const AkUniqueID GROUP = 1562068129U;
@@ -86,6 +98,9 @@ namespace AK
 
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID KILLERPROXIMITY = 110585135U;
+        static const AkUniqueID MUSICVOLUME = 2346531308U;
+        static const AkUniqueID SFXVOLUME = 988953028U;
         static const AkUniqueID SPATIALIZATION1 = 2155950306U;
     } // namespace GAME_PARAMETERS
 
@@ -102,6 +117,11 @@ namespace AK
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID OVERWORLDMUSIC = 1872467674U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

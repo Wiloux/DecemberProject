@@ -24,6 +24,13 @@
 						<State Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}">
+					<ChildrenList>
+						<State Name="None" ID="{0AD495A4-3B29-4CFB-9AFA-CD2C04EEBE49}"/>
+						<State Name="Yes" ID="{B8DA0160-63E3-4CCA-B091-04B800C6F99C}"/>
+						<State Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

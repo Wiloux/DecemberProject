@@ -57,6 +57,7 @@
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
 										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -67,7 +68,6 @@
 								<Action Name="" ID="{3E9C9EE2-C322-483C-82B8-9BFB8B5256BC}" ShortID="148987229">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="22"/>
-										<Property Name="Delay" Type="Real64" Value="2"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -75,11 +75,29 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{993BE491-F43B-4809-8D46-72436DDB4ED6}" ShortID="387552027">
+								<Action Name="" ID="{4991B269-29D6-45A9-B430-0508D84382F4}" ShortID="849837982">
 									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="ActionType" Type="int16" Value="22"/>
 									</PropertyList>
-									<ReferenceList/>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}" WorkUnitID="{FFF60CC1-D8AC-4865-9438-D69566D6646E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="IsBeingCorrupted" ID="{1FFBC9D8-93C6-46E1-91BB-CD6CFC93A35E}">
+							<ChildrenList>
+								<Action Name="" ID="{CD31F306-515C-4ED8-93A8-210C31C156E2}" ShortID="21436309">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Yes" ID="{B8DA0160-63E3-4CCA-B091-04B800C6F99C}" WorkUnitID="{FFF60CC1-D8AC-4865-9438-D69566D6646E}"/>
+										</Reference>
+									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>

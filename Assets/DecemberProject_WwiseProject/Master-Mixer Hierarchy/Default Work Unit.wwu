@@ -9,6 +9,47 @@
 							<ValueList>
 								<Value>-18</Value>
 							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{739746F8-3B23-48C3-8261-269621D20AA0}" ShortID="342852953">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="SFXVolume" ID="{F6FC2505-72DB-48A0-859F-23DA72E8F544}" WorkUnitID="{FDBF762A-8CB4-491C-A285-37708C1866E8}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{4B0813E7-ADCD-4A15-A46F-BCFE5DBA8A96}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>70.22697</XPos>
+												<YPos>-1.82177</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>80.10681</XPos>
+												<YPos>-1.15384</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>89.85314</XPos>
+												<YPos>-0.48991</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
 						</Property>
 						<Property Name="Lowpass" Type="int16">
 							<ValueList>
@@ -48,11 +89,73 @@
 					</StateInfo>
 				</Bus>
 				<Bus Name="Music" ID="{447E649B-2F10-44EB-89F4-D257D074E699}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+							<RTPCList>
+								<RTPC Name="" ID="{F4F4B1FA-DC56-4683-AAD6-7FA13E7A74C9}" ShortID="183728298">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="MusicVolume" ID="{102EBDFF-AC50-4568-B70E-D32B300D28FF}" WorkUnitID="{FDBF762A-8CB4-491C-A285-37708C1866E8}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{5B5F896A-50C5-45F9-B20D-523A50731D08}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>59.9466</XPos>
+												<YPos>-10.61381</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>69.82644</XPos>
+												<YPos>-7.53471</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>79.9733</XPos>
+												<YPos>-4.53615</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>90.25367</XPos>
+												<YPos>-2.65812</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>100</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{E9F44C94-632E-4E49-9DAD-396F09596528}" WorkUnitID="{F152F3CE-44CE-45BE-9C49-2813E526D499}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="OverworldMusic" ID="{CEA4A069-E2E9-4AB3-8C8A-458629FA2D92}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+					</ChildrenList>
 					<StateInfo>
 						<StateGroupList>
 							<StateGroupInfo>

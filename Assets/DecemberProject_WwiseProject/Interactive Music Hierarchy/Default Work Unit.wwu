@@ -6,19 +6,31 @@
 				<Folder Name="Overworld+Tense" ID="{922E1A45-5D67-482A-8937-93E359B32FAA}" ShortID="81914968">
 					<ChildrenList>
 						<MusicSwitchContainer Name="Overworld+Tense" ID="{128DCD76-6399-4D1E-961D-61B9DEB8ECAC}" ShortID="844497740">
+							<PropertyList>
+								<Property Name="Tempo" Type="Real64" Value="140"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Music" ID="{AAF9DC4E-28A3-4F1C-85CD-80DD0E114329}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+									<ObjectRef Name="Music" ID="{447E649B-2F10-44EB-89F4-D257D074E699}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<MusicPlaylistContainer Name="Overworld+Tense" ID="{4EC4F7B7-068A-4735-BA65-D4FFEEF151E2}" ShortID="134416499">
 									<PropertyList>
 										<Property Name="GridFrequencyPreset" Type="int16" Value="52"/>
+										<Property Name="OutputBusVolume" Type="Real64">
+											<ValueList>
+												<Value>-96</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="OverrideOutput" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="140"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>12</Value>
@@ -30,7 +42,10 @@
 											<ObjectRef Name="Music" ID="{AAF9DC4E-28A3-4F1C-85CD-80DD0E114329}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+											<ObjectRef Name="Music" ID="{447E649B-2F10-44EB-89F4-D257D074E699}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="OverworldMusic" ID="{CEA4A069-E2E9-4AB3-8C8A-458629FA2D92}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -390,14 +405,14 @@
 														</MusicTrackSequence>
 													</SequenceList>
 												</MusicTrack>
-												<MusicTrack Name="tense music undermelody " ID="{798E2FA6-B922-4DC1-B756-9AC6BC61CEF9}" ShortID="221999476">
+												<MusicTrack Name="tense music undermelody" ID="{798E2FA6-B922-4DC1-B756-9AC6BC61CEF9}" ShortID="221999476">
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="tense music undermelody " ID="{9DA7B9ED-07EE-4270-A529-ACFDF4B6CFF8}">
+														<AudioFileSource Name="tense music undermelody" ID="{9DA7B9ED-07EE-4270-A529-ACFDF4B6CFF8}">
 															<Language>SFX</Language>
 															<AudioFile>tense music undermelody .wav</AudioFile>
 															<MediaIDList>
@@ -422,7 +437,7 @@
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																	</PropertyList>
-																	<AudioSourceRef Name="tense music undermelody " ID="{9DA7B9ED-07EE-4270-A529-ACFDF4B6CFF8}"/>
+																	<AudioSourceRef Name="tense music undermelody" ID="{9DA7B9ED-07EE-4270-A529-ACFDF4B6CFF8}"/>
 																</MusicClip>
 															</ClipList>
 														</MusicTrackSequence>
@@ -1262,6 +1277,27 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
+												<CustomState Name="" ID="{33059E5C-8C43-4755-B31F-371FB30541B1}" ShortID="527231729"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{B8DA0160-63E3-4CCA-B091-04B800C6F99C}"/>
+												<CustomState Name="" ID="{69E4DC35-874E-4008-A612-690C3913E6F8}" ShortID="713069030">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-8"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{33121419-9CE0-4264-B7ED-2EDA912DCD3A}">
 											<PropertyList>
@@ -1315,6 +1351,27 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
+												<CustomState Name="" ID="{3C3EFBE4-ECFA-449B-943E-FBC79911F3D7}" ShortID="689012030"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{B8DA0160-63E3-4CCA-B091-04B800C6F99C}"/>
+												<CustomState Name="" ID="{53DDEA20-36DD-44F3-8765-63A4BA7E2B63}" ShortID="86268649">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{C8AD20CA-1710-42DB-9663-7D4D9046195B}">
 											<PropertyList>
@@ -1407,6 +1464,27 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
+												<CustomState Name="" ID="{4D3BF97D-4FFB-4BC0-BC55-33E0E4E1D9A8}" ShortID="985862255"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{B8DA0160-63E3-4CCA-B091-04B800C6F99C}"/>
+												<CustomState Name="" ID="{7247C062-9C6E-4C9E-9A0E-0341FF2E9FEA}" ShortID="423528815">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{4D5530A9-6CF5-4230-94CC-36F16C34370A}">
 											<PropertyList>
@@ -1469,6 +1547,27 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
+												<CustomState Name="" ID="{64C35EA7-ABDB-4A05-9CEC-EF916C06AA4E}" ShortID="759944702"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{B8DA0160-63E3-4CCA-B091-04B800C6F99C}"/>
+												<CustomState Name="" ID="{E0370C79-2270-4D3C-9A90-753AE9F1F8C6}" ShortID="576769052">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-8"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{6D79AF0C-8304-439C-8E02-2261AF790D48}">
 											<PropertyList>
@@ -1507,6 +1606,27 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
+												<CustomState Name="" ID="{29464AC0-27B6-4940-A9E9-649E55A735B0}" ShortID="174076665"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{B8DA0160-63E3-4CCA-B091-04B800C6F99C}"/>
+												<CustomState Name="" ID="{2A3A0678-C735-4236-9C59-F82D6955F333}" ShortID="1015398410">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{B3001342-29DC-4769-9546-7F1F60C3ADAF}">
 											<PropertyList>
@@ -1586,6 +1706,27 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
+												<CustomState Name="" ID="{8B9D5990-5E64-4A79-B7D8-4EDE36219A63}" ShortID="1038329491"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Yes" ID="{B8DA0160-63E3-4CCA-B091-04B800C6F99C}"/>
+												<CustomState Name="" ID="{50D708D3-58CE-4EAA-B46B-4ACF528D0EE7}" ShortID="897133653">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<TransitionList>
 										<MusicTransition Name="Root" ID="{605A1384-BB8E-45AD-9B38-83A9B195E752}">
 											<PropertyList>

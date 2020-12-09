@@ -11,10 +11,17 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1733214153">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1331529741">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="1872467674" Name="OverworldMusic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Music\OverworldMusic"/>
+			</IncludedAuxBusses>
+			<GameParameters>
+				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
+				<GameParameter Id="2346531308" Name="MusicVolume" ObjectPath="\Game Parameters\Default Work Unit\MusicVolume"/>
+			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3494343696" Name="PauseMenu" ObjectPath="\States\Default Work Unit\PauseMenu">
 					<States>
@@ -25,7 +32,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1403154964">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4251803906">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -179,7 +186,7 @@
 					<IncludedMemoryFiles>
 						<File Id="175012262" Language="SFX">
 							<ShortName>Main Menu Highlight.wav</ShortName>
-							<Path>SFX\Main Menu Highlight_C2066C43.wem</Path>
+							<Path>SFX\Main Menu Highlight_CD1ED910.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -231,7 +238,7 @@
 						</File>
 						<File Id="293490680" Language="SFX">
 							<ShortName>Footstep Killer 2.1.wav</ShortName>
-							<Path>SFX\Footstep Killer 2.1_8EC83FF6.wem</Path>
+							<Path>SFX\Footstep Killer 2.1_1FE86188.wem</Path>
 						</File>
 						<File Id="535574224" Language="SFX">
 							<ShortName>Footstep Killer 2.4.wav</ShortName>
@@ -328,6 +335,9 @@
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
+					<AuxBusSends>
+						<AuxBus Id="1872467674" Name="OverworldMusic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Music\OverworldMusic"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="3467592801" Name="PlayStatic" ObjectPath="\Events\Default Work Unit\Others\PlayStatic" MaxAttenuation="70.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -376,7 +386,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="55202904">
+		<SoundBank Id="3604647259" Language="SFX" Hash="4195208089">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>
@@ -397,7 +407,7 @@
 					<IncludedMemoryFiles>
 						<File Id="175012262" Language="SFX">
 							<ShortName>Main Menu Highlight.wav</ShortName>
-							<Path>SFX\Main Menu Highlight_C2066C43.wem</Path>
+							<Path>SFX\Main Menu Highlight_CD1ED910.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

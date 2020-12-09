@@ -8,7 +8,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	175012262	Main Menu Highlight	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Main Menu Highlight_C2066C43.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Main Menu Highlight		3354
+	175012262	Main Menu Highlight	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Main Menu Highlight_CD1ED910.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Main Menu Highlight		3354
 	190373997	footsteps 1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\1\footsteps 1_2		5443
 	520607068	Main Menu Keypress	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Main Menu Keypress_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Main Menu Keypress		2837
 	879557984	footsteps 1_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 1.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\1\footsteps 1_1		5390

@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 27596ce3e9aa5240a54f786194d9fa0c
     GuidInternal: 
-    m_lastTime: -8585941346541611146
+    m_lastTime: -8585941307915332705
     List:
     - name: MainMenu
       guid: c4f31a29ed3f254189da43c96b8cb14c
@@ -59,6 +59,17 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 2
       Path: Default Work Unit\Music
+    - name: OverworldMusic
+      guid: 69a0a4cee9e2b34a8c8a458629fa2d92
+      id: 1872467674
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 2
+      - ElementName: OverworldMusic
+        ObjectType: 1
+      Path: Default Work Unit\Music\OverworldMusic
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -67,7 +78,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585941349533404212
+    m_lastTime: -8585941332154654340
     List:
     - name: Main
       guid: e8a3ab083a4d344489c1ca41b102a799
@@ -602,8 +613,22 @@ MonoBehaviour:
     ParentPath: Music
     guid: 38e6abbb33223a48925241b8e238fef4
     GuidInternal: 
-    m_lastTime: -8585942233195295190
+    m_lastTime: -8585941288244620813
     List:
+    - name: IsBeingCorrupted
+      guid: d8c9fb1fc693e14691bbcd6cfc93a35e
+      id: 2661533922
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: Overworld
+        ObjectType: 4
+      - ElementName: IsBeingCorrupted
+        ObjectType: 3
+      Path: Music\Overworld\IsBeingCorrupted
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Overworld
       guid: 1fd663e1db5653458e55d44d740a8017
       id: 1562068129
@@ -680,8 +705,26 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2a76bffdb48c1c49a28537708c1866e8
     GuidInternal: 
-    m_lastTime: -8585942290093935674
+    m_lastTime: -8585941307915382566
     List:
+    - name: MusicVolume
+      guid: ffbd2e1050ac6845b70ed32b300d28ff
+      id: 2346531308
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MusicVolume
+        ObjectType: 13
+      Path: Default Work Unit\MusicVolume
+    - name: SFXVolume
+      guid: 0525fcf6db72a048859f23da72e8f544
+      id: 988953028
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFXVolume
+        ObjectType: 13
+      Path: Default Work Unit\SFXVolume
     - name: Spatialization1
       guid: f1dde6e8e6104d48b97aba85fcc2c25f
       id: 2155950306
@@ -699,8 +742,39 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c10cf6ffacd865489438d69566d6646e
     GuidInternal: 
-    m_lastTime: -8585941348289603838
+    m_lastTime: -8585941294807768445
     List:
+    - name: IsBeingCorrupted
+      guid: 70effdbdab2838449d5f97a0bfc1175a
+      id: 2661533922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: IsBeingCorrupted
+        ObjectType: 9
+      Path: Default Work Unit\IsBeingCorrupted
+      values:
+      - name: No
+        guid: 9c1248efaee6ab4993b0f735a314630d
+        id: 1668749452
+        PathAndIcons:
+        - ElementName: No
+          ObjectType: 8
+      - name: None
+        guid: a495d40a293bfb4c9afacd2c04eebe49
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Yes
+        guid: 6001dab8e363ca4cb09104b800c6f99c
+        id: 979470758
+        PathAndIcons:
+        - ElementName: Yes
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
     - name: Overworld
       guid: 8aff8469e9cb3f4f9dc19f135218b940
       id: 1562068129
@@ -818,6 +892,7 @@ MonoBehaviour:
   - /DecemberProject_WwiseProject
   - /DecemberProject_WwiseProject/States
   - /DecemberProject_WwiseProject/States/Default Work Unit
+  - /DecemberProject_WwiseProject/States/Default Work Unit/IsBeingCorrupted
   - /DecemberProject_WwiseProject/States/Default Work Unit/Overworld
   - /DecemberProject_WwiseProject/States/Default Work Unit/PauseMenu
   autoPopulateEnabled: 1

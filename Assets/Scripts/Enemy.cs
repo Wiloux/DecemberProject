@@ -136,7 +136,6 @@ public class Enemy : MonoBehaviour
                     {
 
                         CurrentTransformObjective = Objectives[Random.Range(0, Objectives.Count)].transform;
-
                         if (CurrentTransformObjective.GetComponent<Objective>().Type == Objective.WorkType.car)
                         {
                             CurrentTransformObjective = CurrentTransformObjective.GetComponent<Objective>().PS.transform;
@@ -148,6 +147,7 @@ public class Enemy : MonoBehaviour
                     {
                         if (Player.PlayerScript.ChaseMe && Player.PlayerScript.currentState != Movement.States.Corrupted && Player.PlayerScript.currentState != Movement.States.Dead)
                         {
+                            AkSoundEngine.PostEvent("PlayChase", gameObject);
                             t = 0;
                             Player.isSpotted = true;
                             Player.Timer = ChaseDur;
