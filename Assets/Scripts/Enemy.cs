@@ -122,6 +122,7 @@ public class Enemy : MonoBehaviour
                     }
                     else
                     {
+                        AkSoundEngine.PostEvent("StopChase", gameObject);
                         CurrentTransformPlayer = null;
                         set_skinned_mat(mesh, 2, IdleMat[Random.Range(0, IdleMat.Count)]);
                         currentState = States.Patrolling;
@@ -217,7 +218,7 @@ public class Enemy : MonoBehaviour
                             newtv.tvGameObject.GetComponent<Renderer>().materials = mats;
                             newtv.survivor = CurrentTransformPlayer.PlayerScript;
                         }
-                        AkSoundEngine.PostEvent("StopChase", gameObject);
+                      
                        // AkSoundEngine.PostEvent("IsBeingCorrupted", gameObject);
                         currentState = States.Pause;
 
