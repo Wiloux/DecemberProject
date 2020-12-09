@@ -302,7 +302,7 @@ MonoBehaviour:
     Mathis Varnier <3
 
 
-    Morrigan
+    Morigan
     Let
 
 
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_margin: {x: -219.97978, y: 0, z: -220.47083, w: -1486.6425}
   m_textInfo:
     textComponent: {fileID: 3607617566549981363}
-    characterCount: 237
+    characterCount: 236
     spriteCount: 0
     spaceCount: 46
     wordCount: 28
