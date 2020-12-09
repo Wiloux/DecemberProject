@@ -45,11 +45,16 @@ public class VictoryManagement : MonoBehaviour
             if (i >= 3)
             {
                 anim.SetTrigger("Lost");
-                AkSoundEngine.PostEvent("StopAllSounds", gameObject);
+             
             }
         }
 
          //   anim.SetTrigger("Victory");
+
+    }
+
+    public void StopAllSound()
+    {
 
     }
 }

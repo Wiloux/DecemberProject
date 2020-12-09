@@ -217,8 +217,15 @@ public class Enemy : MonoBehaviour
                             newtv.tvGameObject.GetComponent<Renderer>().materials = mats;
                             newtv.survivor = CurrentTransformPlayer.PlayerScript;
                         }
+                        AkSoundEngine.PostEvent("StopChase", gameObject);
+                      //  AkSoundEngine.PostEvent("IsBeingCorrupted", gameObject);
                         currentState = States.Pause;
-                        set_skinned_mat(mesh, 2, CorruptMat[Random.Range(0, CorruptMat.Count)]);
+
+                        foreach (SpottedSurvior Player in Players)
+                        {
+                            Player.PlayerScript.ChaseTimer = 0;
+                            Player.isSpotted = false; }
+                            set_skinned_mat(mesh, 2, CorruptMat[Random.Range(0, CorruptMat.Count)]);
                         break;
                     }
 
@@ -245,6 +252,7 @@ public class Enemy : MonoBehaviour
                     if (NoMoreSpotted)
                     {
                         //     Debug.Log("Going Back to Patroll");
+                        AkSoundEngine.PostEvent("StopChase", gameObject);
                         CurrentTransformPlayer = null;
                         currentState = States.Patrolling;
                         agent.speed = spd;

@@ -38,6 +38,9 @@ public class PauseMenu : MonoBehaviour
         GamePaused = !GamePaused;
         PauseMenuPanel.SetActive(GamePaused);
         SurvUI.SetActive(!GamePaused);
+        if(GamePaused)
+        AkSoundEngine.SetState("PauseMenu","Yes");
+        else
         AkSoundEngine.SetState("PauseMenu", "No");
     }
 
