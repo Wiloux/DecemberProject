@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986dbb0d0adc99648b6f1af93c7216ed, type: 3}
+  m_Name: 36E12197-18AA-4F3E-A7A8-DF0E9F005E82
+  m_EditorClassIdentifier: 
+  objectName: KillerProximity
+  id: 110585135
+  guid: 36E12197-18AA-4F3E-A7A8-DF0E9F005E82

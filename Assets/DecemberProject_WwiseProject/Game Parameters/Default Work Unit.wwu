@@ -16,7 +16,13 @@
 						<Property Name="Max" Type="Real64" Value="10"/>
 					</PropertyList>
 				</GameParameter>
-				<GameParameter Name="KillerProximity" ID="{36E12197-18AA-4F3E-A7A8-DF0E9F005E82}"/>
+				<GameParameter Name="KillerProximity" ID="{36E12197-18AA-4F3E-A7A8-DF0E9F005E82}">
+					<PropertyList>
+						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="70"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
