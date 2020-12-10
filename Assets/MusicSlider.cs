@@ -19,7 +19,7 @@ public class MusicSlider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Img1.fillAmount = Slider1.value;
-        Img2.fillAmount = Slider2.value;   
+        Img1.fillAmount = Slider1.value / Slider1.maxValue;
+        Img2.fillAmount = Slider2.value / Slider2.maxValue;
     }
 }

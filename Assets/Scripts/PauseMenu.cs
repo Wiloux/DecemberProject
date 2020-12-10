@@ -9,16 +9,21 @@ public class PauseMenu : MonoBehaviour
     public static PauseMenu instance;
     public GameObject PauseMenuPanel;
     public GameObject SurvUI;
+    public GameObject GameCam;
+    public GameObject PauseCam;
     // Update is called once per frame
 
     private void Awake()
     {
         instance = this;
+
         AkSoundEngine.SetState("PauseMenu", "Yes");
     }
 
     private void Start()
     {
+        PauseCam.SetActive(GamePaused);
+        GameCam.SetActive(!GamePaused);
         GamePaused = false;
         PauseMenuPanel.SetActive(GamePaused);
     }
@@ -38,10 +43,16 @@ public class PauseMenu : MonoBehaviour
         GamePaused = !GamePaused;
         PauseMenuPanel.SetActive(GamePaused);
         SurvUI.SetActive(!GamePaused);
-        if(GamePaused)
-        AkSoundEngine.SetState("PauseMenu","Yes");
+        PauseCam.SetActive(GamePaused);
+        GameCam.SetActive(!GamePaused);
+        if (GamePaused)
+        {
+            AkSoundEngine.SetState("PauseMenu", "Yes");
+        }
         else
-        AkSoundEngine.SetState("PauseMenu", "No");
+        {
+            AkSoundEngine.SetState("PauseMenu", "No");
+        }
     }
 
 }

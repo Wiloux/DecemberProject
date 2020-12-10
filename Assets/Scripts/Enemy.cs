@@ -225,7 +225,10 @@ public class Enemy : MonoBehaviour
                         foreach (SpottedSurvior Player in Players)
                         {
                             Player.PlayerScript.ChaseTimer = 0;
-                            Player.isSpotted = false; }
+                            Player.Timer = 0;
+                            Player.isSpotted = false;
+                            Player.PlayerScript.ChaseMe = false;
+                        }
                             set_skinned_mat(mesh, 2, CorruptMat[Random.Range(0, CorruptMat.Count)]);
                         break;
                     }

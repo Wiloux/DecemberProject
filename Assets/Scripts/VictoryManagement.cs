@@ -53,7 +53,7 @@ public class VictoryManagement : MonoBehaviour
 
     }
 
-    public void StopAllSound()
+    public void StaticGoesHere()
     {
 
     }
