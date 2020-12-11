@@ -118,7 +118,10 @@ public class Movement : MonoBehaviour
                 soulGameObject.SetActive(false);
             }
 
-            hover = HoverWork();
+            if (isSelected)
+            {
+                hover = HoverWork();
+            }
             SelectedSprite.SetActive(isSelected);
             if (isSelected && currentState != States.Dead)
             {
@@ -705,8 +708,13 @@ public class Movement : MonoBehaviour
                         { return false; }
                         if (currentObjective.GetComponent<Movement>() != null)
                         {
-                            if (currentObjective.GetComponent<Movement>().isBeingHelped)
-                            { return false; }
+                            Movement currMovement = currentObjective.GetComponent<Movement>();
+                            if (currMovement != GetComponent<Movement>())
+                            {
+                                if (currMovement.isBeingHelped || currMovement.currentState != Movement.States.Corrupted && currMovement.currentState != Movement.States.Dead)
+                                { return false; }
+                            }
+                            else { return false; }
                         }
                         return true;
                     }
