@@ -13,7 +13,7 @@
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-17</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -88,7 +88,7 @@
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-16</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -408,7 +408,7 @@
 										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-25</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -490,6 +490,85 @@
 										</Reference>
 									</ReferenceList>
 								</RandomSequenceContainer>
+								<Folder Name="Nightstalker" ID="{CC0A6904-3570-49E2-82C1-89A6DFDF648C}" ShortID="507207762">
+									<ChildrenList>
+										<ActorMixer Name="Nightstalker" ID="{332E1AE6-E1DA-42D9-B6D3-A8ACBD8C54EB}" ShortID="135917898">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>17</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F556C30F-77C3-4945-AE04-851B6A851FBB}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="101"/>
+																	<Property Name="Min" Type="Real64" Value="-101"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-2</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="1" ID="{2988DDF2-0836-4FA2-A833-64640B8109A1}" ShortID="433393084">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="1" ID="{AC486AE2-1A3B-441E-A5DC-54461FA269CE}">
+															<Language>SFX</Language>
+															<AudioFile>1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="366924425"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="1" ID="{AC486AE2-1A3B-441E-A5DC-54461FA269CE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</ActorMixer>
+									</ChildrenList>
+								</Folder>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
@@ -598,6 +677,27 @@
 									</PropertyList>
 								</Panner>
 							</PositioningInfo>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PauseMenu" ID="{E8A7B26B-939F-45B6-8575-634A237FB705}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Yes" ID="{7F1C27A4-B933-4614-A847-93C83D1D68A4}"/>
+										<CustomState Name="" ID="{F753F66F-6734-4847-9C5A-5BF5AF4A0599}" ShortID="451678780">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
+										<CustomState Name="" ID="{25FFDF59-3D71-4612-A401-0648168D4FA2}" ShortID="3116235"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="orb2" ID="{D51481E8-EBD6-4796-9C81-53E243DC9AC6}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -619,7 +719,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+									<ObjectRef Name="Orb" ID="{F0188C47-9694-4D26-A6C7-99F672F696E8}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
@@ -637,6 +737,27 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PauseMenu" ID="{E8A7B26B-939F-45B6-8575-634A237FB705}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Yes" ID="{7F1C27A4-B933-4614-A847-93C83D1D68A4}"/>
+										<CustomState Name="" ID="{162F1C69-E7CE-487C-BF87-2E92EE10F1B4}" ShortID="338123450">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
+										<CustomState Name="" ID="{E0143192-0916-4C19-8D76-CCDFC9F8DE88}" ShortID="212607425"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="orb remake2" ID="{E515BB2C-AC02-4F2B-8E4D-7997564913D2}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -716,6 +837,23 @@
 									</PropertyList>
 								</Position>
 							</PositioningInfo>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PauseMenu" ID="{E8A7B26B-939F-45B6-8575-634A237FB705}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Yes" ID="{7F1C27A4-B933-4614-A847-93C83D1D68A4}"/>
+										<CustomState Name="" ID="{B1A52F45-0986-46AD-805B-9B6B5D335E15}" ShortID="574953184"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
+										<CustomState Name="" ID="{4907B5E5-92EE-4A04-B9D4-66CDB25CDF85}" ShortID="447401820"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="staticTvHead" ID="{DECA04DB-772D-4C7B-84A8-8F3FC91D4962}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -760,6 +898,28 @@
 									</PropertyList>
 								</Panner>
 							</PositioningInfo>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="PauseMenu" ID="{E8A7B26B-939F-45B6-8575-634A237FB705}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Yes" ID="{7F1C27A4-B933-4614-A847-93C83D1D68A4}"/>
+										<CustomState Name="" ID="{75343B91-F31E-435D-BDE9-CC9ACF88A667}" ShortID="441833695">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16" Value="2"/>
+												<Property Name="Volume" Type="Real64" Value="-108"/>
+											</PropertyList>
+										</CustomState>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
+										<CustomState Name="" ID="{38567F1C-5037-4BEC-86E7-60483D5E67F3}" ShortID="239721321"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="staticPlayer" ID="{937CE997-22C1-4CD1-8375-18FBC48C062D}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -774,10 +934,15 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="TvHeadStatic" ID="{66191E7C-4DE1-4DEC-ADFF-274F900645AB}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+											<ObjectRef Name="WeaponsSetup" ID="{40997A55-DD42-40C4-87A9-E9785893A36B}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
@@ -800,9 +965,17 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="beartrap trigger" ID="{A8D2C6E6-9ACE-4291-8FE9-5E73C5A5BC50}" ShortID="256592711">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+											<ObjectRef Name="WeaponsTrigger" ID="{7E3B4B9C-A089-43D0-B29B-35704D65293F}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
@@ -832,12 +1005,15 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-										<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-12</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+											<ObjectRef Name="WeaponsSetup" ID="{40997A55-DD42-40C4-87A9-E9785893A36B}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
@@ -869,12 +1045,159 @@
 								</Sound>
 								<RandomSequenceContainer Name="fireworks trigger" ID="{1D85B09C-FD04-4776-9550-734F40AB0C57}" ShortID="347119090">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-14</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="Lightbulb" ID="{DC062C90-12E9-4691-A895-F3F265680B61}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+											<Custom CreatedFrom="{7E3B4B9C-A089-43D0-B29B-35704D65293F}">
+												<Attenuation Name="WeaponsTrigger (Custom)" ID="{C85C1AD3-FEFF-44B7-A12B-9EDAE8883228}" ShortID="871597027">
+													<PropertyList>
+														<Property Name="RadiusMax" Type="Real64" Value="70"/>
+													</PropertyList>
+													<CurveUsageInfoList>
+														<VolumeDryUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="VolumeDry" ID="{15C277AF-7E3A-41AA-A7A0-A7BFA8CBC2EF}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="3"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>9.92472</XPos>
+																			<YPos>-0</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>37.09345</XPos>
+																			<YPos>-20.26421</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>70</XPos>
+																			<YPos>-200</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</VolumeDryUsage>
+														<VolumeWetGameUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetGameUsage>
+														<VolumeWetUserUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+														</VolumeWetUserUsage>
+														<LowPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="LowPassFilter" ID="{4BFC7ADB-ED67-413D-AE63-5A6D3C167721}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>58.6917</XPos>
+																			<YPos>31</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>70</XPos>
+																			<YPos>37</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</LowPassFilterUsage>
+														<HighPassFilterUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="HighPassFilter" ID="{CE181854-73A6-47D2-B210-A850D5315056}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="65537"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>0</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>34.80046</XPos>
+																			<YPos>74</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>70</XPos>
+																			<YPos>100</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</HighPassFilterUsage>
+														<SpreadUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+																<Curve Name="Spread" ID="{33ABB61B-335B-45F9-B1DC-1D9862DC1CD3}">
+																	<PropertyList>
+																		<Property Name="Flags" Type="int32" Value="1"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>0</XPos>
+																			<YPos>100</YPos>
+																			<Flags>5</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>3.59179</XPos>
+																			<YPos>100</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>4.9886</XPos>
+																			<YPos>80.59406</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>6.42531</XPos>
+																			<YPos>42.77228</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>8.81984</XPos>
+																			<YPos>-0</YPos>
+																			<Flags>0</Flags>
+																		</Point>
+																		<Point>
+																			<XPos>70</XPos>
+																			<YPos>0</YPos>
+																			<Flags>37</Flags>
+																		</Point>
+																	</PointList>
+																</Curve>
+															</CurveUsageInfo>
+														</SpreadUsage>
+														<FocusUsage>
+															<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+														</FocusUsage>
+													</CurveUsageInfoList>
+												</Attenuation>
+											</Custom>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
@@ -1300,7 +1623,120 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+									<Custom CreatedFrom="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}">
+										<Attenuation Name="FootstepsPlayer (Custom)" ID="{4696663D-556B-40F4-8C71-78B882831B63}" ShortID="112282675">
+											<PropertyList>
+												<Property Name="RadiusMax" Type="Real64" Value="70"/>
+											</PropertyList>
+											<CurveUsageInfoList>
+												<VolumeDryUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="VolumeDry" ID="{0F252642-6B92-4CA5-939C-9AD58C965E40}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="3"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>19.96131</XPos>
+																	<YPos>-10.11949</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>19.96231</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>70</XPos>
+																	<YPos>-200</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</VolumeDryUsage>
+												<VolumeWetGameUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetGameUsage>
+												<VolumeWetUserUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+												</VolumeWetUserUsage>
+												<LowPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+														<Curve Name="LowPassFilter" ID="{B061CE89-42D9-49ED-9C2C-64AAF9C26551}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="65537"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>0</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>24.06639</XPos>
+																	<YPos>81</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>36.80486</XPos>
+																	<YPos>100</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>70</XPos>
+																	<YPos>100</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</LowPassFilterUsage>
+												<HighPassFilterUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</HighPassFilterUsage>
+												<SpreadUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None">
+														<Curve Name="Spread" ID="{8F7C4B55-4864-4598-B443-F7F1470AD388}">
+															<PropertyList>
+																<Property Name="Flags" Type="int32" Value="1"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>0</XPos>
+																	<YPos>100</YPos>
+																	<Flags>5</Flags>
+																</Point>
+																<Point>
+																	<XPos>2.63488</XPos>
+																	<YPos>100</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>19.93727</XPos>
+																	<YPos>11.29707</YPos>
+																	<Flags>0</Flags>
+																</Point>
+																<Point>
+																	<XPos>70</XPos>
+																	<YPos>0</YPos>
+																	<Flags>37</Flags>
+																</Point>
+															</PointList>
+														</Curve>
+													</CurveUsageInfo>
+												</SpreadUsage>
+												<FocusUsage>
+													<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+												</FocusUsage>
+											</CurveUsageInfoList>
+										</Attenuation>
+									</Custom>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>

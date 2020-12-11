@@ -7,6 +7,8 @@
 					<ChildrenList>
 						<MusicSwitchContainer Name="Overworld+Tense" ID="{128DCD76-6399-4D1E-961D-61B9DEB8ECAC}" ShortID="844497740">
 							<PropertyList>
+								<Property Name="GridFrequencyPreset" Type="int16" Value="51"/>
+								<Property Name="ListenerRelativeRouting" Type="bool" Value="False"/>
 								<Property Name="Tempo" Type="Real64" Value="140"/>
 							</PropertyList>
 							<ReferenceList>
@@ -221,7 +223,7 @@
 												<Property Name="Tempo" Type="Real64" Value="140"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-3</Value>
+														<Value>-7</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -235,6 +237,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<MusicTrack Name="tense music synth" ID="{72E1EFF5-A491-4C85-8D55-A66984F4B5A0}" ShortID="484198209">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
@@ -273,6 +282,13 @@
 													</SequenceList>
 												</MusicTrack>
 												<MusicTrack Name="tense music bass" ID="{E5634C73-021A-4B13-BC51-11AE5138013A}" ShortID="169118705">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>1</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
@@ -314,7 +330,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-8</Value>
+																<Value>-12</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -358,6 +374,11 @@
 												<MusicTrack Name="tense music random tremolo" ID="{1A807B31-1639-4562-9E35-0C0D2EBE72F8}" ShortID="560593846">
 													<PropertyList>
 														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="OutputBus">
@@ -373,6 +394,27 @@
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
+													<StateInfo>
+														<StateGroupList>
+															<StateGroupInfo MusicSyncType="3">
+																<StateGroupRef Name="Overworld" ID="{6984FF8A-CBE9-4F3F-9DC1-9F135218B940}"/>
+															</StateGroupInfo>
+														</StateGroupList>
+														<CustomStateList>
+															<CustomState>
+																<StateRef Name="NonTense" ID="{D560E708-FB1A-4472-8F41-FE0743F8D463}"/>
+																<CustomState Name="" ID="{AF5D630D-554E-4F65-8562-BBD91EA751D2}" ShortID="935872476">
+																	<PropertyList>
+																		<Property Name="Volume" Type="Real64" Value="-108"/>
+																	</PropertyList>
+																</CustomState>
+															</CustomState>
+															<CustomState>
+																<StateRef Name="Tense" ID="{EBBD9D27-82D5-4658-99B8-BDCD92FD277C}"/>
+																<CustomState Name="" ID="{2E37CB2F-C52E-42B7-BA62-217613EC6D63}" ShortID="408400467"/>
+															</CustomState>
+														</CustomStateList>
+													</StateInfo>
 													<TransitionList>
 														<MusicTransition Name="Root" ID="{66A8E4CC-DBFC-4D52-9EFC-94EA748CE3E9}">
 															<PropertyList>
@@ -1043,7 +1085,7 @@
 												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
 												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 												<Property Name="SourceContextType" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1080,7 +1122,7 @@
 												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
 												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="1"/>
 												<Property Name="SourceContextType" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1144,7 +1186,7 @@
 						<Property Name="Tempo" Type="Real64" Value="160"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-11</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1268,7 +1310,7 @@
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
-											<StateGroupInfo>
+											<StateGroupInfo MusicSyncType="2">
 												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
 											</StateGroupInfo>
 										</StateGroupList>
@@ -1324,6 +1366,13 @@
 									</SequenceList>
 								</MusicTrack>
 								<MusicTrack Name="chase bass" ID="{19796B0A-3206-4523-B4A4-ECE3B440897E}" ShortID="741693581">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
@@ -1381,7 +1430,7 @@
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
-											<StateGroupInfo>
+											<StateGroupInfo MusicSyncType="2">
 												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
 											</StateGroupInfo>
 										</StateGroupList>
@@ -1523,7 +1572,7 @@
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
-											<StateGroupInfo>
+											<StateGroupInfo MusicSyncType="2">
 												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
 											</StateGroupInfo>
 										</StateGroupList>
@@ -1566,6 +1615,13 @@
 									</SequenceList>
 								</MusicTrack>
 								<MusicTrack Name="stinger bass (2+1dc)" ID="{95A06576-36CF-4EB8-AB0A-5BE5B47284D8}" ShortID="742087648">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
@@ -1623,7 +1679,7 @@
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
-											<StateGroupInfo>
+											<StateGroupInfo MusicSyncType="2">
 												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
 											</StateGroupInfo>
 										</StateGroupList>
@@ -1832,7 +1888,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1942,7 +1998,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-7</Value>
+								<Value>-11</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

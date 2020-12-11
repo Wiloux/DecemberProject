@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1927847360	PlayKillerFootsteps1			\Default Work Unit\TVHead\PlayKillerFootsteps1	
 	1927847362	PlayKillerFootsteps3			\Default Work Unit\TVHead\PlayKillerFootsteps3	
 	1927847363	PlayKillerFootsteps2			\Default Work Unit\TVHead\PlayKillerFootsteps2	
+	1928550884	PlayNSFootstep			\Default Work Unit\PlayNSFootstep	
 	2047933731	TvHeadStaticStop			\Default Work Unit\TVHead\TvHeadStaticStop	
 	2053742238	PlayOrb			\Default Work Unit\SoulStuff\Orb\PlayOrb	
 	2187166475	FireworksTrigger			\Default Work Unit\Weapons\Fireworks\FireworksTrigger	
@@ -35,6 +36,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	1562068129	Overworld			\Default Work Unit\Overworld	
 	2661533922	IsBeingCorrupted			\Default Work Unit\IsBeingCorrupted	
 	3214304800	Spotted			\Default Work Unit\Spotted	
+	3494343696	PauseMenu			\Default Work Unit\PauseMenu	
 
 State	ID	Name	State Group			Notes
 	391998042	Tense	Overworld			
@@ -46,15 +48,21 @@ State	ID	Name	State Group			Notes
 	748895195	None	Spotted			
 	979470758	Yes	Spotted			
 	1668749452	No	Spotted			
+	748895195	None	PauseMenu			
+	979470758	Yes	PauseMenu			
+	1668749452	No	PauseMenu			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	86268649	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth CALLs		
+	338123450	Yes	PauseMenu	\Actor-Mixer Hierarchy\Default Work Unit\SoulStuff\orb remake2		
 	423528815	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase drums		
+	441833695	Yes	PauseMenu	\Actor-Mixer Hierarchy\Default Work Unit\Others\static2		
 	576769052	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger synth (2+1dc)		
 	713069030	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth 1DC!!!!!!		
 	753563285	Yes	Spotted	\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Overworld		
 	769042501	Yes	Spotted	\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense		
 	897133653	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger drums (2+1dc)		
+	935872476	NonTense	Overworld	\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music random tremolo		
 	1015398410	Yes	IsBeingCorrupted	\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger synth call (2+1dc)		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -84,6 +92,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	293490680	Footstep Killer 2_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 2.1_1FE86188.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_1		8652
 	300243749	footsteps 3_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 3.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\3\footsteps 3_2		4412
 	335048445	firework5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\firework5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework5		18300
+	366924425	1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\Nightstalker\Nightstalker\1		88264
 	390844414	Footstep Killer 1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_2		1182
 	426864640	stinger drums (2+1dc)	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\stinger drums (2+1dc)_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger drums (2+1dc)		71522
 	432592923	footsteps 2_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 2.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\2\footsteps 2_2		5273

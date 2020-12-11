@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3118184891">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2715688996">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -32,12 +32,12 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="593220193">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1823978933">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3283823493" Name="BeartrapSetup" ObjectPath="\Events\Default Work Unit\Weapons\Beartrap\BeartrapSetup" MaxAttenuation="30.000000" DurationType="Infinite">
+				<Event Id="3283823493" Name="BeartrapSetup" ObjectPath="\Events\Default Work Unit\Weapons\Beartrap\BeartrapSetup" MaxAttenuation="70.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="506638655" Language="SFX">
 							<ShortName>beartrap setup.wav</ShortName>
@@ -83,7 +83,7 @@
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="2740640909" Name="FireworksStop" ObjectPath="\Events\Default Work Unit\Weapons\Fireworks\FireworksStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="2187166475" Name="FireworksTrigger" ObjectPath="\Events\Default Work Unit\Weapons\Fireworks\FireworksTrigger" MaxAttenuation="10.000000" DurationType="OneShot" DurationMin="2.850000" DurationMax="3.247415">
+				<Event Id="2187166475" Name="FireworksTrigger" ObjectPath="\Events\Default Work Unit\Weapons\Fireworks\FireworksTrigger" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="1.350000" DurationMax="1.747415">
 					<IncludedMemoryFiles>
 						<File Id="27905807" Language="SFX">
 							<ShortName>firework1.wav</ShortName>
@@ -205,6 +205,7 @@
 					</IncludedMemoryFiles>
 					<ActionSetState>
 						<ActionSetStateEntry Id="979470758" Name="Yes" ObjectPath="\States\Default Work Unit\Spotted\Yes"/>
+						<ActionSetStateEntry Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\IsBeingCorrupted\No"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="145167493" Name="PlayHighlight" ObjectPath="\Events\Default Work Unit\MainMenu\PlayHighlight" DurationType="OneShot" DurationMin="0.266259" DurationMax="0.266259">
@@ -303,7 +304,15 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\PlayOrb" MaxAttenuation="70.000000" DurationType="Infinite">
+				<Event Id="1928550884" Name="PlayNSFootstep" ObjectPath="\Events\Default Work Unit\PlayNSFootstep" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.471665" DurationMax="0.530038">
+					<IncludedMemoryFiles>
+						<File Id="366924425" Language="SFX">
+							<ShortName>1.wav</ShortName>
+							<Path>SFX\1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\PlayOrb" MaxAttenuation="100.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="854505131" Language="SFX">
 							<ShortName>orb remake2.wav</ShortName>
@@ -401,12 +410,12 @@
 						<State Id="391998042" Name="Tense" ObjectPath="\States\Default Work Unit\Overworld\Tense"/>
 					</States>
 				</StateGroup>
-				<StateGroup Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\Spotted\No">
+				<StateGroup Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\IsBeingCorrupted\No">
 					<States/>
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="445267428">
+		<SoundBank Id="3604647259" Language="SFX" Hash="567663781">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>
@@ -453,7 +462,7 @@
 				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="4158285989" Language="SFX" Hash="2755493986">
+		<SoundBank Id="4158285989" Language="SFX" Hash="792525610">
 			<ObjectPath>\SoundBanks\Default Work Unit\GameOver</ObjectPath>
 			<ShortName>GameOver</ShortName>
 			<Path>GameOver.bnk</Path>

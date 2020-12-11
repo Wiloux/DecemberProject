@@ -336,16 +336,6 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
-										<Action Name="" ID="{CA5FE3A8-1334-4BC4-B372-6C53E4E6BBEB}" ShortID="565483349">
-											<PropertyList>
-												<Property Name="Delay" Type="Real64" Value="1.5"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="fireworks trigger" ID="{1D85B09C-FD04-4776-9550-734F40AB0C57}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="FireworksStop" ID="{C637927D-9D74-41D6-86CF-E18392D0B855}">
@@ -508,23 +498,21 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
-								<Action Name="" ID="{FAB8825A-BE7B-4F62-9FE3-E5501DF83F50}" ShortID="942220921">
-									<PropertyList>
-										<Property Name="ActionType" Type="int16" Value="12"/>
-										<Property Name="Delay" Type="Real64" Value="9"/>
-										<Property Name="FadeTime" Type="Real64" Value="2"/>
-										<Property Name="Volume" Type="Real64" Value="-25"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="static2" ID="{490F014A-8102-4DD4-9134-D54817DA6AB3}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="PlayNSFootstep" ID="{E8129C6F-3661-4B0A-AA67-1752D3FC19F7}">
+					<ChildrenList>
+						<Action Name="" ID="{43F76C48-6BFC-4FA3-88E3-C70F349D2582}" ShortID="20271063">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="1" ID="{2988DDF2-0836-4FA2-A833-64640B8109A1}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

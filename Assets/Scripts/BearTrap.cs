@@ -21,7 +21,7 @@ public class BearTrap : MonoBehaviour
     void Update()
     {
 
-        if (player.currentState == Movement.States.Corrupted)
+        if (player != null && player.currentState == Movement.States.Corrupted)
         {
             AkSoundEngine.PostEvent("BeartrapStop", gameObject);
             Destroy(gameObject);

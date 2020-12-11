@@ -97,6 +97,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{A74FED38-AEA5-4DDA-BB25-3B5B004E0DB1}" ShortID="1056714807">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}" WorkUnitID="{FFF60CC1-D8AC-4865-9438-D69566D6646E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="StopChase" ID="{7C25AC06-4FAC-4D53-A558-C8992F0FC9C1}">

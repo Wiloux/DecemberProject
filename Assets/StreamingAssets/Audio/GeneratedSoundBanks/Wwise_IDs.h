@@ -35,6 +35,7 @@ namespace AK
         static const AkUniqueID PLAYKILLERFOOTSTEPS2 = 1927847363U;
         static const AkUniqueID PLAYKILLERFOOTSTEPS3 = 1927847362U;
         static const AkUniqueID PLAYMAINMENU = 3998606525U;
+        static const AkUniqueID PLAYNSFOOTSTEP = 1928550884U;
         static const AkUniqueID PLAYORB = 2053742238U;
         static const AkUniqueID PLAYOVERWORLD_TENSE = 1809856591U;
         static const AkUniqueID PLAYSTATIC = 3467592801U;

@@ -24,23 +24,23 @@
 												<Flags>5</Flags>
 											</Point>
 											<Point>
-												<XPos>7.03608</XPos>
-												<YPos>-4.19759</YPos>
+												<XPos>7</XPos>
+												<YPos>-1.5</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>8.02407</XPos>
-												<YPos>-2.09097</YPos>
+												<XPos>8</XPos>
+												<YPos>0</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>8.9987</XPos>
-												<YPos>-1.05665</YPos>
+												<XPos>9</XPos>
+												<YPos>1.5</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
 												<XPos>10</XPos>
-												<YPos>0</YPos>
+												<YPos>3</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -84,28 +84,23 @@
 												<Flags>5</Flags>
 											</Point>
 											<Point>
-												<XPos>5.99466</XPos>
-												<YPos>-10.61381</YPos>
+												<XPos>7</XPos>
+												<YPos>-1.5</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>6.982644</XPos>
-												<YPos>-7.53471</YPos>
+												<XPos>8</XPos>
+												<YPos>0</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>7.99733</XPos>
-												<YPos>-4.53615</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>9.025367</XPos>
-												<YPos>-2.65812</YPos>
+												<XPos>9</XPos>
+												<YPos>1.5</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
 												<XPos>10</XPos>
-												<YPos>0</YPos>
+												<YPos>3</YPos>
 												<Flags>37</Flags>
 											</Point>
 										</PointList>
@@ -139,7 +134,7 @@
 								<StateRef Name="Yes" ID="{7F1C27A4-B933-4614-A847-93C83D1D68A4}"/>
 								<CustomState Name="" ID="{D5A23212-9ED6-4FE8-A503-D50B9D7B0752}" ShortID="164552317">
 									<PropertyList>
-										<Property Name="BusVolume" Type="Real64" Value="-7"/>
+										<Property Name="BusVolume" Type="Real64" Value="-3"/>
 										<Property Name="Lowpass" Type="int16" Value="69"/>
 									</PropertyList>
 								</CustomState>

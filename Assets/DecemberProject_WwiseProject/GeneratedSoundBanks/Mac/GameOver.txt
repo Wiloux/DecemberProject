@@ -6,6 +6,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	2895517991	PlayGameOver			\Default Work Unit\Game Over\PlayGameOver	
 	3887894719	StaticGameOver			\Default Work Unit\Game Over\StaticGameOver	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	3494343696	PauseMenu			\Default Work Unit\PauseMenu	
+
+State	ID	Name	State Group			Notes
+	748895195	None	PauseMenu			
+	979470758	Yes	PauseMenu			
+	1668749452	No	PauseMenu			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	441833695	Yes	PauseMenu	\Actor-Mixer Hierarchy\Default Work Unit\Others\static2		
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	988953028	SFXVolume			\Default Work Unit\SFXVolume	
 
