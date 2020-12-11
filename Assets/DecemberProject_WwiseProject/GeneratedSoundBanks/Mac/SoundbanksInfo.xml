@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3511557184">
+		<SoundBank Id="1355168291" Language="SFX" Hash="3118184891">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -32,7 +32,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1603574831">
+		<SoundBank Id="3161908922" Language="SFX" Hash="593220193">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -51,6 +51,14 @@
 						<File Id="5711083" Language="SFX">
 							<ShortName>beartrap trigger.wav</ShortName>
 							<Path>SFX\beartrap trigger_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3844998465" Name="DefeatedStatic" ObjectPath="\Events\Default Work Unit\Others\DefeatedStatic" MaxAttenuation="30.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="975610250" Language="SFX">
+							<ShortName>staticTvHead.wav</ShortName>
+							<Path>SFX\staticTvHead_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -295,7 +303,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3228498500" Name="PlayLightbulb" ObjectPath="\Events\Default Work Unit\Others\PlayLightbulb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\PlayOrb" MaxAttenuation="70.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="854505131" Language="SFX">
@@ -314,25 +321,17 @@
 							<ShortName>tense music synth.wav</ShortName>
 							<Path>SFX\tense music synth_9EDFC787.wem</Path>
 						</File>
-						<File Id="754720362" Language="SFX">
-							<ShortName>tense music undermelody .wav</ShortName>
-							<Path>SFX\tense music undermelody _9EDFC787.wem</Path>
-						</File>
 						<File Id="823019377" Language="SFX">
 							<ShortName>tense music random tremolo.wav</ShortName>
 							<Path>SFX\tense music random tremolo_9EDFC787.wem</Path>
 						</File>
-						<File Id="833994417" Language="SFX">
-							<ShortName>mall ow bass.wav</ShortName>
-							<Path>SFX\mall ow bass_9EDFC787.wem</Path>
+						<File Id="894294164" Language="SFX">
+							<ShortName>tense music undermelody.wav</ShortName>
+							<Path>SFX\tense music undermelody_9EDFC787.wem</Path>
 						</File>
 						<File Id="894454575" Language="SFX">
 							<ShortName>mall ow keys.wav</ShortName>
 							<Path>SFX\mall ow keys_9EDFC787.wem</Path>
-						</File>
-						<File Id="937468604" Language="SFX">
-							<ShortName>mall ow drums.wav</ShortName>
-							<Path>SFX\mall ow drums_9EDFC787.wem</Path>
 						</File>
 						<File Id="1020886213" Language="SFX">
 							<ShortName>mall clean final mix.wav</ShortName>
@@ -343,15 +342,13 @@
 						<SwitchContainer SwitchValue="{D560E708-FB1A-4472-8F41-FE0743F8D463}">
 							<Media>
 								<File Id="894454575"/>
-								<File Id="833994417"/>
-								<File Id="937468604"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{EBBD9D27-82D5-4658-99B8-BDCD92FD277C}">
 							<Media>
 								<File Id="634241349"/>
 								<File Id="193363895"/>
-								<File Id="754720362"/>
+								<File Id="894294164"/>
 								<File Id="823019377"/>
 							</Media>
 						</SwitchContainer>
@@ -390,6 +387,7 @@
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="110585135" Name="KillerProximity" ObjectPath="\Game Parameters\Default Work Unit\KillerProximity"/>
+				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
 				<GameParameter Id="2155950306" Name="Spatialization1" ObjectPath="\Game Parameters\Default Work Unit\Spatialization1"/>
 			</GameParameters>
 			<StateGroups>
@@ -408,7 +406,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="2169820753">
+		<SoundBank Id="3604647259" Language="SFX" Hash="445267428">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>
@@ -441,8 +439,74 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3998606525" Name="PlayMainMenu" ObjectPath="\Events\Default Work Unit\MainMenu\PlayMainMenu" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="861567613" Language="SFX">
+							<ShortName>main menu theme final.wav</ShortName>
+							<Path>SFX\main menu theme final_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1416937818" Name="StopAllSounds" ObjectPath="\Events\Default Work Unit\Others\StopAllSounds" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="4158285989" Language="SFX" Hash="2755493986">
+			<ObjectPath>\SoundBanks\Default Work Unit\GameOver</ObjectPath>
+			<ShortName>GameOver</ShortName>
+			<Path>GameOver.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2385628260" Name="Footstep1" ObjectPath="\Events\Default Work Unit\Player\Footstep1" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.500000" DurationMax="0.500000">
+					<IncludedMemoryFiles>
+						<File Id="190373997" Language="SFX">
+							<ShortName>footsteps 1.2.wav</ShortName>
+							<Path>SFX\footsteps 1.2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="879557984" Language="SFX">
+							<ShortName>footsteps 1.1.wav</ShortName>
+							<Path>SFX\footsteps 1.1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2895517991" Name="PlayGameOver" ObjectPath="\Events\Default Work Unit\Game Over\PlayGameOver" DurationType="OneShot" DurationMin="12.000000" DurationMax="12.000000">
+					<IncludedMemoryFiles>
+						<File Id="905363371" Language="SFX">
+							<ShortName>game over theme final.wav</ShortName>
+							<Path>SFX\game over theme final_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="145167493" Name="PlayHighlight" ObjectPath="\Events\Default Work Unit\MainMenu\PlayHighlight" DurationType="OneShot" DurationMin="0.266259" DurationMax="0.266259">
+					<IncludedMemoryFiles>
+						<File Id="175012262" Language="SFX">
+							<ShortName>Main Menu Highlight.wav</ShortName>
+							<Path>SFX\Main Menu Highlight_CD1ED910.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1168436793" Name="PlayKeypress" ObjectPath="\Events\Default Work Unit\MainMenu\PlayKeypress" DurationType="OneShot" DurationMin="0.149773" DurationMax="0.149773">
+					<IncludedMemoryFiles>
+						<File Id="520607068" Language="SFX">
+							<ShortName>Main Menu Keypress.wav</ShortName>
+							<Path>SFX\Main Menu Keypress_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3887894719" Name="StaticGameOver" ObjectPath="\Events\Default Work Unit\Game Over\StaticGameOver" MaxAttenuation="70.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="528025441" Language="SFX">
+							<ShortName>staticPlayer.wav</ShortName>
+							<Path>SFX\staticPlayer_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1416937818" Name="StopAllSounds" ObjectPath="\Events\Default Work Unit\Others\StopAllSounds" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

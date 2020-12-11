@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID BEARTRAPSETUP = 3283823493U;
         static const AkUniqueID BEARTRAPSTOP = 3005731438U;
         static const AkUniqueID BEARTRAPTRIGGER = 4283543462U;
+        static const AkUniqueID DEFEATEDSTATIC = 3844998465U;
         static const AkUniqueID ENDSCENE = 3129425356U;
         static const AkUniqueID FIREWORKSSETUP = 3701804816U;
         static const AkUniqueID FIREWORKSSTOP = 2740640909U;
@@ -26,16 +27,18 @@ namespace AK
         static const AkUniqueID FOOTSTEP4 = 2385628257U;
         static const AkUniqueID ISBEINGCORRUPTED = 2661533922U;
         static const AkUniqueID PLAYCHASE = 3706411783U;
+        static const AkUniqueID PLAYGAMEOVER = 2895517991U;
         static const AkUniqueID PLAYHIGHLIGHT = 145167493U;
         static const AkUniqueID PLAYJERRYCAN = 448200913U;
         static const AkUniqueID PLAYKEYPRESS = 1168436793U;
         static const AkUniqueID PLAYKILLERFOOTSTEPS1 = 1927847360U;
         static const AkUniqueID PLAYKILLERFOOTSTEPS2 = 1927847363U;
         static const AkUniqueID PLAYKILLERFOOTSTEPS3 = 1927847362U;
-        static const AkUniqueID PLAYLIGHTBULB = 3228498500U;
+        static const AkUniqueID PLAYMAINMENU = 3998606525U;
         static const AkUniqueID PLAYORB = 2053742238U;
         static const AkUniqueID PLAYOVERWORLD_TENSE = 1809856591U;
         static const AkUniqueID PLAYSTATIC = 3467592801U;
+        static const AkUniqueID STATICGAMEOVER = 3887894719U;
         static const AkUniqueID STOPALLSOUNDS = 1416937818U;
         static const AkUniqueID STOPCHASE = 2399390441U;
         static const AkUniqueID STOPJERRYCAN = 2638603827U;
@@ -121,13 +124,13 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID GAMEOVER = 4158285989U;
         static const AkUniqueID MAIN = 3161908922U;
         static const AkUniqueID MAINMENU = 3604647259U;
     } // namespace BANKS
 
     namespace BUSSES
     {
-        static const AkUniqueID MAINMENU = 3604647259U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES

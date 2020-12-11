@@ -56,8 +56,16 @@
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="PlayGameOver" ID="{0E395F7D-72AB-484F-A79B-580934526750}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="PlayOverworld_Tense" ID="{E879FF36-4B82-4CFC-B52C-6FB67CD0A24F}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}"/>
 							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="PlayMainMenu" ID="{A2A71271-33F1-4423-9305-16F8FC956256}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}"/>
+							<Position X="3" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -71,7 +79,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFXVolume" ID="{F6FC2505-72DB-48A0-859F-23DA72E8F544}"/>
-							<Value>8</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="KillerProximity" ID="{36E12197-18AA-4F3E-A7A8-DF0E9F005E82}"/>
@@ -79,11 +87,11 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Yes" ID="{B8DA0160-63E3-4CCA-B091-04B800C6F99C}"/>
+						<CurrentStateRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
 						<CurrentStateRef Name="No" ID="{D00660D1-4C93-4198-8996-FD4984C19BC0}"/>
-						<CurrentStateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
-						<CurrentStateRef Name="Yes" ID="{860D9639-D09F-4138-A570-609CA7F3614B}"/>
-						<CurrentStateRef Name="Tense" ID="{EBBD9D27-82D5-4658-99B8-BDCD92FD277C}"/>
+						<CurrentStateRef Name="Yes" ID="{7F1C27A4-B933-4614-A847-93C83D1D68A4}"/>
+						<CurrentStateRef Name="No" ID="{833A786E-E085-4610-ABCC-20527A99508F}"/>
+						<CurrentStateRef Name="NonTense" ID="{D560E708-FB1A-4472-8F41-FE0743F8D463}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

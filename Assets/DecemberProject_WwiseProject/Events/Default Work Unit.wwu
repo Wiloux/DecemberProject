@@ -152,17 +152,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="PlayLightbulb" ID="{47F61D70-1838-40E7-9C83-9FAF4D145E85}">
-							<ChildrenList>
-								<Action Name="" ID="{2CF5CBDB-912C-4F4F-85F2-1E5A68DC554B}" ShortID="275498953">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="faulty lightbulb" ID="{D5D31C3F-2191-4CC8-AD52-501A5FF53F5D}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
 						<Event Name="StopAllSounds" ID="{494AE715-1E52-4E0B-87F7-F52AB4D05713}">
 							<ChildrenList>
 								<Action Name="" ID="{8929C155-AD65-4B09-A942-996ACEB07449}" ShortID="909547172">
@@ -173,6 +162,20 @@
 										<Property Name="Scope" Type="int16" Value="1"/>
 									</PropertyList>
 									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DefeatedStatic" ID="{072B9B92-D67D-42F8-B929-075C45ECE8E0}">
+							<ChildrenList>
+								<Action Name="" ID="{46581463-680F-4958-BC9B-ABB78D335B9D}" ShortID="717008177">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="staticTvHead" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
 								</Action>
 							</ChildrenList>
 						</Event>
@@ -388,6 +391,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="PlayMainMenu" ID="{A2A71271-33F1-4423-9305-16F8FC956256}">
+							<ChildrenList>
+								<Action Name="" ID="{6C1C51B3-26B8-4ED3-84BE-072E8EE3EA3C}" ShortID="403925833">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main Menu" ID="{E2BC1F9C-203C-493A-81FB-CC4BFF7A81BD}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="EndScene" ID="{8205F5CD-14A6-47E8-BCA5-411A0CC1250A}">
@@ -461,6 +475,56 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Folder Name="Game Over" ID="{9151CC1A-FF9E-4C3A-B166-896DBDE8BBB6}" ShortID="783539756">
+					<ChildrenList>
+						<Event Name="PlayGameOver" ID="{0E395F7D-72AB-484F-A79B-580934526750}">
+							<ChildrenList>
+								<Action Name="" ID="{716A8746-75B9-4489-81ED-4B47889CAE3C}" ShortID="718273233">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Game Over" ID="{E4E2D920-252F-47E3-84EF-F08657085D4B}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StaticGameOver" ID="{D7369B4C-0B24-4FDC-A6CD-4EDB95C8E11F}">
+							<ChildrenList>
+								<Action Name="" ID="{6CF4AA7E-A73F-4335-B4C5-F23B5A3416ED}" ShortID="1031585317">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="Volume" Type="Real64" Value="-35"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="static2" ID="{490F014A-8102-4DD4-9134-D54817DA6AB3}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B5D46793-43F1-4612-916A-3F413070503D}" ShortID="931913486">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="static2" ID="{490F014A-8102-4DD4-9134-D54817DA6AB3}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FAB8825A-BE7B-4F62-9FE3-E5501DF83F50}" ShortID="942220921">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="Delay" Type="Real64" Value="9"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Volume" Type="Real64" Value="-25"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="static2" ID="{490F014A-8102-4DD4-9134-D54817DA6AB3}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

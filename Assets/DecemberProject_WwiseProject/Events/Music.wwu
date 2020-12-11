@@ -66,7 +66,21 @@
 						</Event>
 						<Event Name="PlayChase" ID="{E1647F33-14D7-40B0-8265-B3AED2039FB3}">
 							<ChildrenList>
+								<Action Name="" ID="{2483B37C-4AAD-47C8-95DC-368CDD140013}" ShortID="882112427">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Chase" ID="{248136FF-289C-4495-987E-97929CD2BB78}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{9712A5D2-005F-4F64-A665-07B4CDD703BA}" ShortID="702883225">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.01"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Chase" ID="{248136FF-289C-4495-987E-97929CD2BB78}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
@@ -137,6 +151,8 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="GameOver" ID="{B2C5B90B-91EC-4796-94DB-A6F0B281A806}" ShortID="310416646"/>
+				<Folder Name="MainMenu" ID="{C086BBC3-A95F-4BA7-87EE-AF532645CF05}" ShortID="814842854"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

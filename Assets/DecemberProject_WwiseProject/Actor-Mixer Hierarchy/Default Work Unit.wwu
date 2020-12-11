@@ -652,7 +652,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-96</Value>
+										<Value>-22</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -728,7 +728,7 @@
 								<Property Name="SpeakerPanning3DSpatializationMix" Type="int32" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-19</Value>
+										<Value>-31</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1003,12 +1003,45 @@
 				<Folder Name="MainMenu" ID="{ECB823FA-22D9-4C37-BA80-DD819E8BF4EC}" ShortID="980327109">
 					<ChildrenList>
 						<Sound Name="Main Menu Highlight" ID="{10D791AA-8E35-405C-9E39-A5A0EDC45005}" ShortID="187772072">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{68E70CAD-E5DC-43EB-B64D-12417CDBA87B}" ShortID="256696109">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SFXVolume" ID="{F6FC2505-72DB-48A0-859F-23DA72E8F544}" WorkUnitID="{FDBF762A-8CB4-491C-A285-37708C1866E8}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{D30B66DD-85A2-443B-A63D-9DC992F4F5DB}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>10</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="MainMenu" ID="{291AF3C4-3FED-4125-89DA-43C96B8CB14C}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1030,12 +1063,45 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Main Menu Keypress" ID="{BAD22BED-E197-4B75-B9FB-0D25AA6D6BB2}" ShortID="401393460">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+									<RTPCList>
+										<RTPC Name="" ID="{6D8929AC-5108-411F-8E8B-B572B431F59B}" ShortID="191766781">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="SFXVolume" ID="{F6FC2505-72DB-48A0-859F-23DA72E8F544}" WorkUnitID="{FDBF762A-8CB4-491C-A285-37708C1866E8}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{268FF584-3476-4465-82CF-1B6B651639EC}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>10</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="MainMenu" ID="{291AF3C4-3FED-4125-89DA-43C96B8CB14C}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

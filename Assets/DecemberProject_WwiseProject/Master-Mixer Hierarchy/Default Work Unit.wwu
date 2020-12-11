@@ -24,18 +24,18 @@
 												<Flags>5</Flags>
 											</Point>
 											<Point>
-												<XPos>7.022697</XPos>
-												<YPos>-1.82177</YPos>
+												<XPos>7.03608</XPos>
+												<YPos>-4.19759</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>8.010681</XPos>
-												<YPos>-1.15384</YPos>
+												<XPos>8.02407</XPos>
+												<YPos>-2.09097</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
-												<XPos>8.985314</XPos>
-												<YPos>-0.48991</YPos>
+												<XPos>8.9987</XPos>
+												<YPos>-1.05665</YPos>
 												<Flags>0</Flags>
 											</Point>
 											<Point>
@@ -62,28 +62,6 @@
 							<ObjectRef Name="Phone_Booth" ID="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 					</ReferenceList>
-					<StateInfo>
-						<StateGroupList>
-							<StateGroupInfo>
-								<StateGroupRef Name="PauseMenu" ID="{E8A7B26B-939F-45B6-8575-634A237FB705}"/>
-							</StateGroupInfo>
-						</StateGroupList>
-						<CustomStateList>
-							<CustomState>
-								<StateRef Name="Yes" ID="{7F1C27A4-B933-4614-A847-93C83D1D68A4}"/>
-								<CustomState Name="" ID="{51AAAFA3-B2E8-455B-9CD1-34F16B315686}" ShortID="159890777">
-									<PropertyList>
-										<Property Name="BusVolume" Type="Real64" Value="-7"/>
-										<Property Name="Lowpass" Type="int16" Value="49"/>
-									</PropertyList>
-								</CustomState>
-							</CustomState>
-							<CustomState>
-								<StateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
-								<CustomState Name="" ID="{1A988BFD-8F5A-4128-A502-76524AC19D05}" ShortID="1041437142"/>
-							</CustomState>
-						</CustomStateList>
-					</StateInfo>
 				</Bus>
 				<Bus Name="Music" ID="{447E649B-2F10-44EB-89F4-D257D074E699}">
 					<PropertyList>
@@ -172,13 +150,6 @@
 							</CustomState>
 						</CustomStateList>
 					</StateInfo>
-				</Bus>
-				<Bus Name="MainMenu" ID="{291AF3C4-3FED-4125-89DA-43C96B8CB14C}">
-					<ReferenceList>
-						<Reference Name="AudioDevice">
-							<ObjectRef Name="System" ID="{E9F44C94-632E-4E49-9DAD-396F09596528}" WorkUnitID="{F152F3CE-44CE-45BE-9C49-2813E526D499}"/>
-						</Reference>
-					</ReferenceList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

@@ -13,11 +13,11 @@
 					</PropertyList>
 					<ObjectInclusionList>
 						<ObjectRef Name="PlayChase" ID="{E1647F33-14D7-40B0-8265-B3AED2039FB3}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="PlayLightbulb" ID="{47F61D70-1838-40E7-9C83-9FAF4D145E85}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BeartrapStop" ID="{9051FB8E-1DBC-40FE-9D93-E56DDE662BC9}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayKillerFootsteps3" ID="{0022F30A-2D7F-414C-8604-6947278C38D5}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FireworksStop" ID="{C637927D-9D74-41D6-86CF-E18392D0B855}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BeartrapSetup" ID="{1DD81B9F-7171-41DB-A063-33AECCE790B1}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DefeatedStatic" ID="{072B9B92-D67D-42F8-B929-075C45ECE8E0}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopStatic" ID="{8BCA3C52-A28F-436F-992A-CAC287BA40F3}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FireworksSetup" ID="{605E4769-4A82-4429-A366-D21038D094E7}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayKillerFootsteps2" ID="{18658727-CA3C-4515-8911-027BB33151BB}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
@@ -56,10 +56,23 @@
 						</Property>
 					</PropertyList>
 					<ObjectInclusionList>
+						<ObjectRef Name="PlayMainMenu" ID="{A2A71271-33F1-4423-9305-16F8FC956256}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayKeypress" ID="{DAF74E53-D530-48EC-8472-21E8E1061BEF}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopAllSounds" ID="{494AE715-1E52-4E0B-87F7-F52AB4D05713}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayHighlight" ID="{1B785851-4844-4E10-851E-FA6D3E2742FB}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep1" ID="{C0E0C9B1-716D-4F1C-80CB-6202B949A47E}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="GameOver" ID="{8353DC94-CD6F-4445-B0EC-D94937812CC4}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PlayGameOver" ID="{0E395F7D-72AB-484F-A79B-580934526750}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayKeypress" ID="{DAF74E53-D530-48EC-8472-21E8E1061BEF}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopAllSounds" ID="{494AE715-1E52-4E0B-87F7-F52AB4D05713}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayHighlight" ID="{1B785851-4844-4E10-851E-FA6D3E2742FB}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footstep1" ID="{C0E0C9B1-716D-4F1C-80CB-6202B949A47E}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StaticGameOver" ID="{D7369B4C-0B24-4FDC-A6CD-4EDB95C8E11F}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -23,7 +23,6 @@ State	ID	Name	State Group			Notes
 	1668749452	No	PauseMenu			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	159890777	Yes	PauseMenu	\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus		
 	164552317	Yes	PauseMenu	\Master-Mixer Hierarchy\Default Work Unit\Music		
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -31,7 +30,6 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2346531308	MusicVolume			\Default Work Unit\MusicVolume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
-	3604647259	MainMenu			\Default Work Unit\MainMenu	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Music	
 

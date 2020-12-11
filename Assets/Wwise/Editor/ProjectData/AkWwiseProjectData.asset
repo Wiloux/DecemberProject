@@ -78,8 +78,17 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585940719820285934
+    m_lastTime: -8585939619476972042
     List:
+    - name: GameOver
+      guid: 94dc53836fcd4544b0ecd94937812cc4
+      id: 4158285989
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GameOver
+        ObjectType: 7
+      Path: Default Work Unit\GameOver
     - name: Main
       guid: e8a3ab083a4d344489c1ca41b102a799
       id: 3161908922
@@ -106,7 +115,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23cdf775154ee34c9621da36a37cfeb8
     GuidInternal: 
-    m_lastTime: -8585940529983382970
+    m_lastTime: -8585939620377848202
     List:
     - name: Beartrap
       guid: 87f1222de4e06641bf489cdb74bd3c23
@@ -300,6 +309,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Game Over
+      guid: 1acc51919eff3a4cb166896dbde8bbb6
+      id: 1035379895
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Game Over
+        ObjectType: 4
+      Path: Default Work Unit\Game Over
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Jerrycan
       guid: a43112c47526624a9a2cb401f4147665
       id: 2981649099
@@ -361,6 +382,20 @@ MonoBehaviour:
       - ElementName: Player
         ObjectType: 4
       Path: Default Work Unit\Player
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayGameOver
+      guid: 7d5f390eab724f48a79b580934526750
+      id: 2895517991
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Game Over
+        ObjectType: 4
+      - ElementName: PlayGameOver
+        ObjectType: 3
+      Path: Default Work Unit\Game Over\PlayGameOver
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -450,17 +485,17 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: PlayLightbulb
-      guid: 701df6473818e7409c839faf4d145e85
-      id: 3228498500
+    - name: PlayMainMenu
+      guid: 7112a7a2f1332344930516f8fc956256
+      id: 3998606525
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: Others
+      - ElementName: MainMenu
         ObjectType: 4
-      - ElementName: PlayLightbulb
+      - ElementName: PlayMainMenu
         ObjectType: 3
-      Path: Default Work Unit\Others\PlayLightbulb
+      Path: Default Work Unit\MainMenu\PlayMainMenu
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -503,6 +538,20 @@ MonoBehaviour:
       - ElementName: SoulStuff
         ObjectType: 4
       Path: Default Work Unit\SoulStuff
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StaticGameOver
+      guid: 4c9b36d7240bdc4fa6cd4edb95c8e11f
+      id: 3887894719
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Game Over
+        ObjectType: 4
+      - ElementName: StaticGameOver
+        ObjectType: 3
+      Path: Default Work Unit\Game Over\StaticGameOver
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -625,8 +674,20 @@ MonoBehaviour:
     ParentPath: Music
     guid: 38e6abbb33223a48925241b8e238fef4
     GuidInternal: 
-    m_lastTime: -8585940719909545607
+    m_lastTime: -8585939679796581002
     List:
+    - name: GameOver
+      guid: 0bb9c5b2ec91964794dba6f0b281a806
+      id: 4158285989
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: GameOver
+        ObjectType: 4
+      Path: Music\GameOver
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: IsBeingCorrupted
       guid: d8c9fb1fc693e14691bbcd6cfc93a35e
       id: 2661533922
@@ -638,6 +699,18 @@ MonoBehaviour:
       - ElementName: IsBeingCorrupted
         ObjectType: 3
       Path: Music\Overworld\IsBeingCorrupted
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MainMenu
+      guid: c3bb86c05fa9a74b87eeaf532645cf05
+      id: 3604647259
+      PathAndIcons:
+      - ElementName: Music
+        ObjectType: 12
+      - ElementName: MainMenu
+        ObjectType: 4
+      Path: Music\MainMenu
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -717,7 +790,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2a76bffdb48c1c49a28537708c1866e8
     GuidInternal: 
-    m_lastTime: -8585940570588915163
+    m_lastTime: -8585940464062392949
     List:
     - name: KillerProximity
       guid: 9721e136aa183e4fa7a8df0e9f005e82
@@ -944,6 +1017,7 @@ MonoBehaviour:
   - /DecemberProject_WwiseProject
   - /DecemberProject_WwiseProject/Events
   - /DecemberProject_WwiseProject/Events/Default Work Unit
+  - /DecemberProject_WwiseProject/Events/Default Work Unit/Game Over
   - /DecemberProject_WwiseProject/Events/Default Work Unit/Weapons
   - /DecemberProject_WwiseProject/Events/Default Work Unit/Weapons/Beartrap
   autoPopulateEnabled: 1

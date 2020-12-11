@@ -23,11 +23,11 @@ Event	ID	Name			Wwise Object Path	Notes
 	2852051516	StopOrb			\Default Work Unit\SoulStuff\Orb\StopOrb	
 	3005731438	BeartrapStop			\Default Work Unit\Weapons\Beartrap\BeartrapStop	
 	3129425356	EndScene			\Default Work Unit\EndScene	
-	3228498500	PlayLightbulb			\Default Work Unit\Others\PlayLightbulb	
 	3283823493	BeartrapSetup			\Default Work Unit\Weapons\Beartrap\BeartrapSetup	
 	3467592801	PlayStatic			\Default Work Unit\Others\PlayStatic	
 	3701804816	FireworksSetup			\Default Work Unit\Weapons\Fireworks\FireworksSetup	
 	3706411783	PlayChase			\Music\Overworld\PlayChase	
+	3844998465	DefeatedStatic			\Default Work Unit\Others\DefeatedStatic	
 	4033460349	StopOverworld_Tense			\Music\Overworld\StopOverworld_Tense	
 	4283543462	BeartrapTrigger			\Default Work Unit\Weapons\Beartrap\BeartrapTrigger	
 
@@ -59,6 +59,7 @@ Custom State	ID	Name	State Group	Owner		Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	110585135	KillerProximity			\Default Work Unit\KillerProximity	
+	988953028	SFXVolume			\Default Work Unit\SFXVolume	
 	2155950306	Spatialization1			\Default Work Unit\Spatialization1	
 
 Effect plug-ins	ID	Name	Type				Notes
@@ -78,7 +79,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	172220298	chase drums	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\chase drums_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase drums		417645
 	175012262	Main Menu Highlight	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Main Menu Highlight_CD1ED910.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Main Menu Highlight		3354
 	190373997	footsteps 1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\1\footsteps 1_2		5443
-	193363895	tense music bass	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\tense music bass_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music bass		507144
+	193363895	tense music bass	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\tense music bass_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music bass		506672
 	260759101	Footstep Killer 1_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 1.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_1		1214
 	293490680	Footstep Killer 2_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 2.1_1FE86188.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_1		8652
 	300243749	footsteps 3_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 3.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\3\footsteps 3_2		4412
@@ -96,25 +97,23 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	626323812	firework2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\firework2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework2		22283
 	631430281	stinger bass (2+1dc)	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\stinger bass (2+1dc)_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger bass (2+1dc)		25289
 	632205178	firework4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\firework4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework4		16633
-	634241349	tense music synth	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\tense music synth_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music synth		1361870
+	634241349	tense music synth	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\tense music synth_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music synth		1363237
 	651192086	Footstep Killer 2_5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 2.5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_5		7916
 	693411796	stinger synth call (2+1dc)	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\stinger synth call (2+1dc)_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger synth call (2+1dc)		55102
 	740779274	chase synth 1DC!!!!!!	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\chase synth 1DC!!!!!!_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth 1DC!!!!!!		373718
 	741320198	chase synth CALLs	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\chase synth CALL1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth CALLs		93909
 	741580282	Footstep Killer 2_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 2.2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_2		10252
-	754720362	tense music undermelody	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\tense music undermelody _9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music undermelody		1407463
 	770735795	footsteps 2_1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 2.1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\2\footsteps2\footsteps 2_1_2		3706
 	771280129	footsteps 4_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 4.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\4\footsteps 4_1		4506
 	803494294	chase synth CALLs	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\chase synth CALL2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth CALLs		118110
 	808663612	Footstep Killer 3_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 3.1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS3\Footstep Killer 3_1		9336
-	823019377	tense music random tremolo	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\tense music random tremolo_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music random tremolo		1529354
-	833994417	mall ow bass	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\mall ow bass_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Overworld\Overworld\mall ow bass		1395020
+	823019377	tense music random tremolo	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\tense music random tremolo_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music random tremolo		1554787
 	854505131	orb remake2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\orb remake2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SoulStuff\orb remake2		11289664
 	863297654	stinger synth (2+1dc)	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\stinger synth (2+1dc)_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger synth (2+1dc)		58084
 	864226983	fireworks setup	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\fireworks setup_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks setup		129614
 	879557984	footsteps 1_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 1.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\1\footsteps 1_1		5390
-	894454575	mall ow keys	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\mall ow keys_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Overworld\Overworld\mall ow keys		1649059
-	937468604	mall ow drums	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\mall ow drums_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Overworld\Overworld\mall ow drums		1536005
+	894294164	tense music undermelody	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\tense music undermelody_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music undermelody		1612965
+	894454575	mall ow keys	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\mall ow keys_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Overworld\Overworld\mall ow keys		1638749
 	945119091	Footstep Killer 1_4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 1.4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_4		1194
 	957438151	Footstep Killer 1_5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 1.5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_5		1292
 	975610250	staticTvHead	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\staticTvHead_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\staticTvHead		561292

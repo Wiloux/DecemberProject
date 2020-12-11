@@ -55,6 +55,6 @@ public class VictoryManagement : MonoBehaviour
 
     public void StaticGoesHere()
     {
-
+        AkSoundEngine.PostEvent("DefeatedStatic", gameObject);
     }
 }

@@ -3,6 +3,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	1168436793	PlayKeypress			\Default Work Unit\MainMenu\PlayKeypress	
 	1416937818	StopAllSounds			\Default Work Unit\Others\StopAllSounds	
 	2385628260	Footstep1			\Default Work Unit\Player\Footstep1	
+	3998606525	PlayMainMenu			\Default Work Unit\MainMenu\PlayMainMenu	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	988953028	SFXVolume			\Default Work Unit\SFXVolume	
 
 Effect plug-ins	ID	Name	Type				Notes
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
@@ -11,5 +15,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	175012262	Main Menu Highlight	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Main Menu Highlight_CD1ED910.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Main Menu Highlight		3354
 	190373997	footsteps 1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\1\footsteps 1_2		5443
 	520607068	Main Menu Keypress	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Main Menu Keypress_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Main Menu Keypress		2837
+	861567613	main menu theme final	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\main menu theme final_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main Menu\main menu theme final\main menu theme final		12316120
 	879557984	footsteps 1_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 1.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\1\footsteps 1_1		5390
 

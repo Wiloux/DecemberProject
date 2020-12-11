@@ -5332,6 +5332,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2104492881058642950, guid: 2ef944251e058ed4ab7a7ff0227b0417,
+        type: 3}
+      propertyPath: triggerList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2104492881058642950, guid: 2ef944251e058ed4ab7a7ff0227b0417,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2104492881058642951, guid: 2ef944251e058ed4ab7a7ff0227b0417,
         type: 3}
       propertyPath: m_Radius
@@ -22236,9 +22246,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
   m_Bindings:
-  - {fileID: 1141910618}
-  - {fileID: 1141910619}
   - {fileID: 1141910621}
+  - {fileID: 1141910619}
+  - {fileID: 1141910618}
   m_VisualEffect: {fileID: 1141910616}
 --- !u!114 &1141910621
 MonoBehaviour:
@@ -23673,7 +23683,7 @@ GameObject:
   - component: {fileID: 1245597030}
   - component: {fileID: 1245597031}
   m_Layer: 13
-  m_Name: Slider
+  m_Name: SfxSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23752,8 +23762,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1245597031}
-        m_TargetAssemblyTypeName: Volume_Controls, Assembly-CSharp
-        m_MethodName: SetSpecificVolume
+        m_TargetAssemblyTypeName: SFX_Volume_Control, Assembly-CSharp
+        m_MethodName: SetSpecificVolume2
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23772,11 +23782,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1245597028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b4b1ef26784cc43891669f08699a20, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a550b10faf226345af7f7ff9327fd48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisSlider: {fileID: 1245597030}
-  musicVolume: 0
+  thisSlider2: {fileID: 1245597030}
   sfxVolume: 10
 --- !u!1001 &1252133609
 PrefabInstance:
@@ -33413,7 +33422,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1601308003}
-        m_TargetAssemblyTypeName: Volume_Controls, Assembly-CSharp
+        m_TargetAssemblyTypeName: Music_Volume_Controls, Assembly-CSharp
         m_MethodName: SetSpecificVolume
         m_Mode: 5
         m_Arguments:
@@ -33433,12 +33442,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1601308000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47b4b1ef26784cc43891669f08699a20, type: 3}
+  m_Script: {fileID: 11500000, guid: c2254ed1dc73ace47aba1cbc9005a6c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   thisSlider: {fileID: 1601308002}
   musicVolume: 10
-  sfxVolume: 0
 --- !u!1001 &1608802169
 PrefabInstance:
   m_ObjectHideFlags: 0
