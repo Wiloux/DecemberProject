@@ -218,7 +218,7 @@ public class CameraScript : MonoBehaviour
         }
     }
 
-    void SwitchTarget(int i)
+    public void SwitchTarget(int i)
     {
         target = Players[i].transform;
 

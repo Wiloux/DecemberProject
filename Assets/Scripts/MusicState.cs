@@ -29,7 +29,7 @@ public class MusicState : MonoBehaviour
     {
         foreach(Movement Player in Players)
         {
-            if (Player.isSelected)
+            if (Player.isSelected && Player.currentState != Movement.States.Corrupted && Player.currentState != Movement.States.Dead)
             {
                 SelectedPlayer = Player.gameObject;
             }

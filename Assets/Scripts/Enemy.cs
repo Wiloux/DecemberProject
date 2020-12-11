@@ -153,14 +153,18 @@ public class Enemy : MonoBehaviour
                             Player.isSpotted = true;
                             Player.Timer = ChaseDur;
                             CurrentTransformPlayer = Player;
-                            if (CameraScript.instance.CurrentTarget != null)
-                            {
-                                CameraScript.instance.CurrentTarget.isSelected = false;
-                                CameraScript.instance.CurrentTarget = Player.PlayerScript;
-                            }
+                            //if (CameraScript.instance.CurrentTarget != null)
+                            //{
+                            //    CameraScript.instance.CurrentTarget.isSelected = false;
+                            //    CameraScript.instance.CurrentTarget.wantsToUseItem = false;
+                            //    CameraScript.instance.CurrentTarget = Player.PlayerScript;
+                            //}
                             CameraScript.instance.isLocked = true;
-                            CameraScript.instance.CamLockedImg.SetActive(true);
-                            CameraScript.instance.target = Player.PlayerScript.transform;
+                            //CameraScript.instance.CamLockedImg.SetActive(true);
+                            //CameraScript.instance.target = Player.PlayerScript.transform;
+
+                            CameraScript.instance.SwitchTarget(Player.PlayerScript.playerInt);
+                            CameraScript.instance.isLocked = true;
 
                             Player.PlayerScript.isSelected = true;
                             EasterEgg.instance.VictoryWithoutBeingSpotted = false;

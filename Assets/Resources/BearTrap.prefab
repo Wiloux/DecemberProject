@@ -142,8 +142,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   workLeft: 20
   workAmount: 20
-  stunTime: 2
+  stunTime: 3
   isBeingWorkedOn: 0
+  player: {fileID: 0}
 --- !u!54 &8267405923868767980
 Rigidbody:
   m_ObjectHideFlags: 0

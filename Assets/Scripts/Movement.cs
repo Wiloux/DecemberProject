@@ -126,25 +126,33 @@ public class Movement : MonoBehaviour
             }
             if (currentState != States.Dead && !isNinja)
             {
-                if (Physics.Linecast(new Vector3(transform.position.x, 1f, transform.position.z), Killer.transform.position, out hit, ChaseLayer))
+                if (KillerScript.currentState == Enemy.States.Pause)
                 {
-                    if (hit.transform.name == Killer.transform.name && hit.distance <= SpottedDistance)
-                    {
-                        ChaseMe = true;
-                        ChaseTimer = KillerScript.ChaseDur;
-                    }
-                    else if (hit.transform.name != Killer.transform.name && hit.distance <= SpottedDistance)
-                    {
-                        ChaseMe = false;
-                        if (ChaseTimer >= 0)
-                        {
-                            ChaseTimer -= Time.deltaTime;
-                        }
-                    }
+                    ChaseMe = false;
+                    ChaseTimer = 0;
                 }
                 else
                 {
-                    ChaseMe = false;
+                    if (Physics.Linecast(new Vector3(transform.position.x, 1f, transform.position.z), Killer.transform.position, out hit, ChaseLayer))
+                    {
+                        if (hit.transform.name == Killer.transform.name && hit.distance <= SpottedDistance)
+                        {
+                            ChaseMe = true;
+                            ChaseTimer = KillerScript.ChaseDur;
+                        }
+                        else if (hit.transform.name != Killer.transform.name && hit.distance <= SpottedDistance)
+                        {
+                            ChaseMe = false;
+                            if (ChaseTimer >= 0)
+                            {
+                                ChaseTimer -= Time.deltaTime;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        ChaseMe = false;
+                    }
                 }
             }
 

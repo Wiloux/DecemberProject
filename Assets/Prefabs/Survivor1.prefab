@@ -7536,6 +7536,14 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 0}
+  FootstepSound4:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  FootstepSoundKiller:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &4150466204413269305
 GameObject:
   m_ObjectHideFlags: 0
@@ -18982,7 +18990,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a0ee3b3766b24b8489d4751bc612c84c, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.16726303, a: 1}
+  m_Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -19746,6 +19754,7 @@ MonoBehaviour:
   currentObjective: {fileID: 0}
   workingSpeed: 4
   Killer: {fileID: 0}
+  KillerScript: {fileID: 0}
   SpottedDistance: 0.1
   ChaseLayer:
     serializedVersion: 2
