@@ -39,11 +39,13 @@ public class EasterEgg : MonoBehaviour
 
         if (isNightStalker)
         {
+            Syd.transform.position = new Vector3(100, 100, 100);
             NightStalker.SetActive(true);
             Syd.SetActive(false);
         }
         else
         {
+            NightStalker.transform.position = new Vector3(100, 100, 100);
             Syd.SetActive(true);
             NightStalker.SetActive(false);
         }

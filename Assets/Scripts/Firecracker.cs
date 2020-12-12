@@ -22,38 +22,55 @@ public class Firecracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (workLeft > 0 && !isBeingWorkedOn)
-        {
-            AkSoundEngine.PostEvent("FireworksStop", gameObject);
-            Destroy(gameObject);
-        }
-
-        if (player.currentState == Movement.States.Corrupted)
-        {
-            AkSoundEngine.PostEvent("FireworksStop", gameObject);
-            Destroy(gameObject);
-        }
-
-
-        if (workLeft <= 0)
+        if (player != null)
         {
 
-            AkSoundEngine.PostEvent("FireworksStop", gameObject);
-            if (player.currentObjective != null && player.currentObjective.isBeingWorkedOn && !isActive)
+
+
+            if (workLeft > 0 && !isBeingWorkedOn)
             {
-                if (killer.currentState == Enemy.States.Patrolling)
+                AkSoundEngine.PostEvent("FireworksStop", gameObject);
+                Destroy(gameObject);
+            }
+
+            if (player.currentState == Movement.States.Corrupted)
+            {
+                AkSoundEngine.PostEvent("FireworksStop", gameObject);
+                Destroy(gameObject);
+            }
+
+
+            if (workLeft <= 0)
+            {
+
+                AkSoundEngine.PostEvent("FireworksStop", gameObject);
+                if (player.currentObjective != null && player.currentObjective.isBeingWorkedOn && !isActive)
                 {
-                    AkSoundEngine.PostEvent("FireworksTrigger", gameObject);
-                    particles.SetActive(true);
-                    isActive = true;
-                    killer.CurrentTransformObjective = transform;
+
+                    if (killer.currentState == Enemy.States.Patrolling)
+                    {
+                        AkSoundEngine.PostEvent("FireworksTrigger", gameObject);
+                        particles.SetActive(true);
+                        isActive = true;
+                        killer.CurrentTransformObjective = transform;
+                    }
                 }
             }
+
+            if (isActive && player.currentFirecracker != null)
+            {
+                Destroy(gameObject);
+            }
+
+            if (isActive && killer.CurrentTransformObjective != this.transform)
+            {
+
+                Destroy(gameObject);
+            }
         }
-
-        if (isActive && killer.CurrentTransformObjective != this.transform)
+        else
         {
-
+            AkSoundEngine.PostEvent("FireworksStop", gameObject);
             Destroy(gameObject);
         }
     }

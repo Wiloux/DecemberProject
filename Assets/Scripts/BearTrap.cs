@@ -20,23 +20,29 @@ public class BearTrap : MonoBehaviour
     }
     void Update()
     {
+        if (player != null)
+        {
+            if (player.currentState == Movement.States.Corrupted)
+            {
+                AkSoundEngine.PostEvent("BeartrapStop", gameObject);
+                Destroy(gameObject);
+            }
 
-        if (player != null && player.currentState == Movement.States.Corrupted)
+
+
+            if (workLeft > 0 && !isBeingWorkedOn)
+            {
+                AkSoundEngine.PostEvent("BeartrapStop", gameObject);
+                Destroy(gameObject);
+            }
+            else if (workLeft <= 0)
+            {
+                AkSoundEngine.PostEvent("BeartrapStop", gameObject);
+            }
+        } else
         {
             AkSoundEngine.PostEvent("BeartrapStop", gameObject);
             Destroy(gameObject);
-        }
-
-
-
-        if (workLeft > 0 && !isBeingWorkedOn)
-        {
-            AkSoundEngine.PostEvent("BeartrapStop", gameObject);
-            Destroy(gameObject);
-        }
-        else if (workLeft <= 0)
-        {
-            AkSoundEngine.PostEvent("BeartrapStop", gameObject);
         }
     }
 

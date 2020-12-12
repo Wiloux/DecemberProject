@@ -22067,6 +22067,7 @@ GameObject:
   - component: {fileID: 1141910619}
   - component: {fileID: 1141910618}
   - component: {fileID: 1141910621}
+  - component: {fileID: 1141910622}
   m_Layer: 12
   m_Name: FogManager
   m_TagString: Untagged
@@ -22152,6 +22153,9 @@ VisualEffect:
       - m_Value: {x: 3.670404, y: 0.5, z: 5.6380935}
         m_Name: positionPlayer3
         m_Overridden: 1
+      - m_Value: {x: 6.58, y: 0.5, z: 2.87}
+        m_Name: positionPlayer4
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:
@@ -22226,6 +22230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
   m_Bindings:
+  - {fileID: 1141910622}
   - {fileID: 1141910621}
   - {fileID: 1141910618}
   - {fileID: 1141910619}
@@ -22245,6 +22250,21 @@ MonoBehaviour:
   m_Property:
     m_Name: positionPlayer3
   Target: {fileID: 111623762}
+--- !u!114 &1141910622
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141910614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c3070554d0a8944a95ff8f018c2c9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Property:
+    m_Name: positionPlayer4
+  Target: {fileID: 1798265938}
 --- !u!1 &1145437422
 GameObject:
   m_ObjectHideFlags: 0
@@ -35594,6 +35614,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!4 &1798265938 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7111978867541742174, guid: ab9b41a46f077ef4ab149d6ed64d8add,
+    type: 3}
+  m_PrefabInstance: {fileID: 2042170130}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1802445977
 GameObject:
   m_ObjectHideFlags: 0
