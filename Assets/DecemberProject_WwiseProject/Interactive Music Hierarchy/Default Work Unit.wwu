@@ -179,6 +179,9 @@
 										<Property Name="OverrideOutput" Type="bool" Value="True"/>
 										<Property Name="Tempo" Type="Real64" Value="140"/>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{51940893-29C0-4D7B-BD93-E824D69D41F7}" ShortID="17213439">
 													<ReferenceList>
@@ -285,7 +288,7 @@
 													<PropertyList>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>1</Value>
+																<Value>4</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -1085,7 +1088,7 @@
 												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
 												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
 												<Property Name="SourceContextType" Type="int16" Value="2"/>
 											</PropertyList>
 											<ReferenceList>
@@ -1182,7 +1185,6 @@
 				</Folder>
 				<MusicPlaylistContainer Name="Chase" ID="{248136FF-289C-4495-987E-97929CD2BB78}" ShortID="447676883">
 					<PropertyList>
-						<Property Name="GridFrequencyPreset" Type="int16" Value="52"/>
 						<Property Name="Tempo" Type="Real64" Value="160"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
@@ -1310,7 +1312,7 @@
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
-											<StateGroupInfo MusicSyncType="2">
+											<StateGroupInfo>
 												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
 											</StateGroupInfo>
 										</StateGroupList>
@@ -1430,7 +1432,7 @@
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
-											<StateGroupInfo MusicSyncType="2">
+											<StateGroupInfo>
 												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
 											</StateGroupInfo>
 										</StateGroupList>
@@ -1572,7 +1574,7 @@
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
-											<StateGroupInfo MusicSyncType="2">
+											<StateGroupInfo>
 												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
 											</StateGroupInfo>
 										</StateGroupList>
@@ -1679,7 +1681,7 @@
 									</ChildrenList>
 									<StateInfo>
 										<StateGroupList>
-											<StateGroupInfo MusicSyncType="2">
+											<StateGroupInfo>
 												<StateGroupRef Name="IsBeingCorrupted" ID="{BDFDEF70-28AB-4438-9D5F-97A0BFC1175A}"/>
 											</StateGroupInfo>
 										</StateGroupList>
@@ -1770,7 +1772,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-9</Value>
+								<Value>-48</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

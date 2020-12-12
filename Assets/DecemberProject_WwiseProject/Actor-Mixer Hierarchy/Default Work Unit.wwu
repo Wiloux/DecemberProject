@@ -585,13 +585,13 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>12</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="FootstepsPlayer" ID="{FD97C9BE-0157-4B64-BA3E-99111AF9B6D7}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+									<ObjectRef Name="Jerrycan" ID="{7086F170-AF0C-4275-8107-203C93858234}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="SFX" ID="{380FC46E-5176-4040-9A4E-F9833110AD21}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
@@ -602,6 +602,11 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="jerrycan1" ID="{0B29A9A6-E5FC-45CD-8CE8-A65D23B954C6}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.591809775429327"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.591809775429326"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>jerrycan1.wav</AudioFile>
 									<MediaIDList>
@@ -713,7 +718,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-9</Value>
+										<Value>-11</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1076,7 +1081,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>9.92472</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																		</Point>
 																		<Point>
@@ -1180,7 +1185,7 @@
 																		</Point>
 																		<Point>
 																			<XPos>8.81984</XPos>
-																			<YPos>-0</YPos>
+																			<YPos>0</YPos>
 																			<Flags>0</Flags>
 																		</Point>
 																		<Point>
@@ -2060,6 +2065,11 @@
 						<Sound Name="atmos 1" ID="{DA8DAE6D-98C5-47AD-8BEE-266ADEE319F0}" ShortID="764492138">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2144,6 +2154,9 @@
 						</Sound>
 						<Sound Name="orb end remake" ID="{07208FFF-6E3C-47B5-AA6B-2A52183499E9}" ShortID="464320231">
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Orb" ID="{F0188C47-9694-4D26-A6C7-99F672F696E8}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
 								</Reference>
