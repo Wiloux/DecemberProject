@@ -793,7 +793,7 @@ public class Movement : MonoBehaviour
     IEnumerator StartMessage()
     {
         ObjectText.enabled = true;
-        ObjectText.text = "Find 3 <color=#69ffe6>orbs</color> to power the TV";
+        ObjectText.text = "Find 3 <color=#69ffe6>orbs</color> to overload the TV";
         yield return new WaitForSeconds(4);
         ObjectText.enabled = false;
     }
