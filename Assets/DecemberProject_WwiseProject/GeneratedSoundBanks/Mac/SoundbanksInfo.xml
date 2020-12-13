@@ -11,12 +11,13 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2715688996">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4158282815">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<IncludedAuxBusses>
 				<AuxBus Id="1872467674" Name="OverworldMusic" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Music\OverworldMusic"/>
+				<AuxBus Id="3840845152" Name="NoReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NoReverb"/>
 			</IncludedAuxBusses>
 			<GameParameters>
 				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
@@ -32,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2392883406">
+		<SoundBank Id="3161908922" Language="SFX" Hash="4131515519">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -208,6 +209,17 @@
 						<ActionSetStateEntry Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\IsBeingCorrupted\No"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="2080376856" Name="PlayGetItem" ObjectPath="\Events\Default Work Unit\PlayGetItem" DurationType="OneShot" DurationMin="0.309115" DurationMax="0.309115">
+					<IncludedMemoryFiles>
+						<File Id="415982012" Language="SFX">
+							<ShortName>Get item.wav</ShortName>
+							<Path>SFX\Get item_F76FA8F1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3840845152" Name="NoReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NoReverb"/>
+					</AuxBusSends>
+				</Event>
 				<Event Id="145167493" Name="PlayHighlight" ObjectPath="\Events\Default Work Unit\MainMenu\PlayHighlight" DurationType="OneShot" DurationMin="0.266259" DurationMax="0.266259">
 					<IncludedMemoryFiles>
 						<File Id="175012262" Language="SFX">
@@ -220,7 +232,7 @@
 					<IncludedMemoryFiles>
 						<File Id="984088383" Language="SFX">
 							<ShortName>jerrycan1.wav</ShortName>
-							<Path>SFX\jerrycan1_598A03A9.wem</Path>
+							<Path>SFX\jerrycan1_E1010490.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -415,7 +427,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="567663781">
+		<SoundBank Id="3604647259" Language="SFX" Hash="2170156355">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>
@@ -462,7 +474,7 @@
 				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="4158285989" Language="SFX" Hash="792525610">
+		<SoundBank Id="4158285989" Language="SFX" Hash="1825772530">
 			<ObjectPath>\SoundBanks\Default Work Unit\GameOver</ObjectPath>
 			<ShortName>GameOver</ShortName>
 			<Path>GameOver.bnk</Path>

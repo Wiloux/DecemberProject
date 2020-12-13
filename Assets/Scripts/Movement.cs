@@ -336,6 +336,7 @@ public class Movement : MonoBehaviour
                                     break;
                                 case Objective.WorkType.chest:
                                     AkSoundEngine.PostEvent("FireworksStop", gameObject);
+                                    AkSoundEngine.PostEvent("PlayGetItem", gameObject);
                                     int i = Random.Range(0, 2);
                                     if (i == 1)
                                     {

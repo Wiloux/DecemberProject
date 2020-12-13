@@ -406,6 +406,7 @@
 						<Action Name="" ID="{02C1E704-43E1-4758-8F37-5A5A1E3C8830}" ShortID="369655620">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
 								<Property Name="FadeTime" Type="Real64" Value="4.5"/>
 								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
@@ -508,6 +509,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="1" ID="{2988DDF2-0836-4FA2-A833-64640B8109A1}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayGetItem" ID="{7781F2B9-C0BE-47E8-9BE2-EC0E983E4F3C}">
+					<ChildrenList>
+						<Action Name="" ID="{2E1FCE3B-DC0A-4CC2-B274-4AAB519B286E}" ShortID="479274018">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Get item" ID="{42CA0E21-348F-4BA3-A849-3D5F43DF2F8D}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

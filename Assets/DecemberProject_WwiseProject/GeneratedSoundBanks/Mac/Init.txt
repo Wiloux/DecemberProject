@@ -35,6 +35,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	1872467674	OverworldMusic			\Default Work Unit\Music\OverworldMusic	
+	3840845152	NoReverb			\Default Work Unit\Master Audio Bus\NoReverb	
 
 Effect plug-ins	ID	Name	Type				Notes
 	3407225994	Phone_Booth	Wwise RoomVerb			

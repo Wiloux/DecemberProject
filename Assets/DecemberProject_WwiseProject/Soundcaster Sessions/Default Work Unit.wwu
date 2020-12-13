@@ -26,6 +26,10 @@
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="IsBeingCorrupted" ID="{1FFBC9D8-93C6-46E1-91BB-CD6CFC93A35E}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Music" ID="{447E649B-2F10-44EB-89F4-D257D074E699}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
 							<Position X="3" Y="0"/>
 						</Module>

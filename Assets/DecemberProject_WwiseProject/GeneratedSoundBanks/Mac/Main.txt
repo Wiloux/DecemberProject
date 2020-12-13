@@ -12,6 +12,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1928550884	PlayNSFootstep			\Default Work Unit\PlayNSFootstep	
 	2047933731	TvHeadStaticStop			\Default Work Unit\TVHead\TvHeadStaticStop	
 	2053742238	PlayOrb			\Default Work Unit\SoulStuff\Orb\PlayOrb	
+	2080376856	PlayGetItem			\Default Work Unit\PlayGetItem	
 	2187166475	FireworksTrigger			\Default Work Unit\Weapons\Fireworks\FireworksTrigger	
 	2385628257	Footstep4			\Default Work Unit\Player\Footstep4	
 	2385628260	Footstep1			\Default Work Unit\Player\Footstep1	
@@ -94,6 +95,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	335048445	firework5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\firework5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework5		18300
 	366924425	1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\Nightstalker\Nightstalker\1		88264
 	390844414	Footstep Killer 1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_2		1182
+	415982012	Get item	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Get item_F76FA8F1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\Get item		54592
 	426864640	stinger drums (2+1dc)	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\stinger drums (2+1dc)_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger drums (2+1dc)		71522
 	432592923	footsteps 2_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\footsteps 2.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\2\footsteps 2_2		5273
 	506638655	beartrap setup	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\beartrap setup_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Beartrap\beartrap setup		166958
@@ -126,7 +128,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	945119091	Footstep Killer 1_4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 1.4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_4		1194
 	957438151	Footstep Killer 1_5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 1.5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_5		1292
 	975610250	staticTvHead	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\staticTvHead_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\staticTvHead		561292
-	984088383	jerrycan1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\jerrycan1_598A03A9.wem		\Actor-Mixer Hierarchy\Default Work Unit\SoulStuff\jerrycan1		718789
+	984088383	jerrycan1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\jerrycan1_E1010490.wem		\Actor-Mixer Hierarchy\Default Work Unit\SoulStuff\jerrycan1		718789
 	999391431	Footstep Killer 3_4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\Footstep Killer 3.4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS3\Footstep Killer 3_4		9480
 	1020886213	mall clean final mix	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\mall clean final mix_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Clean\mall clean final mix\mall clean final mix		19353664
 	1022517877	firework3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Mac\SFX\firework3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework3		19360

@@ -28,6 +28,7 @@ namespace AK
         static const AkUniqueID ISBEINGCORRUPTED = 2661533922U;
         static const AkUniqueID PLAYCHASE = 3706411783U;
         static const AkUniqueID PLAYGAMEOVER = 2895517991U;
+        static const AkUniqueID PLAYGETITEM = 2080376856U;
         static const AkUniqueID PLAYHIGHLIGHT = 145167493U;
         static const AkUniqueID PLAYJERRYCAN = 448200913U;
         static const AkUniqueID PLAYKEYPRESS = 1168436793U;
@@ -138,6 +139,7 @@ namespace AK
 
     namespace AUX_BUSSES
     {
+        static const AkUniqueID NOREVERB = 3840845152U;
         static const AkUniqueID OVERWORLDMUSIC = 1872467674U;
     } // namespace AUX_BUSSES
 
