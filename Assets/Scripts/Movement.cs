@@ -68,6 +68,11 @@ public class Movement : MonoBehaviour
     void Start()
     {
         //  audioSource = GetComponent<AudioSource>();
+        if (playerInt == 0)
+        {
+            AkSoundEngine.PostEvent("PlayGetItem", gameObject);
+            StartCoroutine(StartMessage());
+        }
         pixelParticle = transform.Find("PixelParticle").GetComponent<ParticleSystem>();
         DisolveMat = transform.Find("Mesh").GetComponent<Renderer>().materials;
         anim = GetComponent<Animator>();
@@ -286,7 +291,7 @@ public class Movement : MonoBehaviour
                                 AkSoundEngine.PostEvent("PlayJerrycan", gameObject);
                             }
 
-                            if(currentObjective.Type == Objective.WorkType.chest && !mustPlaySFX)
+                            if (currentObjective.Type == Objective.WorkType.chest && !mustPlaySFX)
                             {
                                 mustPlaySFX = true;
                                 AkSoundEngine.PostEvent("FireworksSetup", gameObject);
@@ -331,8 +336,10 @@ public class Movement : MonoBehaviour
                                     break;
                                 case Objective.WorkType.jerryCan:
                                     hasSoul = true;
+                                    StartCoroutine(ShowFoundObject("orb", 3, "#69ffe6"));
                                     AkSoundEngine.PostEvent("StopJerrycan", gameObject);
                                     AkSoundEngine.PostEvent("PlayOrb", gameObject);
+                                    AkSoundEngine.PostEvent("PlayGetItem", gameObject);
                                     break;
                                 case Objective.WorkType.chest:
                                     AkSoundEngine.PostEvent("FireworksStop", gameObject);
@@ -545,7 +552,7 @@ public class Movement : MonoBehaviour
                                         }
                                     }
 
-                                    if(currentObjective.Type == Objective.WorkType.chest)
+                                    if (currentObjective.Type == Objective.WorkType.chest)
                                     {
                                         if (mustPlaySFX)
                                         {
@@ -783,11 +790,19 @@ public class Movement : MonoBehaviour
         }
     }
 
-    IEnumerator ShowFoundObject(string Object)
+    IEnumerator StartMessage()
     {
         ObjectText.enabled = true;
-        ObjectText.text = "You found " + "<color=green>" +Object +"</color>";
-        yield return new WaitForSeconds(3);
+        ObjectText.text = "Find 3 <color=#69ffe6>orbs</color> to power the TV";
+        yield return new WaitForSeconds(4);
+        ObjectText.enabled = false;
+    }
+
+    IEnumerator ShowFoundObject(string Object, float time = 3, string color = "green")
+    {
+        ObjectText.enabled = true;
+        ObjectText.text = "You found " + "<color="+color+">" + Object + "</color>";
+        yield return new WaitForSeconds(time);
         ObjectText.enabled = false;
     }
 

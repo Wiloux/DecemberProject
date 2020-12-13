@@ -104,6 +104,7 @@ public class Enemy : MonoBehaviour
             if (go.isFinished)
             {
                 Objectives.Remove(go);
+                    break;
             }
         }
 
