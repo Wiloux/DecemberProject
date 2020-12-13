@@ -21176,7 +21176,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 9b55f8174379d6e42881a4b30d5f7e0b, type: 2}
   - {fileID: 2100000, guid: a3ff0baace2ad96499550a13d1502f72, type: 2}
   - {fileID: 2100000, guid: 1a7264c1a0d87bd45b6a689894a66d14, type: 2}
-  PatrollColor: {r: 0.38039216, g: 1, b: 0.49019608, a: 1}
+  PatrollColor: {r: 0.41404274, g: 0.9528302, b: 0.14831792, a: 1}
   spd: 3.4
   mesh: {fileID: 5110120037790105}
   tvscript: {fileID: 0}
@@ -47977,7 +47977,7 @@ PrefabInstance:
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
       propertyPath: isNinja
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
@@ -54014,7 +54014,7 @@ PrefabInstance:
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
       propertyPath: isNinja
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7293696574984134417, guid: ab9b41a46f077ef4ab149d6ed64d8add,
         type: 3}
