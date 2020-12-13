@@ -19,12 +19,16 @@ public class CameraScript : MonoBehaviour
 
     public Texture2D activeCursor;
     public Texture2D unActiveCursor;
+
+   
     //  public GameObject cursor;
 
     [Range(0.01f, 1f)]
     public float smoothness = 0.5f;
 
     public static CameraScript instance;
+
+    public GameObject Arrow; public float spdArrow;
 
     private void Awake()
     {
@@ -119,7 +123,7 @@ public class CameraScript : MonoBehaviour
                     }
                     isDiag = true;
                     Camera.main.transform.position += dir * CameraSpeed * Time.deltaTime;
-                } 
+                }
             }
 
             if (!isDiag)
@@ -181,6 +185,39 @@ public class CameraScript : MonoBehaviour
 
         if (!PauseMenu.instance.GamePaused)
         {
+
+            bool SomeoneIsCorrupted = false;
+            float bestDistance = 10000f;
+            Transform bestTarget = null;
+            foreach (Movement chara in Players)
+            {
+
+                if (chara.currentState == Movement.States.Corrupted && Vector3.Distance(chara.transform.position, target.position) <= bestDistance && chara.transform != target && target != null)
+                {
+                    bestDistance = Vector3.Distance(chara.transform.position, target.position);
+                    bestTarget = chara.transform;
+                }
+            }
+
+            Debug.Log(bestTarget);
+            if (bestTarget != null)
+            {
+                Arrow.SetActive(true);
+            }
+            else
+                Arrow.SetActive(false);
+
+            if (bestTarget != null)
+            {
+                Vector3 dir = bestTarget.transform.position - Arrow.transform.position;
+               // dir.x = 0;
+                dir.y = 0;
+                var rotation = Quaternion.LookRotation(dir);
+                Arrow.transform.rotation = Quaternion.Slerp(Arrow.transform.rotation, rotation, Time.deltaTime * spdArrow);
+               // Quaternion returnvalue = Arrow.transform.rotation;
+              //  Arrow.transform.eulerAngles = new Vector3(dir.eulerAngles.x, 0, returnvalue.z);
+            }
+
             //Select Character
             if (Input.GetMouseButtonDown(0))
             {

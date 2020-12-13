@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
+using TMPro;
 public class Movement : MonoBehaviour
 {
     NavMeshAgent agent;
@@ -90,6 +91,7 @@ public class Movement : MonoBehaviour
     public bool hover;
     public TVClass ChoiceTV;
 
+    public TextMeshProUGUI ObjectText;
 
     bool mustPlaySFX;
 
@@ -283,6 +285,12 @@ public class Movement : MonoBehaviour
                                 mustPlaySFX = true;
                                 AkSoundEngine.PostEvent("PlayJerrycan", gameObject);
                             }
+
+                            if(currentObjective.Type == Objective.WorkType.chest && !mustPlaySFX)
+                            {
+                                mustPlaySFX = true;
+                                AkSoundEngine.PostEvent("FireworksSetup", gameObject);
+                            }
                         }
                         else
                         {
@@ -327,13 +335,16 @@ public class Movement : MonoBehaviour
                                     AkSoundEngine.PostEvent("PlayOrb", gameObject);
                                     break;
                                 case Objective.WorkType.chest:
+                                    AkSoundEngine.PostEvent("FireworksStop", gameObject);
                                     int i = Random.Range(0, 2);
                                     if (i == 1)
                                     {
                                         currentItem = Items.Trap;
+                                        StartCoroutine(ShowFoundObject("Beartrap"));
                                     }
                                     else
                                     {
+                                        StartCoroutine(ShowFoundObject("Fireworks"));
                                         currentItem = Items.FireCracker;
                                     }
                                     break;
@@ -400,6 +411,7 @@ public class Movement : MonoBehaviour
                         {
                             DisolveMat[u].SetFloat("Vector1_DD60D333", 0);
                         }
+                        PlayWwiseEvent("StopStatic");
                         anim.SetBool("isStunned", false);
                         currentState = States.Walk;
                         ChoiceTV.survivor = null;
@@ -531,6 +543,15 @@ public class Movement : MonoBehaviour
                                             AkSoundEngine.PostEvent("StopJerrycan", gameObject);
                                         }
                                     }
+
+                                    if(currentObjective.Type == Objective.WorkType.chest)
+                                    {
+                                        if (mustPlaySFX)
+                                        {
+                                            mustPlaySFX = false;
+                                            AkSoundEngine.PostEvent("FireworksStop", gameObject);
+                                        }
+                                    }
                                     currentObjective.isBeingWorkedOn = false;
 
                                     if (currentObjective.GetComponent<Movement>() != null)
@@ -569,6 +590,7 @@ public class Movement : MonoBehaviour
                                     {
                                         currentObjective = null;
                                         AkSoundEngine.PostEvent("StopJerrycan", gameObject);
+                                        AkSoundEngine.PostEvent("FireworksStop", gameObject);
                                         return;
                                     }
                                     if (currentObjective.Type == Objective.WorkType.jerryCan && hasSoul)
@@ -610,6 +632,7 @@ public class Movement : MonoBehaviour
                                     return;
                                 }
                                 AkSoundEngine.PostEvent("StopJerrycan", gameObject);
+                                AkSoundEngine.PostEvent("FireworksStop", gameObject);
                                 currentObjective.GetComponent<Movement>().isBeingHelped = true;
                                 currentObjective.isBeingWorkedOn = true;
                                 anim.SetBool("isWorking", false);
@@ -661,6 +684,7 @@ public class Movement : MonoBehaviour
                                 }
                                 agent.isStopped = false;
                                 AkSoundEngine.PostEvent("StopJerrycan", gameObject);
+                                AkSoundEngine.PostEvent("FireworksStop", gameObject);
                                 anim.SetBool("isWorking", false);
                                 anim.SetBool("isWalking", true);
                                 agent.SetDestination(hit.point);
@@ -758,6 +782,13 @@ public class Movement : MonoBehaviour
         }
     }
 
+    IEnumerator ShowFoundObject(string Object)
+    {
+        ObjectText.enabled = true;
+        ObjectText.text = "You found " + Object;
+        yield return new WaitForSeconds(3);
+        ObjectText.enabled = false;
+    }
 
     public void PlayWwiseEvent(string EventName)
     {
