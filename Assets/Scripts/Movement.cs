@@ -785,7 +785,7 @@ public class Movement : MonoBehaviour
     IEnumerator ShowFoundObject(string Object)
     {
         ObjectText.enabled = true;
-        ObjectText.text = "You found " + Object;
+        ObjectText.text = "You found " + "<color=green>" +Object +"</color>";
         yield return new WaitForSeconds(3);
         ObjectText.enabled = false;
     }

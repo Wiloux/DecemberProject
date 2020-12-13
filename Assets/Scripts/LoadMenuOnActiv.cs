@@ -8,10 +8,10 @@ public class LoadMenuOnActiv : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
-    // Update is called once per frame
+    // Update is called once per leframe
     void Update()
     {
         
