@@ -22,12 +22,20 @@
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Main Menu Highlight" ID="{10D791AA-8E35-405C-9E39-A5A0EDC45005}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="StopChase" ID="{7C25AC06-4FAC-4D53-A558-C8992F0FC9C1}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="IsBeingCorrupted" ID="{1FFBC9D8-93C6-46E1-91BB-CD6CFC93A35E}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Main Menu Keypress" ID="{BAD22BED-E197-4B75-B9FB-0D25AA6D6BB2}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Music" ID="{447E649B-2F10-44EB-89F4-D257D074E699}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
@@ -45,7 +53,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="SFXVolume" ID="{F6FC2505-72DB-48A0-859F-23DA72E8F544}"/>
-							<Value>100</Value>
+							<Value>8</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="KillerProximity" ID="{36E12197-18AA-4F3E-A7A8-DF0E9F005E82}"/>
@@ -56,8 +64,8 @@
 						<CurrentStateRef Name="No" ID="{EF48129C-E6AE-49AB-93B0-F735A314630D}"/>
 						<CurrentStateRef Name="No" ID="{D00660D1-4C93-4198-8996-FD4984C19BC0}"/>
 						<CurrentStateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
-						<CurrentStateRef Name="No" ID="{833A786E-E085-4610-ABCC-20527A99508F}"/>
-						<CurrentStateRef Name="NonTense" ID="{D560E708-FB1A-4472-8F41-FE0743F8D463}"/>
+						<CurrentStateRef Name="Yes" ID="{860D9639-D09F-4138-A570-609CA7F3614B}"/>
+						<CurrentStateRef Name="Tense" ID="{EBBD9D27-82D5-4658-99B8-BDCD92FD277C}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

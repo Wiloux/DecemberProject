@@ -495,6 +495,11 @@
 										<ActorMixer Name="Nightstalker" ID="{332E1AE6-E1DA-42D9-B6D3-A8ACBD8C54EB}" ShortID="135917898">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>12</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
 														<Value>17</Value>
@@ -515,7 +520,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-2</Value>
+														<Value>12</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -534,10 +539,21 @@
 												<Sound Name="1" ID="{2988DDF2-0836-4FA2-A833-64640B8109A1}" ShortID="433393084">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>18</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>26</Value>
+															</ValueList>
+														</Property>
 														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>3</Value>
+																<Value>5</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -550,6 +566,9 @@
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="NoReverb" ID="{F6D9B65D-7880-4D8A-B7B4-0C407722DEB8}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
@@ -1379,9 +1398,14 @@
 					<ChildrenList>
 						<Sound Name="Main Menu Highlight" ID="{10D791AA-8E35-405C-9E39-A5A0EDC45005}" ShortID="187772072">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>27</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>5</Value>
+										<Value>9</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{68E70CAD-E5DC-43EB-B64D-12417CDBA87B}" ShortID="256696109">
@@ -1439,9 +1463,14 @@
 						</Sound>
 						<Sound Name="Main Menu Keypress" ID="{BAD22BED-E197-4B75-B9FB-0D25AA6D6BB2}" ShortID="401393460">
 							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>9</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>5</Value>
+										<Value>12</Value>
 									</ValueList>
 									<RTPCList>
 										<RTPC Name="" ID="{6D8929AC-5108-411F-8E8B-B572B431F59B}" ShortID="191766781">

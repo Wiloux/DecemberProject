@@ -1948,7 +1948,6 @@
 													<PropertyList>
 														<Property Name="EndTrimOffset" Type="Real64" Value="69818.9115646258"/>
 														<Property Name="FadeInMode" Type="int16" Value="0"/>
-														<Property Name="FadeOutMode" Type="int16" Value="0"/>
 													</PropertyList>
 													<AudioSourceRef Name="main menu theme final" ID="{043076E3-598A-4006-92B8-66F16EA2D332}"/>
 												</MusicClip>

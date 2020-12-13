@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="4131515519">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3309095516">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -213,7 +213,7 @@
 					<IncludedMemoryFiles>
 						<File Id="415982012" Language="SFX">
 							<ShortName>Get item.wav</ShortName>
-							<Path>SFX\Get item_F76FA8F1.wem</Path>
+							<Path>SFX\Get item_A54EB81F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<AuxBusSends>
@@ -323,6 +323,9 @@
 							<Path>SFX\1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="3840845152" Name="NoReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NoReverb"/>
+					</AuxBusSends>
 				</Event>
 				<Event Id="2053742238" Name="PlayOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\PlayOrb" MaxAttenuation="100.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -427,7 +430,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="2170156355">
+		<SoundBank Id="3604647259" Language="SFX" Hash="3005010615">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>
@@ -474,7 +477,7 @@
 				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
 			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="4158285989" Language="SFX" Hash="1825772530">
+		<SoundBank Id="4158285989" Language="SFX" Hash="3528986953">
 			<ObjectPath>\SoundBanks\Default Work Unit\GameOver</ObjectPath>
 			<ShortName>GameOver</ShortName>
 			<Path>GameOver.bnk</Path>
