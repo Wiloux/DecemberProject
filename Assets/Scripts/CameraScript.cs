@@ -20,6 +20,8 @@ public class CameraScript : MonoBehaviour
     public Texture2D activeCursor;
     public Texture2D unActiveCursor;
 
+    public Transform NS;
+    public Transform Syd;
    
     //  public GameObject cursor;
 
@@ -36,7 +38,14 @@ public class CameraScript : MonoBehaviour
     }
     void Start()
     {
-        camOffSet = transform.position - target.transform.position;
+        if (EasterEgg.instance.isNightStalker)
+        {
+            camOffSet = transform.position - NS.position;
+        }
+        else
+        {
+            camOffSet = transform.position - Syd.position;
+        }
         if (EasterEgg.instance.isNightStalker)
         {
             Players[0] = EasterEgg.instance.NightStalker.GetComponent<Movement>();

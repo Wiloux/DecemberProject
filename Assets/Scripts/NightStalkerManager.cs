@@ -10,6 +10,7 @@ public class NightStalkerManager : MonoBehaviour
     public Toggle toggle;
     void Start()
     {
+        PlayerPrefs.SetInt("NightStalkerUnlocked", 1);
         if (PlayerPrefs.GetInt("NightStalkerModeOn") == 0)
         {
             toggle.isOn = false;
@@ -35,7 +36,6 @@ public class NightStalkerManager : MonoBehaviour
         if (On)
         {
             PlayerPrefs.SetInt("NightStalkerModeOn", 1);
-            Debug.Log("on");
         }
         else
         {
@@ -44,6 +44,7 @@ public class NightStalkerManager : MonoBehaviour
         }
     }
 
+  
     // Update is called once per frame
     void Update()
     {

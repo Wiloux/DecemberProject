@@ -1042,7 +1042,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: We recommand the use of headphones
+  m_text: We recommend the use of headphones
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dd2b611f2ef683142ad8cdb46256beff, type: 2}
   m_sharedMaterial: {fileID: -8122038054746212257, guid: dd2b611f2ef683142ad8cdb46256beff,
