@@ -25,6 +25,7 @@ namespace AK
         static const AkUniqueID FOOTSTEP2 = 2385628263U;
         static const AkUniqueID FOOTSTEP3 = 2385628262U;
         static const AkUniqueID FOOTSTEP4 = 2385628257U;
+        static const AkUniqueID GAMEOVERFADEOUT = 4108772633U;
         static const AkUniqueID ISBEINGCORRUPTED = 2661533922U;
         static const AkUniqueID PLAYCHASE = 3706411783U;
         static const AkUniqueID PLAYGAMEOVER = 2895517991U;

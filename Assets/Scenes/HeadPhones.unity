@@ -1042,7 +1042,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: We recommend the use of headphones
+  m_text: We recommend the use of headphones.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dd2b611f2ef683142ad8cdb46256beff, type: 2}
   m_sharedMaterial: {fileID: -8122038054746212257, guid: dd2b611f2ef683142ad8cdb46256beff,
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_margin: {x: -217.53033, y: 0, z: -220.80357, w: 0}
   m_textInfo:
     textComponent: {fileID: 1785765523}
-    characterCount: 34
+    characterCount: 35
     spriteCount: 0
     spaceCount: 5
     wordCount: 6

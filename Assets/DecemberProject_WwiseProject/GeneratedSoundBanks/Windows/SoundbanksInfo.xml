@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3309095516">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1029339644">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -55,7 +55,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3844998465" Name="DefeatedStatic" ObjectPath="\Events\Default Work Unit\Others\DefeatedStatic" MaxAttenuation="30.000000" DurationType="Infinite">
+				<Event Id="3844998465" Name="DefeatedStatic" ObjectPath="\Events\Default Work Unit\Others\DefeatedStatic" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="975610250" Language="SFX">
 							<ShortName>staticTvHead.wav</ShortName>
@@ -157,6 +157,14 @@
 						<File Id="771280129" Language="SFX">
 							<ShortName>footsteps 4.1.wav</ShortName>
 							<Path>SFX\footsteps 4.1_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4108772633" Name="GameOverFadeOut" ObjectPath="\Events\Default Work Unit\Game Over\GameOverFadeOut" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="975610250" Language="SFX">
+							<ShortName>staticTvHead.wav</ShortName>
+							<Path>SFX\staticTvHead_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -399,7 +407,7 @@
 				<Event Id="2852051516" Name="StopOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\StopOrb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4033460349" Name="StopOverworld_Tense" ObjectPath="\Events\Music\Overworld\StopOverworld_Tense" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1707810303" Name="StopStatic" ObjectPath="\Events\Default Work Unit\Others\StopStatic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="664857509" Name="TvHeadStaticPlay" ObjectPath="\Events\Default Work Unit\TVHead\TvHeadStaticPlay" MaxAttenuation="30.000000" DurationType="Infinite">
+				<Event Id="664857509" Name="TvHeadStaticPlay" ObjectPath="\Events\Default Work Unit\TVHead\TvHeadStaticPlay" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="975610250" Language="SFX">
 							<ShortName>staticTvHead.wav</ShortName>

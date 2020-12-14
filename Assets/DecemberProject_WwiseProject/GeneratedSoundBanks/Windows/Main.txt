@@ -31,6 +31,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3706411783	PlayChase			\Music\Overworld\PlayChase	
 	3844998465	DefeatedStatic			\Default Work Unit\Others\DefeatedStatic	
 	4033460349	StopOverworld_Tense			\Music\Overworld\StopOverworld_Tense	
+	4108772633	GameOverFadeOut			\Default Work Unit\Game Over\GameOverFadeOut	
 	4283543462	BeartrapTrigger			\Default Work Unit\Weapons\Beartrap\BeartrapTrigger	
 
 State Group	ID	Name			Wwise Object Path	Notes

@@ -501,6 +501,38 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="GameOverFadeOut" ID="{545F8E86-BD9C-4A7D-8C85-740A23F96C47}">
+							<ChildrenList>
+								<Action Name="" ID="{5418F47A-4ABB-40D5-B7FC-A39A9B084C1A}" ShortID="95211651">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+								<Action Name="" ID="{BA6B8151-75BE-41F7-AD1E-B43324B9CD04}" ShortID="628807089">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+										<Property Name="FadeTime" Type="Real64" Value="3.15"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="staticTvHead" ID="{5E73573E-33A5-4A2E-B878-4763C73B3346}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EDE63BE2-947B-49C4-88CE-005D18339680}" ShortID="176033130">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="3"/>
+										<Property Name="Delay" Type="Real64" Value="3.16"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.29"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList/>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="PlayNSFootstep" ID="{E8129C6F-3661-4B0A-AA67-1752D3FC19F7}">
