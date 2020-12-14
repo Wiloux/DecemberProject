@@ -38,6 +38,15 @@
 						<State Name="No" ID="{D00660D1-4C93-4198-8996-FD4984C19BC0}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Giggles" ID="{D0A3846E-D69D-4088-9FA0-774B611F8511}">
+					<ChildrenList>
+						<State Name="None" ID="{EE1BC06F-83B4-4DE0-B5EA-817BE82F6809}"/>
+						<State Name="Chasing" ID="{B494D591-FD30-43E3-A2E0-1766D2E52027}"/>
+						<State Name="Working" ID="{E0C481B8-E453-4F8A-929A-CEB377CA781E}"/>
+						<State Name="Finished" ID="{2B625058-B7BC-4F03-B37E-F2A157360972}"/>
+						<State Name="Patrol" ID="{47CC3466-AEA6-4C54-813E-EBCE4592C74B}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

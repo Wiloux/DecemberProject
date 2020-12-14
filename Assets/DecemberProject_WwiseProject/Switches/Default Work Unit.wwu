@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Giggles" ID="{2A25F7FA-13FB-4B9E-9E48-9D8F25B32CAA}">
+					<ChildrenList>
+						<Switch Name="Working" ID="{DA1AAB19-A8E6-4CED-80A2-A036DB357A64}"/>
+						<Switch Name="Finished" ID="{F501486A-AF41-4BD9-B48C-DAB7E27DA4A9}"/>
+						<Switch Name="Chasing" ID="{2E1E8FA9-9F78-47AF-815B-01F870274580}"/>
+						<Switch Name="Silence" ID="{2213BEB0-76F7-472E-8432-99C3535144B3}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

@@ -30,6 +30,7 @@ namespace AK
         static const AkUniqueID PLAYCHASE = 3706411783U;
         static const AkUniqueID PLAYGAMEOVER = 2895517991U;
         static const AkUniqueID PLAYGETITEM = 2080376856U;
+        static const AkUniqueID PLAYGIGGLES = 2627712155U;
         static const AkUniqueID PLAYHIGHLIGHT = 145167493U;
         static const AkUniqueID PLAYJERRYCAN = 448200913U;
         static const AkUniqueID PLAYKEYPRESS = 1168436793U;
@@ -44,6 +45,8 @@ namespace AK
         static const AkUniqueID STATICGAMEOVER = 3887894719U;
         static const AkUniqueID STOPALLSOUNDS = 1416937818U;
         static const AkUniqueID STOPCHASE = 2399390441U;
+        static const AkUniqueID STOPGIGGLESCAUGHT = 206134053U;
+        static const AkUniqueID STOPGIGGLESLOST = 237550319U;
         static const AkUniqueID STOPJERRYCAN = 2638603827U;
         static const AkUniqueID STOPORB = 2852051516U;
         static const AkUniqueID STOPOVERWORLD_TENSE = 4033460349U;
@@ -65,6 +68,20 @@ namespace AK
                 static const AkUniqueID YES = 979470758U;
             } // namespace STATE
         } // namespace END
+
+        namespace GIGGLES
+        {
+            static const AkUniqueID GROUP = 4002248037U;
+
+            namespace STATE
+            {
+                static const AkUniqueID CHASING = 1516571116U;
+                static const AkUniqueID FINISHED = 3683254051U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID PATROL = 3497767639U;
+                static const AkUniqueID WORKING = 1992928594U;
+            } // namespace STATE
+        } // namespace GIGGLES
 
         namespace ISBEINGCORRUPTED
         {
@@ -116,6 +133,23 @@ namespace AK
 
     } // namespace STATES
 
+    namespace SWITCHES
+    {
+        namespace GIGGLES
+        {
+            static const AkUniqueID GROUP = 4002248037U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CHASING = 1516571116U;
+                static const AkUniqueID FINISHED = 3683254051U;
+                static const AkUniqueID SILENCE = 3041563226U;
+                static const AkUniqueID WORKING = 1992928594U;
+            } // namespace SWITCH
+        } // namespace GIGGLES
+
+    } // namespace SWITCHES
+
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID KILLERPROXIMITY = 110585135U;
@@ -135,6 +169,7 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MASTERNOREVERB = 3104833122U;
         static const AkUniqueID MUSIC = 3991942870U;
     } // namespace BUSSES
 

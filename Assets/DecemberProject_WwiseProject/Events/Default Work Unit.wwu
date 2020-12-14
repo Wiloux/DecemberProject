@@ -269,6 +269,73 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="Giggles" ID="{79B684FF-4734-4806-A337-5A6000DB38BC}" ShortID="63504774">
+							<ChildrenList>
+								<Event Name="StopGigglesLost" ID="{2277F30A-F4E5-4967-B70C-92703DCCBD42}">
+									<ChildrenList>
+										<Action Name="" ID="{AABB580A-C7ED-4D96-9DC5-F4B8AEB6C4A0}" ShortID="63935084">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Silence" ID="{2213BEB0-76F7-472E-8432-99C3535144B3}" WorkUnitID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="StopGigglesCaught" ID="{BC7A4CB1-7874-444D-A2A2-ED131083C92F}">
+									<ChildrenList>
+										<Action Name="" ID="{EBF80546-B251-4B67-BF51-C50C5FE0153A}" ShortID="72412384">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Finished" ID="{F501486A-AF41-4BD9-B48C-DAB7E27DA4A9}" WorkUnitID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{6713B153-134B-4772-9B82-C087157E1AD0}" ShortID="829406631">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+												<Property Name="Delay" Type="Real64" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Silence" ID="{2213BEB0-76F7-472E-8432-99C3535144B3}" WorkUnitID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="PlayGiggles" ID="{0E1FA620-2299-48A4-9621-BE1F5681FFEA}">
+									<ChildrenList>
+										<Action Name="" ID="{BB43980C-BDF9-4EAF-9D5A-1A132B7F1170}" ShortID="917379495">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="23"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Silence" ID="{2213BEB0-76F7-472E-8432-99C3535144B3}" WorkUnitID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{8805822A-5ACB-47DB-80BB-1C6EAA757787}" ShortID="880476670">
+											<PropertyList>
+												<Property Name="Delay" Type="Real64" Value="0.1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Giggles" ID="{059B9ACA-5560-4C1D-A944-12EEBEA02050}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Weapons" ID="{320F91B8-7EC0-4813-B9F0-0472610369F9}" ShortID="146968002">

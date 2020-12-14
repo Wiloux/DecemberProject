@@ -61,13 +61,16 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{EE1BC06F-83B4-4DE0-B5EA-817BE82F6809}"/>
 						<CurrentStateRef Name="Yes" ID="{B8DA0160-63E3-4CCA-B091-04B800C6F99C}"/>
 						<CurrentStateRef Name="No" ID="{D00660D1-4C93-4198-8996-FD4984C19BC0}"/>
 						<CurrentStateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
 						<CurrentStateRef Name="Yes" ID="{860D9639-D09F-4138-A570-609CA7F3614B}"/>
 						<CurrentStateRef Name="Tense" ID="{EBBD9D27-82D5-4658-99B8-BDCD92FD277C}"/>
 					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Working" ID="{DA1AAB19-A8E6-4CED-80A2-A036DB357A64}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="end scene" ID="{51BF487C-2183-4D6C-9CBB-53E17D3ACB81}">
 					<ModuleList>

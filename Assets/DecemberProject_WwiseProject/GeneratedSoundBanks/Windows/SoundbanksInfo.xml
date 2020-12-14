@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4046749657">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1150135534">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1029339644">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2911614583">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -172,6 +172,9 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="979470758" Name="Yes" ObjectPath="\States\Default Work Unit\IsBeingCorrupted\Yes"/>
 					</ActionSetState>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="1992928594" Name="Working" ObjectPath="\Switches\Default Work Unit\Giggles\Working"/>
+					</ActionSetSwitch>
 				</Event>
 				<Event Id="3706411783" Name="PlayChase" ObjectPath="\Events\Music\Overworld\PlayChase" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -216,6 +219,9 @@
 						<ActionSetStateEntry Id="979470758" Name="Yes" ObjectPath="\States\Default Work Unit\Spotted\Yes"/>
 						<ActionSetStateEntry Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\IsBeingCorrupted\No"/>
 					</ActionSetState>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="1516571116" Name="Chasing" ObjectPath="\Switches\Default Work Unit\Giggles\Chasing"/>
+					</ActionSetSwitch>
 				</Event>
 				<Event Id="2080376856" Name="PlayGetItem" ObjectPath="\Events\Default Work Unit\PlayGetItem" DurationType="OneShot" DurationMin="0.309115" DurationMax="0.309115">
 					<IncludedMemoryFiles>
@@ -227,6 +233,108 @@
 					<AuxBusSends>
 						<AuxBus Id="3840845152" Name="NoReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\NoReverb"/>
 					</AuxBusSends>
+				</Event>
+				<Event Id="2627712155" Name="PlayGiggles" ObjectPath="\Events\Default Work Unit\TVHead\Giggles\PlayGiggles" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="67215594" Language="SFX">
+							<ShortName>gf1.wav</ShortName>
+							<Path>SFX\gf1_10C4C929.wem</Path>
+						</File>
+						<File Id="99061884" Language="SFX">
+							<ShortName>gf4.wav</ShortName>
+							<Path>SFX\gf4_10C4C929.wem</Path>
+						</File>
+						<File Id="195557443" Language="SFX">
+							<ShortName>g9.wav</ShortName>
+							<Path>SFX\g9_10C4C929.wem</Path>
+						</File>
+						<File Id="310637566" Language="SFX">
+							<ShortName>g2.wav</ShortName>
+							<Path>SFX\g2_10C4C929.wem</Path>
+						</File>
+						<File Id="499438136" Language="SFX">
+							<ShortName>g7.wav</ShortName>
+							<Path>SFX\g7_10C4C929.wem</Path>
+						</File>
+						<File Id="575501773" Language="SFX">
+							<ShortName>gf2.wav</ShortName>
+							<Path>SFX\gf2_10C4C929.wem</Path>
+						</File>
+						<File Id="624128063" Language="SFX">
+							<ShortName>g4.wav</ShortName>
+							<Path>SFX\g4_10C4C929.wem</Path>
+						</File>
+						<File Id="730114883" Language="SFX">
+							<ShortName>g12.wav</ShortName>
+							<Path>SFX\g12_10C4C929.wem</Path>
+						</File>
+						<File Id="770393744" Language="SFX">
+							<ShortName>g10.wav</ShortName>
+							<Path>SFX\g10_10C4C929.wem</Path>
+						</File>
+						<File Id="811897968" Language="SFX">
+							<ShortName>g6.wav</ShortName>
+							<Path>SFX\g6_10C4C929.wem</Path>
+						</File>
+						<File Id="819135650" Language="SFX">
+							<ShortName>g3.wav</ShortName>
+							<Path>SFX\g3_10C4C929.wem</Path>
+						</File>
+						<File Id="836312457" Language="SFX">
+							<ShortName>gf3.wav</ShortName>
+							<Path>SFX\gf3_10C4C929.wem</Path>
+						</File>
+						<File Id="875109637" Language="SFX">
+							<ShortName>g11.wav</ShortName>
+							<Path>SFX\g11_10C4C929.wem</Path>
+						</File>
+						<File Id="894689707" Language="SFX">
+							<ShortName>g5.wav</ShortName>
+							<Path>SFX\g5_10C4C929.wem</Path>
+						</File>
+						<File Id="956046119" Language="SFX">
+							<ShortName>g8.wav</ShortName>
+							<Path>SFX\g8_10C4C929.wem</Path>
+						</File>
+						<File Id="1049964613" Language="SFX">
+							<ShortName>g1.wav</ShortName>
+							<Path>SFX\g1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{2213BEB0-76F7-472E-8432-99C3535144B3}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{2E1E8FA9-9F78-47AF-815B-01F870274580}">
+							<Media>
+								<File Id="1049964613"/>
+								<File Id="310637566"/>
+								<File Id="819135650"/>
+								<File Id="624128063"/>
+								<File Id="894689707"/>
+								<File Id="811897968"/>
+								<File Id="499438136"/>
+								<File Id="956046119"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{DA1AAB19-A8E6-4CED-80A2-A036DB357A64}">
+							<Media>
+								<File Id="195557443"/>
+								<File Id="770393744"/>
+								<File Id="875109637"/>
+								<File Id="730114883"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{F501486A-AF41-4BD9-B48C-DAB7E27DA4A9}">
+							<Media>
+								<File Id="67215594"/>
+								<File Id="575501773"/>
+								<File Id="836312457"/>
+								<File Id="99061884"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="3041563226" Name="Silence" ObjectPath="\Switches\Default Work Unit\Giggles\Silence"/>
+					</ActionSetSwitch>
 				</Event>
 				<Event Id="145167493" Name="PlayHighlight" ObjectPath="\Events\Default Work Unit\MainMenu\PlayHighlight" DurationType="OneShot" DurationMin="0.266259" DurationMax="0.266259">
 					<IncludedMemoryFiles>
@@ -403,6 +511,17 @@
 						<ActionSetStateEntry Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\Spotted\No"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="206134053" Name="StopGigglesCaught" ObjectPath="\Events\Default Work Unit\TVHead\Giggles\StopGigglesCaught" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="3041563226" Name="Silence" ObjectPath="\Switches\Default Work Unit\Giggles\Silence"/>
+						<ActionSetSwitchEntry Id="3683254051" Name="Finished" ObjectPath="\Switches\Default Work Unit\Giggles\Finished"/>
+					</ActionSetSwitch>
+				</Event>
+				<Event Id="237550319" Name="StopGigglesLost" ObjectPath="\Events\Default Work Unit\TVHead\Giggles\StopGigglesLost" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetSwitch>
+						<ActionSetSwitchEntry Id="3041563226" Name="Silence" ObjectPath="\Switches\Default Work Unit\Giggles\Silence"/>
+					</ActionSetSwitch>
+				</Event>
 				<Event Id="2638603827" Name="StopJerrycan" ObjectPath="\Events\Default Work Unit\SoulStuff\Jerrycan\StopJerrycan" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2852051516" Name="StopOrb" ObjectPath="\Events\Default Work Unit\SoulStuff\Orb\StopOrb" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4033460349" Name="StopOverworld_Tense" ObjectPath="\Events\Music\Overworld\StopOverworld_Tense" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -437,6 +556,28 @@
 					<States/>
 				</StateGroup>
 			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="1516571116" Name="Chasing" ObjectPath="\Switches\Default Work Unit\Giggles\Chasing">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="1992928594" Name="Working" ObjectPath="\Switches\Default Work Unit\Giggles\Working">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="3041563226" Name="Silence" ObjectPath="\Switches\Default Work Unit\Giggles\Silence">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="3683254051" Name="Finished" ObjectPath="\Switches\Default Work Unit\Giggles\Finished">
+					<Switches/>
+				</SwitchGroup>
+				<SwitchGroup Id="4002248037" Name="Giggles" ObjectPath="\Switches\Default Work Unit\Giggles">
+					<Switches>
+						<Switch Id="1992928594" Name="Working" ObjectPath="\Switches\Default Work Unit\Giggles\Working"/>
+						<Switch Id="3683254051" Name="Finished" ObjectPath="\Switches\Default Work Unit\Giggles\Finished"/>
+						<Switch Id="1516571116" Name="Chasing" ObjectPath="\Switches\Default Work Unit\Giggles\Chasing"/>
+						<Switch Id="3041563226" Name="Silence" ObjectPath="\Switches\Default Work Unit\Giggles\Silence"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="3604647259" Language="SFX" Hash="3005010615">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>

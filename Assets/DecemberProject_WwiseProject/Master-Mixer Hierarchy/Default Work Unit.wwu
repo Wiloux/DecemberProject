@@ -149,6 +149,58 @@
 						</CustomStateList>
 					</StateInfo>
 				</Bus>
+				<Bus Name="MasterNoReverb" ID="{DD8B1643-98DE-4F10-AEBC-BBE672B94690}">
+					<PropertyList>
+						<Property Name="BusVolume" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{44D02E61-6505-4DB4-866D-05C0A18DE0D7}" ShortID="795207012">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="SFXVolume" ID="{F6FC2505-72DB-48A0-859F-23DA72E8F544}" WorkUnitID="{FDBF762A-8CB4-491C-A285-37708C1866E8}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{DD440439-4F4F-4654-9A10-1A5CBC0649F5}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-200</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>7</XPos>
+												<YPos>-1.5</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>8</XPos>
+												<YPos>0</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>9</XPos>
+												<YPos>1.5</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>10</XPos>
+												<YPos>2.99999999999997</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{E9F44C94-632E-4E49-9DAD-396F09596528}" WorkUnitID="{F152F3CE-44CE-45BE-9C49-2813E526D499}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
 			</ChildrenList>
 		</WorkUnit>
 	</Busses>

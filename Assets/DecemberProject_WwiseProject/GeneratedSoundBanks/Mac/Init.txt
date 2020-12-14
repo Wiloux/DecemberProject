@@ -4,6 +4,7 @@ State Group	ID	Name			Wwise Object Path	Notes
 	2661533922	IsBeingCorrupted			\Default Work Unit\IsBeingCorrupted	
 	3214304800	Spotted			\Default Work Unit\Spotted	
 	3494343696	PauseMenu			\Default Work Unit\PauseMenu	
+	4002248037	Giggles			\Default Work Unit\Giggles	
 
 State	ID	Name	State Group			Notes
 	748895195	None	End			
@@ -21,6 +22,11 @@ State	ID	Name	State Group			Notes
 	748895195	None	PauseMenu			
 	979470758	Yes	PauseMenu			
 	1668749452	No	PauseMenu			
+	748895195	None	Giggles			
+	1516571116	Chasing	Giggles			
+	1992928594	Working	Giggles			
+	3497767639	Patrol	Giggles			
+	3683254051	Finished	Giggles			
 
 Custom State	ID	Name	State Group	Owner		Notes
 	164552317	Yes	PauseMenu	\Master-Mixer Hierarchy\Default Work Unit\Music		
@@ -30,6 +36,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2346531308	MusicVolume			\Default Work Unit\MusicVolume	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	3104833122	MasterNoReverb			\Default Work Unit\MasterNoReverb	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 	3991942870	Music			\Default Work Unit\Music	
 

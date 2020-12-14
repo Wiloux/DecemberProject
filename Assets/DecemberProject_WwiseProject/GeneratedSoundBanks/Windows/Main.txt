@@ -1,5 +1,7 @@
 Event	ID	Name			Wwise Object Path	Notes
 	145167493	PlayHighlight			\Default Work Unit\MainMenu\PlayHighlight	
+	206134053	StopGigglesCaught			\Default Work Unit\TVHead\Giggles\StopGigglesCaught	
+	237550319	StopGigglesLost			\Default Work Unit\TVHead\Giggles\StopGigglesLost	
 	448200913	PlayJerrycan			\Default Work Unit\SoulStuff\Jerrycan\PlayJerrycan	
 	664857509	TvHeadStaticPlay			\Default Work Unit\TVHead\TvHeadStaticPlay	
 	1168436793	PlayKeypress			\Default Work Unit\MainMenu\PlayKeypress	
@@ -19,6 +21,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2385628262	Footstep3			\Default Work Unit\Player\Footstep3	
 	2385628263	Footstep2			\Default Work Unit\Player\Footstep2	
 	2399390441	StopChase			\Music\Overworld\StopChase	
+	2627712155	PlayGiggles			\Default Work Unit\TVHead\Giggles\PlayGiggles	
 	2638603827	StopJerrycan			\Default Work Unit\SoulStuff\Jerrycan\StopJerrycan	
 	2661533922	IsBeingCorrupted			\Music\Overworld\IsBeingCorrupted	
 	2740640909	FireworksStop			\Default Work Unit\Weapons\Fireworks\FireworksStop	
@@ -33,6 +36,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	4033460349	StopOverworld_Tense			\Music\Overworld\StopOverworld_Tense	
 	4108772633	GameOverFadeOut			\Default Work Unit\Game Over\GameOverFadeOut	
 	4283543462	BeartrapTrigger			\Default Work Unit\Weapons\Beartrap\BeartrapTrigger	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	4002248037	Giggles			\Default Work Unit\Giggles	
+
+Switch	ID	Name	Switch Group			Notes
+	1516571116	Chasing	Giggles			
+	1992928594	Working	Giggles			
+	3041563226	Silence	Giggles			
+	3683254051	Finished	Giggles			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1562068129	Overworld			\Default Work Unit\Overworld	
@@ -73,7 +85,18 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	2155950306	Spatialization1			\Default Work Unit\Spatialization1	
 
 Effect plug-ins	ID	Name	Type				Notes
+	706922706	Phone_Booth_(Custom)	Wwise RoomVerb			
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	60682191	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesChasingSequence\SilenceRandom\Silence2\Wwise Silence	
+	180628535	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesChasingSequence\SilenceRandom\silence\Wwise Silence	
+	243950143	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\Silence\Wwise Silence	
+	455437878	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesWorkingSequence\SilenceRandom\silence3\Wwise Silence	
+	458022799	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesWorkingSequence\SilenceRandom\Silence2\Wwise Silence	
+	576567876	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesWorkingSequence\SilenceRandom\silence\Wwise Silence	
+	769504216	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesChasingSequence\SilenceRandom\silence3\Wwise Silence	
+	881948208	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesFinishedSequence\Silence5\Wwise Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	5711083	beartrap trigger	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\beartrap trigger_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Beartrap\beartrap trigger		8017
@@ -81,7 +104,9 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	18310448	chase bass	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\chase bass_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase bass		181136
 	19686228	Footstep Killer 3_3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 3.3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS3\Footstep Killer 3_3		11484
 	27905807	firework1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\firework1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework1		17560
+	67215594	gf1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\gf1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesFinishedSequence\GigglesFinished\gf1		308900
 	95132543	Footstep Killer 2_3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 2.3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_3		11432
+	99061884	gf4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\gf4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesFinishedSequence\GigglesFinished\gf4		173696
 	103516333	footsteps 3_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 3.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\3\footsteps 3_1		5126
 	113483634	footsteps 2_1_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 2.1.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\2\footsteps2\footsteps 2_1_1		3753
 	117092517	atmos 1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\atmos 1_5B0B678B.wem		\Actor-Mixer Hierarchy\Default Work Unit\EndScene\atmos 1		7303988
@@ -90,47 +115,61 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	175012262	Main Menu Highlight	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Main Menu Highlight_CD1ED910.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Main Menu Highlight		3354
 	190373997	footsteps 1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\1\footsteps 1_2		5443
 	193363895	tense music bass	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\tense music bass_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music bass		506672
+	195557443	g9	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g9_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesWorkingSequence\GigglesWorking\g9		176464
 	260759101	Footstep Killer 1_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 1.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_1		1214
 	293490680	Footstep Killer 2_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 2.1_1FE86188.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_1		8652
 	300243749	footsteps 3_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 3.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\3\footsteps 3_2		4412
+	310637566	g2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesChasingSequence\GigglesChasing\g2		164680
 	335048445	firework5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\firework5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework5		18300
 	366924425	1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\Nightstalker\Nightstalker\1		88264
 	390844414	Footstep Killer 1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_2		1182
 	415982012	Get item	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Get item_A54EB81F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\Get item		54592
 	426864640	stinger drums (2+1dc)	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\stinger drums (2+1dc)_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger drums (2+1dc)		71522
 	432592923	footsteps 2_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 2.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\2\footsteps 2_2		5273
+	499438136	g7	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g7_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesChasingSequence\GigglesChasing\g7		217036
 	506638655	beartrap setup	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\beartrap setup_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Beartrap\beartrap setup		166958
 	520607068	Main Menu Keypress	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Main Menu Keypress_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\MainMenu\Main Menu Keypress		2837
 	527035602	big orb	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\big orb_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\EndScene\big orb		1675756
 	528025441	static2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\staticPlayer_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\static2		568908
 	535574224	Footstep Killer 2_4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 2.4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_4		9560
+	575501773	gf2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\gf2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesFinishedSequence\GigglesFinished\gf2		228052
 	582918435	Footstep Killer 1_3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 1.3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_3		1382
 	595616853	footsteps 4_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 4.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\4\footsteps 4_2		3789
+	624128063	g4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesChasingSequence\GigglesChasing\g4		186520
 	626323812	firework2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\firework2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework2		22283
 	631430281	stinger bass (2+1dc)	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\stinger bass (2+1dc)_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger bass (2+1dc)		25289
 	632205178	firework4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\firework4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework4		16633
 	634241349	tense music synth	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\tense music synth_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music synth		1363237
 	651192086	Footstep Killer 2_5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 2.5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_5		7916
 	693411796	stinger synth call (2+1dc)	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\stinger synth call (2+1dc)_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger synth call (2+1dc)		55102
+	730114883	g12	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g12_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesWorkingSequence\GigglesWorking\g12		239844
 	740779274	chase synth 1DC!!!!!!	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\chase synth 1DC!!!!!!_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth 1DC!!!!!!		373718
 	741320198	chase synth CALLs	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\chase synth CALL1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth CALLs		93909
 	741580282	Footstep Killer 2_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 2.2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS2\Footstep Killer 2_2		10252
+	770393744	g10	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g10_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesWorkingSequence\GigglesWorking\g10		264664
 	770735795	footsteps 2_1_2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 2.1.2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\2\footsteps2\footsteps 2_1_2		3706
 	771280129	footsteps 4_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 4.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\4\footsteps 4_1		4506
 	803494294	chase synth CALLs	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\chase synth CALL2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Chase\chase synth CALLs		118110
 	808663612	Footstep Killer 3_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 3.1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS3\Footstep Killer 3_1		9336
+	811897968	g6	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesChasingSequence\GigglesChasing\g6		55144
+	819135650	g3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesChasingSequence\GigglesChasing\g3		182584
 	823019377	tense music random tremolo	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\tense music random tremolo_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music random tremolo		1554787
+	836312457	gf3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\gf3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesFinishedSequence\GigglesFinished\gf3		255796
 	854505131	orb remake2	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\orb remake2_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\SoulStuff\orb remake2		11289664
 	863297654	stinger synth (2+1dc)	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\stinger synth (2+1dc)_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Chase\Stinger\stinger synth (2+1dc)		58084
 	864226983	fireworks setup	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\fireworks setup_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks setup		129614
+	875109637	g11	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g11_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesWorkingSequence\GigglesWorking\g11		194080
 	879557984	footsteps 1_1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\footsteps 1.1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Footsteps\1\footsteps 1_1		5390
 	894294164	tense music undermelody	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\tense music undermelody_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Tense\Tense\tense music undermelody		1612965
 	894454575	mall ow keys	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\mall ow keys_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\Overworld+Tense\Overworld+Tense\Overworld\Overworld\mall ow keys		1638749
+	894689707	g5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesChasingSequence\GigglesChasing\g5		171224
 	945119091	Footstep Killer 1_4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 1.4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_4		1194
+	956046119	g8	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g8_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesChasingSequence\GigglesChasing\g8		264664
 	957438151	Footstep Killer 1_5	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 1.5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS1\Footstep Killer 1_5		1292
 	975610250	staticTvHead	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\staticTvHead_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\Others\staticTvHead		561292
 	984088383	jerrycan1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\jerrycan1_E1010490.wem		\Actor-Mixer Hierarchy\Default Work Unit\SoulStuff\jerrycan1		718789
 	999391431	Footstep Killer 3_4	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\Footstep Killer 3.4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\KFS3\Footstep Killer 3_4		9480
 	1020886213	mall clean final mix	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\mall clean final mix_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Clean\mall clean final mix\mall clean final mix		19353664
 	1022517877	firework3	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\firework3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Weapons\Fire\fireworks trigger\firework3		19360
+	1049964613	g1	C:\Users\migue\Desktop\Projecto terror\Projecto\DecemberProject\Assets\DecemberProject_WwiseProject\.cache\Windows\SFX\g1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Enemy\Giggles\Giggles\GigglesChasingSequence\GigglesChasing\g1		153760
 

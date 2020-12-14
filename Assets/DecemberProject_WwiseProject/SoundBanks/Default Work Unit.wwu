@@ -20,6 +20,7 @@
 						<ObjectRef Name="DefeatedStatic" ID="{072B9B92-D67D-42F8-B929-075C45ECE8E0}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopStatic" ID="{8BCA3C52-A28F-436F-992A-CAC287BA40F3}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FireworksSetup" ID="{605E4769-4A82-4429-A366-D21038D094E7}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopGigglesCaught" ID="{BC7A4CB1-7874-444D-A2A2-ED131083C92F}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayKillerFootsteps2" ID="{18658727-CA3C-4515-8911-027BB33151BB}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep4" ID="{DCAEB2DE-F35F-4538-B654-3820066B96EF}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="IsBeingCorrupted" ID="{1FFBC9D8-93C6-46E1-91BB-CD6CFC93A35E}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}" Origin="Manual" Filter="7"/>
@@ -28,10 +29,12 @@
 						<ObjectRef Name="StopOverworld_Tense" ID="{36C0C93C-2EE7-47D8-931D-849EBF1BBF4E}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EndScene" ID="{8205F5CD-14A6-47E8-BCA5-411A0CC1250A}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayGetItem" ID="{7781F2B9-C0BE-47E8-9BE2-EC0E983E4F3C}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayGiggles" ID="{0E1FA620-2299-48A4-9621-BE1F5681FFEA}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayJerrycan" ID="{3B72C077-1A3F-48B9-9F9E-A6968EA3C8AA}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayKeypress" ID="{DAF74E53-D530-48EC-8472-21E8E1061BEF}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayStatic" ID="{D784173A-5FEC-4910-BF9C-C085618D09F7}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayOrb" ID="{C501D7C1-4549-4966-B519-5C89EAFE7D85}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopGigglesLost" ID="{2277F30A-F4E5-4967-B70C-92703DCCBD42}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopJerrycan" ID="{677693DC-8A70-49AE-ACCD-9722D97FFC26}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BeartrapTrigger" ID="{F54E6BD5-CB9A-49BF-9F56-C2ACC21B93D4}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FireworksTrigger" ID="{5950FFB8-54FD-4A69-BA27-5945C9927B3C}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>

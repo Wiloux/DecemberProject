@@ -124,6 +124,7 @@ public class Enemy : MonoBehaviour
                     else
                     {
                         AkSoundEngine.PostEvent("StopChase", gameObject);
+                        AkSoundEngine.PostEvent("StopGigglesCaught", gameObject);
                         CurrentTransformPlayer = null;
                         set_skinned_mat(mesh, 2, IdleMat[Random.Range(0, IdleMat.Count)]);
                         currentState = States.Patrolling;
@@ -262,6 +263,7 @@ public class Enemy : MonoBehaviour
                     {
                         //     Debug.Log("Going Back to Patroll");
                         AkSoundEngine.PostEvent("StopChase", gameObject);
+                        AkSoundEngine.PostEvent("StopGigglesLost", gameObject);
                         CurrentTransformPlayer = null;
                         currentState = States.Patrolling;
                         agent.speed = spd;

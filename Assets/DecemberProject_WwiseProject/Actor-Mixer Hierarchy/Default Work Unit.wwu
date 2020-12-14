@@ -2135,6 +2135,773 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<Folder Name="Giggles" ID="{AF0B652A-F165-46D5-8BE7-EAEC2D66B533}" ShortID="564097046">
+							<ChildrenList>
+								<SwitchContainer Name="Giggles" ID="{059B9ACA-5560-4C1D-A944-12EEBEA02050}" ShortID="666388683">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>15</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-250</Value>
+											</ValueList>
+										</Property>
+										<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Giggles" ID="{58DEE4FA-1604-44B9-B103-015F4424D0A4}" WorkUnitID="{886DA7F6-A764-46C6-A489-5A2BEA7F057D}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Silence" ID="{2213BEB0-76F7-472E-8432-99C3535144B3}" WorkUnitID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom CreatedFrom="{180A35FE-BF4E-4BCD-8D7F-872B580E55EC}">
+												<Effect Name="Phone_Booth_(Custom)" ID="{8F563261-4225-4499-A4FD-C4689D3EBEA6}" ShortID="706922706" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="0.8"/>
+														<Property Name="Density" Type="Real32" Value="68"/>
+														<Property Name="Diffusion" Type="Real32" Value="12"/>
+														<Property Name="DryLevel" Type="Real32" Value="-3"/>
+														<Property Name="ERLevel" Type="Real32" Value="-10"/>
+														<Property Name="ERPattern" Type="int32" Value="27"/>
+														<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+														<Property Name="Filter1Gain" Type="Real32" Value="-5"/>
+														<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+														<Property Name="Filter2Freq" Type="Real32" Value="6450"/>
+														<Property Name="Filter2Gain" Type="Real32" Value="8.5"/>
+														<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+														<Property Name="HFDamping" Type="Real32" Value="1.95"/>
+														<Property Name="PreDelay" Type="Real32" Value="1"/>
+														<Property Name="Quality" Type="int32" Value="4"/>
+														<Property Name="ReverbLevel" Type="Real32" Value="-26"/>
+														<Property Name="RoomSize" Type="Real32" Value="-93"/>
+														<Property Name="StereoWidth" Type="Real32" Value="0"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MasterNoReverb" ID="{DD8B1643-98DE-4F10-AEBC-BBE672B94690}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Giggles" ID="{2A25F7FA-13FB-4B9E-9E48-9D8F25B32CAA}" WorkUnitID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="GigglesChasingSequence" ID="{5F5E0BDD-7A48-4DD8-96ED-96537AF999A6}" ShortID="471992233">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="GigglesChasing" ID="{95752CFD-F115-48C2-B8B0-1C079EC1DE19}" ShortID="536260546">
+													<PropertyList>
+														<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="g1" ID="{5C0EB6B7-5F9B-408A-85A9-4998FFA21F56}" ShortID="1042793675">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g1" ID="{3E5DD03B-F4F9-4413-9C56-68D05A19F539}">
+																	<Language>SFX</Language>
+																	<AudioFile>g1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1049964613"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g1" ID="{3E5DD03B-F4F9-4413-9C56-68D05A19F539}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="g2" ID="{FBD2CF19-875B-4FEB-9424-25650E59B5C1}" ShortID="349382363">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g2" ID="{99898387-9304-4A04-A5C1-C5FFF41ADF07}">
+																	<Language>SFX</Language>
+																	<AudioFile>g2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="310637566"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g2" ID="{99898387-9304-4A04-A5C1-C5FFF41ADF07}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="g3" ID="{7B55B260-B82E-4B66-A38B-8D55AB7F13A0}" ShortID="475166861">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g3" ID="{E5747EB4-2F53-401D-8F86-803C358993CB}">
+																	<Language>SFX</Language>
+																	<AudioFile>g3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="819135650"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g3" ID="{E5747EB4-2F53-401D-8F86-803C358993CB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="g4" ID="{26DAF6F5-9922-4F32-8D09-69F2703F09B6}" ShortID="124055636">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g4" ID="{5A6CC90E-E791-493F-B085-B8693FF03FE7}">
+																	<Language>SFX</Language>
+																	<AudioFile>g4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="624128063"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g4" ID="{5A6CC90E-E791-493F-B085-B8693FF03FE7}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="g5" ID="{CBCE2B91-F00D-40A2-B3FA-01F02EE06380}" ShortID="454535516">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g5" ID="{E7425E07-68D9-4AAB-9ED5-3D32F8858A2A}">
+																	<Language>SFX</Language>
+																	<AudioFile>g5.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="894689707"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g5" ID="{E7425E07-68D9-4AAB-9ED5-3D32F8858A2A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="g6" ID="{93846D45-0CC8-473D-AA6F-7F85D5E1CF2D}" ShortID="165716511">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g6" ID="{104F8691-FAD5-4754-AA9A-8A18EA4B9BC2}">
+																	<Language>SFX</Language>
+																	<AudioFile>g6.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="811897968"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g6" ID="{104F8691-FAD5-4754-AA9A-8A18EA4B9BC2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="g7" ID="{023B157B-1D92-429C-8A5F-720B2DBD2697}" ShortID="803707974">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g7" ID="{C76DEB86-B5F0-44A9-BBC5-6A93559ADB3A}">
+																	<Language>SFX</Language>
+																	<AudioFile>g7.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="499438136"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g7" ID="{C76DEB86-B5F0-44A9-BBC5-6A93559ADB3A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="g8" ID="{AD9BB8F2-1E47-4DB8-A1D1-141F136A8C5C}" ShortID="72682195">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g8" ID="{FF6577A9-7D57-4612-B694-DD13720B7E56}">
+																	<Language>SFX</Language>
+																	<AudioFile>g8.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="956046119"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g8" ID="{FF6577A9-7D57-4612-B694-DD13720B7E56}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="SilenceRandom" ID="{E62C03C5-5ACE-4A73-ABBC-C20B990C9DFD}" ShortID="353065069">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="silence" ID="{F9C2B14A-233B-4976-A8E2-4B81E62FE456}" ShortID="679243670">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SourcePlugin Name="Wwise Silence" ID="{F1D73C73-7951-46A4-A3E7-5EB3B1D20982}" ShortID="180628535" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																	<PropertyList>
+																		<Property Name="Length" Type="Real32" Value="1.5"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																</SourcePlugin>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wwise Silence" ID="{F1D73C73-7951-46A4-A3E7-5EB3B1D20982}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Silence2" ID="{4D2097E4-EC2A-49FA-9DC1-2D201250B7B0}" ShortID="246158540">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SourcePlugin Name="Wwise Silence" ID="{D304C8C4-DCFB-4745-A4E3-C4C226B080F3}" ShortID="60682191" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																	<Language>SFX</Language>
+																</SourcePlugin>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wwise Silence" ID="{D304C8C4-DCFB-4745-A4E3-C4C226B080F3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="silence3" ID="{3AEB0B45-AFB5-451E-BFFB-A6D7E0EB4645}" ShortID="948863891">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SourcePlugin Name="Wwise Silence" ID="{A4394300-8A5E-4777-A6E6-019054B2F358}" ShortID="769504216" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																	<PropertyList>
+																		<Property Name="Length" Type="Real32" Value="2"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																</SourcePlugin>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wwise Silence" ID="{A4394300-8A5E-4777-A6E6-019054B2F358}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="GigglesChasing" ID="{95752CFD-F115-48C2-B8B0-1C079EC1DE19}"/>
+												<ItemRef Name="SilenceRandom" ID="{E62C03C5-5ACE-4A73-ABBC-C20B990C9DFD}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="GigglesWorkingSequence" ID="{7FE5759C-EAE0-4FC0-BBDD-8DEBDAC77869}" ShortID="398144488">
+											<PropertyList>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="GigglesWorking" ID="{CBBD205F-9411-4207-8579-CB2516180D94}" ShortID="1061898588">
+													<PropertyList>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="g9" ID="{8069B78C-8407-4DD7-9DB3-6942BB2E09F1}" ShortID="755654381">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g9" ID="{CD81F1B8-7DFA-4D85-96C1-048956FC701C}">
+																	<Language>SFX</Language>
+																	<AudioFile>g9.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="195557443"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g9" ID="{CD81F1B8-7DFA-4D85-96C1-048956FC701C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="g10" ID="{7CC71B0D-8BC2-46E5-BEE4-0DC4A62C1910}" ShortID="1017729036">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g10" ID="{7B747C00-FBDB-482D-849F-84A0C13A8339}">
+																	<Language>SFX</Language>
+																	<AudioFile>g10.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="770393744"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g10" ID="{7B747C00-FBDB-482D-849F-84A0C13A8339}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="g11" ID="{3315DA00-74E0-40CC-B7D4-46E45AD9D2D8}" ShortID="790059327">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g11" ID="{65ACC093-4E34-40BC-B6DA-B6ACD03E26EB}">
+																	<Language>SFX</Language>
+																	<AudioFile>g11.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="875109637"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g11" ID="{65ACC093-4E34-40BC-B6DA-B6ACD03E26EB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="g12" ID="{B7999EB4-30DC-472C-B98A-754FDA24D3DE}" ShortID="736289902">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="g12" ID="{C8814EA0-1C69-4834-9DA9-5DC705EF7B8E}">
+																	<Language>SFX</Language>
+																	<AudioFile>g12.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="730114883"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="g12" ID="{C8814EA0-1C69-4834-9DA9-5DC705EF7B8E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="SilenceRandom" ID="{FBC9E8DE-A34F-4DE6-A587-436DCB27DAEE}" ShortID="684791926">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="silence" ID="{61A4A769-A1BC-4ABC-A1A3-946C95D807E1}" ShortID="926100474">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SourcePlugin Name="Wwise Silence" ID="{5ACC2EFD-AFAB-4268-B7B6-332EF85DF734}" ShortID="576567876" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																	<PropertyList>
+																		<Property Name="Length" Type="Real32" Value="1.5"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																</SourcePlugin>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wwise Silence" ID="{5ACC2EFD-AFAB-4268-B7B6-332EF85DF734}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Silence2" ID="{42687CE0-A9CF-43D4-A282-50B09EEF9696}" ShortID="895079326">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SourcePlugin Name="Wwise Silence" ID="{C4ED076C-7557-4873-BC1F-EF4E6A22A73A}" ShortID="458022799" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																	<Language>SFX</Language>
+																</SourcePlugin>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wwise Silence" ID="{C4ED076C-7557-4873-BC1F-EF4E6A22A73A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="silence3" ID="{396876B8-C396-445B-9345-E45A21369B67}" ShortID="550889749">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<SourcePlugin Name="Wwise Silence" ID="{D76436CD-927D-4085-9C62-A39A3B6BB254}" ShortID="455437878" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+																	<PropertyList>
+																		<Property Name="Length" Type="Real32" Value="2"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																</SourcePlugin>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wwise Silence" ID="{D76436CD-927D-4085-9C62-A39A3B6BB254}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="SilenceRandom" ID="{FBC9E8DE-A34F-4DE6-A587-436DCB27DAEE}"/>
+												<ItemRef Name="GigglesWorking" ID="{CBBD205F-9411-4207-8579-CB2516180D94}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+										<Sound Name="Silence" ID="{1BE66E5F-EC7B-4FB3-92E8-28441A6BE0B8}" ShortID="570343337">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{773F80AC-8029-4D58-A271-A95468DA7656}" ShortID="243950143" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{773F80AC-8029-4D58-A271-A95468DA7656}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<RandomSequenceContainer Name="GigglesFinishedSequence" ID="{6877671D-AFA1-472B-8FF6-5212FBAA4FF2}" ShortID="253937747">
+											<PropertyList>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="GigglesFinished" ID="{C151CBE8-F115-4124-BC19-342523834A0F}" ShortID="854787902">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="gf1" ID="{72FE11AA-4C11-4878-A589-EB342A44AFCE}" ShortID="253357284">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="gf1" ID="{EE89C9C2-C594-4958-9790-E05719CC806A}">
+																	<Language>SFX</Language>
+																	<AudioFile>gf1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="67215594"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="gf1" ID="{EE89C9C2-C594-4958-9790-E05719CC806A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="gf2" ID="{5F6E62E9-48FF-4F26-8247-2C38E1EB9049}" ShortID="173485823">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="gf2" ID="{3517F463-3D59-4A23-8C4E-3A8A72E8B911}">
+																	<Language>SFX</Language>
+																	<AudioFile>gf2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="575501773"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="gf2" ID="{3517F463-3D59-4A23-8C4E-3A8A72E8B911}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="gf3" ID="{E5C41873-ED6E-44F8-95B1-CBF2FC0D6100}" ShortID="484439325">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="gf3" ID="{E9365D67-4A92-406D-9515-4EB366EEFD4A}">
+																	<Language>SFX</Language>
+																	<AudioFile>gf3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="836312457"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="gf3" ID="{E9365D67-4A92-406D-9515-4EB366EEFD4A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="gf4" ID="{BF5A24BC-4E97-4E23-8003-068193DABF62}" ShortID="182676646">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="gf4" ID="{EAE1BFB6-4298-473D-ABE2-869B4E371DD9}">
+																	<Language>SFX</Language>
+																	<AudioFile>gf4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="99061884"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="gf4" ID="{EAE1BFB6-4298-473D-ABE2-869B4E371DD9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<Sound Name="Silence5" ID="{973BBBA2-35CD-40CF-8C83-8C858B368203}" ShortID="315434162">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A7B26700-49F6-4B55-AB6E-DC6B3F882DFD}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{E36C5927-AAE9-4052-A54F-786194D9FA0C}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Silence" ID="{46609C75-15D6-4B23-8DAF-E473FB276845}" ShortID="881948208" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+															<PropertyList>
+																<Property Name="Length" Type="Real32" Value="0.5"/>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Silence" ID="{46609C75-15D6-4B23-8DAF-E473FB276845}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<Playlist>
+												<ItemRef Name="Silence5" ID="{973BBBA2-35CD-40CF-8C83-8C858B368203}"/>
+												<ItemRef Name="GigglesFinished" ID="{C151CBE8-F115-4124-BC19-342523834A0F}"/>
+											</Playlist>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="PauseMenu" ID="{E8A7B26B-939F-45B6-8575-634A237FB705}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Yes" ID="{7F1C27A4-B933-4614-A847-93C83D1D68A4}"/>
+												<CustomState Name="" ID="{F88A8BDB-A3BB-455E-8FB9-A42EC6B8B787}" ShortID="781173953"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
+												<CustomState Name="" ID="{C1DD83C4-00F8-4EBB-89A0-30CF6E076153}" ShortID="40270428"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="GigglesFinishedSequence" ID="{6877671D-AFA1-472B-8FF6-5212FBAA4FF2}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Silence" ID="{1BE66E5F-EC7B-4FB3-92E8-28441A6BE0B8}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="GigglesWorkingSequence" ID="{7FE5759C-EAE0-4FC0-BBDD-8DEBDAC77869}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="GigglesChasingSequence" ID="{5F5E0BDD-7A48-4DD8-96ED-96537AF999A6}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Working" ID="{DA1AAB19-A8E6-4CED-80A2-A036DB357A64}"/>
+												<ItemList>
+													<ItemRef Name="GigglesWorkingSequence" ID="{7FE5759C-EAE0-4FC0-BBDD-8DEBDAC77869}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Finished" ID="{F501486A-AF41-4BD9-B48C-DAB7E27DA4A9}"/>
+												<ItemList>
+													<ItemRef Name="GigglesFinishedSequence" ID="{6877671D-AFA1-472B-8FF6-5212FBAA4FF2}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Chasing" ID="{2E1E8FA9-9F78-47AF-815B-01F870274580}"/>
+												<ItemList>
+													<ItemRef Name="GigglesChasingSequence" ID="{5F5E0BDD-7A48-4DD8-96ED-96537AF999A6}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Silence" ID="{2213BEB0-76F7-472E-8432-99C3535144B3}"/>
+												<ItemList>
+													<ItemRef Name="Silence" ID="{1BE66E5F-EC7B-4FB3-92E8-28441A6BE0B8}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="EndScene" ID="{EA59F3BC-9640-4837-BCD4-653552A12A48}" ShortID="1023781272">

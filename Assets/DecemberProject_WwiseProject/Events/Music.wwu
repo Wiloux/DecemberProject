@@ -107,6 +107,17 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{569E9867-0723-4F39-BF1B-E12E6A4C03F2}" ShortID="37313670">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+										<Property Name="Delay" Type="Real64" Value="3.3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Chasing" ID="{2E1E8FA9-9F78-47AF-815B-01F870274580}" WorkUnitID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="StopChase" ID="{7C25AC06-4FAC-4D53-A558-C8992F0FC9C1}">
@@ -153,6 +164,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Yes" ID="{B8DA0160-63E3-4CCA-B091-04B800C6F99C}" WorkUnitID="{FFF60CC1-D8AC-4865-9438-D69566D6646E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{749A02B5-8512-4BB5-87F3-BF1AD17D633A}" ShortID="791232760">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="23"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Working" ID="{DA1AAB19-A8E6-4CED-80A2-A036DB357A64}" WorkUnitID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
