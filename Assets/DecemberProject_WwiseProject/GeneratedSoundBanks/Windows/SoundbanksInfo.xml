@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2911614583">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2124673802">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -173,7 +173,7 @@
 						<ActionSetStateEntry Id="979470758" Name="Yes" ObjectPath="\States\Default Work Unit\IsBeingCorrupted\Yes"/>
 					</ActionSetState>
 					<ActionSetSwitch>
-						<ActionSetSwitchEntry Id="1992928594" Name="Working" ObjectPath="\Switches\Default Work Unit\Giggles\Working"/>
+						<ActionSetSwitchEntry Id="3041563226" Name="Silence" ObjectPath="\Switches\Default Work Unit\Giggles\Silence"/>
 					</ActionSetSwitch>
 				</Event>
 				<Event Id="3706411783" Name="PlayChase" ObjectPath="\Events\Music\Overworld\PlayChase" DurationType="Infinite">
@@ -558,9 +558,6 @@
 			</StateGroups>
 			<SwitchGroups>
 				<SwitchGroup Id="1516571116" Name="Chasing" ObjectPath="\Switches\Default Work Unit\Giggles\Chasing">
-					<Switches/>
-				</SwitchGroup>
-				<SwitchGroup Id="1992928594" Name="Working" ObjectPath="\Switches\Default Work Unit\Giggles\Working">
 					<Switches/>
 				</SwitchGroup>
 				<SwitchGroup Id="3041563226" Name="Silence" ObjectPath="\Switches\Default Work Unit\Giggles\Silence">

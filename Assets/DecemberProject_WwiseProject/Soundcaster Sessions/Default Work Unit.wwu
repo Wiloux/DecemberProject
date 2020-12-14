@@ -69,7 +69,7 @@
 						<CurrentStateRef Name="Tense" ID="{EBBD9D27-82D5-4658-99B8-BDCD92FD277C}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Working" ID="{DA1AAB19-A8E6-4CED-80A2-A036DB357A64}"/>
+						<CurrentSwitchRef Name="Chasing" ID="{2E1E8FA9-9F78-47AF-815B-01F870274580}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="end scene" ID="{51BF487C-2183-4D6C-9CBB-53E17D3ACB81}">

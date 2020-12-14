@@ -173,7 +173,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Working" ID="{DA1AAB19-A8E6-4CED-80A2-A036DB357A64}" WorkUnitID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}"/>
+											<ObjectRef Name="Silence" ID="{2213BEB0-76F7-472E-8432-99C3535144B3}" WorkUnitID="{C3BF8318-82B5-460C-BA31-36DE0FF3D53C}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
