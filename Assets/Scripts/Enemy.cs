@@ -76,7 +76,7 @@ public class Enemy : MonoBehaviour
         chaseLight = GetComponentInChildren<Light>();
         agent = GetComponent<NavMeshAgent>();
         chaseLight.color = PatrollColor;
-     
+
         agent.speed = spd;
         anim = GetComponent<Animator>();
         StartCoroutine(RdmSpawn());
@@ -87,7 +87,8 @@ public class Enemy : MonoBehaviour
     void Update()
     {
 
-        if (isActive) {
+        if (isActive)
+        {
             if (!PauseMenu.instance.GamePaused)
             {
                 if (t < 1)
@@ -97,22 +98,22 @@ public class Enemy : MonoBehaviour
                                                           //     Time.timeScale = Mathf.Clamp(Time.timeScale, 0, 1);
                 }
             }
-            
 
-        foreach (Objective go in Objectives)
-        {
-            if (go.isFinished)
+
+            foreach (Objective go in Objectives)
             {
-                Objectives.Remove(go);
+                if (go.isFinished)
+                {
+                    Objectives.Remove(go);
                     break;
+                }
             }
-        }
 
-        anim.SetBool("stopped", agent.isStopped);
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
-        }
+            anim.SetBool("stopped", agent.isStopped);
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+            }
             switch (currentState)
             {
                 case States.Pause:
@@ -153,7 +154,7 @@ public class Enemy : MonoBehaviour
                             AkSoundEngine.PostEvent("PlayChase", gameObject);
                             t = 0;
                             Player.isSpotted = true;
-                            Player.Timer = ChaseDur;
+                            //    Player.Timer = ChaseDur;
                             CurrentTransformPlayer = Player;
                             //if (CameraScript.instance.CurrentTarget != null)
                             //{
@@ -205,6 +206,8 @@ public class Enemy : MonoBehaviour
                         CurrentTransformPlayer.isCorrupted = true;
                         CurrentTransformPlayer.isSpotted = false;
                         CurrentTransformPlayer.PlayerScript.ChaseTimer = 0;
+                        CurrentTransformPlayer.PlayerScript.agent.radius = 0.0001f;
+                        CurrentTransformPlayer.PlayerScript.agent.height = 0.0001f;
                         currentWaitAfterCorruptTime = waitAfterCorruptTime;
                         agent.speed = spd;
 
@@ -214,6 +217,7 @@ public class Enemy : MonoBehaviour
                             CurrentTransformPlayer.PlayerScript.readytoadd = false;
                         }
 
+                        //Assign a tv to the player
                         if (CurrentTransformPlayer.PlayerScript.ChoiceTV.survivor == null)
                         {
                             TVClass newtv = tvscript.Tvs[Random.Range(0, tvscript.Tvs.Count)];
@@ -224,10 +228,6 @@ public class Enemy : MonoBehaviour
                             newtv.tvGameObject.GetComponent<Renderer>().materials = mats;
                             newtv.survivor = CurrentTransformPlayer.PlayerScript;
                         }
-                      
-                        AkSoundEngine.PostEvent("IsBeingCorrupted", gameObject);
-                        currentState = States.Pause;
-
                         foreach (SpottedSurvior Player in Players)
                         {
                             Player.PlayerScript.ChaseTimer = 0;
@@ -235,7 +235,9 @@ public class Enemy : MonoBehaviour
                             Player.isSpotted = false;
                             Player.PlayerScript.ChaseMe = false;
                         }
-                            set_skinned_mat(mesh, 2, CorruptMat[Random.Range(0, CorruptMat.Count)]);
+                        AkSoundEngine.PostEvent("IsBeingCorrupted", gameObject);
+                        set_skinned_mat(mesh, 2, CorruptMat[Random.Range(0, CorruptMat.Count)]);
+                        currentState = States.Pause;
                         break;
                     }
 
@@ -245,21 +247,23 @@ public class Enemy : MonoBehaviour
                             CurrentTransformPlayer.isCorrupted = false;
                     }
 
-                    foreach (SpottedSurvior Player in Players)
-                    {
-                        if (Player.PlayerScript.ChaseTimer <= 0)
-                        {
-                            //      Debug.Log("Stops Chase : " + Player.PlayerScript.transform.name);
-                            Player.isSpotted = false;
-                        }
 
-                        if (Player.isSpotted)
-                        {
-                            NoMoreSpotted = false;
-                        }
-                    }
+
+                    //foreach (SpottedSurvior Player in Players)
+                    //{
+                    //    if (Player.PlayerScript.ChaseTimer <= 0)
+                    //    {
+                    //        //      Debug.Log("Stops Chase : " + Player.PlayerScript.transform.name);
+                    //        Player.isSpotted = false;
+                    //    }
+
+                    //    if (Player.isSpotted)
+                    //    {
+                    //        NoMoreSpotted = false;
+                    //    }
+                    //}
                     //Checks if should go back to Patroll
-                    if (NoMoreSpotted)
+                    if (CurrentTransformPlayer.PlayerScript.ChaseTimer <= 0)
                     {
                         //     Debug.Log("Going Back to Patroll");
                         AkSoundEngine.PostEvent("StopChase", gameObject);
@@ -271,22 +275,22 @@ public class Enemy : MonoBehaviour
                         chaseLight.color = PatrollColor;
                     }
                     //Checks for new Main Target 
-                    else
-                    {
-                        if (!CurrentTransformPlayer.isSpotted || CurrentTransformPlayer.isCorrupted)
-                        {
-                            float BestDistance = 1000f;
-                            foreach (SpottedSurvior Player in Players)
-                            {
-                                if (Vector3.Distance(transform.position, Player.PlayerScript.transform.position) <= BestDistance && !Player.isCorrupted)
-                                {
-                                    BestDistance = Vector3.Distance(transform.position, Player.PlayerScript.transform.position);
-                                    CurrentTransformPlayer = Player;
-                                    Debug.Log("New Target :" + Player.PlayerScript.transform.name);
-                                }
-                            }
-                        }
-                    }
+                    //else
+                  //  {
+                        //if (!CurrentTransformPlayer.isSpotted || CurrentTransformPlayer.isCorrupted)
+                        //{
+                        //    float BestDistance = 1000f;
+                        //    foreach (SpottedSurvior Player in Players)
+                        //    {
+                        //        if (Vector3.Distance(transform.position, Player.PlayerScript.transform.position) <= BestDistance && !Player.isCorrupted)
+                        //        {
+                        //            BestDistance = Vector3.Distance(transform.position, Player.PlayerScript.transform.position);
+                        //            CurrentTransformPlayer = Player;
+                        //            Debug.Log("New Target :" + Player.PlayerScript.transform.name);
+                        //        }
+                        //    }
+                        //}
+//                    }
 
 
                     //Checks for better target when searching for a while

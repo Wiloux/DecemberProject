@@ -40,10 +40,12 @@ public class CameraScript : MonoBehaviour
     {
         if (EasterEgg.instance.isNightStalker)
         {
+            target = NS;
             camOffSet = transform.position - NS.position;
         }
         else
         {
+            target = Syd;
             camOffSet = transform.position - Syd.position;
         }
         if (EasterEgg.instance.isNightStalker)

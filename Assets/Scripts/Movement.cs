@@ -6,7 +6,10 @@ using UnityEngine.AI;
 using TMPro;
 public class Movement : MonoBehaviour
 {
-    NavMeshAgent agent;
+    [HideInInspector]
+    public NavMeshAgent agent;
+    private float realradius;
+    private float realheight;
 
     public bool isNinja;
 
@@ -80,6 +83,8 @@ public class Movement : MonoBehaviour
         KillerScript = GameObject.FindObjectOfType<Enemy>();
         Killer = KillerScript.gameObject;
         SpottedDistance = KillerScript.CheckRadius;
+        realradius = agent.radius;
+        realheight = agent.height;
         if (isNinja)
         {
             workingSpeed += 15;
@@ -324,6 +329,8 @@ public class Movement : MonoBehaviour
                                     move.currDisolveAmount = disolveAmount;
                                     move.currentState = States.Walk;
                                     move.PlayWwiseEvent("StopStatic");
+                                    move.agent.radius = realradius;
+                                    move.agent.height = realheight;
                                     move.isBeingHelped = false;
                                     currentObjective.isBeingWorkedOn = false;
                                     move.anim.SetBool("isStunned", false);
@@ -420,6 +427,8 @@ public class Movement : MonoBehaviour
                             DisolveMat[u].SetFloat("Vector1_DD60D333", 0);
                         }
                         PlayWwiseEvent("StopStatic");
+                        agent.radius = realradius;
+                        realheight = agent.height;
                         anim.SetBool("isStunned", false);
                         currentState = States.Walk;
                         ChoiceTV.survivor = null;

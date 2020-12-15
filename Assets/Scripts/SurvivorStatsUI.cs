@@ -119,7 +119,7 @@ public class SurvivorStatsUI : MonoBehaviour
         }
         else if (Player.currentState == Movement.States.Dead)
         {
-            infotext.text = "Digitalised";
+            infotext.text = "Digitalized";
             imgWorkAmount.gameObject.SetActive(false);
             img.gameObject.SetActive(false);
         }

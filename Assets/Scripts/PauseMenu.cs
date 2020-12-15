@@ -12,6 +12,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject GameCam;
     public GameObject PauseCam;
     // Update is called once per frame
+    public Objective vic;
 
     private void Awake()
     {
@@ -32,7 +33,7 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = GamePaused ? 0 : 1;
 
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && !vic.victory)
         {
             Resume();
         }

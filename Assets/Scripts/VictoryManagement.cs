@@ -10,6 +10,9 @@ public class VictoryManagement : MonoBehaviour
     public List<Movement> Players= new List<Movement>();
     Objective car;
     // Start is called before the first frame update
+    private void Awake()
+    {
+    }
     void Start()
     {
         anim = GetComponent<Animator>();
