@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3274885139">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3132759031">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -336,30 +336,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1927847360" Name="PlayKillerFootsteps1" ObjectPath="\Events\Default Work Unit\TVHead\PlayKillerFootsteps1" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.039816" DurationMax="0.089945">
-					<IncludedMemoryFiles>
-						<File Id="260759101" Language="SFX">
-							<ShortName>Footstep Killer 1.1.wav</ShortName>
-							<Path>SFX\Footstep Killer 1.1_3F75BDB9.wem</Path>
-						</File>
-						<File Id="390844414" Language="SFX">
-							<ShortName>Footstep Killer 1.2.wav</ShortName>
-							<Path>SFX\Footstep Killer 1.2_3F75BDB9.wem</Path>
-						</File>
-						<File Id="582918435" Language="SFX">
-							<ShortName>Footstep Killer 1.3.wav</ShortName>
-							<Path>SFX\Footstep Killer 1.3_3F75BDB9.wem</Path>
-						</File>
-						<File Id="945119091" Language="SFX">
-							<ShortName>Footstep Killer 1.4.wav</ShortName>
-							<Path>SFX\Footstep Killer 1.4_3F75BDB9.wem</Path>
-						</File>
-						<File Id="957438151" Language="SFX">
-							<ShortName>Footstep Killer 1.5.wav</ShortName>
-							<Path>SFX\Footstep Killer 1.5_3F75BDB9.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
 				<Event Id="1927847363" Name="PlayKillerFootsteps2" ObjectPath="\Events\Default Work Unit\TVHead\PlayKillerFootsteps2" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.038460" DurationMax="0.088851">
 					<IncludedMemoryFiles>
 						<File Id="95132543" Language="SFX">
@@ -381,30 +357,6 @@
 						<File Id="741580282" Language="SFX">
 							<ShortName>Footstep Killer 2.2.wav</ShortName>
 							<Path>SFX\Footstep Killer 2.2_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="1927847362" Name="PlayKillerFootsteps3" ObjectPath="\Events\Default Work Unit\TVHead\PlayKillerFootsteps3" MaxAttenuation="70.000000" DurationType="OneShot" DurationMin="0.039593" DurationMax="0.084199">
-					<IncludedMemoryFiles>
-						<File Id="9397051" Language="SFX">
-							<ShortName>Footstep Killer 3.2.wav</ShortName>
-							<Path>SFX\Footstep Killer 3.2_10C4C929.wem</Path>
-						</File>
-						<File Id="19686228" Language="SFX">
-							<ShortName>Footstep Killer 3.3.wav</ShortName>
-							<Path>SFX\Footstep Killer 3.3_10C4C929.wem</Path>
-						</File>
-						<File Id="142657747" Language="SFX">
-							<ShortName>Footstep Killer 3.5.wav</ShortName>
-							<Path>SFX\Footstep Killer 3.5_10C4C929.wem</Path>
-						</File>
-						<File Id="808663612" Language="SFX">
-							<ShortName>Footstep Killer 3.1.wav</ShortName>
-							<Path>SFX\Footstep Killer 3.1_10C4C929.wem</Path>
-						</File>
-						<File Id="999391431" Language="SFX">
-							<ShortName>Footstep Killer 3.4.wav</ShortName>
-							<Path>SFX\Footstep Killer 3.4_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

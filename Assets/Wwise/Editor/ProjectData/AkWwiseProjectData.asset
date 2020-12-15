@@ -89,7 +89,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585936315822571814
+    m_lastTime: -8585936147488098270
     List:
     - name: GameOver
       guid: 94dc53836fcd4544b0ecd94937812cc4
@@ -126,7 +126,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23cdf775154ee34c9621da36a37cfeb8
     GuidInternal: 
-    m_lastTime: -8585936288510709844
+    m_lastTime: -8585936147488028761
     List:
     - name: Beartrap
       guid: 87f1222de4e06641bf489cdb74bd3c23
@@ -524,20 +524,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
-    - name: PlayKillerFootsteps1
-      guid: 91630109fe26eb46ba58dee0e4cb7768
-      id: 1927847360
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: TVHead
-        ObjectType: 4
-      - ElementName: PlayKillerFootsteps1
-        ObjectType: 3
-      Path: Default Work Unit\TVHead\PlayKillerFootsteps1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: PlayKillerFootsteps2
       guid: 278765183cca15458911027bb33151bb
       id: 1927847363
@@ -549,20 +535,6 @@ MonoBehaviour:
       - ElementName: PlayKillerFootsteps2
         ObjectType: 3
       Path: Default Work Unit\TVHead\PlayKillerFootsteps2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: PlayKillerFootsteps3
-      guid: 0af322007f2d4c4186046947278c38d5
-      id: 1927847362
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: TVHead
-        ObjectType: 4
-      - ElementName: PlayKillerFootsteps3
-        ObjectType: 3
-      Path: Default Work Unit\TVHead\PlayKillerFootsteps3
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1

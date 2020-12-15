@@ -14,7 +14,6 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="PlayChase" ID="{E1647F33-14D7-40B0-8265-B3AED2039FB3}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BeartrapStop" ID="{9051FB8E-1DBC-40FE-9D93-E56DDE662BC9}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="PlayKillerFootsteps3" ID="{0022F30A-2D7F-414C-8604-6947278C38D5}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="FireworksStop" ID="{C637927D-9D74-41D6-86CF-E18392D0B855}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="BeartrapSetup" ID="{1DD81B9F-7171-41DB-A063-33AECCE790B1}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DefeatedStatic" ID="{072B9B92-D67D-42F8-B929-075C45ECE8E0}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
@@ -24,7 +23,6 @@
 						<ObjectRef Name="PlayKillerFootsteps2" ID="{18658727-CA3C-4515-8911-027BB33151BB}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep4" ID="{DCAEB2DE-F35F-4538-B654-3820066B96EF}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="IsBeingCorrupted" ID="{1FFBC9D8-93C6-46E1-91BB-CD6CFC93A35E}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="PlayKillerFootsteps1" ID="{09016391-26FE-46EB-BA58-DEE0E4CB7768}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Footstep3" ID="{A038CCE9-E1BA-476B-A218-5F7C2653B950}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StopOverworld_Tense" ID="{36C0C93C-2EE7-47D8-931D-849EBF1BBF4E}" WorkUnitID="{BBABE638-2233-483A-9252-41B8E238FEF4}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="EndScene" ID="{8205F5CD-14A6-47E8-BCA5-411A0CC1250A}" WorkUnitID="{75F7CD23-4E15-4CE3-9621-DA36A37CFEB8}" Origin="Manual" Filter="7"/>
