@@ -13970,7 +13970,7 @@ MonoBehaviour:
   SurvUI: {fileID: 1004532651}
   GameCam: {fileID: 1688298555}
   PauseCam: {fileID: 827576678}
-  vic: {fileID: 0}
+  vic: {fileID: 1224438989}
 --- !u!1 &842354718
 GameObject:
   m_ObjectHideFlags: 0
