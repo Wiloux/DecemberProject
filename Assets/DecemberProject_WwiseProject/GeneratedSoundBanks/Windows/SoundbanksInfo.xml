@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2124673802">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3274885139">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -244,10 +244,6 @@
 							<ShortName>gf4.wav</ShortName>
 							<Path>SFX\gf4_10C4C929.wem</Path>
 						</File>
-						<File Id="195557443" Language="SFX">
-							<ShortName>g9.wav</ShortName>
-							<Path>SFX\g9_10C4C929.wem</Path>
-						</File>
 						<File Id="310637566" Language="SFX">
 							<ShortName>g2.wav</ShortName>
 							<Path>SFX\g2_10C4C929.wem</Path>
@@ -264,14 +260,6 @@
 							<ShortName>g4.wav</ShortName>
 							<Path>SFX\g4_10C4C929.wem</Path>
 						</File>
-						<File Id="730114883" Language="SFX">
-							<ShortName>g12.wav</ShortName>
-							<Path>SFX\g12_10C4C929.wem</Path>
-						</File>
-						<File Id="770393744" Language="SFX">
-							<ShortName>g10.wav</ShortName>
-							<Path>SFX\g10_10C4C929.wem</Path>
-						</File>
 						<File Id="811897968" Language="SFX">
 							<ShortName>g6.wav</ShortName>
 							<Path>SFX\g6_10C4C929.wem</Path>
@@ -283,10 +271,6 @@
 						<File Id="836312457" Language="SFX">
 							<ShortName>gf3.wav</ShortName>
 							<Path>SFX\gf3_10C4C929.wem</Path>
-						</File>
-						<File Id="875109637" Language="SFX">
-							<ShortName>g11.wav</ShortName>
-							<Path>SFX\g11_10C4C929.wem</Path>
 						</File>
 						<File Id="894689707" Language="SFX">
 							<ShortName>g5.wav</ShortName>
@@ -313,14 +297,6 @@
 								<File Id="811897968"/>
 								<File Id="499438136"/>
 								<File Id="956046119"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{DA1AAB19-A8E6-4CED-80A2-A036DB357A64}">
-							<Media>
-								<File Id="195557443"/>
-								<File Id="770393744"/>
-								<File Id="875109637"/>
-								<File Id="730114883"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{F501486A-AF41-4BD9-B48C-DAB7E27DA4A9}">
