@@ -30,17 +30,8 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 27596ce3e9aa5240a54f786194d9fa0c
     GuidInternal: 
-    m_lastTime: -8585940570589393921
+    m_lastTime: -8585936288510659543
     List:
-    - name: MainMenu
-      guid: c4f31a29ed3f254189da43c96b8cb14c
-      id: 3604647259
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: MainMenu
-        ObjectType: 2
-      Path: Default Work Unit\MainMenu
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
       id: 3803692087
@@ -50,6 +41,15 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
+    - name: MasterNoReverb
+      guid: 43168bddde98104faebcbbe672b94690
+      id: 3104833122
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: MasterNoReverb
+        ObjectType: 2
+      Path: Default Work Unit\MasterNoReverb
     - name: Music
       guid: 9b647e44102feb4489f4d257d074e699
       id: 3991942870
@@ -59,6 +59,17 @@ MonoBehaviour:
       - ElementName: Music
         ObjectType: 2
       Path: Default Work Unit\Music
+    - name: NoReverb
+      guid: 5db6d9f680788a4db7b40c407722deb8
+      id: 3840845152
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: NoReverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\NoReverb
     - name: OverworldMusic
       guid: 69a0a4cee9e2b34a8c8a458629fa2d92
       id: 1872467674
@@ -78,7 +89,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 2adf9b48a55e0042ac0d652e549d36c6
     GuidInternal: 
-    m_lastTime: -8585939619476972042
+    m_lastTime: -8585936315822571814
     List:
     - name: GameOver
       guid: 94dc53836fcd4544b0ecd94937812cc4
@@ -115,7 +126,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 23cdf775154ee34c9621da36a37cfeb8
     GuidInternal: 
-    m_lastTime: -8585939620377848202
+    m_lastTime: -8585936288510709844
     List:
     - name: Beartrap
       guid: 87f1222de4e06641bf489cdb74bd3c23
@@ -176,6 +187,20 @@ MonoBehaviour:
       - ElementName: BeartrapTrigger
         ObjectType: 3
       Path: Default Work Unit\Weapons\Beartrap\BeartrapTrigger
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: DefeatedStatic
+      guid: 929b2b077dd6f842b929075c45ece8e0
+      id: 3844998465
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Others
+        ObjectType: 4
+      - ElementName: DefeatedStatic
+        ObjectType: 3
+      Path: Default Work Unit\Others\DefeatedStatic
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -321,6 +346,34 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: GameOverFadeOut
+      guid: 868e5f549cbd7d4a8c85740a23f96c47
+      id: 4108772633
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Game Over
+        ObjectType: 4
+      - ElementName: GameOverFadeOut
+        ObjectType: 3
+      Path: Default Work Unit\Game Over\GameOverFadeOut
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Giggles
+      guid: ff84b67934470648a3375a6000db38bc
+      id: 4002248037
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TVHead
+        ObjectType: 4
+      - ElementName: Giggles
+        ObjectType: 4
+      Path: Default Work Unit\TVHead\Giggles
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Jerrycan
       guid: a43112c47526624a9a2cb401f4147665
       id: 2981649099
@@ -396,6 +449,34 @@ MonoBehaviour:
       - ElementName: PlayGameOver
         ObjectType: 3
       Path: Default Work Unit\Game Over\PlayGameOver
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayGetItem
+      guid: b9f28177bec0e8479be2ec0e983e4f3c
+      id: 2080376856
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayGetItem
+        ObjectType: 3
+      Path: Default Work Unit\PlayGetItem
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PlayGiggles
+      guid: 20a61f0e9922a4489621be1f5681ffea
+      id: 2627712155
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TVHead
+        ObjectType: 4
+      - ElementName: Giggles
+        ObjectType: 4
+      - ElementName: PlayGiggles
+        ObjectType: 3
+      Path: Default Work Unit\TVHead\Giggles\PlayGiggles
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -499,6 +580,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: PlayNSFootstep
+      guid: 6f9c12e861360a4baa671752d3fc19f7
+      id: 1928550884
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayNSFootstep
+        ObjectType: 3
+      Path: Default Work Unit\PlayNSFootstep
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: PlayOrb
       guid: c1d701c549456649b5195c89eafe7d85
       id: 2053742238
@@ -566,6 +659,38 @@ MonoBehaviour:
       - ElementName: StopAllSounds
         ObjectType: 3
       Path: Default Work Unit\Others\StopAllSounds
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopGigglesCaught
+      guid: b14c7abc74784d44a2a2ed131083c92f
+      id: 206134053
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TVHead
+        ObjectType: 4
+      - ElementName: Giggles
+        ObjectType: 4
+      - ElementName: StopGigglesCaught
+        ObjectType: 3
+      Path: Default Work Unit\TVHead\Giggles\StopGigglesCaught
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: StopGigglesLost
+      guid: 0af37722e5f46749b70c92703dccbd42
+      id: 237550319
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: TVHead
+        ObjectType: 4
+      - ElementName: Giggles
+        ObjectType: 4
+      - ElementName: StopGigglesLost
+        ObjectType: 3
+      Path: Default Work Unit\TVHead\Giggles\StopGigglesLost
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -674,7 +799,7 @@ MonoBehaviour:
     ParentPath: Music
     guid: 38e6abbb33223a48925241b8e238fef4
     GuidInternal: 
-    m_lastTime: -8585939679796581002
+    m_lastTime: -8585936249309844671
     List:
     - name: GameOver
       guid: 0bb9c5b2ec91964794dba6f0b281a806
@@ -836,7 +961,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: c10cf6ffacd865489438d69566d6646e
     GuidInternal: 
-    m_lastTime: -8585940829362346860
+    m_lastTime: -8585936315822072753
     List:
     - name: End
       guid: 80f50ddfe3d951448bfa5401cea77c8c
@@ -865,6 +990,49 @@ MonoBehaviour:
         id: 979470758
         PathAndIcons:
         - ElementName: Yes
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Giggles
+      guid: 6e84a3d09dd688409fa0774b611f8511
+      id: 4002248037
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Giggles
+        ObjectType: 9
+      Path: Default Work Unit\Giggles
+      values:
+      - name: Chasing
+        guid: 91d594b430fde343a2e01766d2e52027
+        id: 1516571116
+        PathAndIcons:
+        - ElementName: Chasing
+          ObjectType: 8
+      - name: Finished
+        guid: 5850622bbcb7034fb37ef2a157360972
+        id: 3683254051
+        PathAndIcons:
+        - ElementName: Finished
+          ObjectType: 8
+      - name: None
+        guid: 6fc01beeb483e04db5ea817be82f6809
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Patrol
+        guid: 6634cc47a6ae544c813eebce4592c74b
+        id: 3497767639
+        PathAndIcons:
+        - ElementName: Patrol
+          ObjectType: 8
+      - name: Working
+        guid: b881c4e053e48a4f929aceb377ca781e
+        id: 1992928594
+        PathAndIcons:
+        - ElementName: Working
           ObjectType: 8
       ValueGuids: []
       ValueIcons: []
@@ -1001,8 +1169,45 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 1883bfc3b5820c46ba3136de0ff3d53c
     GuidInternal: 
-    m_lastTime: -8585957803260950915
-    List: []
+    m_lastTime: -8585936315822921513
+    List:
+    - name: Giggles
+      guid: faf7252afb139e4b9e489d8f25b32caa
+      id: 4002248037
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Giggles
+        ObjectType: 11
+      Path: Default Work Unit\Giggles
+      values:
+      - name: Chasing
+        guid: a98f1e2e789faf47815b01f870274580
+        id: 1516571116
+        PathAndIcons:
+        - ElementName: Chasing
+          ObjectType: 10
+      - name: Finished
+        guid: 6a4801f541afd94bb48cdab7e27da4a9
+        id: 3683254051
+        PathAndIcons:
+        - ElementName: Finished
+          ObjectType: 10
+      - name: Silence
+        guid: b0be1322f7762e47843299c3535144b3
+        id: 3041563226
+        PathAndIcons:
+        - ElementName: Silence
+          ObjectType: 10
+      - name: Working
+        guid: 19ab1adae6a8ed4c80a2a036db357a64
+        id: 1992928594
+        PathAndIcons:
+        - ElementName: Working
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:

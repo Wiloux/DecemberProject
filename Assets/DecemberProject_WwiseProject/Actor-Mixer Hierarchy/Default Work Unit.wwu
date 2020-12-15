@@ -2653,7 +2653,11 @@
 										<CustomStateList>
 											<CustomState>
 												<StateRef Name="Yes" ID="{7F1C27A4-B933-4614-A847-93C83D1D68A4}"/>
-												<CustomState Name="" ID="{F88A8BDB-A3BB-455E-8FB9-A42EC6B8B787}" ShortID="781173953"/>
+												<CustomState Name="" ID="{F88A8BDB-A3BB-455E-8FB9-A42EC6B8B787}" ShortID="781173953">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64" Value="-108"/>
+													</PropertyList>
+												</CustomState>
 											</CustomState>
 											<CustomState>
 												<StateRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}"/>
