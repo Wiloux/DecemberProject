@@ -2744,7 +2744,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Plants gives you orbs
+  m_text: Plants give you orbs
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dd2b611f2ef683142ad8cdb46256beff, type: 2}
   m_sharedMaterial: {fileID: -8122038054746212257, guid: dd2b611f2ef683142ad8cdb46256beff,
@@ -6295,7 +6295,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'TVs allows you to save
+  m_text: 'TVs allow you to save
 
     your faded characters'
   m_isRightToLeft: 0
@@ -8576,7 +8576,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Gashapon machines gives\n you items"
+  m_text: "Gashapon machines give\n you items"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dd2b611f2ef683142ad8cdb46256beff, type: 2}
   m_sharedMaterial: {fileID: -8122038054746212257, guid: dd2b611f2ef683142ad8cdb46256beff,
