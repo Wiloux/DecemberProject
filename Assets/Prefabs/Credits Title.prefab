@@ -770,7 +770,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\n\n\nDevelloped by\n\nArt by \n\nMusic by \n\nSound Design by\n\n\n\nSurvivor
+  m_text: "\n\n\nDeveloped by\n\nArt by \n\nMusic by \n\nSound Design by\n\n\n\nSurvivor
     1 TV counterpart\n\nSurvivor 2 TV counterpart\n\nSurvivor 3 TV counterpart\n\nVideo
     Editor\n\nVideo Editor\n\n\n\nPlaytester\n\nPlaytester\n\nPlaytester\n\n\nProofreader"
   m_isRightToLeft: 0
@@ -847,7 +847,7 @@ MonoBehaviour:
   m_margin: {x: -219.97978, y: 0, z: -220.47083, w: -1486.6425}
   m_textInfo:
     textComponent: {fileID: 3607617567359109607}
-    characterCount: 216
+    characterCount: 215
     spriteCount: 0
     spaceCount: 50
     wordCount: 30

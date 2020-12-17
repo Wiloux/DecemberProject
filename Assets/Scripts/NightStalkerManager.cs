@@ -10,7 +10,7 @@ public class NightStalkerManager : MonoBehaviour
     public Toggle toggle;
     void Start()
     {
-        PlayerPrefs.SetInt("NightStalkerUnlocked", 1);
+     //   PlayerPrefs.SetInt("NightStalkerUnlocked", 0);
         if (PlayerPrefs.GetInt("NightStalkerModeOn") == 0)
         {
             toggle.isOn = false;

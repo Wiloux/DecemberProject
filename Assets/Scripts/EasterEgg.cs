@@ -20,7 +20,9 @@ public class EasterEgg : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        if(PlayerPrefs.GetInt("NightStalkerUnlocked") == 1)
+
+       // PlayerPrefs.SetInt("NightStalkerUnlocked", 0);
+        if (PlayerPrefs.GetInt("NightStalkerUnlocked") == 1)
         {
            if (PlayerPrefs.GetInt("NightStalkerModeOn") != 1)
             {

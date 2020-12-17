@@ -168,6 +168,7 @@ public class Enemy : MonoBehaviour
 
                             CameraScript.instance.SwitchTarget(Player.PlayerScript.playerInt);
                             CameraScript.instance.isLocked = true;
+                            CameraScript.instance.CamLockedImg.SetActive(true);
 
                             Player.PlayerScript.isSelected = true;
                             EasterEgg.instance.VictoryWithoutBeingSpotted = false;
