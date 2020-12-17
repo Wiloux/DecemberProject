@@ -98,8 +98,8 @@
 																<MusicClip Name="mall ow keys" ID="{6F3A7727-67E1-4977-B776-AC3792E2336C}">
 																	<PropertyList>
 																		<Property Name="EndTrimOffset" Type="Real64" Value="109714.285714286"/>
-																		<Property Name="FadeInMode" Type="int16" Value="0"/>
-																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.872168596385805"/>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="1.35748342322768"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mall ow keys" ID="{58F9DE92-DEB2-477E-B3A3-06174BDA8435}"/>
 																</MusicClip>

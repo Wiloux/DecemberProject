@@ -67,6 +67,19 @@
 												</Reference>
 											</ReferenceList>
 										</Action>
+										<Action Name="" ID="{623AB130-43BC-4EFE-AF10-83A0477EF0F5}" ShortID="309409112">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="12"/>
+												<Property Name="Delay" Type="Real64" Value="120"/>
+												<Property Name="FadeTime" Type="Real64" Value="60"/>
+												<Property Name="Volume" Type="Real64" Value="-10"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="orb remake2" ID="{D6103B4B-2F0D-4192-94B2-88C897AB3D84}" WorkUnitID="{5B0881F7-1C4E-4E74-9237-1FD5C41A3591}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
 									</ChildrenList>
 								</Event>
 								<Event Name="StopOrb" ID="{C36ECDAB-D2CD-4C09-A3D1-312503C60DF8}">
@@ -441,6 +454,17 @@
 				</Folder>
 				<Event Name="EndScene" ID="{8205F5CD-14A6-47E8-BCA5-411A0CC1250A}">
 					<ChildrenList>
+						<Action Name="" ID="{2F371597-69B4-4B30-A8D0-7A50CF8A1CB7}" ShortID="1029159112">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chase" ID="{248136FF-289C-4495-987E-97929CD2BB78}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{25454861-8C26-41AD-AB89-6D5173DAA049}" ShortID="455167451">
 							<ReferenceList>
 								<Reference Name="Target">
