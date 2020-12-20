@@ -22950,9 +22950,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
   m_Bindings:
-  - {fileID: 1141910621}
-  - {fileID: 1141910622}
   - {fileID: 1141910618}
+  - {fileID: 1141910622}
+  - {fileID: 1141910621}
   - {fileID: 1141910619}
   m_VisualEffect: {fileID: 1141910616}
 --- !u!114 &1141910621

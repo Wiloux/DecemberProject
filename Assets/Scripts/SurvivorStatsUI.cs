@@ -74,7 +74,14 @@ public class SurvivorStatsUI : MonoBehaviour
 
         if (Player.currentState == Movement.States.Working || Player.currentState == Movement.States.Action)
         {
-            infotext.text = "Working";
+            if (Player.currentObjective.Type == Objective.WorkType.car && Player.currentObjective.Workers != 3)
+            {
+                infotext.text = "<color=red>Waiting</color>";
+            }
+            else
+            {
+                infotext.text = "Working";
+            }
             imgWorkAmount.color = Color.yellow;
 
             if (Player.currentState == Movement.States.Working)
