@@ -33,7 +33,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2151183654">
+		<SoundBank Id="3161908922" Language="SFX" Hash="587100942">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -433,7 +433,11 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1416937818" Name="StopAllSounds" ObjectPath="\Events\Default Work Unit\Others\StopAllSounds" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1416937818" Name="StopAllSounds" ObjectPath="\Events\Default Work Unit\Others\StopAllSounds" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\PauseMenu\No"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="2399390441" Name="StopChase" ObjectPath="\Events\Music\Overworld\StopChase" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\Spotted\No"/>
@@ -504,7 +508,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3604647259" Language="SFX" Hash="3005010615">
+		<SoundBank Id="3604647259" Language="SFX" Hash="897923368">
 			<ObjectPath>\SoundBanks\Default Work Unit\MainMenu</ObjectPath>
 			<ShortName>MainMenu</ShortName>
 			<Path>MainMenu.bnk</Path>
@@ -545,13 +549,22 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1416937818" Name="StopAllSounds" ObjectPath="\Events\Default Work Unit\Others\StopAllSounds" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1416937818" Name="StopAllSounds" ObjectPath="\Events\Default Work Unit\Others\StopAllSounds" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\PauseMenu\No"/>
+					</ActionSetState>
+				</Event>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\PauseMenu\No">
+					<States/>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="4158285989" Language="SFX" Hash="3528986953">
+		<SoundBank Id="4158285989" Language="SFX" Hash="2970492167">
 			<ObjectPath>\SoundBanks\Default Work Unit\GameOver</ObjectPath>
 			<ShortName>GameOver</ShortName>
 			<Path>GameOver.bnk</Path>
@@ -600,11 +613,20 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1416937818" Name="StopAllSounds" ObjectPath="\Events\Default Work Unit\Others\StopAllSounds" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1416937818" Name="StopAllSounds" ObjectPath="\Events\Default Work Unit\Others\StopAllSounds" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\PauseMenu\No"/>
+					</ActionSetState>
+				</Event>
 			</IncludedEvents>
 			<GameParameters>
 				<GameParameter Id="988953028" Name="SFXVolume" ObjectPath="\Game Parameters\Default Work Unit\SFXVolume"/>
 			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1668749452" Name="No" ObjectPath="\States\Default Work Unit\PauseMenu\No">
+					<States/>
+				</StateGroup>
+			</StateGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -176,6 +176,16 @@
 									</PropertyList>
 									<ReferenceList/>
 								</Action>
+								<Action Name="" ID="{D820A108-73B4-416A-B645-3DE9EA5719BC}" ShortID="597502899">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="No" ID="{784CEE18-8B4A-4628-A1CC-61945F256544}" WorkUnitID="{FFF60CC1-D8AC-4865-9438-D69566D6646E}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="DefeatedStatic" ID="{072B9B92-D67D-42F8-B929-075C45ECE8E0}">
@@ -442,6 +452,9 @@
 						<Event Name="PlayMainMenu" ID="{A2A71271-33F1-4423-9305-16F8FC956256}">
 							<ChildrenList>
 								<Action Name="" ID="{6C1C51B3-26B8-4ED3-84BE-072E8EE3EA3C}" ShortID="403925833">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Main Menu" ID="{E2BC1F9C-203C-493A-81FB-CC4BFF7A81BD}" WorkUnitID="{A669F38D-78DE-40B5-8A31-41098F5B1B7B}"/>
